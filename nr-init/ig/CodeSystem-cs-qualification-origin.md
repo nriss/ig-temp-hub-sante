@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-qualification-origin | *Version*:0.1.0 |
-| Draft as of 2026-03-16 | *Computable Name*:CS_QualificationOrigin |
+| Draft as of 2026-03-16 | *Computable Name*:CSQualificationOrigin |
 
  
 Canal ou entité à l'origine de la création du dossier de régulation médicale. 
 
  Cette terminologie de référence (CodeSystem) est référencé dans la définition de contenu des jeux de valeurs (ValueSet) suivants : 
 
-* [VS_QualificationOrigin](ValueSet-vs-qualification-origin.md)
+* [VSQualificationOrigin](ValueSet-vs-qualification-origin.md)
 
 
 
@@ -28,10 +28,10 @@ Canal ou entité à l'origine de la création du dossier de régulation médical
   "id" : "cs-qualification-origin",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-qualification-origin",
   "version" : "0.1.0",
-  "name" : "CS_QualificationOrigin",
+  "name" : "CSQualificationOrigin",
   "title" : "Origine de la qualification (Hub Santé)",
   "status" : "draft",
-  "date" : "2026-03-16T12:48:10+00:00",
+  "date" : "2026-03-16T13:14:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

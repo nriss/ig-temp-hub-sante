@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-qualification-origin | *Version*:0.1.0 |
-| Draft as of 2026-03-16 | *Computable Name*:VS_QualificationOrigin |
+| Draft as of 2026-03-16 | *Computable Name*:VSQualificationOrigin |
 
  
 Canal ou entité à l'origine de la création du dossier de régulation médicale. 
@@ -47,10 +47,10 @@ Canal ou entité à l'origine de la création du dossier de régulation médical
   "id" : "vs-qualification-origin",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-qualification-origin",
   "version" : "0.1.0",
-  "name" : "VS_QualificationOrigin",
+  "name" : "VSQualificationOrigin",
   "title" : "Origine de la qualification (Hub Santé)",
   "status" : "draft",
-  "date" : "2026-03-16T12:48:10+00:00",
+  "date" : "2026-03-16T13:14:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

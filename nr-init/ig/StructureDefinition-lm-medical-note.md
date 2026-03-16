@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-medical-note | *Version*:0.1.0 |
-| Draft as of 2026-03-16 | *Computable Name*:LM_MedicalNote |
+| Draft as of 2026-03-16 | *Computable Name*:MedicalNoteLogical |
 
  
 Observation médicale réalisée par un professionnel de santé dans le contexte de la régulation médicale (RS-EDA). 
@@ -38,10 +38,10 @@ Other representations of profile: [CSV](StructureDefinition-lm-medical-note.csv)
   "id" : "lm-medical-note",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-medical-note",
   "version" : "0.1.0",
-  "name" : "LM_MedicalNote",
+  "name" : "MedicalNoteLogical",
   "title" : "Observation médicale",
   "status" : "draft",
-  "date" : "2026-03-16T12:48:10+00:00",
+  "date" : "2026-03-16T13:14:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

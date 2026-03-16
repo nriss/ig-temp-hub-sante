@@ -4,7 +4,7 @@
 * [**Artifacts Summary**](artifacts.md)
 * **Prénom & nom usuel**
 
-## Logical Model: Prénom & nom usuel /h2> Official URL: https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-detailed-name Version: 0.1.0 Draft as of 2026-03-16 Computable Name: LM_DetailedName Prénom et nom usuel d'une personne. Objet transverse utilisé dans plusieurs contextes (appelant, médecin traitant, identité patient). Utilisations: * Utilise ce/t/te Modèle logique: Appelant, Médecin traitant and Identité Vous pouvez également vérifier les usages dans le FHIR IG Statistics Formal Views of Profile Content Description of Profiles, Differentials, Snapshots and how the different presentations work.   Other representations of profile: CSV, Excel   <prev top   next> IG © 2020+ Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris. Package ans.fhir.fr.hubsante#0.1.0 based on FHIR 4.0.1. Generated 2026-03-16 Liens : Table des matières | QA | Historique des versions Documentation | New Issue Ministère des Solidarités et de la Santé Agence du numérique en santé Agence du Numérique en Santé 2-10 Rue d'Oradour-sur-Glane 75015 Paris * Contact 
+## Logical Model: Prénom & nom usuel /h2> Official URL: https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-detailed-name Version: 0.1.0 Draft as of 2026-03-16 Computable Name: DetailedNameLogical Prénom et nom usuel d'une personne. Objet transverse utilisé dans plusieurs contextes (appelant, médecin traitant, identité patient). Utilisations: * Utilise ce/t/te Modèle logique: Appelant, Médecin traitant and Identité Vous pouvez également vérifier les usages dans le FHIR IG Statistics Formal Views of Profile Content Description of Profiles, Differentials, Snapshots and how the different presentations work.   Other representations of profile: CSV, Excel   <prev top   next> IG © 2020+ Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris. Package ans.fhir.fr.hubsante#0.1.0 based on FHIR 4.0.1. Generated 2026-03-16 Liens : Table des matières | QA | Historique des versions Documentation | New Issue Ministère des Solidarités et de la Santé Agence du numérique en santé Agence du Numérique en Santé 2-10 Rue d'Oradour-sur-Glane 75015 Paris * Contact 
 
 
 
@@ -16,10 +16,10 @@
   "id" : "lm-detailed-name",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-detailed-name",
   "version" : "0.1.0",
-  "name" : "LM_DetailedName",
+  "name" : "DetailedNameLogical",
   "title" : "Prénom & nom usuel",
   "status" : "draft",
-  "date" : "2026-03-16T12:48:10+00:00",
+  "date" : "2026-03-16T13:14:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

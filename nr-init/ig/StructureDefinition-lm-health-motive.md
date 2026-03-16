@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-health-motive | *Version*:0.1.0 |
-| Draft as of 2026-03-16 | *Computable Name*:LM_HealthMotive |
+| Draft as of 2026-03-16 | *Computable Name*:HealthMotiveLogical |
 
  
 Code et libellé décrivant le motif de santé de l'appel (nomenclature SAMU). 
@@ -38,10 +38,10 @@ Other representations of profile: [CSV](StructureDefinition-lm-health-motive.csv
   "id" : "lm-health-motive",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-health-motive",
   "version" : "0.1.0",
-  "name" : "LM_HealthMotive",
+  "name" : "HealthMotiveLogical",
   "title" : "Motif de santé",
   "status" : "draft",
-  "date" : "2026-03-16T12:48:10+00:00",
+  "date" : "2026-03-16T13:14:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

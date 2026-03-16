@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-perimeter | *Version*:0.1.0 |
-| Draft as of 2026-03-16 | *Computable Name*:CS_Perimeter |
+| Draft as of 2026-03-16 | *Computable Name*:CSPerimeter |
 
  
 Filière du CRRA destinataire à laquelle le dossier doit être adressé. 
 
  Cette terminologie de référence (CodeSystem) est référencé dans la définition de contenu des jeux de valeurs (ValueSet) suivants : 
 
-* [VS_Perimeter](ValueSet-vs-perimeter.md)
+* [VSPerimeter](ValueSet-vs-perimeter.md)
 
 
 
@@ -28,10 +28,10 @@ Filière du CRRA destinataire à laquelle le dossier doit être adressé.
   "id" : "cs-perimeter",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-perimeter",
   "version" : "0.1.0",
-  "name" : "CS_Perimeter",
+  "name" : "CSPerimeter",
   "title" : "Filière de régulation (Hub Santé)",
   "status" : "draft",
-  "date" : "2026-03-16T12:48:10+00:00",
+  "date" : "2026-03-16T13:14:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

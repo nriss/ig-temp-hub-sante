@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-external-location-id-source | *Version*:0.1.0 |
-| Draft as of 2026-03-16 | *Computable Name*:CS_ExternalLocationIdSource |
+| Draft as of 2026-03-16 | *Computable Name*:CSExternalLocationIdSource |
 
  
 Types d'identifiants utilisés pour référencer une localisation externe. 
 
  Cette terminologie de référence (CodeSystem) est référencé dans la définition de contenu des jeux de valeurs (ValueSet) suivants : 
 
-* [VS_ExternalLocationIdSource](ValueSet-vs-external-location-id-source.md)
+* [VSExternalLocationIdSource](ValueSet-vs-external-location-id-source.md)
 
 
 
@@ -28,10 +28,10 @@ Types d'identifiants utilisés pour référencer une localisation externe.
   "id" : "cs-external-location-id-source",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-external-location-id-source",
   "version" : "0.1.0",
-  "name" : "CS_ExternalLocationIdSource",
+  "name" : "CSExternalLocationIdSource",
   "title" : "Source des identifiants de localisation externes (Hub Santé)",
   "status" : "draft",
-  "date" : "2026-03-16T12:48:10+00:00",
+  "date" : "2026-03-16T13:14:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

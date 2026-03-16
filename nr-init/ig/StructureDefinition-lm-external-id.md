@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-external-id | *Version*:0.1.0 |
-| Draft as of 2026-03-16 | *Computable Name*:LM_ExternalId |
+| Draft as of 2026-03-16 | *Computable Name*:ExternalIdLogical |
 
  
 Identifiant patient provenant d'un système externe. 
@@ -38,10 +38,10 @@ Other representations of profile: [CSV](StructureDefinition-lm-external-id.csv),
   "id" : "lm-external-id",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-external-id",
   "version" : "0.1.0",
-  "name" : "LM_ExternalId",
+  "name" : "ExternalIdLogical",
   "title" : "Identifiant(s) patient(s)",
   "status" : "draft",
-  "date" : "2026-03-16T12:48:10+00:00",
+  "date" : "2026-03-16T13:14:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

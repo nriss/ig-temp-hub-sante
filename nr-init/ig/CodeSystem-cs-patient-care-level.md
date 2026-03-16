@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-patient-care-level | *Version*:0.1.0 |
-| Draft as of 2026-03-16 | *Computable Name*:CS_PatientCareLevel |
+| Draft as of 2026-03-16 | *Computable Name*:CSPatientCareLevel |
 
  
 Niveaux de soins spécifiques au patient dans le contexte de la régulation médicale. 
 
  Cette terminologie de référence (CodeSystem) est référencé dans la définition de contenu des jeux de valeurs (ValueSet) suivants : 
 
-* [VS_PatientCareLevel](ValueSet-vs-patient-care-level.md)
+* [VSPatientCareLevel](ValueSet-vs-patient-care-level.md)
 
 
 
@@ -28,10 +28,10 @@ Niveaux de soins spécifiques au patient dans le contexte de la régulation méd
   "id" : "cs-patient-care-level",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-patient-care-level",
   "version" : "0.1.0",
-  "name" : "CS_PatientCareLevel",
+  "name" : "CSPatientCareLevel",
   "title" : "Niveau de soin du patient (Hub Santé)",
   "status" : "draft",
-  "date" : "2026-03-16T12:48:10+00:00",
+  "date" : "2026-03-16T13:14:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

@@ -3,7 +3,7 @@ HubSante : Validation Results
 
 err = 1, warn = 431, info = 207
 IG Publisher Version: 2.1.2
-Generated Mon Mar 16 12:49:28 UTC 2026. FHIR version 4.0.1 for ans.fhir.fr.hubsante#0.1.0 (canonical = https://interop.esante.gouv.fr/ig/fhir/hubsante)
+Generated Mon Mar 16 13:15:48 UTC 2026. FHIR version 4.0.1 for ans.fhir.fr.hubsante#0.1.0 (canonical = https://interop.esante.gouv.fr/ig/fhir/hubsante)
  Build Errors : 1234 / 3 / 0
  /home/runner/work/ig-temp-hub-sante/ig-temp-hub-sante/igSource/fsh-generated/resources/CodeSystem-cs-caller-communication : 0 / 2 / 3
  /home/runner/work/ig-temp-hub-sante/ig-temp-hub-sante/igSource/fsh-generated/resources/CodeSystem-cs-caller-type : 0 / 2 / 3

@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "5e421c1c-104d-495a-a5e1-a74dc212b8b4",
+  "id" : "5b582a44-e098-42c0-b255-3b8734b497a1",
   "meta" : {
-    "lastUpdated" : "2026-03-16T12:48:10.907+00:00"
+    "lastUpdated" : "2026-03-16T13:14:36.671+00:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -15,10 +15,10 @@
       },
       "url" : "https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-caller-communication",
       "version" : "0.1.0",
-      "name" : "VS_CallerCommunication",
+      "name" : "VSCallerCommunication",
       "title" : "Communication avec l'appelant (Hub Santé)",
       "status" : "draft",
-      "date" : "2026-03-16T12:48:10+00:00",
+      "date" : "2026-03-16T13:14:36+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -27,8 +27,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:f039bd74-ae35-4a48-991f-e31efb137686",
-        "timestamp" : "2026-03-16T12:49:07+00:00",
+        "identifier" : "urn:uuid:a8e08490-16f8-40ea-9e91-381ac15a3bcd",
+        "timestamp" : "2026-03-16T13:15:28+00:00",
         "total" : 9,
         "offset" : 0,
         "parameter" : [{
@@ -100,10 +100,10 @@
       },
       "url" : "https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-caller-type",
       "version" : "0.1.0",
-      "name" : "VS_CallerType",
+      "name" : "VSCallerType",
       "title" : "Type d'appelant (Hub Santé)",
       "status" : "draft",
-      "date" : "2026-03-16T12:48:10+00:00",
+      "date" : "2026-03-16T13:14:36+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -112,8 +112,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:9e268b80-b2e8-4484-a9be-c68e70fe2717",
-        "timestamp" : "2026-03-16T12:49:07+00:00",
+        "identifier" : "urn:uuid:44f33dae-35ab-41f9-92e2-492cd30deb23",
+        "timestamp" : "2026-03-16T13:15:28+00:00",
         "total" : 29,
         "offset" : 0,
         "parameter" : [{
@@ -265,10 +265,10 @@
       },
       "url" : "https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-case-attribution",
       "version" : "0.1.0",
-      "name" : "VS_CaseAttribution",
+      "name" : "VSCaseAttribution",
       "title" : "Attribution du dossier (Hub Santé)",
       "status" : "draft",
-      "date" : "2026-03-16T12:48:10+00:00",
+      "date" : "2026-03-16T13:14:36+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -277,8 +277,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:6392a724-de93-4b77-b462-2b6c1ceaf49d",
-        "timestamp" : "2026-03-16T12:49:08+00:00",
+        "identifier" : "urn:uuid:37a54ef1-a9fb-4f0e-a665-43f6f630ac09",
+        "timestamp" : "2026-03-16T13:15:28+00:00",
         "total" : 40,
         "offset" : 0,
         "parameter" : [{
@@ -474,10 +474,10 @@
       },
       "url" : "https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-case-priority",
       "version" : "0.1.0",
-      "name" : "VS_CasePriority",
+      "name" : "VSCasePriority",
       "title" : "Priorité du dossier (Hub Santé)",
       "status" : "draft",
-      "date" : "2026-03-16T12:48:10+00:00",
+      "date" : "2026-03-16T13:14:36+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -486,8 +486,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:1c4ee0a8-7e9a-4f2e-b2cd-7b4566fd1533",
-        "timestamp" : "2026-03-16T12:49:08+00:00",
+        "identifier" : "urn:uuid:ffa49280-8609-4952-8913-ebfb190f2019",
+        "timestamp" : "2026-03-16T13:15:28+00:00",
         "total" : 5,
         "offset" : 0,
         "parameter" : [{
@@ -543,10 +543,10 @@
       },
       "url" : "https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-case-status",
       "version" : "0.1.0",
-      "name" : "VS_CaseStatus",
+      "name" : "VSCaseStatus",
       "title" : "Statut du dossier (Hub Santé)",
       "status" : "draft",
-      "date" : "2026-03-16T12:48:10+00:00",
+      "date" : "2026-03-16T13:14:36+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -555,8 +555,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:f0bec03e-1dc0-494a-81fd-7e6ae4267b9c",
-        "timestamp" : "2026-03-16T12:49:08+00:00",
+        "identifier" : "urn:uuid:f0f77f7b-6f40-44f9-91b5-11e4f5c905b5",
+        "timestamp" : "2026-03-16T13:15:28+00:00",
         "total" : 7,
         "offset" : 0,
         "parameter" : [{
@@ -620,10 +620,10 @@
       },
       "url" : "https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-contact-channel",
       "version" : "0.1.0",
-      "name" : "VS_ContactChannel",
+      "name" : "VSContactChannel",
       "title" : "Canal de contact (Hub Santé)",
       "status" : "draft",
-      "date" : "2026-03-16T12:48:10+00:00",
+      "date" : "2026-03-16T13:14:36+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -632,8 +632,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:ecaa7071-4456-46d4-8922-22a646ef1619",
-        "timestamp" : "2026-03-16T12:49:08+00:00",
+        "identifier" : "urn:uuid:1b4529e0-61cc-45e6-a167-aa36f828f538",
+        "timestamp" : "2026-03-16T13:15:28+00:00",
         "total" : 6,
         "offset" : 0,
         "parameter" : [{
@@ -693,10 +693,10 @@
       },
       "url" : "https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-contact-type",
       "version" : "0.1.0",
-      "name" : "VS_ContactType",
+      "name" : "VSContactType",
       "title" : "Type de contact (Hub Santé)",
       "status" : "draft",
-      "date" : "2026-03-16T12:48:10+00:00",
+      "date" : "2026-03-16T13:14:36+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -705,8 +705,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:76836508-67a2-4619-bd89-bd76688a1cd4",
-        "timestamp" : "2026-03-16T12:49:08+00:00",
+        "identifier" : "urn:uuid:ca98d8b2-6b3b-4a80-8885-81333a19b443",
+        "timestamp" : "2026-03-16T13:15:28+00:00",
         "total" : 7,
         "offset" : 0,
         "parameter" : [{
@@ -770,10 +770,10 @@
       },
       "url" : "https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-coord-precision",
       "version" : "0.1.0",
-      "name" : "VS_CoordPrecision",
+      "name" : "VSCoordPrecision",
       "title" : "Précision des coordonnées géographiques (Hub Santé)",
       "status" : "draft",
-      "date" : "2026-03-16T12:48:10+00:00",
+      "date" : "2026-03-16T13:14:36+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -782,8 +782,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:eaa13831-97b1-4a2a-8580-c14775f1c334",
-        "timestamp" : "2026-03-16T12:49:08+00:00",
+        "identifier" : "urn:uuid:e1d16506-551b-42ff-bccb-eba3c804062b",
+        "timestamp" : "2026-03-16T13:15:28+00:00",
         "total" : 5,
         "offset" : 0,
         "parameter" : [{
@@ -839,10 +839,10 @@
       },
       "url" : "https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-decision-type",
       "version" : "0.1.0",
-      "name" : "VS_DecisionType",
+      "name" : "VSDecisionType",
       "title" : "Type de décision médicale (Hub Santé)",
       "status" : "draft",
-      "date" : "2026-03-16T12:48:10+00:00",
+      "date" : "2026-03-16T13:14:36+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -851,8 +851,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:75aab5e3-fdf9-4d69-a6d6-ba2e6a51e52d",
-        "timestamp" : "2026-03-16T12:49:08+00:00",
+        "identifier" : "urn:uuid:f24ffae5-fc5c-4e2f-9179-366d7dfa9e17",
+        "timestamp" : "2026-03-16T13:15:28+00:00",
         "total" : 5,
         "offset" : 0,
         "parameter" : [{
@@ -908,10 +908,10 @@
       },
       "url" : "https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-external-id-source",
       "version" : "0.1.0",
-      "name" : "VS_ExternalIdSource",
+      "name" : "VSExternalIdSource",
       "title" : "Source des identifiants externes patient (Hub Santé)",
       "status" : "draft",
-      "date" : "2026-03-16T12:48:10+00:00",
+      "date" : "2026-03-16T13:14:36+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -920,8 +920,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:ed51edb1-d408-4ca2-a999-448a92df2bfa",
-        "timestamp" : "2026-03-16T12:49:08+00:00",
+        "identifier" : "urn:uuid:818ccbfd-221f-4791-9e2e-42037950a690",
+        "timestamp" : "2026-03-16T13:15:28+00:00",
         "total" : 5,
         "offset" : 0,
         "parameter" : [{
@@ -977,10 +977,10 @@
       },
       "url" : "https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-external-info-type",
       "version" : "0.1.0",
-      "name" : "VS_ExternalInfoType",
+      "name" : "VSExternalInfoType",
       "title" : "Type d'information externe (Hub Santé)",
       "status" : "draft",
-      "date" : "2026-03-16T12:48:10+00:00",
+      "date" : "2026-03-16T13:14:36+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -989,8 +989,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:2728cb3b-9122-4d1f-91ae-0fb1ba4e13d7",
-        "timestamp" : "2026-03-16T12:49:08+00:00",
+        "identifier" : "urn:uuid:bd1a8274-27c9-489f-94a1-ef478be55cbf",
+        "timestamp" : "2026-03-16T13:15:28+00:00",
         "total" : 5,
         "offset" : 0,
         "parameter" : [{
@@ -1046,10 +1046,10 @@
       },
       "url" : "https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-external-location-id-source",
       "version" : "0.1.0",
-      "name" : "VS_ExternalLocationIdSource",
+      "name" : "VSExternalLocationIdSource",
       "title" : "Source des identifiants de localisation externes (Hub Santé)",
       "status" : "draft",
-      "date" : "2026-03-16T12:48:10+00:00",
+      "date" : "2026-03-16T13:14:36+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -1058,8 +1058,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:d1277ef7-688d-4353-a1d5-4a8318ec9083",
-        "timestamp" : "2026-03-16T12:49:08+00:00",
+        "identifier" : "urn:uuid:3cafc7d1-9d4a-41ef-aaf8-b18d5aa94410",
+        "timestamp" : "2026-03-16T13:15:28+00:00",
         "total" : 5,
         "offset" : 0,
         "parameter" : [{
@@ -1115,10 +1115,10 @@
       },
       "url" : "https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-intervention-type",
       "version" : "0.1.0",
-      "name" : "VS_InterventionType",
+      "name" : "VSInterventionType",
       "title" : "Type d'intervention (Hub Santé)",
       "status" : "draft",
-      "date" : "2026-03-16T12:48:10+00:00",
+      "date" : "2026-03-16T13:14:36+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -1127,8 +1127,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:7c04152a-1bc1-48cb-b87e-2edf355e51ed",
-        "timestamp" : "2026-03-16T12:49:08+00:00",
+        "identifier" : "urn:uuid:14f06287-7ce1-4c10-9724-73edfddb5a09",
+        "timestamp" : "2026-03-16T13:15:28+00:00",
         "total" : 5,
         "offset" : 0,
         "parameter" : [{
@@ -1184,10 +1184,10 @@
       },
       "url" : "https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-operator-role",
       "version" : "0.1.0",
-      "name" : "VS_OperatorRole",
+      "name" : "VSOperatorRole",
       "title" : "Rôles des opérateurs (Hub Santé)",
       "status" : "draft",
-      "date" : "2026-03-16T12:48:10+00:00",
+      "date" : "2026-03-16T13:14:36+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -1196,8 +1196,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:08fd794d-b6ef-423f-811d-fde318535323",
-        "timestamp" : "2026-03-16T12:49:08+00:00",
+        "identifier" : "urn:uuid:20afd4ef-378a-4abb-a566-ad24e9c195c2",
+        "timestamp" : "2026-03-16T13:15:28+00:00",
         "total" : 8,
         "offset" : 0,
         "parameter" : [{
@@ -1265,10 +1265,10 @@
       },
       "url" : "https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-orientation-type",
       "version" : "0.1.0",
-      "name" : "VS_OrientationType",
+      "name" : "VSOrientationType",
       "title" : "Type d'orientation (Hub Santé)",
       "status" : "draft",
-      "date" : "2026-03-16T12:48:10+00:00",
+      "date" : "2026-03-16T13:14:36+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -1277,8 +1277,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:7af3ba28-0815-401e-8dc0-dc9539d2819c",
-        "timestamp" : "2026-03-16T12:49:08+00:00",
+        "identifier" : "urn:uuid:2ddd0818-582a-4b89-bbc5-55a0a1119d8e",
+        "timestamp" : "2026-03-16T13:15:28+00:00",
         "total" : 7,
         "offset" : 0,
         "parameter" : [{
@@ -1342,10 +1342,10 @@
       },
       "url" : "https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-patient-care-level",
       "version" : "0.1.0",
-      "name" : "VS_PatientCareLevel",
+      "name" : "VSPatientCareLevel",
       "title" : "Niveau de soin du patient (Hub Santé)",
       "status" : "draft",
-      "date" : "2026-03-16T12:48:10+00:00",
+      "date" : "2026-03-16T13:14:36+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -1354,8 +1354,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:e4be74fa-389f-40f2-b50b-ab5b53aee7d3",
-        "timestamp" : "2026-03-16T12:49:08+00:00",
+        "identifier" : "urn:uuid:96a7e684-e890-4f23-b354-26a22bba7242",
+        "timestamp" : "2026-03-16T13:15:28+00:00",
         "total" : 4,
         "offset" : 0,
         "parameter" : [{
@@ -1407,10 +1407,10 @@
       },
       "url" : "https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-perimeter",
       "version" : "0.1.0",
-      "name" : "VS_Perimeter",
+      "name" : "VSPerimeter",
       "title" : "Filière de régulation (Hub Santé)",
       "status" : "draft",
-      "date" : "2026-03-16T12:48:10+00:00",
+      "date" : "2026-03-16T13:14:36+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -1419,8 +1419,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:9116abea-fc49-4c58-bc44-568a8fa6529f",
-        "timestamp" : "2026-03-16T12:49:08+00:00",
+        "identifier" : "urn:uuid:40dd8cf7-da43-4d9b-8f50-f364def4e9a3",
+        "timestamp" : "2026-03-16T13:15:28+00:00",
         "total" : 4,
         "offset" : 0,
         "parameter" : [{
@@ -1472,10 +1472,10 @@
       },
       "url" : "https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-qualification-origin",
       "version" : "0.1.0",
-      "name" : "VS_QualificationOrigin",
+      "name" : "VSQualificationOrigin",
       "title" : "Origine de la qualification (Hub Santé)",
       "status" : "draft",
-      "date" : "2026-03-16T12:48:10+00:00",
+      "date" : "2026-03-16T13:14:36+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -1484,8 +1484,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:cb6eff9a-8a15-491f-9cfd-453ef213ae45",
-        "timestamp" : "2026-03-16T12:49:08+00:00",
+        "identifier" : "urn:uuid:53e245ac-1110-4ee3-a841-4601cd277148",
+        "timestamp" : "2026-03-16T13:15:28+00:00",
         "total" : 19,
         "offset" : 0,
         "parameter" : [{
@@ -1597,10 +1597,10 @@
       },
       "url" : "https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-resource-type",
       "version" : "0.1.0",
-      "name" : "VS_ResourceType",
+      "name" : "VSResourceType",
       "title" : "Type de ressource mobilisée (Hub Santé)",
       "status" : "draft",
-      "date" : "2026-03-16T12:48:10+00:00",
+      "date" : "2026-03-16T13:14:36+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -1609,8 +1609,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:5170e078-79e4-4fef-b7f1-7f467ccd095d",
-        "timestamp" : "2026-03-16T12:49:08+00:00",
+        "identifier" : "urn:uuid:632a88ca-c842-46da-81b0-8a80598dc12f",
+        "timestamp" : "2026-03-16T13:15:28+00:00",
         "total" : 34,
         "offset" : 0,
         "parameter" : [{
@@ -1782,10 +1782,10 @@
       },
       "url" : "https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-sex",
       "version" : "0.1.0",
-      "name" : "VS_Sex",
+      "name" : "VSSex",
       "title" : "Sexe du patient (Hub Santé)",
       "status" : "draft",
-      "date" : "2026-03-16T12:48:10+00:00",
+      "date" : "2026-03-16T13:14:36+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -1794,8 +1794,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:a23fa25b-b606-4c80-8e0b-a80f22949ef4",
-        "timestamp" : "2026-03-16T12:49:08+00:00",
+        "identifier" : "urn:uuid:42f1bff3-a2da-46d4-b0d6-f879689e847d",
+        "timestamp" : "2026-03-16T13:15:28+00:00",
         "total" : 4,
         "offset" : 0,
         "parameter" : [{

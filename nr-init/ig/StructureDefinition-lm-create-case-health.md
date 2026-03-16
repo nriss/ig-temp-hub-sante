@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-create-case-health | *Version*:0.1.0 |
-| Draft as of 2026-03-16 | *Computable Name*:LM_CreateCaseHealth |
+| Draft as of 2026-03-16 | *Computable Name*:CreateCaseHealthLogical |
 
  
 Objet racine du message RS-EDA : dossier de régulation médicale transmis entre partenaires du Hub Santé. 
@@ -38,10 +38,10 @@ Other representations of profile: [CSV](StructureDefinition-lm-create-case-healt
   "id" : "lm-create-case-health",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-create-case-health",
   "version" : "0.1.0",
-  "name" : "LM_CreateCaseHealth",
+  "name" : "CreateCaseHealthLogical",
   "title" : "Dossier de régulation médicale (RS-EDA)",
   "status" : "draft",
-  "date" : "2026-03-16T12:48:10+00:00",
+  "date" : "2026-03-16T13:14:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

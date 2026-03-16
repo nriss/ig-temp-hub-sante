@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-external-info | *Version*:0.1.0 |
-| Draft as of 2026-03-16 | *Computable Name*:LM_ExternalInfo |
+| Draft as of 2026-03-16 | *Computable Name*:ExternalInfoLogical |
 
  
 Référence vers une ressource externe apportant des informations complémentaires sur la localisation. 
@@ -38,10 +38,10 @@ Other representations of profile: [CSV](StructureDefinition-lm-external-info.csv
   "id" : "lm-external-info",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-external-info",
   "version" : "0.1.0",
-  "name" : "LM_ExternalInfo",
+  "name" : "ExternalInfoLogical",
   "title" : "Information externe",
   "status" : "draft",
-  "date" : "2026-03-16T12:48:10+00:00",
+  "date" : "2026-03-16T13:14:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

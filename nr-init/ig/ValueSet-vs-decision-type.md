@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-decision-type | *Version*:0.1.0 |
-| Draft as of 2026-03-16 | *Computable Name*:VS_DecisionType |
+| Draft as of 2026-03-16 | *Computable Name*:VSDecisionType |
 
  
 Type de décision prise dans le cadre de la régulation médicale. 
@@ -47,10 +47,10 @@ Type de décision prise dans le cadre de la régulation médicale.
   "id" : "vs-decision-type",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-decision-type",
   "version" : "0.1.0",
-  "name" : "VS_DecisionType",
+  "name" : "VSDecisionType",
   "title" : "Type de décision médicale (Hub Santé)",
   "status" : "draft",
-  "date" : "2026-03-16T12:48:10+00:00",
+  "date" : "2026-03-16T13:14:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

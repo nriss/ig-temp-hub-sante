@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-whats-happen | *Version*:0.1.0 |
-| Draft as of 2026-03-16 | *Computable Name*:LM_WhatsHappen |
+| Draft as of 2026-03-16 | *Computable Name*:WhatsHappenLogical |
 
  
 Code et libellé décrivant la nature de l'événement déclenchant l'appel (nomenclature SAMU). 
@@ -38,10 +38,10 @@ Other representations of profile: [CSV](StructureDefinition-lm-whats-happen.csv)
   "id" : "lm-whats-happen",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-whats-happen",
   "version" : "0.1.0",
-  "name" : "LM_WhatsHappen",
+  "name" : "WhatsHappenLogical",
   "title" : "Nature du problème",
   "status" : "draft",
-  "date" : "2026-03-16T12:48:10+00:00",
+  "date" : "2026-03-16T13:14:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

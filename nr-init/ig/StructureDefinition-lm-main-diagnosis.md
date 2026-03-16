@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-main-diagnosis | *Version*:0.1.0 |
-| Draft as of 2026-03-16 | *Computable Name*:LM_MainDiagnosis |
+| Draft as of 2026-03-16 | *Computable Name*:MainDiagnosisLogical |
 
  
 Hypothèse diagnostique principale issue de la régulation médicale. 
@@ -38,10 +38,10 @@ Other representations of profile: [CSV](StructureDefinition-lm-main-diagnosis.cs
   "id" : "lm-main-diagnosis",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-main-diagnosis",
   "version" : "0.1.0",
-  "name" : "LM_MainDiagnosis",
+  "name" : "MainDiagnosisLogical",
   "title" : "Hypothèse de régulation médicale principale",
   "status" : "draft",
-  "date" : "2026-03-16T12:48:10+00:00",
+  "date" : "2026-03-16T13:14:36+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

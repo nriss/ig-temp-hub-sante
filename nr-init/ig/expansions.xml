@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="5e421c1c-104d-495a-a5e1-a74dc212b8b4"/>
+  <id value="5b582a44-e098-42c0-b255-3b8734b497a1"/>
   <meta>
-    <lastUpdated value="2026-03-16T12:48:10.907+00:00"/>
+    <lastUpdated value="2026-03-16T13:14:36.671+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -224,10 +224,10 @@
         </text>
         <url value="https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-caller-communication"/>
         <version value="0.1.0"/>
-        <name value="VS_CallerCommunication"/>
+        <name value="VSCallerCommunication"/>
         <title value="Communication avec l'appelant (Hub Santé)"/>
         <status value="draft"/>
-        <date value="2026-03-16T12:48:10+00:00"/>
+        <date value="2026-03-16T13:14:36+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -236,8 +236,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:f039bd74-ae35-4a48-991f-e31efb137686"/>
-          <timestamp value="2026-03-16T12:49:07+00:00"/>
+          <identifier value="urn:uuid:a8e08490-16f8-40ea-9e91-381ac15a3bcd"/>
+          <timestamp value="2026-03-16T13:15:28+00:00"/>
           <total value="9"/>
           <offset value="0"/>
           <parameter>
@@ -918,10 +918,10 @@
         </text>
         <url value="https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-caller-type"/>
         <version value="0.1.0"/>
-        <name value="VS_CallerType"/>
+        <name value="VSCallerType"/>
         <title value="Type d'appelant (Hub Santé)"/>
         <status value="draft"/>
-        <date value="2026-03-16T12:48:10+00:00"/>
+        <date value="2026-03-16T13:14:36+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -930,8 +930,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:9e268b80-b2e8-4484-a9be-c68e70fe2717"/>
-          <timestamp value="2026-03-16T12:49:07+00:00"/>
+          <identifier value="urn:uuid:44f33dae-35ab-41f9-92e2-492cd30deb23"/>
+          <timestamp value="2026-03-16T13:15:28+00:00"/>
           <total value="29"/>
           <offset value="0"/>
           <parameter>
@@ -1912,10 +1912,10 @@
         </text>
         <url value="https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-case-attribution"/>
         <version value="0.1.0"/>
-        <name value="VS_CaseAttribution"/>
+        <name value="VSCaseAttribution"/>
         <title value="Attribution du dossier (Hub Santé)"/>
         <status value="draft"/>
-        <date value="2026-03-16T12:48:10+00:00"/>
+        <date value="2026-03-16T13:14:36+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -1924,8 +1924,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:6392a724-de93-4b77-b462-2b6c1ceaf49d"/>
-          <timestamp value="2026-03-16T12:49:08+00:00"/>
+          <identifier value="urn:uuid:37a54ef1-a9fb-4f0e-a665-43f6f630ac09"/>
+          <timestamp value="2026-03-16T13:15:28+00:00"/>
           <total value="40"/>
           <offset value="0"/>
           <parameter>
@@ -2250,10 +2250,10 @@
         </text>
         <url value="https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-case-priority"/>
         <version value="0.1.0"/>
-        <name value="VS_CasePriority"/>
+        <name value="VSCasePriority"/>
         <title value="Priorité du dossier (Hub Santé)"/>
         <status value="draft"/>
-        <date value="2026-03-16T12:48:10+00:00"/>
+        <date value="2026-03-16T13:14:36+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -2262,8 +2262,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:1c4ee0a8-7e9a-4f2e-b2cd-7b4566fd1533"/>
-          <timestamp value="2026-03-16T12:49:08+00:00"/>
+          <identifier value="urn:uuid:ffa49280-8609-4952-8913-ebfb190f2019"/>
+          <timestamp value="2026-03-16T13:15:28+00:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>
@@ -2488,10 +2488,10 @@
         </text>
         <url value="https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-case-status"/>
         <version value="0.1.0"/>
-        <name value="VS_CaseStatus"/>
+        <name value="VSCaseStatus"/>
         <title value="Statut du dossier (Hub Santé)"/>
         <status value="draft"/>
-        <date value="2026-03-16T12:48:10+00:00"/>
+        <date value="2026-03-16T13:14:36+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -2500,8 +2500,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:f0bec03e-1dc0-494a-81fd-7e6ae4267b9c"/>
-          <timestamp value="2026-03-16T12:49:08+00:00"/>
+          <identifier value="urn:uuid:f0f77f7b-6f40-44f9-91b5-11e4f5c905b5"/>
+          <timestamp value="2026-03-16T13:15:28+00:00"/>
           <total value="7"/>
           <offset value="0"/>
           <parameter>
@@ -2714,10 +2714,10 @@
         </text>
         <url value="https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-contact-channel"/>
         <version value="0.1.0"/>
-        <name value="VS_ContactChannel"/>
+        <name value="VSContactChannel"/>
         <title value="Canal de contact (Hub Santé)"/>
         <status value="draft"/>
-        <date value="2026-03-16T12:48:10+00:00"/>
+        <date value="2026-03-16T13:14:36+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -2726,8 +2726,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:ecaa7071-4456-46d4-8922-22a646ef1619"/>
-          <timestamp value="2026-03-16T12:49:08+00:00"/>
+          <identifier value="urn:uuid:1b4529e0-61cc-45e6-a167-aa36f828f538"/>
+          <timestamp value="2026-03-16T13:15:28+00:00"/>
           <total value="6"/>
           <offset value="0"/>
           <parameter>
@@ -2956,10 +2956,10 @@
         </text>
         <url value="https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-contact-type"/>
         <version value="0.1.0"/>
-        <name value="VS_ContactType"/>
+        <name value="VSContactType"/>
         <title value="Type de contact (Hub Santé)"/>
         <status value="draft"/>
-        <date value="2026-03-16T12:48:10+00:00"/>
+        <date value="2026-03-16T13:14:36+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -2968,8 +2968,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:76836508-67a2-4619-bd89-bd76688a1cd4"/>
-          <timestamp value="2026-03-16T12:49:08+00:00"/>
+          <identifier value="urn:uuid:ca98d8b2-6b3b-4a80-8885-81333a19b443"/>
+          <timestamp value="2026-03-16T13:15:28+00:00"/>
           <total value="7"/>
           <offset value="0"/>
           <parameter>
@@ -3162,10 +3162,10 @@
         </text>
         <url value="https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-coord-precision"/>
         <version value="0.1.0"/>
-        <name value="VS_CoordPrecision"/>
+        <name value="VSCoordPrecision"/>
         <title value="Précision des coordonnées géographiques (Hub Santé)"/>
         <status value="draft"/>
-        <date value="2026-03-16T12:48:10+00:00"/>
+        <date value="2026-03-16T13:14:36+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -3174,8 +3174,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:eaa13831-97b1-4a2a-8580-c14775f1c334"/>
-          <timestamp value="2026-03-16T12:49:08+00:00"/>
+          <identifier value="urn:uuid:e1d16506-551b-42ff-bccb-eba3c804062b"/>
+          <timestamp value="2026-03-16T13:15:28+00:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>
@@ -3360,10 +3360,10 @@
         </text>
         <url value="https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-decision-type"/>
         <version value="0.1.0"/>
-        <name value="VS_DecisionType"/>
+        <name value="VSDecisionType"/>
         <title value="Type de décision médicale (Hub Santé)"/>
         <status value="draft"/>
-        <date value="2026-03-16T12:48:10+00:00"/>
+        <date value="2026-03-16T13:14:36+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -3372,8 +3372,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:75aab5e3-fdf9-4d69-a6d6-ba2e6a51e52d"/>
-          <timestamp value="2026-03-16T12:49:08+00:00"/>
+          <identifier value="urn:uuid:f24ffae5-fc5c-4e2f-9179-366d7dfa9e17"/>
+          <timestamp value="2026-03-16T13:15:28+00:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>
@@ -3558,10 +3558,10 @@
         </text>
         <url value="https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-external-id-source"/>
         <version value="0.1.0"/>
-        <name value="VS_ExternalIdSource"/>
+        <name value="VSExternalIdSource"/>
         <title value="Source des identifiants externes patient (Hub Santé)"/>
         <status value="draft"/>
-        <date value="2026-03-16T12:48:10+00:00"/>
+        <date value="2026-03-16T13:14:36+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -3570,8 +3570,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:ed51edb1-d408-4ca2-a999-448a92df2bfa"/>
-          <timestamp value="2026-03-16T12:49:08+00:00"/>
+          <identifier value="urn:uuid:818ccbfd-221f-4791-9e2e-42037950a690"/>
+          <timestamp value="2026-03-16T13:15:28+00:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>
@@ -3756,10 +3756,10 @@
         </text>
         <url value="https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-external-info-type"/>
         <version value="0.1.0"/>
-        <name value="VS_ExternalInfoType"/>
+        <name value="VSExternalInfoType"/>
         <title value="Type d'information externe (Hub Santé)"/>
         <status value="draft"/>
-        <date value="2026-03-16T12:48:10+00:00"/>
+        <date value="2026-03-16T13:14:36+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -3768,8 +3768,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:2728cb3b-9122-4d1f-91ae-0fb1ba4e13d7"/>
-          <timestamp value="2026-03-16T12:49:08+00:00"/>
+          <identifier value="urn:uuid:bd1a8274-27c9-489f-94a1-ef478be55cbf"/>
+          <timestamp value="2026-03-16T13:15:28+00:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>
@@ -3954,10 +3954,10 @@
         </text>
         <url value="https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-external-location-id-source"/>
         <version value="0.1.0"/>
-        <name value="VS_ExternalLocationIdSource"/>
+        <name value="VSExternalLocationIdSource"/>
         <title value="Source des identifiants de localisation externes (Hub Santé)"/>
         <status value="draft"/>
-        <date value="2026-03-16T12:48:10+00:00"/>
+        <date value="2026-03-16T13:14:36+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -3966,8 +3966,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:d1277ef7-688d-4353-a1d5-4a8318ec9083"/>
-          <timestamp value="2026-03-16T12:49:08+00:00"/>
+          <identifier value="urn:uuid:3cafc7d1-9d4a-41ef-aaf8-b18d5aa94410"/>
+          <timestamp value="2026-03-16T13:15:28+00:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>
@@ -4152,10 +4152,10 @@
         </text>
         <url value="https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-intervention-type"/>
         <version value="0.1.0"/>
-        <name value="VS_InterventionType"/>
+        <name value="VSInterventionType"/>
         <title value="Type d'intervention (Hub Santé)"/>
         <status value="draft"/>
-        <date value="2026-03-16T12:48:10+00:00"/>
+        <date value="2026-03-16T13:14:36+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -4164,8 +4164,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:7c04152a-1bc1-48cb-b87e-2edf355e51ed"/>
-          <timestamp value="2026-03-16T12:49:08+00:00"/>
+          <identifier value="urn:uuid:14f06287-7ce1-4c10-9724-73edfddb5a09"/>
+          <timestamp value="2026-03-16T13:15:28+00:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>
@@ -4410,10 +4410,10 @@
         </text>
         <url value="https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-operator-role"/>
         <version value="0.1.0"/>
-        <name value="VS_OperatorRole"/>
+        <name value="VSOperatorRole"/>
         <title value="Rôles des opérateurs (Hub Santé)"/>
         <status value="draft"/>
-        <date value="2026-03-16T12:48:10+00:00"/>
+        <date value="2026-03-16T13:14:36+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -4422,8 +4422,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:08fd794d-b6ef-423f-811d-fde318535323"/>
-          <timestamp value="2026-03-16T12:49:08+00:00"/>
+          <identifier value="urn:uuid:20afd4ef-378a-4abb-a566-ad24e9c195c2"/>
+          <timestamp value="2026-03-16T13:15:28+00:00"/>
           <total value="8"/>
           <offset value="0"/>
           <parameter>
@@ -4660,10 +4660,10 @@
         </text>
         <url value="https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-orientation-type"/>
         <version value="0.1.0"/>
-        <name value="VS_OrientationType"/>
+        <name value="VSOrientationType"/>
         <title value="Type d'orientation (Hub Santé)"/>
         <status value="draft"/>
-        <date value="2026-03-16T12:48:10+00:00"/>
+        <date value="2026-03-16T13:14:36+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -4672,8 +4672,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:7af3ba28-0815-401e-8dc0-dc9539d2819c"/>
-          <timestamp value="2026-03-16T12:49:08+00:00"/>
+          <identifier value="urn:uuid:2ddd0818-582a-4b89-bbc5-55a0a1119d8e"/>
+          <timestamp value="2026-03-16T13:15:28+00:00"/>
           <total value="7"/>
           <offset value="0"/>
           <parameter>
@@ -4846,10 +4846,10 @@
         </text>
         <url value="https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-patient-care-level"/>
         <version value="0.1.0"/>
-        <name value="VS_PatientCareLevel"/>
+        <name value="VSPatientCareLevel"/>
         <title value="Niveau de soin du patient (Hub Santé)"/>
         <status value="draft"/>
-        <date value="2026-03-16T12:48:10+00:00"/>
+        <date value="2026-03-16T13:14:36+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -4858,8 +4858,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:e4be74fa-389f-40f2-b50b-ab5b53aee7d3"/>
-          <timestamp value="2026-03-16T12:49:08+00:00"/>
+          <identifier value="urn:uuid:96a7e684-e890-4f23-b354-26a22bba7242"/>
+          <timestamp value="2026-03-16T13:15:28+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -5020,10 +5020,10 @@
         </text>
         <url value="https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-perimeter"/>
         <version value="0.1.0"/>
-        <name value="VS_Perimeter"/>
+        <name value="VSPerimeter"/>
         <title value="Filière de régulation (Hub Santé)"/>
         <status value="draft"/>
-        <date value="2026-03-16T12:48:10+00:00"/>
+        <date value="2026-03-16T13:14:36+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -5032,8 +5032,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:9116abea-fc49-4c58-bc44-568a8fa6529f"/>
-          <timestamp value="2026-03-16T12:49:08+00:00"/>
+          <identifier value="urn:uuid:40dd8cf7-da43-4d9b-8f50-f364def4e9a3"/>
+          <timestamp value="2026-03-16T13:15:28+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -5494,10 +5494,10 @@
         </text>
         <url value="https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-qualification-origin"/>
         <version value="0.1.0"/>
-        <name value="VS_QualificationOrigin"/>
+        <name value="VSQualificationOrigin"/>
         <title value="Origine de la qualification (Hub Santé)"/>
         <status value="draft"/>
-        <date value="2026-03-16T12:48:10+00:00"/>
+        <date value="2026-03-16T13:14:36+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -5506,8 +5506,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:cb6eff9a-8a15-491f-9cfd-453ef213ae45"/>
-          <timestamp value="2026-03-16T12:49:08+00:00"/>
+          <identifier value="urn:uuid:53e245ac-1110-4ee3-a841-4601cd277148"/>
+          <timestamp value="2026-03-16T13:15:28+00:00"/>
           <total value="19"/>
           <offset value="0"/>
           <parameter>
@@ -6328,10 +6328,10 @@
         </text>
         <url value="https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-resource-type"/>
         <version value="0.1.0"/>
-        <name value="VS_ResourceType"/>
+        <name value="VSResourceType"/>
         <title value="Type de ressource mobilisée (Hub Santé)"/>
         <status value="draft"/>
-        <date value="2026-03-16T12:48:10+00:00"/>
+        <date value="2026-03-16T13:14:36+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -6340,8 +6340,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:5170e078-79e4-4fef-b7f1-7f467ccd095d"/>
-          <timestamp value="2026-03-16T12:49:08+00:00"/>
+          <identifier value="urn:uuid:632a88ca-c842-46da-81b0-8a80598dc12f"/>
+          <timestamp value="2026-03-16T13:15:28+00:00"/>
           <total value="34"/>
           <offset value="0"/>
           <parameter>
@@ -6622,10 +6622,10 @@
         </text>
         <url value="https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-sex"/>
         <version value="0.1.0"/>
-        <name value="VS_Sex"/>
+        <name value="VSSex"/>
         <title value="Sexe du patient (Hub Santé)"/>
         <status value="draft"/>
-        <date value="2026-03-16T12:48:10+00:00"/>
+        <date value="2026-03-16T13:14:36+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -6634,8 +6634,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:a23fa25b-b606-4c80-8e0b-a80f22949ef4"/>
-          <timestamp value="2026-03-16T12:49:08+00:00"/>
+          <identifier value="urn:uuid:42f1bff3-a2da-46d4-b0d6-f879689e847d"/>
+          <timestamp value="2026-03-16T13:15:28+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
