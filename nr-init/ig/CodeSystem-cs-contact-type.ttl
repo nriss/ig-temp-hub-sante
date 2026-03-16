@@ -1,0 +1,70 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-contact-type> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "cs-contact-type"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : CodeSystem cs-contact-type</b></p><a name=\"cs-contact-type\"> </a><a name=\"hccs-contact-type\"> </a><p>This  code system <code>https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-contact-type</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage</b></td></tr><tr><td style=\"white-space:nowrap\">EMAIL<a name=\"cs-contact-type-EMAIL\"> </a></td><td>Email</td></tr><tr><td style=\"white-space:nowrap\">FAX<a name=\"cs-contact-type-FAX\"> </a></td><td>Fax</td></tr><tr><td style=\"white-space:nowrap\">MSS<a name=\"cs-contact-type-MSS\"> </a></td><td>Messagerie Sécurisée de Santé</td></tr><tr><td style=\"white-space:nowrap\">POSTAL<a name=\"cs-contact-type-POSTAL\"> </a></td><td>Adresse postale</td></tr><tr><td style=\"white-space:nowrap\">RADIO<a name=\"cs-contact-type-RADIO\"> </a></td><td>Radio</td></tr><tr><td style=\"white-space:nowrap\">TEL<a name=\"cs-contact-type-TEL\"> </a></td><td>Téléphone</td></tr><tr><td style=\"white-space:nowrap\">WEB<a name=\"cs-contact-type-WEB\"> </a></td><td>Web</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-contact-type"^^xsd:anyURI ;
+     fhir:l <https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-contact-type>
+  ] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "CS_ContactType"] ; # 
+  fhir:title [ fhir:v "Type de contact (Hub Santé)"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2026-03-16T10:29:29+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://esante.gouv.fr" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Types d'URI utilisés pour les coordonnées de contact."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "FR" ] ;
+       fhir:display [ fhir:v "France" ]
+     ] )
+  ] ) ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "7"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "EMAIL" ] ;
+     fhir:display [ fhir:v "Email" ]
+  ] [
+     fhir:code [ fhir:v "FAX" ] ;
+     fhir:display [ fhir:v "Fax" ]
+  ] [
+     fhir:code [ fhir:v "MSS" ] ;
+     fhir:display [ fhir:v "Messagerie Sécurisée de Santé" ]
+  ] [
+     fhir:code [ fhir:v "POSTAL" ] ;
+     fhir:display [ fhir:v "Adresse postale" ]
+  ] [
+     fhir:code [ fhir:v "RADIO" ] ;
+     fhir:display [ fhir:v "Radio" ]
+  ] [
+     fhir:code [ fhir:v "TEL" ] ;
+     fhir:display [ fhir:v "Téléphone" ]
+  ] [
+     fhir:code [ fhir:v "WEB" ] ;
+     fhir:display [ fhir:v "Web" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

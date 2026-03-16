@@ -1,0 +1,42 @@
+{
+  "codeSystems" : [{
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-contact-type",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "CS_ContactType",
+    "title" : "Type de contact (Hub Santé)",
+    "description" : "Types d'URI utilisés pour les coordonnées de contact."
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-external-id-source",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "CS_ExternalIdSource",
+    "title" : "Source des identifiants externes patient (Hub Santé)",
+    "description" : "Types d'identifiants externes utilisés pour identifier un patient."
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-operator-role",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "CS_OperatorRole",
+    "title" : "Rôles des opérateurs (Hub Santé)",
+    "description" : "Rôles des professionnels de santé opérant au sein de l'entité émettrice d'un message Hub Santé."
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-patient-care-level",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "CS_PatientCareLevel",
+    "title" : "Niveau de soin du patient (Hub Santé)",
+    "description" : "Niveaux de soins spécifiques au patient dans le contexte de la régulation médicale."
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-sex",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "CS_Sex",
+    "title" : "Sexe du patient (Hub Santé)",
+    "description" : "Codes de sexe du patient."
+  }]
+}

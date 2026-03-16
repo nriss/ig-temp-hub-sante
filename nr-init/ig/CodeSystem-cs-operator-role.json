@@ -1,0 +1,64 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "cs-operator-role",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : CodeSystem cs-operator-role</b></p><a name=\"cs-operator-role\"> </a><a name=\"hccs-operator-role\"> </a><p>This  code system <code>https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-operator-role</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage</b></td></tr><tr><td style=\"white-space:nowrap\">AMBULANCIER<a name=\"cs-operator-role-AMBULANCIER\"> </a></td><td>Ambulancier</td></tr><tr><td style=\"white-space:nowrap\">ARM<a name=\"cs-operator-role-ARM\"> </a></td><td>Assistant de Régulation Médicale</td></tr><tr><td style=\"white-space:nowrap\">INFIRMIER<a name=\"cs-operator-role-INFIRMIER\"> </a></td><td>Infirmier</td></tr><tr><td style=\"white-space:nowrap\">MEDECIN<a name=\"cs-operator-role-MEDECIN\"> </a></td><td>Médecin</td></tr><tr><td style=\"white-space:nowrap\">PILOTE<a name=\"cs-operator-role-PILOTE\"> </a></td><td>Pilote</td></tr><tr><td style=\"white-space:nowrap\">TCM<a name=\"cs-operator-role-TCM\"> </a></td><td>Technicien de Coordination Médicale</td></tr><tr><td style=\"white-space:nowrap\">AUTRE<a name=\"cs-operator-role-AUTRE\"> </a></td><td>Autre</td></tr><tr><td style=\"white-space:nowrap\">INCONNU<a name=\"cs-operator-role-INCONNU\"> </a></td><td>Inconnu</td></tr></table></div>"
+  },
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-operator-role",
+  "version" : "0.1.0",
+  "name" : "CS_OperatorRole",
+  "title" : "Rôles des opérateurs (Hub Santé)",
+  "status" : "draft",
+  "date" : "2026-03-16T10:29:29+00:00",
+  "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
+  "contact" : [{
+    "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://esante.gouv.fr"
+    }]
+  }],
+  "description" : "Rôles des professionnels de santé opérant au sein de l'entité émettrice d'un message Hub Santé.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "France"
+    }]
+  }],
+  "content" : "complete",
+  "count" : 8,
+  "concept" : [{
+    "code" : "AMBULANCIER",
+    "display" : "Ambulancier"
+  },
+  {
+    "code" : "ARM",
+    "display" : "Assistant de Régulation Médicale"
+  },
+  {
+    "code" : "INFIRMIER",
+    "display" : "Infirmier"
+  },
+  {
+    "code" : "MEDECIN",
+    "display" : "Médecin"
+  },
+  {
+    "code" : "PILOTE",
+    "display" : "Pilote"
+  },
+  {
+    "code" : "TCM",
+    "display" : "Technicien de Coordination Médicale"
+  },
+  {
+    "code" : "AUTRE",
+    "display" : "Autre"
+  },
+  {
+    "code" : "INCONNU",
+    "display" : "Inconnu"
+  }]
+}

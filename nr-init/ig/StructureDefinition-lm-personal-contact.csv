@@ -1,0 +1,7 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
+"lm-personal-contact","lm-personal-contact","","","",0,*,"","","","null {[]} {[]}
+","Contact personnel","Coordonnées de contact d'une personne (utilisé notamment pour le médecin traitant).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"lm-personal-contact.type","lm-personal-contact.type","","","",1,1,"","","","code {[]} {[]}
+","Type de contact","Type de l'URI utilisée.","","","","","","","","","",,"required","","https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-contact-type|0.1.0","",,,,"lm-personal-contact.type",1,1,"",""
+"lm-personal-contact.detail","lm-personal-contact.detail","","","",1,1,"","","","string {[]} {[]}
+","URI du contact","Valeur de l'URI utilisée. Format téléphone : +{indicatif pays}{numéro}.","","","","","","","","","",,,,,"",,,,"lm-personal-contact.detail",1,1,"",""

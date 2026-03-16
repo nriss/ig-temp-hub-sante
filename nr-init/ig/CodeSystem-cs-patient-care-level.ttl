@@ -1,0 +1,61 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-patient-care-level> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "cs-patient-care-level"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : CodeSystem cs-patient-care-level</b></p><a name=\"cs-patient-care-level\"> </a><a name=\"hccs-patient-care-level\"> </a><p>This  code system <code>https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-patient-care-level</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td></tr><tr><td style=\"white-space:nowrap\">R1<a name=\"cs-patient-care-level-R1\"> </a></td></tr><tr><td style=\"white-space:nowrap\">R2<a name=\"cs-patient-care-level-R2\"> </a></td></tr><tr><td style=\"white-space:nowrap\">R3<a name=\"cs-patient-care-level-R3\"> </a></td></tr><tr><td style=\"white-space:nowrap\">R4<a name=\"cs-patient-care-level-R4\"> </a></td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-patient-care-level"^^xsd:anyURI ;
+     fhir:l <https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-patient-care-level>
+  ] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "CS_PatientCareLevel"] ; # 
+  fhir:title [ fhir:v "Niveau de soin du patient (Hub Santé)"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2026-03-16T10:29:29+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://esante.gouv.fr" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Niveaux de soins spécifiques au patient dans le contexte de la régulation médicale."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "FR" ] ;
+       fhir:display [ fhir:v "France" ]
+     ] )
+  ] ) ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "4"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "R1" ] ;
+     fhir:display [ fhir:v "R1" ]
+  ] [
+     fhir:code [ fhir:v "R2" ] ;
+     fhir:display [ fhir:v "R2" ]
+  ] [
+     fhir:code [ fhir:v "R3" ] ;
+     fhir:display [ fhir:v "R3" ]
+  ] [
+     fhir:code [ fhir:v "R4" ] ;
+     fhir:display [ fhir:v "R4" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

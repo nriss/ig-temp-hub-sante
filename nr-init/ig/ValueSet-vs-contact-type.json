@@ -1,0 +1,36 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "vs-contact-type",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : EnsembleValeurs vs-contact-type</b></p><a name=\"vs-contact-type\"> </a><a name=\"hcvs-contact-type\"> </a><ul><li>Include tous les codes définis dans <a href=\"CodeSystem-cs-contact-type.html\"><code>https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-contact-type</code></a><span title=\"La version est explicitement indiquée comme étant 0.1.0\"> version &#x1F4CD;0.1.0</span></li></ul></div>"
+  },
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-contact-type",
+  "version" : "0.1.0",
+  "name" : "VS_ContactType",
+  "title" : "Type de contact (Hub Santé)",
+  "status" : "draft",
+  "date" : "2026-03-16T10:29:29+00:00",
+  "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
+  "contact" : [{
+    "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://esante.gouv.fr"
+    }]
+  }],
+  "description" : "Types d'URI utilisés pour les coordonnées de contact.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "France"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-contact-type",
+      "version" : "0.1.0"
+    }]
+  }
+}

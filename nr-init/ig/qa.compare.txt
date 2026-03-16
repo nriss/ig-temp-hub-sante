@@ -1,0 +1,653 @@
+HubSante : Validation Results
+=========================================
+
+err = 1, warn = 128, info = 59
+$--
+Generated $--. FHIR version $-- for ans.fhir.fr.hubsante#$-- (canonical = https://interop.esante.gouv.fr/ig/fhir/hubsante)
+ Build Errors : 406 / 3 / 0
+ /home/runner/work/ig-temp-hub-sante/ig-temp-hub-sante/igSource/fsh-generated/resources/CodeSystem-cs-contact-type : 0 / 2 / 3
+ /home/runner/work/ig-temp-hub-sante/ig-temp-hub-sante/igSource/fsh-generated/resources/CodeSystem-cs-external-id-source : 0 / 2 / 3
+ /home/runner/work/ig-temp-hub-sante/ig-temp-hub-sante/igSource/fsh-generated/resources/CodeSystem-cs-operator-role : 0 / 2 / 3
+ /home/runner/work/ig-temp-hub-sante/ig-temp-hub-sante/igSource/fsh-generated/resources/CodeSystem-cs-patient-care-level : 0 / 2 / 3
+ /home/runner/work/ig-temp-hub-sante/ig-temp-hub-sante/igSource/fsh-generated/resources/CodeSystem-cs-sex : 0 / 2 / 3
+ /home/runner/work/ig-temp-hub-sante/ig-temp-hub-sante/igSource/fsh-generated/resources/ImplementationGuide-ans.fhir.fr.hubsante : 1 / 0 / 2
+ /home/runner/work/ig-temp-hub-sante/ig-temp-hub-sante/igSource/fsh-generated/resources/StructureDefinition-lm-administrative-file : 0 / 6 / 3
+ /home/runner/work/ig-temp-hub-sante/ig-temp-hub-sante/igSource/fsh-generated/resources/StructureDefinition-lm-detailed-name : 0 / 8 / 3
+ /home/runner/work/ig-temp-hub-sante/ig-temp-hub-sante/igSource/fsh-generated/resources/StructureDefinition-lm-external-id : 0 / 6 / 5
+ /home/runner/work/ig-temp-hub-sante/ig-temp-hub-sante/igSource/fsh-generated/resources/StructureDefinition-lm-general-practitioner : 0 / 8 / 3
+ /home/runner/work/ig-temp-hub-sante/ig-temp-hub-sante/igSource/fsh-generated/resources/StructureDefinition-lm-hypothesis : 0 / 6 / 3
+ /home/runner/work/ig-temp-hub-sante/ig-temp-hub-sante/igSource/fsh-generated/resources/StructureDefinition-lm-identity : 0 / 6 / 3
+ /home/runner/work/ig-temp-hub-sante/ig-temp-hub-sante/igSource/fsh-generated/resources/StructureDefinition-lm-ins-strict-features : 0 / 8 / 5
+ /home/runner/work/ig-temp-hub-sante/ig-temp-hub-sante/igSource/fsh-generated/resources/StructureDefinition-lm-main-diagnosis : 0 / 6 / 3
+ /home/runner/work/ig-temp-hub-sante/ig-temp-hub-sante/igSource/fsh-generated/resources/StructureDefinition-lm-medical-note : 0 / 12 / 3
+ /home/runner/work/ig-temp-hub-sante/ig-temp-hub-sante/igSource/fsh-generated/resources/StructureDefinition-lm-operator : 0 / 6 / 5
+ /home/runner/work/ig-temp-hub-sante/ig-temp-hub-sante/igSource/fsh-generated/resources/StructureDefinition-lm-other-diagnosis : 0 / 6 / 3
+ /home/runner/work/ig-temp-hub-sante/ig-temp-hub-sante/igSource/fsh-generated/resources/StructureDefinition-lm-patient : 0 / 12 / 3
+ /home/runner/work/ig-temp-hub-sante/ig-temp-hub-sante/igSource/fsh-generated/resources/StructureDefinition-lm-patient-detail : 0 / 14 / 5
+ /home/runner/work/ig-temp-hub-sante/ig-temp-hub-sante/igSource/fsh-generated/resources/StructureDefinition-lm-personal-contact : 0 / 6 / 5
+ /home/runner/work/ig-temp-hub-sante/ig-temp-hub-sante/igSource/fsh-generated/resources/ValueSet-vs-contact-type : 0 / 1 / 3
+ /home/runner/work/ig-temp-hub-sante/ig-temp-hub-sante/igSource/fsh-generated/resources/ValueSet-vs-external-id-source : 0 / 1 / 3
+ /home/runner/work/ig-temp-hub-sante/ig-temp-hub-sante/igSource/fsh-generated/resources/ValueSet-vs-operator-role : 0 / 1 / 3
+ /home/runner/work/ig-temp-hub-sante/ig-temp-hub-sante/igSource/fsh-generated/resources/ValueSet-vs-patient-care-level : 0 / 1 / 3
+ /home/runner/work/ig-temp-hub-sante/ig-temp-hub-sante/igSource/fsh-generated/resources/ValueSet-vs-sex : 0 / 1 / 3
+</table>
+== n/a ==
+ERROR: CodeSystem-cs-contact-type-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 139, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: CodeSystem-cs-contact-type-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 142, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: CodeSystem-cs-contact-type.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: CodeSystem-cs-contact-type.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 146, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: CodeSystem-cs-contact-type.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 139, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: CodeSystem-cs-contact-type.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 142, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: CodeSystem-cs-contact-type.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: CodeSystem-cs-contact-type.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 144, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: CodeSystem-cs-contact-type.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: CodeSystem-cs-contact-type.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 144, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: CodeSystem-cs-contact-type.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: CodeSystem-cs-contact-type.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 144, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: CodeSystem-cs-external-id-source-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 139, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: CodeSystem-cs-external-id-source-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 142, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: CodeSystem-cs-external-id-source.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: CodeSystem-cs-external-id-source.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 146, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: CodeSystem-cs-external-id-source.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 139, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: CodeSystem-cs-external-id-source.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 142, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: CodeSystem-cs-external-id-source.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: CodeSystem-cs-external-id-source.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 144, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: CodeSystem-cs-external-id-source.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: CodeSystem-cs-external-id-source.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 144, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: CodeSystem-cs-external-id-source.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: CodeSystem-cs-external-id-source.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 144, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: CodeSystem-cs-operator-role-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 139, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: CodeSystem-cs-operator-role-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 142, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: CodeSystem-cs-operator-role.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: CodeSystem-cs-operator-role.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 146, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: CodeSystem-cs-operator-role.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 139, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: CodeSystem-cs-operator-role.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 142, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: CodeSystem-cs-operator-role.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: CodeSystem-cs-operator-role.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 144, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: CodeSystem-cs-operator-role.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: CodeSystem-cs-operator-role.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 144, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: CodeSystem-cs-operator-role.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: CodeSystem-cs-operator-role.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 144, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: CodeSystem-cs-patient-care-level-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 139, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: CodeSystem-cs-patient-care-level-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 142, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: CodeSystem-cs-patient-care-level.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: CodeSystem-cs-patient-care-level.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 146, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: CodeSystem-cs-patient-care-level.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 139, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: CodeSystem-cs-patient-care-level.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 142, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: CodeSystem-cs-patient-care-level.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: CodeSystem-cs-patient-care-level.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 144, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: CodeSystem-cs-patient-care-level.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: CodeSystem-cs-patient-care-level.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 144, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: CodeSystem-cs-patient-care-level.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: CodeSystem-cs-patient-care-level.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 144, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: CodeSystem-cs-sex-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 139, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: CodeSystem-cs-sex-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 142, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: CodeSystem-cs-sex.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: CodeSystem-cs-sex.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 146, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: CodeSystem-cs-sex.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 139, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: CodeSystem-cs-sex.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 142, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: CodeSystem-cs-sex.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: CodeSystem-cs-sex.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 144, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: CodeSystem-cs-sex.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: CodeSystem-cs-sex.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 144, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: CodeSystem-cs-sex.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: CodeSystem-cs-sex.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 144, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: StructureDefinition-lm-administrative-file-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: StructureDefinition-lm-administrative-file-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 146, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: StructureDefinition-lm-administrative-file-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: StructureDefinition-lm-administrative-file-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 146, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: StructureDefinition-lm-administrative-file-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: StructureDefinition-lm-administrative-file-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 146, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: StructureDefinition-lm-administrative-file-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: StructureDefinition-lm-administrative-file-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 146, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: StructureDefinition-lm-administrative-file.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: StructureDefinition-lm-administrative-file.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 146, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: StructureDefinition-lm-administrative-file.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: StructureDefinition-lm-administrative-file.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 146, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: StructureDefinition-lm-administrative-file.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 147, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: StructureDefinition-lm-administrative-file.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 150, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: StructureDefinition-lm-administrative-file.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 147, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: StructureDefinition-lm-administrative-file.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 150, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: StructureDefinition-lm-administrative-file.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 147, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: StructureDefinition-lm-administrative-file.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 150, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: StructureDefinition-lm-detailed-name-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: StructureDefinition-lm-detailed-name-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 146, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: StructureDefinition-lm-detailed-name-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: StructureDefinition-lm-detailed-name-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 146, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: StructureDefinition-lm-detailed-name-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: StructureDefinition-lm-detailed-name-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 146, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: StructureDefinition-lm-detailed-name-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: StructureDefinition-lm-detailed-name-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 146, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: StructureDefinition-lm-detailed-name.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: StructureDefinition-lm-detailed-name.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 146, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: StructureDefinition-lm-detailed-name.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: StructureDefinition-lm-detailed-name.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 146, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: StructureDefinition-lm-detailed-name.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 147, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: StructureDefinition-lm-detailed-name.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 150, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: StructureDefinition-lm-detailed-name.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 147, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: StructureDefinition-lm-detailed-name.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 150, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: StructureDefinition-lm-detailed-name.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 147, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: StructureDefinition-lm-detailed-name.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 150, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: StructureDefinition-lm-external-id-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: StructureDefinition-lm-external-id-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 146, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: StructureDefinition-lm-external-id-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: StructureDefinition-lm-external-id-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 146, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: StructureDefinition-lm-external-id-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: StructureDefinition-lm-external-id-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 146, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: StructureDefinition-lm-external-id-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: StructureDefinition-lm-external-id-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 146, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: StructureDefinition-lm-external-id.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: StructureDefinition-lm-external-id.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 146, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: StructureDefinition-lm-external-id.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: StructureDefinition-lm-external-id.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 146, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: StructureDefinition-lm-external-id.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 147, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: StructureDefinition-lm-external-id.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 150, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: StructureDefinition-lm-external-id.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 147, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: StructureDefinition-lm-external-id.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 150, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: StructureDefinition-lm-external-id.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 147, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: StructureDefinition-lm-external-id.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 150, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: StructureDefinition-lm-general-practitioner-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: StructureDefinition-lm-general-practitioner-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 146, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: StructureDefinition-lm-general-practitioner-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: StructureDefinition-lm-general-practitioner-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 146, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: StructureDefinition-lm-general-practitioner-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: StructureDefinition-lm-general-practitioner-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 146, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: StructureDefinition-lm-general-practitioner-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: StructureDefinition-lm-general-practitioner-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 146, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: StructureDefinition-lm-general-practitioner.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: StructureDefinition-lm-general-practitioner.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 146, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: StructureDefinition-lm-general-practitioner.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: StructureDefinition-lm-general-practitioner.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 146, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: StructureDefinition-lm-general-practitioner.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 147, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: StructureDefinition-lm-general-practitioner.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 150, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: StructureDefinition-lm-general-practitioner.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 147, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: StructureDefinition-lm-general-practitioner.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 150, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: StructureDefinition-lm-general-practitioner.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 147, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: StructureDefinition-lm-general-practitioner.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 150, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: StructureDefinition-lm-hypothesis-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: StructureDefinition-lm-hypothesis-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 146, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: StructureDefinition-lm-hypothesis-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: StructureDefinition-lm-hypothesis-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 146, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: StructureDefinition-lm-hypothesis-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: StructureDefinition-lm-hypothesis-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 146, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: StructureDefinition-lm-hypothesis-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: StructureDefinition-lm-hypothesis-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 146, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: StructureDefinition-lm-hypothesis.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: StructureDefinition-lm-hypothesis.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 146, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: StructureDefinition-lm-hypothesis.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: StructureDefinition-lm-hypothesis.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 146, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: StructureDefinition-lm-hypothesis.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 147, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: StructureDefinition-lm-hypothesis.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 150, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: StructureDefinition-lm-hypothesis.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 147, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: StructureDefinition-lm-hypothesis.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 150, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: StructureDefinition-lm-hypothesis.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 147, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: StructureDefinition-lm-hypothesis.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 150, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: StructureDefinition-lm-identity-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: StructureDefinition-lm-identity-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 146, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: StructureDefinition-lm-identity-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: StructureDefinition-lm-identity-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 146, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: StructureDefinition-lm-identity-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: StructureDefinition-lm-identity-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 146, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: StructureDefinition-lm-identity-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: StructureDefinition-lm-identity-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 146, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: StructureDefinition-lm-identity.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: StructureDefinition-lm-identity.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 146, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: StructureDefinition-lm-identity.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: StructureDefinition-lm-identity.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 146, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: StructureDefinition-lm-identity.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 147, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: StructureDefinition-lm-identity.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 150, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: StructureDefinition-lm-identity.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 147, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: StructureDefinition-lm-identity.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 150, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: StructureDefinition-lm-identity.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 147, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: StructureDefinition-lm-identity.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 150, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: StructureDefinition-lm-ins-strict-features-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: StructureDefinition-lm-ins-strict-features-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 146, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: StructureDefinition-lm-ins-strict-features-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: StructureDefinition-lm-ins-strict-features-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 146, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: StructureDefinition-lm-ins-strict-features-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: StructureDefinition-lm-ins-strict-features-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 146, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: StructureDefinition-lm-ins-strict-features-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: StructureDefinition-lm-ins-strict-features-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 146, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: StructureDefinition-lm-ins-strict-features.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: StructureDefinition-lm-ins-strict-features.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 146, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: StructureDefinition-lm-ins-strict-features.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: StructureDefinition-lm-ins-strict-features.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 146, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: StructureDefinition-lm-ins-strict-features.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 147, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: StructureDefinition-lm-ins-strict-features.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 150, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: StructureDefinition-lm-ins-strict-features.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 147, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: StructureDefinition-lm-ins-strict-features.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 150, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: StructureDefinition-lm-ins-strict-features.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 147, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: StructureDefinition-lm-ins-strict-features.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 150, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: StructureDefinition-lm-main-diagnosis-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: StructureDefinition-lm-main-diagnosis-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 146, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: StructureDefinition-lm-main-diagnosis-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: StructureDefinition-lm-main-diagnosis-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 146, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: StructureDefinition-lm-main-diagnosis-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: StructureDefinition-lm-main-diagnosis-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 146, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: StructureDefinition-lm-main-diagnosis-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: StructureDefinition-lm-main-diagnosis-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 146, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: StructureDefinition-lm-main-diagnosis.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: StructureDefinition-lm-main-diagnosis.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 146, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: StructureDefinition-lm-main-diagnosis.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: StructureDefinition-lm-main-diagnosis.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 146, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: StructureDefinition-lm-main-diagnosis.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 147, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: StructureDefinition-lm-main-diagnosis.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 150, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: StructureDefinition-lm-main-diagnosis.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 147, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: StructureDefinition-lm-main-diagnosis.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 150, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: StructureDefinition-lm-main-diagnosis.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 147, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: StructureDefinition-lm-main-diagnosis.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 150, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: StructureDefinition-lm-medical-note-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: StructureDefinition-lm-medical-note-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 146, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: StructureDefinition-lm-medical-note-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: StructureDefinition-lm-medical-note-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 146, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: StructureDefinition-lm-medical-note-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: StructureDefinition-lm-medical-note-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 146, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: StructureDefinition-lm-medical-note-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: StructureDefinition-lm-medical-note-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 146, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: StructureDefinition-lm-medical-note.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: StructureDefinition-lm-medical-note.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 146, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: StructureDefinition-lm-medical-note.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: StructureDefinition-lm-medical-note.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 146, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: StructureDefinition-lm-medical-note.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 147, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: StructureDefinition-lm-medical-note.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 150, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: StructureDefinition-lm-medical-note.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 147, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: StructureDefinition-lm-medical-note.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 150, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: StructureDefinition-lm-medical-note.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 147, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: StructureDefinition-lm-medical-note.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 150, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: StructureDefinition-lm-operator-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: StructureDefinition-lm-operator-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 146, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: StructureDefinition-lm-operator-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: StructureDefinition-lm-operator-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 146, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: StructureDefinition-lm-operator-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: StructureDefinition-lm-operator-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 146, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: StructureDefinition-lm-operator-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: StructureDefinition-lm-operator-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 146, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: StructureDefinition-lm-operator.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: StructureDefinition-lm-operator.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 146, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: StructureDefinition-lm-operator.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: StructureDefinition-lm-operator.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 146, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: StructureDefinition-lm-operator.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 147, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: StructureDefinition-lm-operator.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 150, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: StructureDefinition-lm-operator.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 147, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: StructureDefinition-lm-operator.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 150, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: StructureDefinition-lm-operator.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 147, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: StructureDefinition-lm-operator.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 150, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: StructureDefinition-lm-other-diagnosis-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: StructureDefinition-lm-other-diagnosis-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 146, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: StructureDefinition-lm-other-diagnosis-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: StructureDefinition-lm-other-diagnosis-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 146, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: StructureDefinition-lm-other-diagnosis-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: StructureDefinition-lm-other-diagnosis-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 146, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: StructureDefinition-lm-other-diagnosis-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: StructureDefinition-lm-other-diagnosis-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 146, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: StructureDefinition-lm-other-diagnosis.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: StructureDefinition-lm-other-diagnosis.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 146, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: StructureDefinition-lm-other-diagnosis.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: StructureDefinition-lm-other-diagnosis.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 146, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: StructureDefinition-lm-other-diagnosis.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 147, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: StructureDefinition-lm-other-diagnosis.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 150, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: StructureDefinition-lm-other-diagnosis.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 147, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: StructureDefinition-lm-other-diagnosis.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 150, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: StructureDefinition-lm-other-diagnosis.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 147, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: StructureDefinition-lm-other-diagnosis.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 150, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: StructureDefinition-lm-patient-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: StructureDefinition-lm-patient-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 146, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: StructureDefinition-lm-patient-detail-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: StructureDefinition-lm-patient-detail-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 146, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: StructureDefinition-lm-patient-detail-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: StructureDefinition-lm-patient-detail-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 146, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: StructureDefinition-lm-patient-detail-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: StructureDefinition-lm-patient-detail-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 146, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: StructureDefinition-lm-patient-detail-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: StructureDefinition-lm-patient-detail-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 146, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: StructureDefinition-lm-patient-detail.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: StructureDefinition-lm-patient-detail.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 146, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: StructureDefinition-lm-patient-detail.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: StructureDefinition-lm-patient-detail.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 146, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: StructureDefinition-lm-patient-detail.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 147, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: StructureDefinition-lm-patient-detail.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 150, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: StructureDefinition-lm-patient-detail.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 147, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: StructureDefinition-lm-patient-detail.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 150, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: StructureDefinition-lm-patient-detail.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 147, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: StructureDefinition-lm-patient-detail.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 150, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: StructureDefinition-lm-patient-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: StructureDefinition-lm-patient-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 146, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: StructureDefinition-lm-patient-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: StructureDefinition-lm-patient-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 146, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: StructureDefinition-lm-patient-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: StructureDefinition-lm-patient-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 146, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: StructureDefinition-lm-patient.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: StructureDefinition-lm-patient.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 146, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: StructureDefinition-lm-patient.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: StructureDefinition-lm-patient.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 146, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: StructureDefinition-lm-patient.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 147, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: StructureDefinition-lm-patient.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 150, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: StructureDefinition-lm-patient.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 147, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: StructureDefinition-lm-patient.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 150, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: StructureDefinition-lm-patient.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 147, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: StructureDefinition-lm-patient.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 150, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: StructureDefinition-lm-personal-contact-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: StructureDefinition-lm-personal-contact-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 146, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: StructureDefinition-lm-personal-contact-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: StructureDefinition-lm-personal-contact-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 146, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: StructureDefinition-lm-personal-contact-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: StructureDefinition-lm-personal-contact-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 146, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: StructureDefinition-lm-personal-contact-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: StructureDefinition-lm-personal-contact-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 146, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: StructureDefinition-lm-personal-contact.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: StructureDefinition-lm-personal-contact.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 146, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: StructureDefinition-lm-personal-contact.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: StructureDefinition-lm-personal-contact.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 146, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: StructureDefinition-lm-personal-contact.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 147, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: StructureDefinition-lm-personal-contact.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 150, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: StructureDefinition-lm-personal-contact.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 147, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: StructureDefinition-lm-personal-contact.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 150, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: StructureDefinition-lm-personal-contact.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 147, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: StructureDefinition-lm-personal-contact.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 150, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: ValueSet-vs-contact-type-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 139, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: ValueSet-vs-contact-type-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 142, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: ValueSet-vs-contact-type.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: ValueSet-vs-contact-type.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 146, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: ValueSet-vs-contact-type.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 139, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: ValueSet-vs-contact-type.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 142, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: ValueSet-vs-contact-type.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: ValueSet-vs-contact-type.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 144, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: ValueSet-vs-contact-type.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: ValueSet-vs-contact-type.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 144, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: ValueSet-vs-contact-type.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: ValueSet-vs-contact-type.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 144, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: ValueSet-vs-external-id-source-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 139, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: ValueSet-vs-external-id-source-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 142, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: ValueSet-vs-external-id-source.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: ValueSet-vs-external-id-source.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 146, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: ValueSet-vs-external-id-source.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 139, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: ValueSet-vs-external-id-source.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 142, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: ValueSet-vs-external-id-source.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: ValueSet-vs-external-id-source.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 144, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: ValueSet-vs-external-id-source.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: ValueSet-vs-external-id-source.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 144, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: ValueSet-vs-external-id-source.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: ValueSet-vs-external-id-source.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 144, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: ValueSet-vs-operator-role-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 139, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: ValueSet-vs-operator-role-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 142, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: ValueSet-vs-operator-role.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: ValueSet-vs-operator-role.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 146, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: ValueSet-vs-operator-role.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 139, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: ValueSet-vs-operator-role.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 142, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: ValueSet-vs-operator-role.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: ValueSet-vs-operator-role.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 144, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: ValueSet-vs-operator-role.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: ValueSet-vs-operator-role.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 144, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: ValueSet-vs-operator-role.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: ValueSet-vs-operator-role.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 144, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: ValueSet-vs-patient-care-level-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 139, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: ValueSet-vs-patient-care-level-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 142, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: ValueSet-vs-patient-care-level.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: ValueSet-vs-patient-care-level.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 146, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: ValueSet-vs-patient-care-level.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 139, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: ValueSet-vs-patient-care-level.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 142, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: ValueSet-vs-patient-care-level.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: ValueSet-vs-patient-care-level.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 144, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: ValueSet-vs-patient-care-level.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: ValueSet-vs-patient-care-level.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 144, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: ValueSet-vs-patient-care-level.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: ValueSet-vs-patient-care-level.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 144, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: ValueSet-vs-sex-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 139, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: ValueSet-vs-sex-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 142, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: ValueSet-vs-sex.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: ValueSet-vs-sex.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 146, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: ValueSet-vs-sex.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 139, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: ValueSet-vs-sex.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 142, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: ValueSet-vs-sex.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: ValueSet-vs-sex.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 144, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: ValueSet-vs-sex.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: ValueSet-vs-sex.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 144, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: ValueSet-vs-sex.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: ValueSet-vs-sex.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 144, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: annexe-downloads.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 139, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: annexe-downloads.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 142, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: annexe-downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 241, column 8: The link 'definitions.json.zip' for "Définitions JSON (zip)" cannot be resolved
+ERROR: annexe-downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 242, column 8: The link 'definitions.xml.zip' for "Définitions XML (zip)" cannot be resolved
+ERROR: annexe-downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 243, column 8: The link 'definitions.ttl.zip' for "Définitions Turtle (zip)" cannot be resolved
+ERROR: annexe-downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 249, column 8: The link 'examples.xml.zip' for "Exemples XML (zip)" cannot be resolved
+ERROR: annexe-downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 250, column 8: The link 'examples.json.zip' for "Exemples JSON (zip)" cannot be resolved
+ERROR: annexe-downloads.html#/html/body/div/div/div/div/div/ul/li/a at Line 251, column 8: The link 'examples.ttl.zip' for "Exemples Turtle (zip)" cannot be resolved
+ERROR: annexe-securite.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 139, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: annexe-securite.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 142, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: artifacts.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 139, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: artifacts.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 142, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: autres_ressources.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 139, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: autres_ressources.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 142, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: autres_ressources.html#/html/body/div/div/div/div/div/ul/li/a at Line 222, column 8: The link './downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: change-log.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 139, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: change-log.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 142, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: index.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 139, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: index.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 142, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: searchform.html#/html/body/div/div/div/a/img/div/a/img/div/p/img at Line 57, column 3: The image source 'assets/images/fra.svg' cannot be resolved
+ERROR: spec-fonctionnelle-alimentation.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 139, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: spec-fonctionnelle-alimentation.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 142, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: spec-fonctionnelle-intro.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 139, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: spec-fonctionnelle-intro.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 142, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: spec-technique-flux-alimentation.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 139, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: spec-technique-flux-alimentation.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 142, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: spec-technique-flux-consommation.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 139, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: spec-technique-flux-consommation.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 142, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: spec-technique-intro.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 139, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: spec-technique-intro.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 142, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: spec-technique-vue-ensemble.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 139, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: spec-technique-vue-ensemble.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 142, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+ERROR: toc.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 139, column 10: The link 'securite.html' for "Sécurité" cannot be resolved
+ERROR: toc.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 142, column 10: The link 'downloads.html' for "Téléchargements et usage" cannot be resolved
+WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
+WARNING: 5: The HTML fragment 'expansion-params.xhtml' is not included anywhere in the produced implementation guide
+== fsh-generated/resources/CodeSystem-cs-contact-type.json ==
+INFORMATION: CodeSystem/cs-contact-type: CodeSystem.jurisdiction[0]: Reference to draft CodeSystem urn:iso:std:iso:3166|20210120
+INFORMATION: CodeSystem/cs-contact-type: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/cs-contact-type: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+WARNING: CodeSystem/cs-contact-type: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+== fsh-generated/resources/CodeSystem-cs-external-id-source.json ==
+INFORMATION: CodeSystem/cs-external-id-source: CodeSystem.jurisdiction[0]: Reference to draft CodeSystem urn:iso:std:iso:3166|20210120
+INFORMATION: CodeSystem/cs-external-id-source: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/cs-external-id-source: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+WARNING: CodeSystem/cs-external-id-source: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+== fsh-generated/resources/CodeSystem-cs-operator-role.json ==
+INFORMATION: CodeSystem/cs-operator-role: CodeSystem.jurisdiction[0]: Reference to draft CodeSystem urn:iso:std:iso:3166|20210120
+INFORMATION: CodeSystem/cs-operator-role: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/cs-operator-role: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+WARNING: CodeSystem/cs-operator-role: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+== fsh-generated/resources/CodeSystem-cs-patient-care-level.json ==
+INFORMATION: CodeSystem/cs-patient-care-level: CodeSystem.jurisdiction[0]: Reference to draft CodeSystem urn:iso:std:iso:3166|20210120
+INFORMATION: CodeSystem/cs-patient-care-level: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/cs-patient-care-level: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+WARNING: CodeSystem/cs-patient-care-level: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+== fsh-generated/resources/CodeSystem-cs-sex.json ==
+INFORMATION: CodeSystem/cs-sex: CodeSystem.jurisdiction[0]: Reference to draft CodeSystem urn:iso:std:iso:3166|20210120
+INFORMATION: CodeSystem/cs-sex: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/cs-sex: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+WARNING: CodeSystem/cs-sex: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+== fsh-generated/resources/ImplementationGuide-ans.fhir.fr.hubsante.json ==
+INFORMATION: ImplementationGuide/ans.fhir.fr.hubsante: ImplementationGuide.jurisdiction[0]: Reference to draft CodeSystem urn:iso:std:iso:3166|20210120
+ERROR: ImplementationGuide/ans.fhir.fr.hubsante: ImplementationGuide.definition.extension[34].url: No definition could be found for URL value 'http://hl7.org/fhir/tools/StructureDefinition/expansion-parameters'
+== fsh-generated/resources/StructureDefinition-lm-administrative-file.json ==
+INFORMATION: StructureDefinition.baseDefinition: Pinned the version of http://hl7.org/fhir/StructureDefinition/Base to 4.0.1
+INFORMATION: StructureDefinition/lm-administrative-file: StructureDefinition.jurisdiction[0]: Reference to draft CodeSystem urn:iso:std:iso:3166|20210120
+WARNING: StructureDefinition/lm-administrative-file: StructureDefinition.snapshot.element[0]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/lm-administrative-file: StructureDefinition.snapshot.element[1]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/lm-administrative-file: StructureDefinition.snapshot.element[2]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/lm-administrative-file: StructureDefinition.differential.element[0]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/lm-administrative-file: StructureDefinition.differential.element[1]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/lm-administrative-file: StructureDefinition.differential.element[2]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+== fsh-generated/resources/StructureDefinition-lm-detailed-name.json ==
+INFORMATION: StructureDefinition.baseDefinition: Pinned the version of http://hl7.org/fhir/StructureDefinition/Base to 4.0.1
+INFORMATION: StructureDefinition/lm-detailed-name: StructureDefinition.jurisdiction[0]: Reference to draft CodeSystem urn:iso:std:iso:3166|20210120
+WARNING: StructureDefinition/lm-detailed-name: StructureDefinition.snapshot.element[0]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/lm-detailed-name: StructureDefinition.snapshot.element[1]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/lm-detailed-name: StructureDefinition.snapshot.element[2]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/lm-detailed-name: StructureDefinition.snapshot.element[3]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/lm-detailed-name: StructureDefinition.differential.element[0]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/lm-detailed-name: StructureDefinition.differential.element[1]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/lm-detailed-name: StructureDefinition.differential.element[2]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/lm-detailed-name: StructureDefinition.differential.element[3]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+== fsh-generated/resources/StructureDefinition-lm-external-id.json ==
+INFORMATION: StructureDefinition.baseDefinition: Pinned the version of http://hl7.org/fhir/StructureDefinition/Base to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[1].binding.valueSet: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-external-id-source to 0.1.0
+INFORMATION: StructureDefinition.differential.element[1].binding.valueSet: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-external-id-source to 0.1.0
+INFORMATION: StructureDefinition/lm-external-id: StructureDefinition.jurisdiction[0]: Reference to draft CodeSystem urn:iso:std:iso:3166|20210120
+WARNING: StructureDefinition/lm-external-id: StructureDefinition.snapshot.element[0]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/lm-external-id: StructureDefinition.snapshot.element[1]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/lm-external-id: StructureDefinition.snapshot.element[2]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/lm-external-id: StructureDefinition.differential.element[0]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/lm-external-id: StructureDefinition.differential.element[1]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/lm-external-id: StructureDefinition.differential.element[2]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+== fsh-generated/resources/StructureDefinition-lm-general-practitioner.json ==
+INFORMATION: StructureDefinition.baseDefinition: Pinned the version of http://hl7.org/fhir/StructureDefinition/Base to 4.0.1
+INFORMATION: StructureDefinition/lm-general-practitioner: StructureDefinition.jurisdiction[0]: Reference to draft CodeSystem urn:iso:std:iso:3166|20210120
+WARNING: StructureDefinition/lm-general-practitioner: StructureDefinition.snapshot.element[0]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/lm-general-practitioner: StructureDefinition.snapshot.element[1]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/lm-general-practitioner: StructureDefinition.snapshot.element[2]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/lm-general-practitioner: StructureDefinition.snapshot.element[3]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/lm-general-practitioner: StructureDefinition.differential.element[0]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/lm-general-practitioner: StructureDefinition.differential.element[1]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/lm-general-practitioner: StructureDefinition.differential.element[2]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/lm-general-practitioner: StructureDefinition.differential.element[3]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+== fsh-generated/resources/StructureDefinition-lm-hypothesis.json ==
+INFORMATION: StructureDefinition.baseDefinition: Pinned the version of http://hl7.org/fhir/StructureDefinition/Base to 4.0.1
+INFORMATION: StructureDefinition/lm-hypothesis: StructureDefinition.jurisdiction[0]: Reference to draft CodeSystem urn:iso:std:iso:3166|20210120
+WARNING: StructureDefinition/lm-hypothesis: StructureDefinition.snapshot.element[0]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/lm-hypothesis: StructureDefinition.snapshot.element[1]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/lm-hypothesis: StructureDefinition.snapshot.element[2]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/lm-hypothesis: StructureDefinition.differential.element[0]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/lm-hypothesis: StructureDefinition.differential.element[1]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/lm-hypothesis: StructureDefinition.differential.element[2]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+== fsh-generated/resources/StructureDefinition-lm-identity.json ==
+INFORMATION: StructureDefinition.baseDefinition: Pinned the version of http://hl7.org/fhir/StructureDefinition/Base to 4.0.1
+INFORMATION: StructureDefinition/lm-identity: StructureDefinition.jurisdiction[0]: Reference to draft CodeSystem urn:iso:std:iso:3166|20210120
+WARNING: StructureDefinition/lm-identity: StructureDefinition.snapshot.element[0]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/lm-identity: StructureDefinition.snapshot.element[1]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/lm-identity: StructureDefinition.snapshot.element[2]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/lm-identity: StructureDefinition.differential.element[0]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/lm-identity: StructureDefinition.differential.element[1]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/lm-identity: StructureDefinition.differential.element[2]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+== fsh-generated/resources/StructureDefinition-lm-ins-strict-features.json ==
+INFORMATION: StructureDefinition.baseDefinition: Pinned the version of http://hl7.org/fhir/StructureDefinition/Base to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[3].binding.valueSet: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-sex to 0.1.0
+INFORMATION: StructureDefinition.differential.element[3].binding.valueSet: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-sex to 0.1.0
+INFORMATION: StructureDefinition/lm-ins-strict-features: StructureDefinition.jurisdiction[0]: Reference to draft CodeSystem urn:iso:std:iso:3166|20210120
+WARNING: StructureDefinition/lm-ins-strict-features: StructureDefinition.snapshot.element[0]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/lm-ins-strict-features: StructureDefinition.snapshot.element[1]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/lm-ins-strict-features: StructureDefinition.snapshot.element[2]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/lm-ins-strict-features: StructureDefinition.snapshot.element[3]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/lm-ins-strict-features: StructureDefinition.differential.element[0]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/lm-ins-strict-features: StructureDefinition.differential.element[1]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/lm-ins-strict-features: StructureDefinition.differential.element[2]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/lm-ins-strict-features: StructureDefinition.differential.element[3]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+== fsh-generated/resources/StructureDefinition-lm-main-diagnosis.json ==
+INFORMATION: StructureDefinition.baseDefinition: Pinned the version of http://hl7.org/fhir/StructureDefinition/Base to 4.0.1
+INFORMATION: StructureDefinition/lm-main-diagnosis: StructureDefinition.jurisdiction[0]: Reference to draft CodeSystem urn:iso:std:iso:3166|20210120
+WARNING: StructureDefinition/lm-main-diagnosis: StructureDefinition.snapshot.element[0]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/lm-main-diagnosis: StructureDefinition.snapshot.element[1]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/lm-main-diagnosis: StructureDefinition.snapshot.element[2]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/lm-main-diagnosis: StructureDefinition.differential.element[0]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/lm-main-diagnosis: StructureDefinition.differential.element[1]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/lm-main-diagnosis: StructureDefinition.differential.element[2]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+== fsh-generated/resources/StructureDefinition-lm-medical-note.json ==
+INFORMATION: StructureDefinition.baseDefinition: Pinned the version of http://hl7.org/fhir/StructureDefinition/Base to 4.0.1
+INFORMATION: StructureDefinition/lm-medical-note: StructureDefinition.jurisdiction[0]: Reference to draft CodeSystem urn:iso:std:iso:3166|20210120
+WARNING: StructureDefinition/lm-medical-note: StructureDefinition.snapshot.element[0]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/lm-medical-note: StructureDefinition.snapshot.element[1]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/lm-medical-note: StructureDefinition.snapshot.element[2]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/lm-medical-note: StructureDefinition.snapshot.element[3]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/lm-medical-note: StructureDefinition.snapshot.element[4]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/lm-medical-note: StructureDefinition.snapshot.element[5]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/lm-medical-note: StructureDefinition.differential.element[0]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/lm-medical-note: StructureDefinition.differential.element[1]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/lm-medical-note: StructureDefinition.differential.element[2]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/lm-medical-note: StructureDefinition.differential.element[3]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/lm-medical-note: StructureDefinition.differential.element[4]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/lm-medical-note: StructureDefinition.differential.element[5]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+== fsh-generated/resources/StructureDefinition-lm-operator.json ==
+INFORMATION: StructureDefinition.baseDefinition: Pinned the version of http://hl7.org/fhir/StructureDefinition/Base to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[2].binding.valueSet: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-operator-role to 0.1.0
+INFORMATION: StructureDefinition.differential.element[2].binding.valueSet: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-operator-role to 0.1.0
+INFORMATION: StructureDefinition/lm-operator: StructureDefinition.jurisdiction[0]: Reference to draft CodeSystem urn:iso:std:iso:3166|20210120
+WARNING: StructureDefinition/lm-operator: StructureDefinition.snapshot.element[0]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/lm-operator: StructureDefinition.snapshot.element[1]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/lm-operator: StructureDefinition.snapshot.element[2]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/lm-operator: StructureDefinition.differential.element[0]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/lm-operator: StructureDefinition.differential.element[1]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/lm-operator: StructureDefinition.differential.element[2]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+== fsh-generated/resources/StructureDefinition-lm-other-diagnosis.json ==
+INFORMATION: StructureDefinition.baseDefinition: Pinned the version of http://hl7.org/fhir/StructureDefinition/Base to 4.0.1
+INFORMATION: StructureDefinition/lm-other-diagnosis: StructureDefinition.jurisdiction[0]: Reference to draft CodeSystem urn:iso:std:iso:3166|20210120
+WARNING: StructureDefinition/lm-other-diagnosis: StructureDefinition.snapshot.element[0]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/lm-other-diagnosis: StructureDefinition.snapshot.element[1]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/lm-other-diagnosis: StructureDefinition.snapshot.element[2]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/lm-other-diagnosis: StructureDefinition.differential.element[0]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/lm-other-diagnosis: StructureDefinition.differential.element[1]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/lm-other-diagnosis: StructureDefinition.differential.element[2]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+== fsh-generated/resources/StructureDefinition-lm-patient.json ==
+INFORMATION: StructureDefinition.baseDefinition: Pinned the version of http://hl7.org/fhir/StructureDefinition/Base to 4.0.1
+INFORMATION: StructureDefinition/lm-patient: StructureDefinition.jurisdiction[0]: Reference to draft CodeSystem urn:iso:std:iso:3166|20210120
+WARNING: StructureDefinition/lm-patient: StructureDefinition.snapshot.element[0]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/lm-patient: StructureDefinition.snapshot.element[1]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/lm-patient: StructureDefinition.snapshot.element[2]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/lm-patient: StructureDefinition.snapshot.element[3]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/lm-patient: StructureDefinition.snapshot.element[4]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/lm-patient: StructureDefinition.snapshot.element[5]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/lm-patient: StructureDefinition.differential.element[0]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/lm-patient: StructureDefinition.differential.element[1]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/lm-patient: StructureDefinition.differential.element[2]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/lm-patient: StructureDefinition.differential.element[3]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/lm-patient: StructureDefinition.differential.element[4]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/lm-patient: StructureDefinition.differential.element[5]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+== fsh-generated/resources/StructureDefinition-lm-patient-detail.json ==
+INFORMATION: StructureDefinition.baseDefinition: Pinned the version of http://hl7.org/fhir/StructureDefinition/Base to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[4].binding.valueSet: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-patient-care-level to 0.1.0
+INFORMATION: StructureDefinition.differential.element[4].binding.valueSet: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-patient-care-level to 0.1.0
+INFORMATION: StructureDefinition/lm-patient-detail: StructureDefinition.jurisdiction[0]: Reference to draft CodeSystem urn:iso:std:iso:3166|20210120
+WARNING: StructureDefinition/lm-patient-detail: StructureDefinition.snapshot.element[0]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/lm-patient-detail: StructureDefinition.snapshot.element[1]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/lm-patient-detail: StructureDefinition.snapshot.element[2]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/lm-patient-detail: StructureDefinition.snapshot.element[3]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/lm-patient-detail: StructureDefinition.snapshot.element[4]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/lm-patient-detail: StructureDefinition.snapshot.element[5]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/lm-patient-detail: StructureDefinition.snapshot.element[6]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/lm-patient-detail: StructureDefinition.differential.element[0]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/lm-patient-detail: StructureDefinition.differential.element[1]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/lm-patient-detail: StructureDefinition.differential.element[2]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/lm-patient-detail: StructureDefinition.differential.element[3]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/lm-patient-detail: StructureDefinition.differential.element[4]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/lm-patient-detail: StructureDefinition.differential.element[5]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/lm-patient-detail: StructureDefinition.differential.element[6]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+== fsh-generated/resources/StructureDefinition-lm-personal-contact.json ==
+INFORMATION: StructureDefinition.baseDefinition: Pinned the version of http://hl7.org/fhir/StructureDefinition/Base to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[1].binding.valueSet: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-contact-type to 0.1.0
+INFORMATION: StructureDefinition.differential.element[1].binding.valueSet: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-contact-type to 0.1.0
+INFORMATION: StructureDefinition/lm-personal-contact: StructureDefinition.jurisdiction[0]: Reference to draft CodeSystem urn:iso:std:iso:3166|20210120
+WARNING: StructureDefinition/lm-personal-contact: StructureDefinition.snapshot.element[0]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/lm-personal-contact: StructureDefinition.snapshot.element[1]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/lm-personal-contact: StructureDefinition.snapshot.element[2]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/lm-personal-contact: StructureDefinition.differential.element[0]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/lm-personal-contact: StructureDefinition.differential.element[1]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/lm-personal-contact: StructureDefinition.differential.element[2]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+== fsh-generated/resources/ValueSet-vs-contact-type.json ==
+INFORMATION: ValueSet.compose.include[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-contact-type to 0.1.0
+INFORMATION: ValueSet/vs-contact-type: ValueSet.jurisdiction[0]: Reference to draft CodeSystem urn:iso:std:iso:3166|20210120
+WARNING: ValueSet/vs-contact-type: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+== fsh-generated/resources/ValueSet-vs-external-id-source.json ==
+INFORMATION: ValueSet.compose.include[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-external-id-source to 0.1.0
+INFORMATION: ValueSet/vs-external-id-source: ValueSet.jurisdiction[0]: Reference to draft CodeSystem urn:iso:std:iso:3166|20210120
+WARNING: ValueSet/vs-external-id-source: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+== fsh-generated/resources/ValueSet-vs-operator-role.json ==
+INFORMATION: ValueSet.compose.include[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-operator-role to 0.1.0
+INFORMATION: ValueSet/vs-operator-role: ValueSet.jurisdiction[0]: Reference to draft CodeSystem urn:iso:std:iso:3166|20210120
+WARNING: ValueSet/vs-operator-role: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+== fsh-generated/resources/ValueSet-vs-patient-care-level.json ==
+INFORMATION: ValueSet.compose.include[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-patient-care-level to 0.1.0
+INFORMATION: ValueSet/vs-patient-care-level: ValueSet.jurisdiction[0]: Reference to draft CodeSystem urn:iso:std:iso:3166|20210120
+WARNING: ValueSet/vs-patient-care-level: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+== fsh-generated/resources/ValueSet-vs-sex.json ==
+INFORMATION: ValueSet.compose.include[0]: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-sex to 0.1.0
+INFORMATION: ValueSet/vs-sex: ValueSet.jurisdiction[0]: Reference to draft CodeSystem urn:iso:std:iso:3166|20210120
+WARNING: ValueSet/vs-sex: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present

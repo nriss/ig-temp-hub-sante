@@ -1,0 +1,36 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "vs-patient-care-level",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : EnsembleValeurs vs-patient-care-level</b></p><a name=\"vs-patient-care-level\"> </a><a name=\"hcvs-patient-care-level\"> </a><ul><li>Include tous les codes définis dans <a href=\"CodeSystem-cs-patient-care-level.html\"><code>https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-patient-care-level</code></a><span title=\"La version est explicitement indiquée comme étant 0.1.0\"> version &#x1F4CD;0.1.0</span></li></ul></div>"
+  },
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-patient-care-level",
+  "version" : "0.1.0",
+  "name" : "VS_PatientCareLevel",
+  "title" : "Niveau de soin du patient (Hub Santé)",
+  "status" : "draft",
+  "date" : "2026-03-16T10:29:29+00:00",
+  "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
+  "contact" : [{
+    "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://esante.gouv.fr"
+    }]
+  }],
+  "description" : "Niveaux de soins spécifiques au patient dans le contexte de la régulation médicale.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "France"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-patient-care-level",
+      "version" : "0.1.0"
+    }]
+  }
+}

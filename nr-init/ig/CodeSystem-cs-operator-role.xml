@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="cs-operator-role"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narratif généré : CodeSystem cs-operator-role</b></p><a name="cs-operator-role"> </a><a name="hccs-operator-role"> </a><p>This  code system <code>https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-operator-role</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Affichage</b></td></tr><tr><td style="white-space:nowrap">AMBULANCIER<a name="cs-operator-role-AMBULANCIER"> </a></td><td>Ambulancier</td></tr><tr><td style="white-space:nowrap">ARM<a name="cs-operator-role-ARM"> </a></td><td>Assistant de Régulation Médicale</td></tr><tr><td style="white-space:nowrap">INFIRMIER<a name="cs-operator-role-INFIRMIER"> </a></td><td>Infirmier</td></tr><tr><td style="white-space:nowrap">MEDECIN<a name="cs-operator-role-MEDECIN"> </a></td><td>Médecin</td></tr><tr><td style="white-space:nowrap">PILOTE<a name="cs-operator-role-PILOTE"> </a></td><td>Pilote</td></tr><tr><td style="white-space:nowrap">TCM<a name="cs-operator-role-TCM"> </a></td><td>Technicien de Coordination Médicale</td></tr><tr><td style="white-space:nowrap">AUTRE<a name="cs-operator-role-AUTRE"> </a></td><td>Autre</td></tr><tr><td style="white-space:nowrap">INCONNU<a name="cs-operator-role-INCONNU"> </a></td><td>Inconnu</td></tr></table></div>
+  </text>
+  <url value="https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-operator-role"/>
+  <version value="0.1.0"/>
+  <name value="CS_OperatorRole"/>
+  <title value="Rôles des opérateurs (Hub Santé)"/>
+  <status value="draft"/>
+  <date value="2026-03-16T10:29:29+00:00"/>
+  <publisher value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
+  <contact>
+    <name value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://esante.gouv.fr"/>
+    </telecom>
+  </contact>
+  <description value="Rôles des professionnels de santé opérant au sein de l'entité émettrice d'un message Hub Santé."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="FR"/>
+      <display value="France"/>
+    </coding>
+  </jurisdiction>
+  <content value="complete"/>
+  <count value="8"/>
+  <concept>
+    <code value="AMBULANCIER"/>
+    <display value="Ambulancier"/>
+  </concept>
+  <concept>
+    <code value="ARM"/>
+    <display value="Assistant de Régulation Médicale"/>
+  </concept>
+  <concept>
+    <code value="INFIRMIER"/>
+    <display value="Infirmier"/>
+  </concept>
+  <concept>
+    <code value="MEDECIN"/>
+    <display value="Médecin"/>
+  </concept>
+  <concept>
+    <code value="PILOTE"/>
+    <display value="Pilote"/>
+  </concept>
+  <concept>
+    <code value="TCM"/>
+    <display value="Technicien de Coordination Médicale"/>
+  </concept>
+  <concept>
+    <code value="AUTRE"/>
+    <display value="Autre"/>
+  </concept>
+  <concept>
+    <code value="INCONNU"/>
+    <display value="Inconnu"/>
+  </concept>
+</CodeSystem>

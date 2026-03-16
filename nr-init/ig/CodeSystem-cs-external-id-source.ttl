@@ -1,0 +1,64 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-external-id-source> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "cs-external-id-source"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : CodeSystem cs-external-id-source</b></p><a name=\"cs-external-id-source\"> </a><a name=\"hccs-external-id-source\"> </a><p>This  code system <code>https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-external-id-source</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage</b></td></tr><tr><td style=\"white-space:nowrap\">NIR<a name=\"cs-external-id-source-NIR\"> </a></td><td>NIR</td></tr><tr><td style=\"white-space:nowrap\">SINUS<a name=\"cs-external-id-source-SINUS\"> </a></td><td>SINUS</td></tr><tr><td style=\"white-space:nowrap\">DOSSARD<a name=\"cs-external-id-source-DOSSARD\"> </a></td><td>Dossard</td></tr><tr><td style=\"white-space:nowrap\">PLACE<a name=\"cs-external-id-source-PLACE\"> </a></td><td>Place</td></tr><tr><td style=\"white-space:nowrap\">AUTRE<a name=\"cs-external-id-source-AUTRE\"> </a></td><td>Autre</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-external-id-source"^^xsd:anyURI ;
+     fhir:l <https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-external-id-source>
+  ] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "CS_ExternalIdSource"] ; # 
+  fhir:title [ fhir:v "Source des identifiants externes patient (Hub Santé)"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2026-03-16T10:29:29+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://esante.gouv.fr" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Types d'identifiants externes utilisés pour identifier un patient."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "FR" ] ;
+       fhir:display [ fhir:v "France" ]
+     ] )
+  ] ) ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "5"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "NIR" ] ;
+     fhir:display [ fhir:v "NIR" ]
+  ] [
+     fhir:code [ fhir:v "SINUS" ] ;
+     fhir:display [ fhir:v "SINUS" ]
+  ] [
+     fhir:code [ fhir:v "DOSSARD" ] ;
+     fhir:display [ fhir:v "Dossard" ]
+  ] [
+     fhir:code [ fhir:v "PLACE" ] ;
+     fhir:display [ fhir:v "Place" ]
+  ] [
+     fhir:code [ fhir:v "AUTRE" ] ;
+     fhir:display [ fhir:v "Autre" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

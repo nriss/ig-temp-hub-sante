@@ -1,0 +1,48 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "cs-patient-care-level",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : CodeSystem cs-patient-care-level</b></p><a name=\"cs-patient-care-level\"> </a><a name=\"hccs-patient-care-level\"> </a><p>This  code system <code>https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-patient-care-level</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td></tr><tr><td style=\"white-space:nowrap\">R1<a name=\"cs-patient-care-level-R1\"> </a></td></tr><tr><td style=\"white-space:nowrap\">R2<a name=\"cs-patient-care-level-R2\"> </a></td></tr><tr><td style=\"white-space:nowrap\">R3<a name=\"cs-patient-care-level-R3\"> </a></td></tr><tr><td style=\"white-space:nowrap\">R4<a name=\"cs-patient-care-level-R4\"> </a></td></tr></table></div>"
+  },
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-patient-care-level",
+  "version" : "0.1.0",
+  "name" : "CS_PatientCareLevel",
+  "title" : "Niveau de soin du patient (Hub Santé)",
+  "status" : "draft",
+  "date" : "2026-03-16T10:29:29+00:00",
+  "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
+  "contact" : [{
+    "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://esante.gouv.fr"
+    }]
+  }],
+  "description" : "Niveaux de soins spécifiques au patient dans le contexte de la régulation médicale.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "France"
+    }]
+  }],
+  "content" : "complete",
+  "count" : 4,
+  "concept" : [{
+    "code" : "R1",
+    "display" : "R1"
+  },
+  {
+    "code" : "R2",
+    "display" : "R2"
+  },
+  {
+    "code" : "R3",
+    "display" : "R3"
+  },
+  {
+    "code" : "R4",
+    "display" : "R4"
+  }]
+}

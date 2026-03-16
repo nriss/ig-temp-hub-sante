@@ -1,0 +1,62 @@
+{
+  "codeSystems" : [{
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-contact-type",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "VS_ContactType",
+    "title" : "Type de contact (Hub Santé)",
+    "description" : "Types d'URI utilisés pour les coordonnées de contact.",
+    "systems" : ["https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-contact-type"],
+    "uses" : {
+    },
+    "StructureDefinition-lm-personal-contact.html" : "Contact personnel"
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-external-id-source",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "VS_ExternalIdSource",
+    "title" : "Source des identifiants externes patient (Hub Santé)",
+    "description" : "Types d'identifiants externes utilisés pour identifier un patient.",
+    "systems" : ["https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-external-id-source"],
+    "uses" : {
+    },
+    "StructureDefinition-lm-external-id.html" : "Identifiant(s) patient(s)"
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-operator-role",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "VS_OperatorRole",
+    "title" : "Rôles des opérateurs (Hub Santé)",
+    "description" : "Rôles des professionnels de santé opérant au sein de l'entité émettrice d'un message Hub Santé.",
+    "systems" : ["https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-operator-role"],
+    "uses" : {
+    },
+    "StructureDefinition-lm-operator.html" : "Professionnel de santé réalisant l'observation"
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-patient-care-level",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "VS_PatientCareLevel",
+    "title" : "Niveau de soin du patient (Hub Santé)",
+    "description" : "Niveaux de soins spécifiques au patient dans le contexte de la régulation médicale.",
+    "systems" : ["https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-patient-care-level"],
+    "uses" : {
+    },
+    "StructureDefinition-lm-patient-detail.html" : "Informations patient"
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-sex",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "VS_Sex",
+    "title" : "Sexe du patient (Hub Santé)",
+    "description" : "Codes de sexe du patient.",
+    "systems" : ["https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-sex"],
+    "uses" : {
+    },
+    "StructureDefinition-lm-ins-strict-features.html" : "Traits stricts de l'identité"
+  }]
+}

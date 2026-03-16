@@ -1,0 +1,7 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
+"lm-other-diagnosis","lm-other-diagnosis","","","",0,*,"","","","null {[]} {[]}
+","Hypothèses de régulation médicale secondaires","Hypothèse diagnostique secondaire issue de la régulation médicale.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"lm-other-diagnosis.code","lm-other-diagnosis.code","","","",1,1,"","","","string {[]} {[]}
+","Code","Code de la nomenclature associée (CIM-10).","Regexp : ^[A-Z]\d{2}(\.[\d\+\-]{1,3})?$","","","","","","","","",,,,,"",,,,"lm-other-diagnosis.code",1,1,"",""
+"lm-other-diagnosis.label","lm-other-diagnosis.label","","","",1,1,"","","","string {[]} {[]}
+","Libellé","Libellé de la nomenclature associée. Obligatoire pour permettre l'affichage même si le code n'est pas reconnu.","","","","","","","","","",,,,,"",,,,"lm-other-diagnosis.label",1,1,"",""

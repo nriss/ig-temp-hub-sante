@@ -1,0 +1,175 @@
+[{
+  "id" : "cs-contact-type",
+  "type" : "CodeSystem",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-contact-type",
+  "version" : "0.1.0",
+  "name" : "CS_ContactType"
+},
+{
+  "id" : "cs-external-id-source",
+  "type" : "CodeSystem",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-external-id-source",
+  "version" : "0.1.0",
+  "name" : "CS_ExternalIdSource"
+},
+{
+  "id" : "cs-operator-role",
+  "type" : "CodeSystem",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-operator-role",
+  "version" : "0.1.0",
+  "name" : "CS_OperatorRole"
+},
+{
+  "id" : "cs-patient-care-level",
+  "type" : "CodeSystem",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-patient-care-level",
+  "version" : "0.1.0",
+  "name" : "CS_PatientCareLevel"
+},
+{
+  "id" : "cs-sex",
+  "type" : "CodeSystem",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-sex",
+  "version" : "0.1.0",
+  "name" : "CS_Sex"
+},
+{
+  "id" : "ans.fhir.fr.hubsante",
+  "type" : "ImplementationGuide",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/hubsante/ImplementationGuide/ans.fhir.fr.hubsante",
+  "version" : "0.1.0",
+  "name" : "HubSante"
+},
+{
+  "id" : "lm-administrative-file",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-administrative-file",
+  "version" : "0.1.0",
+  "name" : "LM_AdministrativeFile"
+},
+{
+  "id" : "lm-detailed-name",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-detailed-name",
+  "version" : "0.1.0",
+  "name" : "LM_DetailedName"
+},
+{
+  "id" : "lm-external-id",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-external-id",
+  "version" : "0.1.0",
+  "name" : "LM_ExternalId"
+},
+{
+  "id" : "lm-general-practitioner",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-general-practitioner",
+  "version" : "0.1.0",
+  "name" : "LM_GeneralPractitioner"
+},
+{
+  "id" : "lm-hypothesis",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-hypothesis",
+  "version" : "0.1.0",
+  "name" : "LM_Hypothesis"
+},
+{
+  "id" : "lm-identity",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-identity",
+  "version" : "0.1.0",
+  "name" : "LM_Identity"
+},
+{
+  "id" : "lm-ins-strict-features",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-ins-strict-features",
+  "version" : "0.1.0",
+  "name" : "LM_InsStrictFeatures"
+},
+{
+  "id" : "lm-main-diagnosis",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-main-diagnosis",
+  "version" : "0.1.0",
+  "name" : "LM_MainDiagnosis"
+},
+{
+  "id" : "lm-medical-note",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-medical-note",
+  "version" : "0.1.0",
+  "name" : "LM_MedicalNote"
+},
+{
+  "id" : "lm-operator",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-operator",
+  "version" : "0.1.0",
+  "name" : "LM_Operator"
+},
+{
+  "id" : "lm-other-diagnosis",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-other-diagnosis",
+  "version" : "0.1.0",
+  "name" : "LM_OtherDiagnosis"
+},
+{
+  "id" : "lm-patient",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-patient",
+  "version" : "0.1.0",
+  "name" : "LM_Patient"
+},
+{
+  "id" : "lm-patient-detail",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-patient-detail",
+  "version" : "0.1.0",
+  "name" : "LM_PatientDetail"
+},
+{
+  "id" : "lm-personal-contact",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-personal-contact",
+  "version" : "0.1.0",
+  "name" : "LM_PersonalContact"
+},
+{
+  "id" : "vs-contact-type",
+  "type" : "ValueSet",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-contact-type",
+  "version" : "0.1.0",
+  "name" : "VS_ContactType"
+},
+{
+  "id" : "vs-external-id-source",
+  "type" : "ValueSet",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-external-id-source",
+  "version" : "0.1.0",
+  "name" : "VS_ExternalIdSource"
+},
+{
+  "id" : "vs-operator-role",
+  "type" : "ValueSet",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-operator-role",
+  "version" : "0.1.0",
+  "name" : "VS_OperatorRole"
+},
+{
+  "id" : "vs-patient-care-level",
+  "type" : "ValueSet",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-patient-care-level",
+  "version" : "0.1.0",
+  "name" : "VS_PatientCareLevel"
+},
+{
+  "id" : "vs-sex",
+  "type" : "ValueSet",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-sex",
+  "version" : "0.1.0",
+  "name" : "VS_Sex"
+}]

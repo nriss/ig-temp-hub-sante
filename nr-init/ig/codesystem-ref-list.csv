@@ -1,0 +1,6 @@
+URL,Version,Status,OIDs,Name,Title,Description,Used
+https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-contact-type,0.1.0,draft,,CS_ContactType,Type de contact (Hub Santé),"Types d'URI utilisés pour les coordonnées de contact.","ValueSet/vs-contact-type"
+https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-external-id-source,0.1.0,draft,,CS_ExternalIdSource,Source des identifiants externes patient (Hub Santé),"Types d'identifiants externes utilisés pour identifier un patient.","ValueSet/vs-external-id-source"
+https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-operator-role,0.1.0,draft,,CS_OperatorRole,Rôles des opérateurs (Hub Santé),"Rôles des professionnels de santé opérant au sein de l'entité émettrice d'un message Hub Santé.","ValueSet/vs-operator-role"
+https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-patient-care-level,0.1.0,draft,,CS_PatientCareLevel,Niveau de soin du patient (Hub Santé),"Niveaux de soins spécifiques au patient dans le contexte de la régulation médicale.","ValueSet/vs-patient-care-level"
+https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-sex,0.1.0,draft,,CS_Sex,Sexe du patient (Hub Santé),"Codes de sexe du patient.","ValueSet/vs-sex"

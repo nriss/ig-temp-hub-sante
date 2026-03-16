@@ -1,0 +1,9 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
+"lm-detailed-name","lm-detailed-name","","","",0,*,"","","","null {[]} {[]}
+","Prénom & nom usuel","Prénom et nom usuel d'une personne. Objet transverse utilisé dans plusieurs contextes (appelant, médecin traitant, identité patient).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"lm-detailed-name.complete","lm-detailed-name.complete","","","",1,1,"","","","string {[]} {[]}
+","Prénom et nom","Prénom et nom usuel. Si firstName et lastName sont renseignés, format : ""{firstName} {lastName}"". Spécificités 15-18 : NexSIS ne fournit que ce champ concaténé.","","","","","","","","","",,,,,"",,,,"lm-detailed-name.complete",1,1,"",""
+"lm-detailed-name.lastName","lm-detailed-name.lastName","","","",0,1,"","","","string {[]} {[]}
+","Nom","Nom usuel.","","","","","","","","","",,,,,"",,,,"lm-detailed-name.lastName",0,1,"",""
+"lm-detailed-name.firstName","lm-detailed-name.firstName","","","",0,1,"","","","string {[]} {[]}
+","Prénom","Prénom usuel. Les prénoms composés sont séparés par ""-"".","","","","","","","","","",,,,,"",,,,"lm-detailed-name.firstName",0,1,"",""

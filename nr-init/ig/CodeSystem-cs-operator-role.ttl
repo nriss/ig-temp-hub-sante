@@ -1,0 +1,73 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-operator-role> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "cs-operator-role"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : CodeSystem cs-operator-role</b></p><a name=\"cs-operator-role\"> </a><a name=\"hccs-operator-role\"> </a><p>This  code system <code>https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-operator-role</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage</b></td></tr><tr><td style=\"white-space:nowrap\">AMBULANCIER<a name=\"cs-operator-role-AMBULANCIER\"> </a></td><td>Ambulancier</td></tr><tr><td style=\"white-space:nowrap\">ARM<a name=\"cs-operator-role-ARM\"> </a></td><td>Assistant de Régulation Médicale</td></tr><tr><td style=\"white-space:nowrap\">INFIRMIER<a name=\"cs-operator-role-INFIRMIER\"> </a></td><td>Infirmier</td></tr><tr><td style=\"white-space:nowrap\">MEDECIN<a name=\"cs-operator-role-MEDECIN\"> </a></td><td>Médecin</td></tr><tr><td style=\"white-space:nowrap\">PILOTE<a name=\"cs-operator-role-PILOTE\"> </a></td><td>Pilote</td></tr><tr><td style=\"white-space:nowrap\">TCM<a name=\"cs-operator-role-TCM\"> </a></td><td>Technicien de Coordination Médicale</td></tr><tr><td style=\"white-space:nowrap\">AUTRE<a name=\"cs-operator-role-AUTRE\"> </a></td><td>Autre</td></tr><tr><td style=\"white-space:nowrap\">INCONNU<a name=\"cs-operator-role-INCONNU\"> </a></td><td>Inconnu</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-operator-role"^^xsd:anyURI ;
+     fhir:l <https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-operator-role>
+  ] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "CS_OperatorRole"] ; # 
+  fhir:title [ fhir:v "Rôles des opérateurs (Hub Santé)"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2026-03-16T10:29:29+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://esante.gouv.fr" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Rôles des professionnels de santé opérant au sein de l'entité émettrice d'un message Hub Santé."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "FR" ] ;
+       fhir:display [ fhir:v "France" ]
+     ] )
+  ] ) ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "8"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "AMBULANCIER" ] ;
+     fhir:display [ fhir:v "Ambulancier" ]
+  ] [
+     fhir:code [ fhir:v "ARM" ] ;
+     fhir:display [ fhir:v "Assistant de Régulation Médicale" ]
+  ] [
+     fhir:code [ fhir:v "INFIRMIER" ] ;
+     fhir:display [ fhir:v "Infirmier" ]
+  ] [
+     fhir:code [ fhir:v "MEDECIN" ] ;
+     fhir:display [ fhir:v "Médecin" ]
+  ] [
+     fhir:code [ fhir:v "PILOTE" ] ;
+     fhir:display [ fhir:v "Pilote" ]
+  ] [
+     fhir:code [ fhir:v "TCM" ] ;
+     fhir:display [ fhir:v "Technicien de Coordination Médicale" ]
+  ] [
+     fhir:code [ fhir:v "AUTRE" ] ;
+     fhir:display [ fhir:v "Autre" ]
+  ] [
+     fhir:code [ fhir:v "INCONNU" ] ;
+     fhir:display [ fhir:v "Inconnu" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

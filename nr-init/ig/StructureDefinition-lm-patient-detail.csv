@@ -1,0 +1,15 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
+"lm-patient-detail","lm-patient-detail","","","",0,*,"","","","null {[]} {[]}
+","Informations patient","Informations cliniques et physiologiques du patient.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"lm-patient-detail.weight","lm-patient-detail.weight","","","",0,1,"","","","decimal {[]} {[]}
+","Poids (kg)","Poids du patient en kilogrammes.","","","","","","","","","",,,,,"",,,,"lm-patient-detail.weight",0,1,"",""
+"lm-patient-detail.height","lm-patient-detail.height","","","",0,1,"","","","decimal {[]} {[]}
+","Taille (cm)","Taille du patient en centimètres.","","","","","","","","","",,,,,"",,,,"lm-patient-detail.height",0,1,"",""
+"lm-patient-detail.age","lm-patient-detail.age","","","",0,1,"","","","string {[]} {[]}
+","Âge","Âge du patient au format durée ISO 8601 (ex : P30Y, P6M, P2W). Une seule unité de durée utilisée (années, mois, semaines ou jours).","Regexp : ^P[0-9]{1,3}[YMWD]$","","","","","","","","",,,,,"",,,,"lm-patient-detail.age",0,1,"",""
+"lm-patient-detail.careLevel","lm-patient-detail.careLevel","","","",0,1,"","","","code {[]} {[]}
+","Niveau de soin","Niveau de soins spécifique au patient.","","","","","","","","","",,"required","","https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-patient-care-level|0.1.0","",,,,"lm-patient-detail.careLevel",0,1,"",""
+"lm-patient-detail.medicalHistory","lm-patient-detail.medicalHistory","","","",0,1,"","","","string {[]} {[]}
+","Antécédents","Antécédents du patient (texte libre).","","","","","","","","","",,,,,"",,,,"lm-patient-detail.medicalHistory",0,1,"",""
+"lm-patient-detail.treatment","lm-patient-detail.treatment","","","",0,1,"","","","string {[]} {[]}
+","Traitements","Traitements du patient (texte libre).","","","","","","","","","",,,,,"",,,,"lm-patient-detail.treatment",0,1,"",""

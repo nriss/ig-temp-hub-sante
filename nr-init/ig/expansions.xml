@@ -1,0 +1,1071 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="2e8a3c3e-c64c-4bf1-8841-4b72b0e5743c"/>
+  <meta>
+    <lastUpdated value="2026-03-16T10:29:29.515+00:00"/>
+  </meta>
+  <type value="collection"/>
+  <entry>
+    <fullUrl value="https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-contact-type"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion effectuée en interne basée sur 
+              <a href="CodeSystem-cs-contact-type.html">codesystem Type de contact (Hub Santé) v0.1.0 (CodeSystem)</a>
+              <span class="copy-text-inline">
+                <button data-clipboard-text="https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-contact-type|0.1.0" title="Cliquer pour copier l'URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>Ce jeu de valeur (ValueSet) contient 7 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>Système</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Affichage (fr)</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-contact-type-EMAIL"> </a>
+                  <code>https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-contact-type</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-cs-contact-type.html#cs-contact-type-EMAIL">EMAIL</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-contact-type&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;EMAIL&quot;}" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-contact-type&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;EMAIL&quot;&gt;&lt;/coding&gt;" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-contact-type-FAX"> </a>
+                  <code>https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-contact-type</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-cs-contact-type.html#cs-contact-type-FAX">FAX</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-contact-type&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;FAX&quot;}" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-contact-type&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;FAX&quot;&gt;&lt;/coding&gt;" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-contact-type-MSS"> </a>
+                  <code>https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-contact-type</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-cs-contact-type.html#cs-contact-type-MSS">MSS</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-contact-type&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;MSS&quot;}" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-contact-type&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;MSS&quot;&gt;&lt;/coding&gt;" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-contact-type-POSTAL"> </a>
+                  <code>https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-contact-type</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-cs-contact-type.html#cs-contact-type-POSTAL">POSTAL</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-contact-type&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;POSTAL&quot;}" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-contact-type&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;POSTAL&quot;&gt;&lt;/coding&gt;" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-contact-type-RADIO"> </a>
+                  <code>https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-contact-type</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-cs-contact-type.html#cs-contact-type-RADIO">RADIO</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-contact-type&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;RADIO&quot;}" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-contact-type&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;RADIO&quot;&gt;&lt;/coding&gt;" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-contact-type-TEL"> </a>
+                  <code>https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-contact-type</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-cs-contact-type.html#cs-contact-type-TEL">TEL</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-contact-type&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;TEL&quot;}" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-contact-type&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;TEL&quot;&gt;&lt;/coding&gt;" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-contact-type-WEB"> </a>
+                  <code>https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-contact-type</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-cs-contact-type.html#cs-contact-type-WEB">WEB</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-contact-type&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;WEB&quot;}" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-contact-type&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;WEB&quot;&gt;&lt;/coding&gt;" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-contact-type"/>
+        <version value="0.1.0"/>
+        <name value="VS_ContactType"/>
+        <title value="Type de contact (Hub Santé)"/>
+        <status value="draft"/>
+        <date value="2026-03-16T10:29:29+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="FR"/>
+            <display value="France"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:16af5d66-193e-488e-b3cd-20f3801d67ad"/>
+          <timestamp value="2026-03-16T10:30:13+00:00"/>
+          <total value="7"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="fr"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-contact-type|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-contact-type"/>
+            <code value="EMAIL"/>
+          </contains>
+          <contains>
+            <system value="https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-contact-type"/>
+            <code value="FAX"/>
+          </contains>
+          <contains>
+            <system value="https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-contact-type"/>
+            <code value="MSS"/>
+          </contains>
+          <contains>
+            <system value="https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-contact-type"/>
+            <code value="POSTAL"/>
+          </contains>
+          <contains>
+            <system value="https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-contact-type"/>
+            <code value="RADIO"/>
+          </contains>
+          <contains>
+            <system value="https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-contact-type"/>
+            <code value="TEL"/>
+          </contains>
+          <contains>
+            <system value="https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-contact-type"/>
+            <code value="WEB"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-external-id-source"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion effectuée en interne basée sur 
+              <a href="CodeSystem-cs-external-id-source.html">codesystem Source des identifiants externes patient (Hub Santé) v0.1.0 (CodeSystem)</a>
+              <span class="copy-text-inline">
+                <button data-clipboard-text="https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-external-id-source|0.1.0" title="Cliquer pour copier l'URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>Ce jeu de valeur (ValueSet) contient 5 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>Système</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Affichage (fr)</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-external-id-source-NIR"> </a>
+                  <code>https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-external-id-source</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-cs-external-id-source.html#cs-external-id-source-NIR">NIR</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-external-id-source&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;NIR&quot;}" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-external-id-source&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;NIR&quot;&gt;&lt;/coding&gt;" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-external-id-source-SINUS"> </a>
+                  <code>https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-external-id-source</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-cs-external-id-source.html#cs-external-id-source-SINUS">SINUS</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-external-id-source&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;SINUS&quot;}" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-external-id-source&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;SINUS&quot;&gt;&lt;/coding&gt;" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-external-id-source-DOSSARD"> </a>
+                  <code>https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-external-id-source</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-cs-external-id-source.html#cs-external-id-source-DOSSARD">DOSSARD</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-external-id-source&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;DOSSARD&quot;}" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-external-id-source&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;DOSSARD&quot;&gt;&lt;/coding&gt;" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-external-id-source-PLACE"> </a>
+                  <code>https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-external-id-source</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-cs-external-id-source.html#cs-external-id-source-PLACE">PLACE</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-external-id-source&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;PLACE&quot;}" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-external-id-source&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;PLACE&quot;&gt;&lt;/coding&gt;" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-external-id-source-AUTRE"> </a>
+                  <code>https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-external-id-source</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-cs-external-id-source.html#cs-external-id-source-AUTRE">AUTRE</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-external-id-source&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;AUTRE&quot;}" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-external-id-source&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;AUTRE&quot;&gt;&lt;/coding&gt;" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-external-id-source"/>
+        <version value="0.1.0"/>
+        <name value="VS_ExternalIdSource"/>
+        <title value="Source des identifiants externes patient (Hub Santé)"/>
+        <status value="draft"/>
+        <date value="2026-03-16T10:29:29+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="FR"/>
+            <display value="France"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:c4d430d0-52ff-4098-a2df-27642171b254"/>
+          <timestamp value="2026-03-16T10:30:13+00:00"/>
+          <total value="5"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="fr"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-external-id-source|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-external-id-source"/>
+            <code value="NIR"/>
+          </contains>
+          <contains>
+            <system value="https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-external-id-source"/>
+            <code value="SINUS"/>
+          </contains>
+          <contains>
+            <system value="https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-external-id-source"/>
+            <code value="DOSSARD"/>
+          </contains>
+          <contains>
+            <system value="https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-external-id-source"/>
+            <code value="PLACE"/>
+          </contains>
+          <contains>
+            <system value="https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-external-id-source"/>
+            <code value="AUTRE"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-operator-role"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion effectuée en interne basée sur 
+              <a href="CodeSystem-cs-operator-role.html">codesystem Rôles des opérateurs (Hub Santé) v0.1.0 (CodeSystem)</a>
+              <span class="copy-text-inline">
+                <button data-clipboard-text="https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-operator-role|0.1.0" title="Cliquer pour copier l'URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>Ce jeu de valeur (ValueSet) contient 8 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>Système</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Affichage (fr)</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-operator-role-AMBULANCIER"> </a>
+                  <code>https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-operator-role</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-cs-operator-role.html#cs-operator-role-AMBULANCIER">AMBULANCIER</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-operator-role&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;AMBULANCIER&quot;}" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-operator-role&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;AMBULANCIER&quot;&gt;&lt;/coding&gt;" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-operator-role-ARM"> </a>
+                  <code>https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-operator-role</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-cs-operator-role.html#cs-operator-role-ARM">ARM</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-operator-role&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;ARM&quot;}" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-operator-role&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;ARM&quot;&gt;&lt;/coding&gt;" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-operator-role-INFIRMIER"> </a>
+                  <code>https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-operator-role</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-cs-operator-role.html#cs-operator-role-INFIRMIER">INFIRMIER</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-operator-role&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;INFIRMIER&quot;}" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-operator-role&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;INFIRMIER&quot;&gt;&lt;/coding&gt;" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-operator-role-MEDECIN"> </a>
+                  <code>https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-operator-role</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-cs-operator-role.html#cs-operator-role-MEDECIN">MEDECIN</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-operator-role&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;MEDECIN&quot;}" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-operator-role&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;MEDECIN&quot;&gt;&lt;/coding&gt;" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-operator-role-PILOTE"> </a>
+                  <code>https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-operator-role</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-cs-operator-role.html#cs-operator-role-PILOTE">PILOTE</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-operator-role&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;PILOTE&quot;}" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-operator-role&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;PILOTE&quot;&gt;&lt;/coding&gt;" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-operator-role-TCM"> </a>
+                  <code>https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-operator-role</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-cs-operator-role.html#cs-operator-role-TCM">TCM</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-operator-role&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;TCM&quot;}" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-operator-role&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;TCM&quot;&gt;&lt;/coding&gt;" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-operator-role-AUTRE"> </a>
+                  <code>https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-operator-role</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-cs-operator-role.html#cs-operator-role-AUTRE">AUTRE</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-operator-role&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;AUTRE&quot;}" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-operator-role&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;AUTRE&quot;&gt;&lt;/coding&gt;" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-operator-role-INCONNU"> </a>
+                  <code>https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-operator-role</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-cs-operator-role.html#cs-operator-role-INCONNU">INCONNU</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-operator-role&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;INCONNU&quot;}" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-operator-role&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;INCONNU&quot;&gt;&lt;/coding&gt;" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-operator-role"/>
+        <version value="0.1.0"/>
+        <name value="VS_OperatorRole"/>
+        <title value="Rôles des opérateurs (Hub Santé)"/>
+        <status value="draft"/>
+        <date value="2026-03-16T10:29:29+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="FR"/>
+            <display value="France"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:51569f2e-7392-4c99-9511-eec912f27b1b"/>
+          <timestamp value="2026-03-16T10:30:13+00:00"/>
+          <total value="8"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="fr"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-operator-role|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-operator-role"/>
+            <code value="AMBULANCIER"/>
+          </contains>
+          <contains>
+            <system value="https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-operator-role"/>
+            <code value="ARM"/>
+          </contains>
+          <contains>
+            <system value="https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-operator-role"/>
+            <code value="INFIRMIER"/>
+          </contains>
+          <contains>
+            <system value="https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-operator-role"/>
+            <code value="MEDECIN"/>
+          </contains>
+          <contains>
+            <system value="https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-operator-role"/>
+            <code value="PILOTE"/>
+          </contains>
+          <contains>
+            <system value="https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-operator-role"/>
+            <code value="TCM"/>
+          </contains>
+          <contains>
+            <system value="https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-operator-role"/>
+            <code value="AUTRE"/>
+          </contains>
+          <contains>
+            <system value="https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-operator-role"/>
+            <code value="INCONNU"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-patient-care-level"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion effectuée en interne basée sur 
+              <a href="CodeSystem-cs-patient-care-level.html">codesystem Niveau de soin du patient (Hub Santé) v0.1.0 (CodeSystem)</a>
+              <span class="copy-text-inline">
+                <button data-clipboard-text="https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-patient-care-level|0.1.0" title="Cliquer pour copier l'URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>Ce jeu de valeur (ValueSet) contient 4 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>Système</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Affichage (fr)</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-patient-care-level-R1"> </a>
+                  <code>https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-patient-care-level</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-cs-patient-care-level.html#cs-patient-care-level-R1">R1</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-patient-care-level&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;R1&quot;}" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-patient-care-level&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;R1&quot;&gt;&lt;/coding&gt;" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-patient-care-level-R2"> </a>
+                  <code>https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-patient-care-level</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-cs-patient-care-level.html#cs-patient-care-level-R2">R2</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-patient-care-level&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;R2&quot;}" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-patient-care-level&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;R2&quot;&gt;&lt;/coding&gt;" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-patient-care-level-R3"> </a>
+                  <code>https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-patient-care-level</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-cs-patient-care-level.html#cs-patient-care-level-R3">R3</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-patient-care-level&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;R3&quot;}" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-patient-care-level&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;R3&quot;&gt;&lt;/coding&gt;" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-patient-care-level-R4"> </a>
+                  <code>https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-patient-care-level</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-cs-patient-care-level.html#cs-patient-care-level-R4">R4</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-patient-care-level&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;R4&quot;}" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-patient-care-level&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;R4&quot;&gt;&lt;/coding&gt;" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-patient-care-level"/>
+        <version value="0.1.0"/>
+        <name value="VS_PatientCareLevel"/>
+        <title value="Niveau de soin du patient (Hub Santé)"/>
+        <status value="draft"/>
+        <date value="2026-03-16T10:29:29+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="FR"/>
+            <display value="France"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:ea074c53-a063-4c12-bd6c-c3c17f3180e5"/>
+          <timestamp value="2026-03-16T10:30:13+00:00"/>
+          <total value="4"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="fr"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-patient-care-level|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-patient-care-level"/>
+            <code value="R1"/>
+          </contains>
+          <contains>
+            <system value="https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-patient-care-level"/>
+            <code value="R2"/>
+          </contains>
+          <contains>
+            <system value="https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-patient-care-level"/>
+            <code value="R3"/>
+          </contains>
+          <contains>
+            <system value="https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-patient-care-level"/>
+            <code value="R4"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-sex"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion effectuée en interne basée sur 
+              <a href="CodeSystem-cs-sex.html">codesystem Sexe du patient (Hub Santé) v0.1.0 (CodeSystem)</a>
+              <span class="copy-text-inline">
+                <button data-clipboard-text="https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-sex|0.1.0" title="Cliquer pour copier l'URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>Ce jeu de valeur (ValueSet) contient 4 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>Système</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Affichage (fr)</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-sex-M"> </a>
+                  <code>https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-sex</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-cs-sex.html#cs-sex-M">M</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-sex&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;M&quot;}" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-sex&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;M&quot;&gt;&lt;/coding&gt;" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-sex-F"> </a>
+                  <code>https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-sex</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-cs-sex.html#cs-sex-F">F</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-sex&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;F&quot;}" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-sex&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;F&quot;&gt;&lt;/coding&gt;" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-sex-O"> </a>
+                  <code>https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-sex</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-cs-sex.html#cs-sex-O">O</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-sex&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;O&quot;}" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-sex&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;O&quot;&gt;&lt;/coding&gt;" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-sex-UN"> </a>
+                  <code>https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-sex</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-cs-sex.html#cs-sex-UN">UN</a>
+                </td>
+                <td/>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-sex&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;UN&quot;}" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-sex&quot;&gt;&lt;version value=&quot;0.1.0&quot;&gt;&lt;code value=&quot;UN&quot;&gt;&lt;/coding&gt;" title="Cliquer pour copier en tant que Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-sex"/>
+        <version value="0.1.0"/>
+        <name value="VS_Sex"/>
+        <title value="Sexe du patient (Hub Santé)"/>
+        <status value="draft"/>
+        <date value="2026-03-16T10:29:29+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="FR"/>
+            <display value="France"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:c518dbcd-d9a9-473d-b542-cbf7626720e8"/>
+          <timestamp value="2026-03-16T10:30:13+00:00"/>
+          <total value="4"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="fr"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-sex|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-sex"/>
+            <code value="M"/>
+          </contains>
+          <contains>
+            <system value="https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-sex"/>
+            <code value="F"/>
+          </contains>
+          <contains>
+            <system value="https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-sex"/>
+            <code value="O"/>
+          </contains>
+          <contains>
+            <system value="https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-sex"/>
+            <code value="UN"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+</Bundle>

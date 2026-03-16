@@ -1,0 +1,55 @@
+# ans.fhir.fr.hubsante#0.1.0: Hub Santé
+
+## Pages
+
+* [Accueil](index.md)
+* [Introduction](spec-technique-intro.md)
+* [Vue d'ensemble](spec-fonctionnelle-intro.md)
+* [Sécurité](annexe-securite.md)
+* [Alimentation](spec-fonctionnelle-alimentation.md)
+* [Flux de consommation](spec-technique-flux-consommation.md)
+* [Artifacts Summary](artifacts.md)
+* [Autres Ressources](autres_ressources.md)
+* [Téléchargements et usages](annexe-downloads.md)
+* [Flux d'alimentation](spec-technique-flux-alimentation.md)
+* [Historique des versions](change-log.md)
+* [Vue d'ensemble](spec-technique-vue-ensemble.md)
+
+## Resources
+
+### CodeSystems
+
+* [Type de contact (Hub Santé)](CodeSystem-cs-contact-type.md)
+* [Source des identifiants externes patient (Hub Santé)](CodeSystem-cs-external-id-source.md)
+* [Rôles des opérateurs (Hub Santé)](CodeSystem-cs-operator-role.md)
+* [Niveau de soin du patient (Hub Santé)](CodeSystem-cs-patient-care-level.md)
+* [Sexe du patient (Hub Santé)](CodeSystem-cs-sex.md)
+
+### ValueSets
+
+* [Type de contact (Hub Santé)](ValueSet-vs-contact-type.md)
+* [Source des identifiants externes patient (Hub Santé)](ValueSet-vs-external-id-source.md)
+* [Rôles des opérateurs (Hub Santé)](ValueSet-vs-operator-role.md)
+* [Niveau de soin du patient (Hub Santé)](ValueSet-vs-patient-care-level.md)
+* [Sexe du patient (Hub Santé)](ValueSet-vs-sex.md)
+
+### Logicals
+
+* [Dossier administratif](StructureDefinition-lm-administrative-file.md)
+* [Prénom & nom usuel](StructureDefinition-lm-detailed-name.md)
+* [Identifiant(s) patient(s)](StructureDefinition-lm-external-id.md)
+* [Médecin traitant](StructureDefinition-lm-general-practitioner.md)
+* [Hypothèses de régulation médicale](StructureDefinition-lm-hypothesis.md)
+* [Identité](StructureDefinition-lm-identity.md)
+* [Traits stricts de l'identité](StructureDefinition-lm-ins-strict-features.md)
+* [Hypothèse de régulation médicale principale](StructureDefinition-lm-main-diagnosis.md)
+* [Observation médicale](StructureDefinition-lm-medical-note.md)
+* [Professionnel de santé réalisant l'observation](StructureDefinition-lm-operator.md)
+* [Hypothèses de régulation médicale secondaires](StructureDefinition-lm-other-diagnosis.md)
+* [Informations patient](StructureDefinition-lm-patient-detail.md)
+* [Patient](StructureDefinition-lm-patient.md)
+* [Contact personnel](StructureDefinition-lm-personal-contact.md)
+
+### ImplementationGuides
+
+* [Hub Santé](index.md)

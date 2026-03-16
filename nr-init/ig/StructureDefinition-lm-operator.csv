@@ -1,0 +1,7 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
+"lm-operator","lm-operator","","","",0,*,"","","","null {[]} {[]}
+","Professionnel de santé réalisant l'observation","Opérateur ayant effectué une observation médicale dans le contexte de la régulation médicale (RS-EDA).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"lm-operator.label","lm-operator.label","","","",0,1,"","","","string {[]} {[]}
+","Label","Nom/prénom ou identifiant de l'opérateur, selon les préférences de chaque partenaire.","","","","","","","","","",,,,,"",,,,"lm-operator.label",0,1,"",""
+"lm-operator.role","lm-operator.role","","","",1,1,"","","","code {[]} {[]}
+","Rôle","Rôle de l'opérateur au sein de l'entité émettrice du message.","","","","","","","","","",,"required","","https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-operator-role|0.1.0","",,,,"lm-operator.role",1,1,"",""

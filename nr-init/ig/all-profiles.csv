@@ -1,0 +1,111 @@
+"Profile","Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
+"lm-administrative-file","lm-administrative-file","lm-administrative-file","","","",0,*,"","","","null {[]} {[]}
+","Dossier administratif","Dossier administratif du patient, contenant ses identifiants externes et son médecin traitant.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"lm-administrative-file","lm-administrative-file.externalId","lm-administrative-file.externalId","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-external-id {[]} {[]}
+","Identifiants externes","Identifiants patient provenant de systèmes externes (NIR, SINUS, dossard…).","","","","","","","","","",,,,,"",,,,"lm-administrative-file.externalId",0,*,"",""
+"lm-administrative-file","lm-administrative-file.generalPractitioner","lm-administrative-file.generalPractitioner","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-general-practitioner {[]} {[]}
+","Médecin traitant","Médecin traitant du patient.","","","","","","","","","",,,,,"",,,,"lm-administrative-file.generalPractitioner",0,1,"",""
+"lm-detailed-name","lm-detailed-name","lm-detailed-name","","","",0,*,"","","","null {[]} {[]}
+","Prénom & nom usuel","Prénom et nom usuel d'une personne. Objet transverse utilisé dans plusieurs contextes (appelant, médecin traitant, identité patient).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"lm-detailed-name","lm-detailed-name.complete","lm-detailed-name.complete","","","",1,1,"","","","string {[]} {[]}
+","Prénom et nom","Prénom et nom usuel. Si firstName et lastName sont renseignés, format : ""{firstName} {lastName}"". Spécificités 15-18 : NexSIS ne fournit que ce champ concaténé.","","","","","","","","","",,,,,"",,,,"lm-detailed-name.complete",1,1,"",""
+"lm-detailed-name","lm-detailed-name.lastName","lm-detailed-name.lastName","","","",0,1,"","","","string {[]} {[]}
+","Nom","Nom usuel.","","","","","","","","","",,,,,"",,,,"lm-detailed-name.lastName",0,1,"",""
+"lm-detailed-name","lm-detailed-name.firstName","lm-detailed-name.firstName","","","",0,1,"","","","string {[]} {[]}
+","Prénom","Prénom usuel. Les prénoms composés sont séparés par ""-"".","","","","","","","","","",,,,,"",,,,"lm-detailed-name.firstName",0,1,"",""
+"lm-external-id","lm-external-id","lm-external-id","","","",0,*,"","","","null {[]} {[]}
+","Identifiant(s) patient(s)","Identifiant patient provenant d'un système externe.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"lm-external-id","lm-external-id.source","lm-external-id.source","","","",1,1,"","","","code {[]} {[]}
+","Source / type d'identifiant","Type de l'identifiant fourni.","","","","","","","","","",,"required","","https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-external-id-source|0.1.0","",,,,"lm-external-id.source",1,1,"",""
+"lm-external-id","lm-external-id.value","lm-external-id.value","","","",1,1,"","","","string {[]} {[]}
+","Identifiant","Valeur de l'identifiant.","","","","","","","","","",,,,,"",,,,"lm-external-id.value",1,1,"",""
+"lm-general-practitioner","lm-general-practitioner","lm-general-practitioner","","","",0,*,"","","","null {[]} {[]}
+","Médecin traitant","Médecin traitant du patient.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"lm-general-practitioner","lm-general-practitioner.detailedName","lm-general-practitioner.detailedName","","","",1,1,"","","","https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-detailed-name {[]} {[]}
+","Prénom et nom","Identité nominative du médecin traitant.","","","","","","","","","",,,,,"",,,,"lm-general-practitioner.detailedName",1,1,"",""
+"lm-general-practitioner","lm-general-practitioner.rppsId","lm-general-practitioner.rppsId","","","",0,1,"","","","string {[]} {[]}
+","Identifiant RPPS","Numéro RPPS du médecin traitant.","","","","","","","","","",,,,,"",,,,"lm-general-practitioner.rppsId",0,1,"",""
+"lm-general-practitioner","lm-general-practitioner.contact","lm-general-practitioner.contact","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-personal-contact {[]} {[]}
+","Contact","Coordonnées du médecin traitant.","","","","","","","","","",,,,,"",,,,"lm-general-practitioner.contact",0,*,"",""
+"lm-hypothesis","lm-hypothesis","lm-hypothesis","","","",0,*,"","","","null {[]} {[]}
+","Hypothèses de régulation médicale","Hypothèses diagnostiques principale et secondaires issues de la régulation médicale.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"lm-hypothesis","lm-hypothesis.mainDiagnosis","lm-hypothesis.mainDiagnosis","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-main-diagnosis {[]} {[]}
+","Hypothèse principale","Hypothèse diagnostique principale.","","","","","","","","","",,,,,"",,,,"lm-hypothesis.mainDiagnosis",0,1,"",""
+"lm-hypothesis","lm-hypothesis.otherDiagnosis","lm-hypothesis.otherDiagnosis","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-other-diagnosis {[]} {[]}
+","Hypothèses secondaires","Hypothèses diagnostiques secondaires.","","","","","","","","","",,,,,"",,,,"lm-hypothesis.otherDiagnosis",0,*,"",""
+"lm-identity","lm-identity","lm-identity","","","",0,*,"","","","null {[]} {[]}
+","Identité","Identité du patient, combinant les traits stricts (INS) et les traits non stricts (nom usuel).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"lm-identity","lm-identity.strictFeatures","lm-identity.strictFeatures","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-ins-strict-features {[]} {[]}
+","Traits stricts","Traits stricts de l'identité INS (nom de naissance, date de naissance, sexe).","","","","","","","","","",,,,,"",,,,"lm-identity.strictFeatures",0,1,"",""
+"lm-identity","lm-identity.nonStrictFeatures","lm-identity.nonStrictFeatures","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-detailed-name {[]} {[]}
+","Traits non stricts","Prénom et nom usuel du patient.","","","","","","","","","",,,,,"",,,,"lm-identity.nonStrictFeatures",0,1,"",""
+"lm-ins-strict-features","lm-ins-strict-features","lm-ins-strict-features","","","",0,*,"","","","null {[]} {[]}
+","Traits stricts de l'identité","Traits stricts de l'identité du patient au sens de l'identité INS.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"lm-ins-strict-features","lm-ins-strict-features.birthName","lm-ins-strict-features.birthName","","","",0,1,"","","","string {[]} {[]}
+","Nom de naissance","Nom de naissance (nom de famille) du patient.","","","","","","","","","",,,,,"",,,,"lm-ins-strict-features.birthName",0,1,"",""
+"lm-ins-strict-features","lm-ins-strict-features.birthDate","lm-ins-strict-features.birthDate","","","",0,1,"","","","date {[]} {[]}
+","Date de naissance","Date de naissance du patient.","Regexp : ^\d{4}-\d{2}-\d{2}$","","","","","","","","",,,,,"",,,,"lm-ins-strict-features.birthDate",0,1,"",""
+"lm-ins-strict-features","lm-ins-strict-features.sex","lm-ins-strict-features.sex","","","",0,1,"","","","code {[]} {[]}
+","Sexe","Sexe du patient.","","","","","","","","","",,"required","","https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-sex|0.1.0","",,,,"lm-ins-strict-features.sex",0,1,"",""
+"lm-main-diagnosis","lm-main-diagnosis","lm-main-diagnosis","","","",0,*,"","","","null {[]} {[]}
+","Hypothèse de régulation médicale principale","Hypothèse diagnostique principale issue de la régulation médicale.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"lm-main-diagnosis","lm-main-diagnosis.code","lm-main-diagnosis.code","","","",1,1,"","","","string {[]} {[]}
+","Code","Code de la nomenclature associée (CIM-10).","Regexp : ^[A-Z]\d{2}(\.[\d\+\-]{1,3})?$","","","","","","","","",,,,,"",,,,"lm-main-diagnosis.code",1,1,"",""
+"lm-main-diagnosis","lm-main-diagnosis.label","lm-main-diagnosis.label","","","",1,1,"","","","string {[]} {[]}
+","Libellé","Libellé de la nomenclature associée. Obligatoire pour permettre l'affichage même si le code n'est pas reconnu.","","","","","","","","","",,,,,"",,,,"lm-main-diagnosis.label",1,1,"",""
+"lm-medical-note","lm-medical-note","lm-medical-note","","","",0,*,"","","","null {[]} {[]}
+","Observation médicale","Observation médicale réalisée par un professionnel de santé dans le contexte de la régulation médicale (RS-EDA).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"lm-medical-note","lm-medical-note.patientId","lm-medical-note.patientId","","","",0,1,"","","","string {[]} {[]}
+","ID patient partagé","Identifiant partagé du patient. Pattern : {OrgId}.patient.{uniqueId}","Regexp : ^([a-zA-Z0-9_-]+\.){3,8}patient(\.[a-zA-Z0-9_-]+){1,2}$","","","","","","","","",,,,,"",,,,"lm-medical-note.patientId",0,1,"",""
+"lm-medical-note","lm-medical-note.operator","lm-medical-note.operator","","","",1,1,"","","","https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-operator {[]} {[]}
+","Professionnel de santé réalisant l'observation","Opérateur ayant effectué l'observation médicale.","","","","","","","","","",,,,,"",,,,"lm-medical-note.operator",1,1,"",""
+"lm-medical-note","lm-medical-note.medicalNoteId","lm-medical-note.medicalNoteId","","","",1,1,"","","","string {[]} {[]}
+","ID Observation","Identifiant unique de l'observation médicale, généré par le système partenaire.","Regexp : ^([a-zA-Z0-9_-]+\.){3,8}medicalNote(\.[a-zA-Z0-9_-]+){1,2}$","","","","","","","","",,,,,"",,,,"lm-medical-note.medicalNoteId",1,1,"",""
+"lm-medical-note","lm-medical-note.creation","lm-medical-note.creation","","","",0,1,"","","","dateTime {[]} {[]}
+","Date/heure de l'observation","Date et heure de création de l'observation médicale (avec fuseau horaire, sans indicateur Z).","","","","","","","","","",,,,,"",,,,"lm-medical-note.creation",0,1,"",""
+"lm-medical-note","lm-medical-note.freetext","lm-medical-note.freetext","","","",1,1,"","","","string {[]} {[]}
+","Observations et commentaires","Champ libre pour les informations médicales et commentaires.","","","","","","","","","",,,,,"",,,,"lm-medical-note.freetext",1,1,"",""
+"lm-operator","lm-operator","lm-operator","","","",0,*,"","","","null {[]} {[]}
+","Professionnel de santé réalisant l'observation","Opérateur ayant effectué une observation médicale dans le contexte de la régulation médicale (RS-EDA).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"lm-operator","lm-operator.label","lm-operator.label","","","",0,1,"","","","string {[]} {[]}
+","Label","Nom/prénom ou identifiant de l'opérateur, selon les préférences de chaque partenaire.","","","","","","","","","",,,,,"",,,,"lm-operator.label",0,1,"",""
+"lm-operator","lm-operator.role","lm-operator.role","","","",1,1,"","","","code {[]} {[]}
+","Rôle","Rôle de l'opérateur au sein de l'entité émettrice du message.","","","","","","","","","",,"required","","https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-operator-role|0.1.0","",,,,"lm-operator.role",1,1,"",""
+"lm-other-diagnosis","lm-other-diagnosis","lm-other-diagnosis","","","",0,*,"","","","null {[]} {[]}
+","Hypothèses de régulation médicale secondaires","Hypothèse diagnostique secondaire issue de la régulation médicale.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"lm-other-diagnosis","lm-other-diagnosis.code","lm-other-diagnosis.code","","","",1,1,"","","","string {[]} {[]}
+","Code","Code de la nomenclature associée (CIM-10).","Regexp : ^[A-Z]\d{2}(\.[\d\+\-]{1,3})?$","","","","","","","","",,,,,"",,,,"lm-other-diagnosis.code",1,1,"",""
+"lm-other-diagnosis","lm-other-diagnosis.label","lm-other-diagnosis.label","","","",1,1,"","","","string {[]} {[]}
+","Libellé","Libellé de la nomenclature associée. Obligatoire pour permettre l'affichage même si le code n'est pas reconnu.","","","","","","","","","",,,,,"",,,,"lm-other-diagnosis.label",1,1,"",""
+"lm-patient-detail","lm-patient-detail","lm-patient-detail","","","",0,*,"","","","null {[]} {[]}
+","Informations patient","Informations cliniques et physiologiques du patient.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"lm-patient-detail","lm-patient-detail.weight","lm-patient-detail.weight","","","",0,1,"","","","decimal {[]} {[]}
+","Poids (kg)","Poids du patient en kilogrammes.","","","","","","","","","",,,,,"",,,,"lm-patient-detail.weight",0,1,"",""
+"lm-patient-detail","lm-patient-detail.height","lm-patient-detail.height","","","",0,1,"","","","decimal {[]} {[]}
+","Taille (cm)","Taille du patient en centimètres.","","","","","","","","","",,,,,"",,,,"lm-patient-detail.height",0,1,"",""
+"lm-patient-detail","lm-patient-detail.age","lm-patient-detail.age","","","",0,1,"","","","string {[]} {[]}
+","Âge","Âge du patient au format durée ISO 8601 (ex : P30Y, P6M, P2W). Une seule unité de durée utilisée (années, mois, semaines ou jours).","Regexp : ^P[0-9]{1,3}[YMWD]$","","","","","","","","",,,,,"",,,,"lm-patient-detail.age",0,1,"",""
+"lm-patient-detail","lm-patient-detail.careLevel","lm-patient-detail.careLevel","","","",0,1,"","","","code {[]} {[]}
+","Niveau de soin","Niveau de soins spécifique au patient.","","","","","","","","","",,"required","","https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-patient-care-level|0.1.0","",,,,"lm-patient-detail.careLevel",0,1,"",""
+"lm-patient-detail","lm-patient-detail.medicalHistory","lm-patient-detail.medicalHistory","","","",0,1,"","","","string {[]} {[]}
+","Antécédents","Antécédents du patient (texte libre).","","","","","","","","","",,,,,"",,,,"lm-patient-detail.medicalHistory",0,1,"",""
+"lm-patient-detail","lm-patient-detail.treatment","lm-patient-detail.treatment","","","",0,1,"","","","string {[]} {[]}
+","Traitements","Traitements du patient (texte libre).","","","","","","","","","",,,,,"",,,,"lm-patient-detail.treatment",0,1,"",""
+"lm-patient","lm-patient","lm-patient","","","",0,*,"","","","null {[]} {[]}
+","Patient","Patient pris en charge dans le cadre d'un dossier de régulation médicale (RS-EDA).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"lm-patient","lm-patient.patientId","lm-patient.patientId","","","",1,1,"","","","string {[]} {[]}
+","ID patient partagé","Identifiant partagé du patient, généré par le système partenaire. Format : {OrgId}.patient.{uniqueId} ou {ID}.{senderCaseId}.patient.{ordre}.","Regexp : ^([a-zA-Z0-9_-]+\.){3,8}patient(\.[a-zA-Z0-9_-]+){1,2}$","","","","","","","","",,,,,"",,,,"lm-patient.patientId",1,1,"",""
+"lm-patient","lm-patient.administrativeFile","lm-patient.administrativeFile","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-administrative-file {[]} {[]}
+","Dossier administratif","Dossier administratif du patient (identifiants externes, médecin traitant).","","","","","","","","","",,,,,"",,,,"lm-patient.administrativeFile",0,1,"",""
+"lm-patient","lm-patient.identity","lm-patient.identity","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-identity {[]} {[]}
+","Identité","Identité du patient (traits stricts INS et traits non stricts).","","","","","","","","","",,,,,"",,,,"lm-patient.identity",0,1,"",""
+"lm-patient","lm-patient.detail","lm-patient.detail","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-patient-detail {[]} {[]}
+","Informations patient","Informations cliniques et physiologiques du patient.","","","","","","","","","",,,,,"",,,,"lm-patient.detail",0,1,"",""
+"lm-patient","lm-patient.hypothesis","lm-patient.hypothesis","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-hypothesis {[]} {[]}
+","Hypothèses de régulation médicale","Hypothèses diagnostiques issues de la régulation médicale.","","","","","","","","","",,,,,"",,,,"lm-patient.hypothesis",0,1,"",""
+"lm-personal-contact","lm-personal-contact","lm-personal-contact","","","",0,*,"","","","null {[]} {[]}
+","Contact personnel","Coordonnées de contact d'une personne (utilisé notamment pour le médecin traitant).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"lm-personal-contact","lm-personal-contact.type","lm-personal-contact.type","","","",1,1,"","","","code {[]} {[]}
+","Type de contact","Type de l'URI utilisée.","","","","","","","","","",,"required","","https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-contact-type|0.1.0","",,,,"lm-personal-contact.type",1,1,"",""
+"lm-personal-contact","lm-personal-contact.detail","lm-personal-contact.detail","","","",1,1,"","","","string {[]} {[]}
+","URI du contact","Valeur de l'URI utilisée. Format téléphone : +{indicatif pays}{numéro}.","","","","","","","","","",,,,,"",,,,"lm-personal-contact.detail",1,1,"",""

@@ -1,0 +1,60 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "cs-contact-type",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : CodeSystem cs-contact-type</b></p><a name=\"cs-contact-type\"> </a><a name=\"hccs-contact-type\"> </a><p>This  code system <code>https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-contact-type</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage</b></td></tr><tr><td style=\"white-space:nowrap\">EMAIL<a name=\"cs-contact-type-EMAIL\"> </a></td><td>Email</td></tr><tr><td style=\"white-space:nowrap\">FAX<a name=\"cs-contact-type-FAX\"> </a></td><td>Fax</td></tr><tr><td style=\"white-space:nowrap\">MSS<a name=\"cs-contact-type-MSS\"> </a></td><td>Messagerie Sécurisée de Santé</td></tr><tr><td style=\"white-space:nowrap\">POSTAL<a name=\"cs-contact-type-POSTAL\"> </a></td><td>Adresse postale</td></tr><tr><td style=\"white-space:nowrap\">RADIO<a name=\"cs-contact-type-RADIO\"> </a></td><td>Radio</td></tr><tr><td style=\"white-space:nowrap\">TEL<a name=\"cs-contact-type-TEL\"> </a></td><td>Téléphone</td></tr><tr><td style=\"white-space:nowrap\">WEB<a name=\"cs-contact-type-WEB\"> </a></td><td>Web</td></tr></table></div>"
+  },
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-contact-type",
+  "version" : "0.1.0",
+  "name" : "CS_ContactType",
+  "title" : "Type de contact (Hub Santé)",
+  "status" : "draft",
+  "date" : "2026-03-16T10:29:29+00:00",
+  "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
+  "contact" : [{
+    "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://esante.gouv.fr"
+    }]
+  }],
+  "description" : "Types d'URI utilisés pour les coordonnées de contact.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "France"
+    }]
+  }],
+  "content" : "complete",
+  "count" : 7,
+  "concept" : [{
+    "code" : "EMAIL",
+    "display" : "Email"
+  },
+  {
+    "code" : "FAX",
+    "display" : "Fax"
+  },
+  {
+    "code" : "MSS",
+    "display" : "Messagerie Sécurisée de Santé"
+  },
+  {
+    "code" : "POSTAL",
+    "display" : "Adresse postale"
+  },
+  {
+    "code" : "RADIO",
+    "display" : "Radio"
+  },
+  {
+    "code" : "TEL",
+    "display" : "Téléphone"
+  },
+  {
+    "code" : "WEB",
+    "display" : "Web"
+  }]
+}
