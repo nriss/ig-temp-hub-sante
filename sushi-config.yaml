@@ -1,9 +1,9 @@
 # Documentation à propos de cette page : https://fshschool.org/docs/sushi/configuration/
 
-id: ans.fhir.fr.[code]
-canonical: https://interop.esante.gouv.fr/ig/fhir/[code] # the last part of canonical and id must be the same
-name: ExampleIG # Should be an acronym
-title: ANS IG Example
+id: ans.fhir.fr.hubsante
+canonical: https://interop.esante.gouv.fr/ig/fhir/hubsante # the last part of canonical and id must be the same
+name: HubSante # Should be an acronym
+title: Hub Santé
 description: Description du projet
 publisher:
   name: Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris
@@ -41,12 +41,14 @@ pages:
             title: Alimentation
     spec-technique-intro.md:
         title: Introduction
-        spec-technique-vue-ensemble.md:
-            title: Vue d'ensemble
-        spec-technique-flux-alimentation.md:
-            title: Flux d'alimentation
-        spec-technique-flux-consommation.md:
-            title: Flux de consommation
+        spec-technique-architecture.md:
+            title: Architecture et sécurité
+        spec-technique-interfacage.md:
+            title: Interfaçage
+        spec-technique-messages.md:
+            title: Format des messages
+        spec-technique-implementation.md:
+            title: Étapes d'implémentation
     change-log.md:
         title: Historique des versions
     autres_ressources.md:
@@ -61,11 +63,12 @@ menu:
     Vol. 1 - Etude fonctionnelle: 
         Introduction: spec-fonctionnelle-intro.html
         Alimentation: spec-fonctionnelle-alimentation.html
-    Vol. 2 - Détail des transactions: 
+    Vol. 2 - Spécifications techniques:
         Introduction: spec-technique-intro.html
-        Vue d'ensemble: spec-technique-vue-ensemble.html
-        Flux d'alimentation: spec-technique-flux-alimentation.html
-        Flux de consommation: spec-technique-flux-consommation.html
+        Architecture et sécurité: spec-technique-architecture.html
+        Interfaçage: spec-technique-interfacage.html
+        Format des messages: spec-technique-messages.html
+        Étapes d'implémentation: spec-technique-implementation.html
     Vol. 3 - Annexes:
         Sécurité: securite.html
         Téléchargements et usage: downloads.html

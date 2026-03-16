@@ -1,0 +1,106 @@
+<?xml version="1.0" ?>
+
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0">
+  <file source-language="en" target-language="fr-FR" id="CodeSystem-cs-operator-role" original="Resource CodeSystem-cs-operator-role" datatype="KEYVALUEJSON">
+    <body>
+      <trans-unit id="CodeSystem-cs-operator-role" resname="CodeSystem.name">
+             <notes>
+               <note id="n1">CodeSystem.name</note>
+             </notes>
+        <source>CS_OperatorRole</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-cs-operator-role" resname="CodeSystem.title">
+             <notes>
+               <note id="n1">CodeSystem.title</note>
+             </notes>
+        <source>Rôles des opérateurs (Hub Santé)</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-cs-operator-role" resname="CodeSystem.publisher">
+             <notes>
+               <note id="n1">CodeSystem.publisher</note>
+             </notes>
+        <source>Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-cs-operator-role" resname="ContactDetail.name">
+             <notes>
+               <note id="n1">ContactDetail.name</note>
+             </notes>
+        <source>Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-cs-operator-role" resname="CodeSystem.description">
+             <notes>
+               <note id="n1">CodeSystem.description</note>
+             </notes>
+        <source>Rôles des professionnels de santé opérant au sein de l'entité émettrice d'un message Hub Santé.</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-cs-operator-role" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>France</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-cs-operator-role" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">CodeSystem.concept.display</note>
+             </notes>
+        <source>Ambulancier</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-cs-operator-role" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">CodeSystem.concept.display</note>
+             </notes>
+        <source>Assistant de Régulation Médicale</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-cs-operator-role" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">CodeSystem.concept.display</note>
+             </notes>
+        <source>Infirmier</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-cs-operator-role" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">CodeSystem.concept.display</note>
+             </notes>
+        <source>Médecin</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-cs-operator-role" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">CodeSystem.concept.display</note>
+             </notes>
+        <source>Pilote</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-cs-operator-role" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">CodeSystem.concept.display</note>
+             </notes>
+        <source>Technicien de Coordination Médicale</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-cs-operator-role" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">CodeSystem.concept.display</note>
+             </notes>
+        <source>Autre</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-cs-operator-role" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">CodeSystem.concept.display</note>
+             </notes>
+        <source>Inconnu</source>
+        <target></target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

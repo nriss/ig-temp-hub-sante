@@ -1,0 +1,36 @@
+
+# ValueSet.name
+#: ValueSet.name
+msgid "VS_OperatorRole"
+msgstr ""
+
+# ValueSet.title
+#: ValueSet.title
+msgid "Rôles des opérateurs (Hub Santé)"
+msgstr ""
+
+# ValueSet.publisher
+#: ValueSet.publisher
+msgid "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"
+msgstr ""
+
+# ContactDetail.name
+#: ContactDetail.name
+msgid "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"
+msgstr ""
+
+# ValueSet.description
+#: ValueSet.description
+msgid "Rôles des professionnels de santé opérant au sein de l'entité émettrice d'un message Hub Santé."
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "France"
+msgstr ""
+
+# ValueSet.compose.include.version
+#: ValueSet.compose.include.version
+msgid "0.1.0"
+msgstr ""
+

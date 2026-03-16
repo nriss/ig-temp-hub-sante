@@ -1,0 +1,155 @@
+<?xml version="1.0" ?>
+
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0">
+  <file source-language="en" target-language="fr-FR" id="ImplementationGuide-ans.fhir.fr.hubsante" original="Resource ImplementationGuide-ans.fhir.fr.hubsante" datatype="KEYVALUEJSON">
+    <body>
+      <trans-unit id="ImplementationGuide-ans.fhir.fr.hubsante" resname="ImplementationGuide.name">
+             <notes>
+               <note id="n1">ImplementationGuide.name</note>
+             </notes>
+        <source>HubSante</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-ans.fhir.fr.hubsante" resname="ImplementationGuide.title">
+             <notes>
+               <note id="n1">ImplementationGuide.title</note>
+             </notes>
+        <source>Hub Santé</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-ans.fhir.fr.hubsante" resname="ImplementationGuide.publisher">
+             <notes>
+               <note id="n1">ImplementationGuide.publisher</note>
+             </notes>
+        <source>Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-ans.fhir.fr.hubsante" resname="ContactDetail.name">
+             <notes>
+               <note id="n1">ContactDetail.name</note>
+             </notes>
+        <source>Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-ans.fhir.fr.hubsante" resname="ImplementationGuide.description">
+             <notes>
+               <note id="n1">ImplementationGuide.description</note>
+             </notes>
+        <source>Description du projet</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-ans.fhir.fr.hubsante" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>France</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-ans.fhir.fr.hubsante" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>Observation médicale</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-ans.fhir.fr.hubsante" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Observation médicale réalisée par un professionnel de santé dans le contexte de la régulation médicale (RS-EDA).</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-ans.fhir.fr.hubsante" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>Rôles des opérateurs (Hub Santé)</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-ans.fhir.fr.hubsante" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Rôles des professionnels de santé opérant au sein de l'entité émettrice d'un message Hub Santé.</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-ans.fhir.fr.hubsante" resname="ImplementationGuide.definition.page.title">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.page.title</note>
+             </notes>
+        <source>Table of Contents</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-ans.fhir.fr.hubsante" resname="ImplementationGuide.definition.page.title">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.page.title</note>
+             </notes>
+        <source>Accueil</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-ans.fhir.fr.hubsante" resname="ImplementationGuide.definition.page.title">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.page.title</note>
+             </notes>
+        <source>Vue d'ensemble</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-ans.fhir.fr.hubsante" resname="ImplementationGuide.definition.page.title">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.page.title</note>
+             </notes>
+        <source>Alimentation</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-ans.fhir.fr.hubsante" resname="ImplementationGuide.definition.page.title">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.page.title</note>
+             </notes>
+        <source>Introduction</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-ans.fhir.fr.hubsante" resname="ImplementationGuide.definition.page.title">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.page.title</note>
+             </notes>
+        <source>Flux d'alimentation</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-ans.fhir.fr.hubsante" resname="ImplementationGuide.definition.page.title">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.page.title</note>
+             </notes>
+        <source>Flux de consommation</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-ans.fhir.fr.hubsante" resname="ImplementationGuide.definition.page.title">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.page.title</note>
+             </notes>
+        <source>Historique des versions</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-ans.fhir.fr.hubsante" resname="ImplementationGuide.definition.page.title">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.page.title</note>
+             </notes>
+        <source>Autres Ressources</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-ans.fhir.fr.hubsante" resname="ImplementationGuide.definition.page.title">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.page.title</note>
+             </notes>
+        <source>Sécurité</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-ans.fhir.fr.hubsante" resname="ImplementationGuide.definition.page.title">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.page.title</note>
+             </notes>
+        <source>Téléchargements et usages</source>
+        <target></target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
