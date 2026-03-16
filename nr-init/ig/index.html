@@ -112,7 +112,7 @@
     </ul>
   </li>
   <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Vol. 2 - Détail des transactions
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Vol. 2 - Spécifications techniques
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
@@ -120,13 +120,16 @@
         <a href="spec-technique-intro.html">Introduction</a>
       </li>
       <li>
-        <a href="spec-technique-vue-ensemble.html">Vue d'ensemble</a>
+        <a href="spec-technique-architecture.html">Architecture et sécurité</a>
       </li>
       <li>
-        <a href="spec-technique-flux-alimentation.html">Flux d'alimentation</a>
+        <a href="spec-technique-interfacage.html">Interfaçage</a>
       </li>
       <li>
-        <a href="spec-technique-flux-consommation.html">Flux de consommation</a>
+        <a href="spec-technique-messages.html">Format des messages</a>
+      </li>
+      <li>
+        <a href="spec-technique-implementation.html">Étapes d'implémentation</a>
       </li>
     </ul>
   </li>
@@ -135,10 +138,10 @@
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-      <li><a name="l236">​</a>
+      <li><a name="l242">​</a>
         <a href="securite.html">Sécurité</a>
       </li>
-      <li><a name="l242">​</a>
+      <li><a name="l248">​</a>
         <a href="downloads.html">Téléchargements et usage</a>
       </li>
       <li>
@@ -257,7 +260,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <div class="markdown-toc">
 <ul id="markdown-toc">
   <li><a href="#introduction" id="markdown-toc-introduction">Introduction</a></li>
-  <li><a href="#périmètre-du-projet" id="markdown-toc-périmètre-du-projet">Périmètre du projet</a></li>
+  <li><a href="#objectifs" id="markdown-toc-objectifs">Objectifs</a></li>
+  <li><a href="#points-forts-du-hub-santé" id="markdown-toc-points-forts-du-hub-santé">Points forts du Hub Santé</a></li>
+  <li><a href="#périmètre-de-cet-ig" id="markdown-toc-périmètre-de-cet-ig">Périmètre de cet IG</a></li>
   <li><a href="#auteurs-et-contributeurs" id="markdown-toc-auteurs-et-contributeurs">Auteurs et contributeurs</a></li>
   <li><a href="#dépendances" id="markdown-toc-dépendances">Dépendances</a></li>
   <li><a href="#propriété-intellectuelle" id="markdown-toc-propriété-intellectuelle">Propriété intellectuelle</a></li>
@@ -277,11 +282,46 @@ This Implementation Guide defines the logical models for the Hub Santé interope
 
 <h3 id="introduction">Introduction</h3>
 
-<p>Le <strong>Hub Santé</strong> est une plateforme d'interopérabilité permettant l'échange de données entre les acteurs du système de soins d'urgence en France, notamment les SAMU (Services d'Aide Médicale Urgente) et leurs partenaires (SIS, FDO, établissements de santé…).</p>
+<p>Le <strong>Hub Santé</strong> est une plateforme permettant un échange sécurisé de données de santé avec l'écosystème des SAMU. Elle sert à aiguiller les informations d'un SAMU vers un autre SAMU, ou d'un SAMU vers ses partenaires, en assurant les liens suivants :</p>
+
+<ul>
+  <li><strong>15-18</strong> — avec NexSIS (système national de gestion des alertes des SDIS) ;</li>
+  <li><strong>15-17</strong> — avec les systèmes nationaux de la Police et de la Gendarmerie ;</li>
+  <li><strong>15-15</strong> — avec le LRM d'un autre SAMU (quel que soit l'éditeur) ;</li>
+  <li><strong>15-X</strong> — avec tout autre logiciel partenaire du SAMU (hélicoptères, tablettes SMUR, SI-CAP, CNR 114…).</li>
+</ul>
 
 <p>Cet Implementation Guide définit les <strong>modèles logiques FHIR</strong> correspondant au schéma JSON <strong>RS-EDA</strong> (Remontée de Situation — État Du dossier d'Affaire), qui est le format de message utilisé pour partager les dossiers de régulation médicale entre partenaires du Hub Santé.</p>
 
-<h3 id="périmètre-du-projet">Périmètre du projet</h3>
+<h3 id="objectifs">Objectifs</h3>
+
+<p>Le Hub Santé vise à :</p>
+
+<ul>
+  <li>automatiser le partage et la synchronisation d'informations avec les acteurs de l'écosystème SAMU ;</li>
+  <li>renforcer la coopération entre les acteurs des urgences ;</li>
+  <li>gagner du temps et limiter la perte d'informations dans les échanges ;</li>
+  <li>éviter la multiplicité des liens entre le LRM du SAMU et les autres logiciels ;</li>
+  <li>définir un cadre d'interopérabilité et un référentiel commun aux éditeurs.</li>
+</ul>
+
+<h3 id="points-forts-du-hub-santé">Points forts du Hub Santé</h3>
+
+<ul>
+  <li><strong>Architecture nationale résiliente et sécurisée</strong> garantissant la continuité des échanges en cas de panne ou de redémarrage d'un logiciel connecté ;</li>
+  <li><strong>Maîtrise des données</strong> : le SAMU reste maître de ses données et de leur partage ;</li>
+  <li><strong>Standardisation nationale</strong> du transfert d'information entre les SAMU et leurs partenaires ;</li>
+  <li><strong>Intégrité des données</strong> : pas de perte ni de modification de l'information pendant les échanges ;</li>
+  <li><strong>Interopérabilité ouverte</strong> : possibilité de connecter le LRM avec tout type de logiciel actuel ou futur ;</li>
+  <li><strong>Suppression de la double saisie</strong> des informations ;</li>
+  <li><strong>Réduction des appels</strong> et des temps d'attente ;</li>
+  <li><strong>Synchronisation automatique</strong> des données dans le LRM ;</li>
+  <li><strong>Fédération des éditeurs</strong> de SAMU autour d'un langage commun, permettant au SAMU de choisir librement sa solution tout en garantissant le dialogue avec des solutions différentes.</li>
+</ul>
+
+<p>Pour plus d'informations sur le SI-SAMU : <a href="https://esante.gouv.fr">esante.gouv.fr</a></p>
+
+<h3 id="périmètre-de-cet-ig">Périmètre de cet IG</h3>
 
 <p>Cet IG couvre la modélisation logique du message <strong>RS-EDA</strong>, qui décrit un dossier de régulation médicale complet, incluant :</p>
 
@@ -379,7 +419,7 @@ This Implementation Guide defines the logical models for the Hub Santé interope
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris</a>.  Package ans.fhir.fr.hubsante#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Mar 16, 2026 13:14+0000">2026-03-16</span>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris</a>.  Package ans.fhir.fr.hubsante#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Mar 16, 2026 13:47+0000">2026-03-16</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens : <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières</a> |

@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <title>Flux d'alimentation - Hub Santé v0.1.0</title>
+    <title>Étapes d'implémentation - Hub Santé v0.1.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -43,8 +43,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script src="assets/js/mermaid.js" type="text/javascript"></script>
     <script src="assets/js/mermaid-init.js" type="text/javascript"></script>
-    <style type="text/css">h2{--heading-prefix:"3.2"}
-    h3,h4,h5,h6{--heading-prefix:"3.2"}</style>
+    <style type="text/css">h2{--heading-prefix:"3.4"}
+    h3,h4,h5,h6{--heading-prefix:"3.4"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
 
@@ -112,7 +112,7 @@
     </ul>
   </li>
   <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Vol. 2 - Détail des transactions
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Vol. 2 - Spécifications techniques
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
@@ -120,13 +120,16 @@
         <a href="spec-technique-intro.html">Introduction</a>
       </li>
       <li>
-        <a href="spec-technique-vue-ensemble.html">Vue d'ensemble</a>
+        <a href="spec-technique-architecture.html">Architecture et sécurité</a>
       </li>
       <li>
-        <a href="spec-technique-flux-alimentation.html">Flux d'alimentation</a>
+        <a href="spec-technique-interfacage.html">Interfaçage</a>
       </li>
       <li>
-        <a href="spec-technique-flux-consommation.html">Flux de consommation</a>
+        <a href="spec-technique-messages.html">Format des messages</a>
+      </li>
+      <li>
+        <a href="spec-technique-implementation.html">Étapes d'implémentation</a>
       </li>
     </ul>
   </li>
@@ -135,10 +138,10 @@
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-      <li><a name="l236">​</a>
+      <li><a name="l242">​</a>
         <a href="securite.html">Sécurité</a>
       </li>
-      <li><a name="l242">​</a>
+      <li><a name="l248">​</a>
         <a href="downloads.html">Téléchargements et usage</a>
       </li>
       <li>
@@ -170,15 +173,15 @@
     <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
       <div class="container">    <!-- container -->
         <ul class="breadcrumb">
-          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="spec-technique-intro.html"><b>Introduction</b></a></li><li><b>Flux d'alimentation</b></li>
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="spec-technique-intro.html"><b>Introduction</b></a></li><li><b>Étapes d'implémentation</b></li>
 
           <span style="float:right;">
 
-            <a href="spec-technique-vue-ensemble.html">&lt;prev</a> | 
+            <a href="spec-technique-messages.html">&lt;prev</a> | 
 
             <a href="#bottom">bottom</a>
 
-          | <a href="spec-technique-flux-consommation.html">next&gt;</a>
+          | <a href="change-log.html">next&gt;</a>
 
           </span>
 
@@ -200,7 +203,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </style>
 <div class="col-12">
     <!-- ReleaseHeader --><p id="publish-box">Hub Santé - version de développement local (intégration continue v0.1.0) construite par les outils de publication FHIR (HL7&reg; FHIR&reg; Standard). Voir le <a href="https://interop.esante.gouv.fr/ig/fhir/hubsante/history.html">répertoire des versions publiées</a></p>  <!-- EndReleaseHeader -->
-  <h2>Flux d'alimentation</h2>
+  <h2>Étapes d'implémentation</h2>
   
 
 
@@ -215,12 +218,77 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
     <p>  <!-- white space is critical inside of capture --></p>
-<div>
-  <!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown. -->
-</div>
-<h3 id="spécifications-techniques-du-flux-dalimentation">Spécifications techniques du flux d'alimentation</h3>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#étapes-dimplémentation" id="markdown-toc-étapes-dimplémentation">Étapes d'implémentation</a></li>
+  <li><a href="#évolutions-techniques-envisagées" id="markdown-toc-évolutions-techniques-envisagées">Évolutions techniques envisagées</a></li>
+  <li><a href="#annexe--génération-dun-certificat" id="markdown-toc-annexe--génération-dun-certificat">Annexe — Génération d'un certificat</a></li>
+</ul>
 
-<p>Description technique du flux d'alimentation</p>
+</div>
+<div style="background-color: #f0f0f0; border-left: 4px solid #666; padding: 10px; margin-bottom: 20px;">
+  <b>Contenu technique</b> — Cette page s'adresse aux développeurs et intégrateurs souhaitant raccorder un logiciel au Hub Santé.
+</div>
+
+<h3 id="étapes-dimplémentation">Étapes d'implémentation</h3>
+
+<p>Liste indicative des étapes à réaliser pour raccorder un Client au Hub Santé :</p>
+
+<ol>
+  <li>
+    <p><strong>Se familiariser avec le client RabbitMQ</strong> dans le langage utilisé — voir <a href="https://www.rabbitmq.com/devtools.html">https://www.rabbitmq.com/devtools.html</a>. Des tutoriels sont disponibles pour Python, Java, Ruby, PHP, C#, JavaScript, Go, Elixir, Objective-C, Swift et Spring AMQP.</p>
+  </li>
+  <li>
+    <p><strong>Demander les accès GitHub</strong> et se familiariser avec la structure du repository (notamment le dossier <code class="language-plaintext highlighter-rouge">docs</code>) en transmettant les identifiants GitHub des personnes impliquées à <a href="mailto:hubsante.contact@esante.gouv.fr">hubsante.contact@esante.gouv.fr</a>.</p>
+  </li>
+  <li>
+    <p><strong>Faire des tests d'implémentation</strong> en local ou en utilisant le certificat client partagé présent sur GitHub. Suivre de façon incrémentale les différentes versions du Hub Santé pour séquencer les développements.</p>
+  </li>
+  <li><strong>Intégrer le code des Consumer et Producer</strong> :
+    <ul>
+      <li><strong>Java</strong> : intégrer le code disponible sur le <a href="https://github.com/ansforge/SAMU-Hub-Sante/tree/main/client/src/main/java/com/hubsante">GitHub partagé</a> en adaptant les <code class="language-plaintext highlighter-rouge">ConsumerRun</code> et <code class="language-plaintext highlighter-rouge">ProducerRun</code> selon les besoins</li>
+      <li><strong>Autres langages</strong> : co-construire avec l'équipe Hub Santé les équivalents dans votre langage</li>
+    </ul>
+  </li>
+  <li><strong>S'enregistrer auprès du Hub Santé</strong> en transmettant une CSR pour obtenir un certificat signé par l'AC du Hub ainsi que la création de files dédiées.</li>
+</ol>
+
+<p>Les développements côté éditeur consistent à :</p>
+
+<ol>
+  <li>S'appuyer sur un <strong>client AMQP</strong> correspondant au langage utilisé pour lire et écrire dans les files</li>
+  <li>S'appuyer sur les <strong>schémas</strong> (AsyncAPI ou XSD) pour valider les messages et faire le transcodage entre messages (JSON ou XML) et objets utilisés dans le code</li>
+  <li>Faire le <strong>lien entre les objets et l'applicatif</strong> (base de données, logique métier, …) — ce dernier point est spécifique à chaque éditeur</li>
+</ol>
+
+<h3 id="évolutions-techniques-envisagées">Évolutions techniques envisagées</h3>
+
+<ul>
+  <li><strong>Monitoring et heartbeat</strong> sur les services opérationnels : vérification des liens, notification aux acteurs lorsque certains liens ne sont plus fonctionnels</li>
+  <li><strong>Matrice de distribution</strong> selon les versions des référentiels et standards implémentés par chacun des clients</li>
+  <li><strong>Transposition des messages</strong> entre les versions supportées par les différents destinataires</li>
+</ul>
+
+<h3 id="annexe--génération-dun-certificat">Annexe — Génération d'un certificat</h3>
+
+<p>Pour qu'un client d'un HubEx dispose d'un certificat pour s'authentifier, il doit générer une <strong>requête de certification</strong> composée de deux parties :</p>
+<ul>
+  <li>Une <strong>partie privée</strong> (clé privée) : à conserver par le client, ne jamais transmettre</li>
+  <li>Une <strong>partie publique</strong> (CSR — Certificate Signing Request) : à transmettre à l'équipe Hub Santé</li>
+</ul>
+
+<p>Procédure :</p>
+
+<ol>
+  <li>Générer une clé privée et une CSR à l'aide du script <a href="https://github.com/ansforge/SAMU-Hub-Sante/blob/0.7/certs/generate.sh"><code class="language-plaintext highlighter-rouge">certs/generate.sh</code></a> du GitHub (génère également un certificat auto-signé pour les tests locaux)</li>
+  <li>Transmettre la CSR à l'équipe Hub Santé</li>
+  <li>L'équipe AC signe la CSR et transmet le certificat au client</li>
+</ol>
+
+<blockquote>
+  <p>À terme, l'AC utilisée sera l'<strong>IGC Santé</strong> et les éditeurs devront générer directement leurs certificats via le portail des industriels de l'ANS (<a href="https://industriels.esante.gouv.fr">industriels.esante.gouv.fr</a>).</p>
+</blockquote>
+
 
 
 
@@ -244,7 +312,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             <tr>
               <td style="text-align:left">&nbsp;
 
-                <a href="spec-technique-vue-ensemble.html">&lt;prev</a>
+                <a href="spec-technique-messages.html">&lt;prev</a>
 
               </td>
               <td style="text-align:center">
@@ -252,7 +320,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
               </td>
               <td style="text-align:right">&nbsp;
 
-                <a href="spec-technique-flux-consommation.html">next&gt;</a>
+                <a href="change-log.html">next&gt;</a>
 
               </td>
             </tr>
@@ -262,7 +330,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris</a>.  Package ans.fhir.fr.hubsante#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Mar 16, 2026 13:14+0000">2026-03-16</span>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris</a>.  Package ans.fhir.fr.hubsante#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Mar 16, 2026 13:47+0000">2026-03-16</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens : <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières</a> |

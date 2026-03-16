@@ -1,0 +1,824 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>Format des messages - Hub Santé v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link rel="stylesheet" href="fhir.css"/>
+
+      <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+
+      <!-- Project extras -->
+    <link rel="stylesheet" href="assets/css/project.css"/>
+    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
+    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+  	<link rel="stylesheet" href="assets/css/prism.css"/>
+  	<link rel="stylesheet" href="assets/css/cqf.css"/>
+    <link rel="stylesheet" href="assets/css/style-ans.css"/>
+    <link rel="stylesheet" href="assets/css/style-add-ans.css"/>
+      <!-- Placeholder for child template CSS declarations -->
+
+    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- [if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif] -->
+
+      <!-- Favicons -->
+    <link sizes="144x144" rel="fhir-logo" href="assets/ico/icon-fhir-144.png"/>
+    <link sizes="114x114" rel="fhir-logo" href="assets/ico/icon-fhir-114.png"/>
+    <link sizes="72x72" rel="fhir-logo" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script src="assets/js/mermaid.js" type="text/javascript"></script>
+    <script src="assets/js/mermaid-init.js" type="text/javascript"></script>
+    <style type="text/css">h2{--heading-prefix:"3.3"}
+    h3,h4,h5,h6{--heading-prefix:"3.3"}</style>
+    <div id="segment-header" class="segment">    <!-- segment-header -->
+      <div class="container">    <!-- container -->
+
+          <!-- Placeholder for child template header declarations -->
+<div id="family-nav">
+    <a id="hl7-search-lnk" href="http://hl7.org/fhir" data-no-external="true"><img src="assets/images/fhir-logo-www.png" alt="Visit the FHIR website" height="50"/> </a>
+  </div>
+  <div style="line-height: 50px; float: left; margin-top: 4px; margin-bottom: 8px; color: #808080; " id="ans-nav">
+    <a id="hl7-logo" href="https://esante.gouv.fr/" data-no-external="true"><img src="assets/images/logo-ANS.svg" alt="ANS Logo" height="50"/></a>
+    <a id="hl7-search-lnk" href="searchform.html" data-no-external="true"><img src="assets/images/search.png" alt="Search FHIR"/></a>
+  </div>
+
+  <div id="ig-search">
+ </div>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Hub Santé</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+
+  <span title="null">FR</span>
+
+
+            </span>
+          </p>
+        </div>
+      </div>   <!-- /container -->
+    </div>    <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">    <!-- container -->
+          <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+            <!-- status-bar -->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+                <!-- menu.xml -->
+
+<ul class="nav navbar-nav">
+  <li>
+    <a href="index.html">Accueil</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Vol. 1 - Etude fonctionnelle
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="spec-fonctionnelle-intro.html">Introduction</a>
+      </li>
+      <li>
+        <a href="spec-fonctionnelle-alimentation.html">Alimentation</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Vol. 2 - Spécifications techniques
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="spec-technique-intro.html">Introduction</a>
+      </li>
+      <li>
+        <a href="spec-technique-architecture.html">Architecture et sécurité</a>
+      </li>
+      <li>
+        <a href="spec-technique-interfacage.html">Interfaçage</a>
+      </li>
+      <li>
+        <a href="spec-technique-messages.html">Format des messages</a>
+      </li>
+      <li>
+        <a href="spec-technique-implementation.html">Étapes d'implémentation</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Vol. 3 - Annexes
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a name="l242">​</a>
+        <a href="securite.html">Sécurité</a>
+      </li>
+      <li><a name="l248">​</a>
+        <a href="downloads.html">Téléchargements et usage</a>
+      </li>
+      <li>
+        <a href="http://hl7.org/fhir/R4/index.html" target="_blank">Spécifications FHIR </a>
+      </li>
+      <li>
+        <a href="https://esante.gouv.fr/" target="_blank">Site de l'ANS </a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">Ressources de conformité</a>
+  </li>
+  <li>
+    <a href="https://interop.esante.gouv.fr/ig/documentation/" target="_blank">Documentation</a>
+  </li>
+  <li>
+    <a href="change-log.html">Historique</a>
+  </li>
+</ul>
+            </div>    <!-- /.nav-collapse -->
+          </div>    <!-- /.container -->
+        </nav>    <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-navbar -->
+      <!-- status-bar -->
+
+    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
+      <div class="container">    <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="spec-technique-intro.html"><b>Introduction</b></a></li><li><b>Format des messages</b></li>
+
+          <span style="float:right;">
+
+            <a href="spec-technique-interfacage.html">&lt;prev</a> | 
+
+            <a href="#bottom">bottom</a>
+
+          | <a href="spec-technique-implementation.html">next&gt;</a>
+
+          </span>
+
+        </ul>
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">    <!-- segment-content -->
+      <div class="container">    <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+    <!-- ReleaseHeader --><p id="publish-box">Hub Santé - version de développement local (intégration continue v0.1.0) construite par les outils de publication FHIR (HL7&reg; FHIR&reg; Standard). Voir le <a href="https://interop.esante.gouv.fr/ig/fhir/hubsante/history.html">répertoire des versions publiées</a></p>  <!-- EndReleaseHeader -->
+  <h2>Format des messages</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p>  <!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#format-des-messages--json-et-xml" id="markdown-toc-format-des-messages--json-et-xml">Format des messages : JSON et XML</a></li>
+  <li><a href="#identifiants-et-logique-de-routage" id="markdown-toc-identifiants-et-logique-de-routage">Identifiants et logique de routage</a></li>
+  <li><a href="#enveloppe-edxl-de" id="markdown-toc-enveloppe-edxl-de">Enveloppe EDXL-DE</a></li>
+  <li><a href="#adressage-destinataire" id="markdown-toc-adressage-destinataire">Adressage destinataire</a></li>
+  <li><a href="#en-tête-rc-de" id="markdown-toc-en-tête-rc-de">En-tête RC-DE</a></li>
+  <li><a href="#message-de-référence-et-acquittements-de-réception-finale" id="markdown-toc-message-de-référence-et-acquittements-de-réception-finale">Message de référence et acquittements de réception finale</a></li>
+  <li><a href="#format-des-messages-derreur" id="markdown-toc-format-des-messages-derreur">Format des messages d'erreur</a></li>
+  <li><a href="#message-personnalisé-customcontent" id="markdown-toc-message-personnalisé-customcontent">Message personnalisé (CustomContent)</a></li>
+  <li><a href="#schémas-et-exemples-de-messages" id="markdown-toc-schémas-et-exemples-de-messages">Schémas et exemples de messages</a></li>
+</ul>
+
+</div>
+<div style="background-color: #f0f0f0; border-left: 4px solid #666; padding: 10px; margin-bottom: 20px;">
+  <b>Contenu technique</b> — Cette page s'adresse aux développeurs et intégrateurs souhaitant raccorder un logiciel au Hub Santé.
+</div>
+
+<h3 id="format-des-messages--json-et-xml">Format des messages : JSON et XML</h3>
+
+<p>Par défaut, les messages échangés sont en <strong>JSON</strong>. Pour certains cas d'usage (notamment le lien 15-NexSIS basé sur les travaux CISU), les messages peuvent également être en <strong>XML</strong>. Le Hub Santé assure la conversion entre les deux formats — les Clients peuvent ainsi ne s'occuper que du format de leur convenance.</p>
+
+<p>Il est nécessaire de définir le <strong><code class="language-plaintext highlighter-rouge">Content-Type</code></strong> dans les propriétés du message AMQP. Deux valeurs sont acceptables :</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">application/json</code></li>
+  <li><code class="language-plaintext highlighter-rouge">application/xml</code></li>
+</ul>
+
+<p>Toute autre valeur, ou l'absence de <code class="language-plaintext highlighter-rouge">Content-Type</code>, entraîne un échec de transmission et l'envoi d'un message d'erreur sur la file <code class="language-plaintext highlighter-rouge">info</code> de l'émetteur.</p>
+
+<h3 id="identifiants-et-logique-de-routage">Identifiants et logique de routage</h3>
+
+<p>La logique de nommage est basée sur des <strong>domaines imbriqués</strong>. L'identifiant d'un SAMU a la forme <code class="language-plaintext highlighter-rouge">fr.health.samuXXX</code> indiquant :</p>
+<ul>
+  <li>Un acteur français</li>
+  <li>Du domaine de la Santé</li>
+  <li>Correspondant au SAMU du département XXX (code CRRA, ex : <code class="language-plaintext highlighter-rouge">FR680</code> pour Mulhouse, <code class="language-plaintext highlighter-rouge">FR2A0</code> pour Ajaccio, <code class="language-plaintext highlighter-rouge">FR641</code> pour Bayonne)</li>
+</ul>
+
+<p>Ces identifiants permettent aux différents HubEx de router les messages en interne ou vers le Hub adapté.</p>
+
+<h3 id="enveloppe-edxl-de">Enveloppe EDXL-DE</h3>
+
+<p>Chaque message transitant par le réseau de HubEx est composé de :</p>
+<ul>
+  <li>Une <strong>enveloppe EDXL-DE</strong> contenant les informations de routage (seule partie exploitée par les HubEx)</li>
+  <li>Un <strong>corps de message</strong> contenant les informations fonctionnelles à transmettre au Client destinataire</li>
+</ul>
+
+<p>Le format par défaut est JSON. Pour les cas 15-NexSIS, l'enveloppe peut aussi être en XML avec les mêmes règles. En JSON, les champs <code class="language-plaintext highlighter-rouge">contentXML</code> et <code class="language-plaintext highlighter-rouge">embeddedXMLContent</code> sont renommés respectivement <code class="language-plaintext highlighter-rouge">JsonContent</code> et <code class="language-plaintext highlighter-rouge">embeddedJsonContent</code>.</p>
+
+<h4 id="structure-edxldistribution">Structure <code class="language-plaintext highlighter-rouge">edxlDistribution</code></h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Paramètre</th>
+      <th>Description</th>
+      <th>Cardinalité</th>
+      <th>Format</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">distributionID</code></td>
+      <td>Identifiant unique du message attribué par l'expéditeur</td>
+      <td>[1..1]</td>
+      <td><code class="language-plaintext highlighter-rouge">{senderId}_{internalId}</code> — ex : <code class="language-plaintext highlighter-rouge">fr.health.samuXXX_ID12345</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">senderID</code></td>
+      <td>Identifiant de l'émetteur</td>
+      <td>[1..1]</td>
+      <td>ex : <code class="language-plaintext highlighter-rouge">fr.health.samuXXX</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">dateTimeSent</code></td>
+      <td>Date et heure d'envoi</td>
+      <td>[1..1]</td>
+      <td>Horodatage avec décalage horaire — ex : <code class="language-plaintext highlighter-rouge">2022-06-21T23:59:00+02:00</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">dateTimeExpires</code></td>
+      <td>Date et heure d'expiration du message</td>
+      <td>[1..1]</td>
+      <td>Horodatage avec décalage horaire</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">distributionStatus</code></td>
+      <td>Statut du message</td>
+      <td>[1..1]</td>
+      <td><code class="language-plaintext highlighter-rouge">Actual</code>, <code class="language-plaintext highlighter-rouge">Exercise</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">distributionKind</code></td>
+      <td>Type de message — détermine la file de destination</td>
+      <td>[1..1]</td>
+      <td><code class="language-plaintext highlighter-rouge">Report</code>/<code class="language-plaintext highlighter-rouge">Update</code>/<code class="language-plaintext highlighter-rouge">Cancel</code> → file <code class="language-plaintext highlighter-rouge">.message</code> ; <code class="language-plaintext highlighter-rouge">Ack</code> → file <code class="language-plaintext highlighter-rouge">.ack</code> ; <code class="language-plaintext highlighter-rouge">Error</code> → file <code class="language-plaintext highlighter-rouge">.info</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">descriptor</code></td>
+      <td>Sous-éléments liés au message</td>
+      <td>[1..1]</td>
+      <td>Voir tableau <code class="language-plaintext highlighter-rouge">descriptor</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">content</code></td>
+      <td>Contenu du message</td>
+      <td>[1..1]</td>
+      <td>Voir tableau <code class="language-plaintext highlighter-rouge">content</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="structure-descriptor">Structure <code class="language-plaintext highlighter-rouge">descriptor</code></h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Paramètre</th>
+      <th>Description</th>
+      <th>Cardinalité</th>
+      <th>Format</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">language</code></td>
+      <td>Langage du message</td>
+      <td>[1..1]</td>
+      <td>Étiquette IETF — ex : <code class="language-plaintext highlighter-rouge">fr-FR</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">explicitAddress</code></td>
+      <td>Identifiants de l'expéditeur et du destinataire</td>
+      <td>[1..1]</td>
+      <td>Voir tableau <code class="language-plaintext highlighter-rouge">explicitAddress</code></td>
+    </tr>
+    <tr>
+      <td>Autres champs</td>
+      <td>Non utilisés</td>
+      <td>—</td>
+      <td>—</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="structure-content--contentobject">Structure <code class="language-plaintext highlighter-rouge">content</code> / <code class="language-plaintext highlighter-rouge">contentObject</code></h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Paramètre</th>
+      <th>Description</th>
+      <th>Cardinalité</th>
+      <th>Format</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">contentObject</code></td>
+      <td>Contenu du message</td>
+      <td>[1..*]</td>
+      <td>—</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">contentXML</code> / <code class="language-plaintext highlighter-rouge">JsonContent</code></td>
+      <td>Contenu du message XML ou JSON, dans un unique élément enfant <code class="language-plaintext highlighter-rouge">embeddedXMLContent</code> / <code class="language-plaintext highlighter-rouge">embeddedJsonContent</code></td>
+      <td>[1..1]</td>
+      <td>Contenu XML ou JSON</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="adressage-destinataire">Adressage destinataire</h3>
+
+<p>Le Hub Santé n'autorise que des <strong>messages point à point</strong> : un seul destinataire par enveloppe EDXL-DE. Si le même message doit être envoyé à plusieurs destinataires, il doit être dupliqué autant de fois que nécessaire.</p>
+
+<h4 id="structure-explicitaddress">Structure <code class="language-plaintext highlighter-rouge">explicitAddress</code></h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Paramètre</th>
+      <th>Description</th>
+      <th>Cardinalité</th>
+      <th>Valeur</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">explicitAddressScheme</code></td>
+      <td>Identifiant du SI pilotant le Hub Santé</td>
+      <td>[1..1]</td>
+      <td>Valeur fixe : <code class="language-plaintext highlighter-rouge">hubex</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">explicitAddressValue</code></td>
+      <td>Identifiant du destinataire</td>
+      <td>[1..1]</td>
+      <td>ex : <code class="language-plaintext highlighter-rouge">fr.health.samuXXX</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="en-tête-rc-de">En-tête RC-DE</h3>
+
+<p>Les messages CISU (notamment les échanges 15-NexSIS) utilisent un <strong>en-tête RC-DE</strong> (Référentiel CISU – Distribution Element) contenant des champs communs à tous les types de messages CISU. Les messages CISU peuvent être compris comme des extensions du RC-DE — par exemple, le message RS-EDA correspond à un RC-DE étendu par l'élément <code class="language-plaintext highlighter-rouge">CreateCaseEvent</code>.</p>
+
+<h4 id="structure-rc-de">Structure <code class="language-plaintext highlighter-rouge">RC-DE</code></h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Paramètre</th>
+      <th>Description</th>
+      <th>Cardinalité</th>
+      <th>Format</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">messageId</code></td>
+      <td>Identifiant du message — identique au <code class="language-plaintext highlighter-rouge">distributionID</code> de l'enveloppe EDXL-DE</td>
+      <td>[1..1]</td>
+      <td>Chaîne de caractères</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">sender</code></td>
+      <td>Émetteur</td>
+      <td>[1..1]</td>
+      <td><code class="language-plaintext highlighter-rouge">AddresseeType</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">sentAt</code></td>
+      <td>Date et heure d'envoi</td>
+      <td>[1..1]</td>
+      <td>Horodatage avec décalage horaire</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">status</code></td>
+      <td>Statut du message</td>
+      <td>[1..1]</td>
+      <td><code class="language-plaintext highlighter-rouge">Actual</code>, <code class="language-plaintext highlighter-rouge">Exercise</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">kind</code></td>
+      <td>Type de message</td>
+      <td>[1..1]</td>
+      <td><code class="language-plaintext highlighter-rouge">Report</code>, <code class="language-plaintext highlighter-rouge">Update</code>, <code class="language-plaintext highlighter-rouge">Cancel</code>, <code class="language-plaintext highlighter-rouge">Ack</code>, <code class="language-plaintext highlighter-rouge">Error</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">recipients</code></td>
+      <td>Liste des destinataires</td>
+      <td>[1..1]</td>
+      <td>Liste de 1..n <code class="language-plaintext highlighter-rouge">recipient</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="structure-addresseetype">Structure <code class="language-plaintext highlighter-rouge">AddresseeType</code></h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Paramètre</th>
+      <th>Description</th>
+      <th>Cardinalité</th>
+      <th>Format</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">name</code></td>
+      <td>Identifiant de l'acteur</td>
+      <td>[1..1]</td>
+      <td>ex : <code class="language-plaintext highlighter-rouge">fr.health.samuXXX</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">URI</code></td>
+      <td>URI de l'acteur</td>
+      <td>[1..1]</td>
+      <td><code class="language-plaintext highlighter-rouge">hubex:{name}</code> — ex : <code class="language-plaintext highlighter-rouge">hubex:fr.health.samuXXX</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<blockquote>
+  <p><strong>Note sur <code class="language-plaintext highlighter-rouge">recipients</code></strong> : bien qu'il n'existe qu'un destinataire par enveloppe EDXL-DE, ce champ permet de lister l'ensemble des destinataires ayant reçu un message au contenu similaire — l'équivalent d'un champ « Copie » dans un courrier postal.</p>
+</blockquote>
+
+<h3 id="message-de-référence-et-acquittements-de-réception-finale">Message de référence et acquittements de réception finale</h3>
+
+<p>Le <strong>message de référence RC-REF</strong> permet de faire référence à un message précédemment partagé. Il reprend la <code class="language-plaintext highlighter-rouge">distributionID</code> du message concerné ainsi que l'ensemble des paramètres du RC-DE.</p>
+
+<p>Les acquittements de réception finale sont des messages RC-REF avec :</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">EDXL-DE.distributionKind</code> = <code class="language-plaintext highlighter-rouge">Ack</code></li>
+  <li><code class="language-plaintext highlighter-rouge">RC-DE.kind</code> = <code class="language-plaintext highlighter-rouge">Ack</code></li>
+  <li><code class="language-plaintext highlighter-rouge">reference.distributionID</code> = <code class="language-plaintext highlighter-rouge">distributionID</code> du message acquitté</li>
+</ul>
+
+<h4 id="structure-rc-ref">Structure <code class="language-plaintext highlighter-rouge">RC-REF</code></h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Paramètre</th>
+      <th>Description</th>
+      <th>Cardinalité</th>
+      <th>Format</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Ensemble des paramètres RC-DE</td>
+      <td>Voir tableau RC-DE ci-dessus</td>
+      <td>—</td>
+      <td>—</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">reference.distributionID</code></td>
+      <td>Identifiant unique du message référencé</td>
+      <td>[1..1]</td>
+      <td>Identique au <code class="language-plaintext highlighter-rouge">distributionID</code> de l'enveloppe EDXL-DE du message acquitté</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="format-des-messages-derreur">Format des messages d'erreur</h3>
+
+<p>Les messages d'erreur sont envoyés par le Hub Santé sur les files <code class="language-plaintext highlighter-rouge">.info</code> des acteurs. Ils sont insérés dans des enveloppes EDXL-DE comme l'ensemble des messages transitant par le réseau.</p>
+
+<h4 id="structure-dun-message-derreur">Structure d'un message d'erreur</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Paramètre</th>
+      <th>Description</th>
+      <th>Cardinalité</th>
+      <th>Format</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">errorCode</code></td>
+      <td>Code de l'erreur</td>
+      <td>[1..1]</td>
+      <td>Voir tableau des codes d'erreur</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">errorCause</code></td>
+      <td>Cause de l'erreur (avec <code class="language-plaintext highlighter-rouge">distributionID</code> si le message a pu être désérialisé)</td>
+      <td>[1..1]</td>
+      <td>Chaîne de caractères</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">sourceMessage</code></td>
+      <td>Message rejeté</td>
+      <td>[1..1]</td>
+      <td>Chaîne de caractères</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="codes-derreur">Codes d'erreur</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Code</th>
+      <th>Libellé</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>100</td>
+      <td><code class="language-plaintext highlighter-rouge">DELIVERY_MODE_INCONSISTENCY</code></td>
+      <td>Le message a été rejeté car il n'a pas été publié en mode persistant</td>
+    </tr>
+    <tr>
+      <td>101</td>
+      <td><code class="language-plaintext highlighter-rouge">NOT_ALLOWED_CONTENT_TYPE</code></td>
+      <td>Le message a été rejeté car l'un des deux Content-Type autorisés n'a pas été spécifié</td>
+    </tr>
+    <tr>
+      <td>102</td>
+      <td><code class="language-plaintext highlighter-rouge">UNRECOGNIZED_MESSAGE_FORMAT</code></td>
+      <td>Le message n'a pas pu être désérialisé</td>
+    </tr>
+    <tr>
+      <td>200</td>
+      <td><code class="language-plaintext highlighter-rouge">SENDER_INCONSISTENCY</code></td>
+      <td>Le champ <code class="language-plaintext highlighter-rouge">senderID</code> de l'enveloppe EDXL ne correspond pas à la clé de routage utilisée pour la publication</td>
+    </tr>
+    <tr>
+      <td>300</td>
+      <td><code class="language-plaintext highlighter-rouge">INVALID_MESSAGE</code></td>
+      <td>Le message n'est pas conforme aux spécifications techniques (JSON Schema ou XSD)</td>
+    </tr>
+    <tr>
+      <td>400</td>
+      <td><code class="language-plaintext highlighter-rouge">EXPIRED_MESSAGE_BEFORE_ROUTING</code></td>
+      <td>Le message a expiré sur le Hub avant d'être délivré au destinataire</td>
+    </tr>
+    <tr>
+      <td>500</td>
+      <td><code class="language-plaintext highlighter-rouge">DEAD_LETTERED_QUEUE</code></td>
+      <td>Le message a expiré avant que le destinataire ne le dépile</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="message-personnalisé-customcontent">Message personnalisé (CustomContent)</h3>
+
+<p>Pour faciliter les travaux d'intégration, un message personnalisé est disponible <strong>uniquement sur l'environnement bac à sable</strong> du Hub Santé. Ce message permet de <strong>désactiver la validation</strong> du contenu par rapport aux spécifications fonctionnelles.</p>
+
+<p>L'élément <code class="language-plaintext highlighter-rouge">customContent</code> (dans <code class="language-plaintext highlighter-rouge">embeddedJsonContent</code> ou <code class="language-plaintext highlighter-rouge">embeddedXMLContent</code>) peut contenir autant d'éléments que souhaité, sans contrainte de format.</p>
+
+<h3 id="schémas-et-exemples-de-messages">Schémas et exemples de messages</h3>
+
+<p>Les schémas (AsyncAPI et XSD) ainsi que des exemples de messages (JSON et XML) sont fournis dans le dossier <code class="language-plaintext highlighter-rouge">docs/DST</code> du GitHub : <a href="https://github.com/ansforge/SAMU-Hub-Sante">https://github.com/ansforge/SAMU-Hub-Sante</a></p>
+
+
+
+
+</div>
+        </div>    <!-- /inner-wrapper -->
+      </div>    <!-- /row -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-content -->
+
+  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+
+<script src="assets/js/window-hash.js" type="text/javascript"> </script>
+  <a name="bottom"> </a>
+  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
+    <div class="container">    <!-- container -->
+
+      <div style="background-color:var(--footer-nav-bg-color)">
+        <table style="width:100%">
+          <tbody>
+            <tr>
+              <td style="text-align:left">&nbsp;
+
+                <a href="spec-technique-interfacage.html">&lt;prev</a>
+
+              </td>
+              <td style="text-align:center">
+                <a href="#top">top</a>
+              </td>
+              <td style="text-align:right">&nbsp;
+
+                <a href="spec-technique-implementation.html">next&gt;</a>
+
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="inner-wrapper">
+        <p>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris</a>.  Package ans.fhir.fr.hubsante#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Mar 16, 2026 13:47+0000">2026-03-16</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)"></span>
+            Liens : <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières</a> |
+<a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA</a> |
+<a style="color: var(--footer-hyperlink-text-color)" href="https://interop.esante.gouv.fr/ig/fhir/hubsante/history.html" target="_blank">Historique des versions</a>
+<a style="color: var(--footer-hyperlink-text-color)" href="https://interop.esante.gouv.fr/ig/documentation" target="_blank">Documentation</a>
+ | <a style="color: var(--footer-hyperlink-text-color)" href="https://github.com/ansforge/FIG_ans-ig-sample/issues/new" target="_blank">New Issue</a>
+
+          
+        </p>
+      </div>    <!-- /inner-wrapper -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
+    <div class="container">    <!-- container -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-post-footer -->
+  
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+  ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
+  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
+
+    <!-- Ajout ANS -->
+  <script src="assets/js/app.js" type="text/javascript"> </script>
+  <script src="assets/js/vendor.js" type="text/javascript"> </script>
+    <!-- Fin ajout ANS -->
+
+  <script src="assets/js/anchor-hover.js" type="text/javascript"> </script>
+  
+
+    <!-- Analytics Below
+  ================================================== -->
+
+
+    <!-- AJOUT ANS -->
+
+<footer role="contentinfo" class="footer footer-principal">
+  <div class="footer__region1">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-6 col-lg-4 text-center text-md-left">
+          <div class="logos">        
+            <div class="logo logo--0">
+              <a rel="nofollow" href="https://solidarites-sante.gouv.fr" title="Ministère des Solidarités et de la Santé (nouvelle fenêtre)" target="_blank">
+                
+                <img src="assets/images/logo-ministere.svg" alt="Ministère des Solidarités et de la Santé" width="133" loading="lazy" height="77"/>
+                
+              </a>
+            </div>
+        
+            <div class="logo logo--1">
+              <a rel="nofollow" href="https://esante.gouv.fr/" title="Agence du numérique en santé (nouvelle fenêtre)" target="_blank">
+                
+                <img src="assets/images/logo-ANS-footer.svg" alt="Agence du numérique en santé" width="106" loading="lazy" height="74"/>
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-6 col-lg-4 text-center text-md-left">
+          <p class="footer__title">Agence du Numérique en Santé</p>
+          <p>2-10 Rue d'Oradour-sur-Glane 75015 Paris</p>
+
+            <!-- <div class="m-social">
+            <ul class="m-social__list">        
+              <li class="m-social__item">
+                <a class="m-social__link" href="https://www.linkedin.com/company/agence-du-numerique-en-sante/" target="_blank" rel="nofollow">
+                  <div class="m-social__icon">
+                    <svg class="svg-icon svg-linkedin" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#linkedin"></use></svg>
+                  </div>
+                  <span class="sr-only">linkedin</span>
+                </a>
+              </li>
+              <li class="m-social__item">
+                <a class="m-social__link" href="https://twitter.com/esante_gouv_fr" target="_blank" rel="nofollow">
+                  <div class="m-social__icon">
+                    <svg class="svg-icon svg-twitter" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#twitter"></use></svg>
+                  </div>
+                  <span class="sr-only">twitter</span>
+                </a>
+              </li>
+              <li class="m-social__item">
+                <a class="m-social__link" href="https://www.youtube.com/channel/UCd1zuSaU5cE1lRCpwv_HSMA" target="_blank" rel="nofollow">
+                  <div class="m-social__icon">
+                    <svg class="svg-icon svg-youtube" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#youtube"></use></svg>
+                  </div>
+                  <span class="sr-only">youtube</span>
+                </a>
+              </li>
+              <li class="m-social__item">
+                <a class="m-social__link" href="https://esante.gouv.fr/rss.xml" target="_blank" rel="nofollow">
+                  <div class="m-social__icon">
+                    <svg class="svg-icon svg-rss" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#rss"></use></svg>
+                  </div>
+                  <span class="sr-only">rss</span>
+                </a>
+              </li>
+            </ul>
+          </div> -->
+        </div>
+        
+        <div class="col-6 col-lg-4">
+          <ul class="footer-list">
+            <li class="footer-list__item footer-list__item--hasIcon">
+              <a href="mailto:ci-sis@esante.gouv.fr" class="mailto-link">
+                <svg aria-hidden="true" focusable="false" class="svg-icon svg-angle-right"><use href="assets/images/icon-sprite.svg#angle-right"></use></svg>Contact</a>
+              </li>
+                <!-- <li class="footer-list__item">
+                <a href="https://interop-pprod.esante.gouv.fr/ci-sis-specifications/wp-content/uploads/CGU_espace_de_tests_v1.1.pdf" class="file-link">Mentions légales</a>
+              </li> -->
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    
+      <!-- <div class="footer__region2">
+      <div class="container">
+        <div class="footer-contentinfo">
+          <ul class="footer-list footer-list--inline">
+
+          </ul>
+        </div>
+      </div>
+    </div> -->
+  </footer>
+  </body>
+</html>

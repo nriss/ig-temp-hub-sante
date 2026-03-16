@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <title>Vue d'ensemble - Hub Santé v0.1.0</title>
+    <title>Architecture et sécurité - Hub Santé v0.1.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -112,7 +112,7 @@
     </ul>
   </li>
   <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Vol. 2 - Détail des transactions
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Vol. 2 - Spécifications techniques
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
@@ -120,13 +120,16 @@
         <a href="spec-technique-intro.html">Introduction</a>
       </li>
       <li>
-        <a href="spec-technique-vue-ensemble.html">Vue d'ensemble</a>
+        <a href="spec-technique-architecture.html">Architecture et sécurité</a>
       </li>
       <li>
-        <a href="spec-technique-flux-alimentation.html">Flux d'alimentation</a>
+        <a href="spec-technique-interfacage.html">Interfaçage</a>
       </li>
       <li>
-        <a href="spec-technique-flux-consommation.html">Flux de consommation</a>
+        <a href="spec-technique-messages.html">Format des messages</a>
+      </li>
+      <li>
+        <a href="spec-technique-implementation.html">Étapes d'implémentation</a>
       </li>
     </ul>
   </li>
@@ -135,10 +138,10 @@
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-      <li><a name="l236">​</a>
+      <li><a name="l242">​</a>
         <a href="securite.html">Sécurité</a>
       </li>
-      <li><a name="l242">​</a>
+      <li><a name="l248">​</a>
         <a href="downloads.html">Téléchargements et usage</a>
       </li>
       <li>
@@ -170,7 +173,7 @@
     <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
       <div class="container">    <!-- container -->
         <ul class="breadcrumb">
-          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="spec-technique-intro.html"><b>Introduction</b></a></li><li><b>Vue d'ensemble</b></li>
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="spec-technique-intro.html"><b>Introduction</b></a></li><li><b>Architecture et sécurité</b></li>
 
           <span style="float:right;">
 
@@ -178,7 +181,7 @@
 
             <a href="#bottom">bottom</a>
 
-          | <a href="spec-technique-flux-alimentation.html">next&gt;</a>
+          | <a href="spec-technique-interfacage.html">next&gt;</a>
 
           </span>
 
@@ -200,7 +203,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </style>
 <div class="col-12">
     <!-- ReleaseHeader --><p id="publish-box">Hub Santé - version de développement local (intégration continue v0.1.0) construite par les outils de publication FHIR (HL7&reg; FHIR&reg; Standard). Voir le <a href="https://interop.esante.gouv.fr/ig/fhir/hubsante/history.html">répertoire des versions publiées</a></p>  <!-- EndReleaseHeader -->
-  <h2>Vue d'ensemble</h2>
+  <h2>Architecture et sécurité</h2>
   
 
 
@@ -215,12 +218,121 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
     <p>  <!-- white space is critical inside of capture --></p>
-<div>
-  <!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown. -->
-</div>
-<h3 id="vue-densemble-des-spécifications-techniques">Vue d'ensemble des spécifications techniques</h3>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#maillage-de-hubex" id="markdown-toc-maillage-de-hubex">Maillage de HubEx</a></li>
+  <li><a href="#articulation-avec-les-dsf" id="markdown-toc-articulation-avec-les-dsf">Articulation avec les DSF</a></li>
+  <li><a href="#orientations-techniques" id="markdown-toc-orientations-techniques">Orientations techniques</a></li>
+  <li><a href="#sécurisation-des-échanges" id="markdown-toc-sécurisation-des-échanges">Sécurisation des échanges</a></li>
+  <li><a href="#autorisations" id="markdown-toc-autorisations">Autorisations</a></li>
+</ul>
 
-<p>Vue d'ensemble des spécifications techniques</p>
+</div>
+<div style="background-color: #f0f0f0; border-left: 4px solid #666; padding: 10px; margin-bottom: 20px;">
+  <b>Contenu technique</b> — Cette page s'adresse aux développeurs et intégrateurs souhaitant raccorder un logiciel au Hub Santé.
+</div>
+
+<h3 id="maillage-de-hubex">Maillage de HubEx</h3>
+
+<p>Les échanges entre les acteurs de l'urgence sont portés par des Hubs d'échanges (aussi appelés « HubEx ») métiers — un par force — interconnectés en un maillage. Les acteurs sont connectés à leur HubEx métier et peuvent échanger des messages avec n'importe quel autre acteur par l'intermédiaire de leur HubEx. Les HubEx métiers considérés dans les travaux CISU sont portés par :</p>
+
+<ul>
+  <li>L'Agence du Numérique de Santé (ANS)</li>
+  <li>L'Agence du Numérique de la Sécurité Civile (ANSC)</li>
+  <li>La Gendarmerie Nationale (GN)</li>
+  <li>La Police Nationale (PN)</li>
+  <li>La Préfecture de Police de Paris (PP)</li>
+</ul>
+
+<h3 id="articulation-avec-les-dsf">Articulation avec les DSF</h3>
+
+<p>Les présentes spécifications détaillent le fonctionnement du Hub Santé ainsi que le raccordement au Hub Santé pour des clients Santé. Ce raccordement est le prérequis technique à l'implémentation d'échanges fonctionnels décrits dans des Dossiers de Spécifications Fonctionnelles (DSF) complémentaires portant notamment sur les échanges 15-NexSIS (entre un LRM Santé et NexSIS) et les échanges 15-15 (entre deux LRM Santé ou autres Clients Santé).</p>
+
+<h3 id="orientations-techniques">Orientations techniques</h3>
+
+<p><strong>Messages asynchrones, AMQP et RabbitMQ</strong></p>
+
+<p>Les échanges entre HubEx ou entre un acteur et son HubEx se font via des opérations d'envoi et/ou de réception de messages en mode asynchrone selon une architecture MOM. La solution technique proposée est basée sur le protocole <strong>AMQP 0-9-1</strong> et son implémentation open-source <strong>RabbitMQ</strong>.</p>
+
+<p><strong>Communications point à point et files de messages</strong></p>
+
+<p>Le mode de communication est basé sur un échange point à point (PTP) via des files de messages. Un client peut publier un message vers un unique destinataire. Chaque client dispose de <strong>3 files d'écoute</strong> selon la typologie des messages reçus :</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">{identifiantClient}.message</code> — échanges fonctionnels</li>
+  <li><code class="language-plaintext highlighter-rouge">{identifiantClient}.ack</code> — acquittements de réception finale</li>
+  <li><code class="language-plaintext highlighter-rouge">{identifiantClient}.info</code> — messages généraux d'informations, alertes et erreurs</li>
+</ul>
+
+<p>Exemples : <code class="language-plaintext highlighter-rouge">fr.health.samu001.message</code>, <code class="language-plaintext highlighter-rouge">fr.health.samu002.ack</code></p>
+
+<h3 id="sécurisation-des-échanges">Sécurisation des échanges</h3>
+
+<h4 id="protocoles">Protocoles</h4>
+
+<p>Le HubEx Santé est accessible directement depuis Internet à l'adresse <code class="language-plaintext highlighter-rouge">messaging.hub.esante.gouv.fr</code>.</p>
+
+<p>Le protocole <strong>AMQPS</strong> (AMQP sécurisé par TLS) est utilisé pour sécuriser les services dans les deux sens. Il permet d'assurer la confidentialité et l'authenticité des échanges. Le canal AMQPS est établi avec une <strong>authentification mutuelle par certificats (mTLS)</strong>. La connexion doit être établie avec <strong>TLS 1.2</strong>.</p>
+
+<p>À l'établissement de la session TLS :</p>
+<ul>
+  <li>Le Hub Santé et le Client présentent un certificat X509 SERV_SSL issu de l'IGC Santé</li>
+  <li>Le Client s'assure que le certificat serveur présenté est bien celui du Hub Santé</li>
+  <li>Le Hub Santé s'assure que le certificat présenté par le Client fait partie des certificats autorisés</li>
+</ul>
+
+<p>L'authentification s'appuie sur le <strong>Common Name (CN)</strong> du certificat client, qui doit correspondre à l'identifiant client.</p>
+
+<h4 id="obtention-des-certificats">Obtention des certificats</h4>
+
+<p><strong>Certificats temporaires (phase de démarrage)</strong></p>
+
+<p>Pour faciliter les premiers raccordements, les éditeurs peuvent transmettre une CSR à l'équipe Hub Santé qui leur retourne un certificat signé par l'AC du Hub Santé. Le script <code class="language-plaintext highlighter-rouge">certs/generate.sh</code> du GitHub permet de générer une clé privée, une CSR et un certificat auto-signé.</p>
+
+<p><strong>Certificats IGC Santé (production)</strong></p>
+
+<p>Le portail des industriels de l'ANS (<a href="https://industriels.esante.gouv.fr">industriels.esante.gouv.fr</a>) est le point d'entrée pour la commande de certificats IGC Santé :</p>
+<ul>
+  <li>Tests : formulaire F414</li>
+  <li>Production : formulaire F413</li>
+</ul>
+
+<h4 id="traçabilité">Traçabilité</h4>
+
+<p>La traçabilité des échanges doit être assurée à la fois par le Hub Santé et par le Client :</p>
+
+<ul>
+  <li>Au niveau de l'échange (réception et émission du message) pour les deux systèmes</li>
+  <li>Au niveau du résultat du traitement du message (système recevant le message uniquement)</li>
+</ul>
+
+<p>Chaque trace doit être <strong>horodatée</strong> et le serveur du Client doit être synchronisé sur une source de temps fiable (NTP). Les traces doivent être accessibles en cas de requête spécifique et conservées conformément à la réglementation.</p>
+
+<h4 id="persistance-des-messages">Persistance des messages</h4>
+
+<p>Chaque message transitant par le Hub Santé est sauvegardé par le cluster RabbitMQ. Le <strong>Time-To-Live général</strong> est de <strong>24 heures</strong>. Lors de la transmission, le Hub Santé renseigne un TTL par message basé sur le champ <code class="language-plaintext highlighter-rouge">dateTimeExpires</code> de l'enveloppe EDXL-DE.</p>
+
+<p>Si le message expire avant d'être délivré (avant ou après le routage), le Hub Santé envoie un message d'erreur à l'expéditeur pour l'en informer.</p>
+
+<h4 id="ouvertures-daccès-réseau">Ouvertures d'accès réseau</h4>
+
+<p>En fonction de la situation du Client, il peut être nécessaire de demander l'ouverture de l'URL de RabbitMQ aux équipes informatiques de l'établissement :</p>
+
+<ul>
+  <li>URL RabbitMQ : <code class="language-plaintext highlighter-rouge">amqps://messaging.hub.esante.gouv.fr:5671</code></li>
+</ul>
+
+<h3 id="autorisations">Autorisations</h3>
+
+<p>L'ajout d'un client sur le Hub Santé nécessite :</p>
+<ol>
+  <li>La prise de contact auprès de l'ANS (hubsante.contact@esante.gouv.fr)</li>
+  <li>La production et transmission d'un certificat validé auprès de l'AC du Hub Santé</li>
+  <li>L'intégration de ces informations dans le Hub Santé</li>
+</ol>
+
+<p>Les acteurs ont le droit d'échanger uniquement avec les acteurs enregistrés par les différents HubEx. Les échanges autorisés sont définis par les DSF et contrôlés par les HubEx lors des échanges de messages.</p>
+
 
 
 
@@ -252,7 +364,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
               </td>
               <td style="text-align:right">&nbsp;
 
-                <a href="spec-technique-flux-alimentation.html">next&gt;</a>
+                <a href="spec-technique-interfacage.html">next&gt;</a>
 
               </td>
             </tr>
@@ -262,7 +374,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris</a>.  Package ans.fhir.fr.hubsante#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Mar 16, 2026 13:14+0000">2026-03-16</span>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris</a>.  Package ans.fhir.fr.hubsante#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Mar 16, 2026 13:47+0000">2026-03-16</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens : <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières</a> |

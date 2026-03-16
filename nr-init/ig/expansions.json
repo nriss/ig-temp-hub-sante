@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "5b582a44-e098-42c0-b255-3b8734b497a1",
+  "id" : "74c6ca35-05be-4015-85bf-e37359b3feee",
   "meta" : {
-    "lastUpdated" : "2026-03-16T13:14:36.671+00:00"
+    "lastUpdated" : "2026-03-16T13:47:35.106+00:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -18,7 +18,7 @@
       "name" : "VSCallerCommunication",
       "title" : "Communication avec l'appelant (Hub Santé)",
       "status" : "draft",
-      "date" : "2026-03-16T13:14:36+00:00",
+      "date" : "2026-03-16T13:47:35+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -27,8 +27,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:a8e08490-16f8-40ea-9e91-381ac15a3bcd",
-        "timestamp" : "2026-03-16T13:15:28+00:00",
+        "identifier" : "urn:uuid:cf645ffa-4f63-496b-bcb1-56340c5ca43a",
+        "timestamp" : "2026-03-16T13:48:17+00:00",
         "total" : 9,
         "offset" : 0,
         "parameter" : [{
@@ -103,7 +103,7 @@
       "name" : "VSCallerType",
       "title" : "Type d'appelant (Hub Santé)",
       "status" : "draft",
-      "date" : "2026-03-16T13:14:36+00:00",
+      "date" : "2026-03-16T13:47:35+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -112,8 +112,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:44f33dae-35ab-41f9-92e2-492cd30deb23",
-        "timestamp" : "2026-03-16T13:15:28+00:00",
+        "identifier" : "urn:uuid:753f5b07-6f29-45a2-a066-6fcd1c7fe5df",
+        "timestamp" : "2026-03-16T13:48:17+00:00",
         "total" : 29,
         "offset" : 0,
         "parameter" : [{
@@ -268,7 +268,7 @@
       "name" : "VSCaseAttribution",
       "title" : "Attribution du dossier (Hub Santé)",
       "status" : "draft",
-      "date" : "2026-03-16T13:14:36+00:00",
+      "date" : "2026-03-16T13:47:35+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -277,8 +277,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:37a54ef1-a9fb-4f0e-a665-43f6f630ac09",
-        "timestamp" : "2026-03-16T13:15:28+00:00",
+        "identifier" : "urn:uuid:b8167826-5de5-444a-b859-be62c0f6f527",
+        "timestamp" : "2026-03-16T13:48:17+00:00",
         "total" : 40,
         "offset" : 0,
         "parameter" : [{
@@ -477,7 +477,7 @@
       "name" : "VSCasePriority",
       "title" : "Priorité du dossier (Hub Santé)",
       "status" : "draft",
-      "date" : "2026-03-16T13:14:36+00:00",
+      "date" : "2026-03-16T13:47:35+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -486,8 +486,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:ffa49280-8609-4952-8913-ebfb190f2019",
-        "timestamp" : "2026-03-16T13:15:28+00:00",
+        "identifier" : "urn:uuid:011b81ce-5692-4ea6-ad9d-dac782d9353d",
+        "timestamp" : "2026-03-16T13:48:17+00:00",
         "total" : 5,
         "offset" : 0,
         "parameter" : [{
@@ -546,7 +546,7 @@
       "name" : "VSCaseStatus",
       "title" : "Statut du dossier (Hub Santé)",
       "status" : "draft",
-      "date" : "2026-03-16T13:14:36+00:00",
+      "date" : "2026-03-16T13:47:35+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -555,8 +555,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:f0f77f7b-6f40-44f9-91b5-11e4f5c905b5",
-        "timestamp" : "2026-03-16T13:15:28+00:00",
+        "identifier" : "urn:uuid:cff1e336-782b-402b-a0a6-ddfd20237f74",
+        "timestamp" : "2026-03-16T13:48:17+00:00",
         "total" : 7,
         "offset" : 0,
         "parameter" : [{
@@ -623,7 +623,7 @@
       "name" : "VSContactChannel",
       "title" : "Canal de contact (Hub Santé)",
       "status" : "draft",
-      "date" : "2026-03-16T13:14:36+00:00",
+      "date" : "2026-03-16T13:47:35+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -632,8 +632,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:1b4529e0-61cc-45e6-a167-aa36f828f538",
-        "timestamp" : "2026-03-16T13:15:28+00:00",
+        "identifier" : "urn:uuid:71930d8d-6f11-45fa-ae87-9a78ab414467",
+        "timestamp" : "2026-03-16T13:48:17+00:00",
         "total" : 6,
         "offset" : 0,
         "parameter" : [{
@@ -696,7 +696,7 @@
       "name" : "VSContactType",
       "title" : "Type de contact (Hub Santé)",
       "status" : "draft",
-      "date" : "2026-03-16T13:14:36+00:00",
+      "date" : "2026-03-16T13:47:35+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -705,8 +705,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:ca98d8b2-6b3b-4a80-8885-81333a19b443",
-        "timestamp" : "2026-03-16T13:15:28+00:00",
+        "identifier" : "urn:uuid:a9e86c41-4d5f-403a-b93c-88989a3326f4",
+        "timestamp" : "2026-03-16T13:48:17+00:00",
         "total" : 7,
         "offset" : 0,
         "parameter" : [{
@@ -773,7 +773,7 @@
       "name" : "VSCoordPrecision",
       "title" : "Précision des coordonnées géographiques (Hub Santé)",
       "status" : "draft",
-      "date" : "2026-03-16T13:14:36+00:00",
+      "date" : "2026-03-16T13:47:35+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -782,8 +782,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:e1d16506-551b-42ff-bccb-eba3c804062b",
-        "timestamp" : "2026-03-16T13:15:28+00:00",
+        "identifier" : "urn:uuid:29054dc6-b9f2-4fbf-ab2a-4849a638b824",
+        "timestamp" : "2026-03-16T13:48:17+00:00",
         "total" : 5,
         "offset" : 0,
         "parameter" : [{
@@ -842,7 +842,7 @@
       "name" : "VSDecisionType",
       "title" : "Type de décision médicale (Hub Santé)",
       "status" : "draft",
-      "date" : "2026-03-16T13:14:36+00:00",
+      "date" : "2026-03-16T13:47:35+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -851,8 +851,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:f24ffae5-fc5c-4e2f-9179-366d7dfa9e17",
-        "timestamp" : "2026-03-16T13:15:28+00:00",
+        "identifier" : "urn:uuid:98ce7e17-e8de-491b-8883-c784f94628ee",
+        "timestamp" : "2026-03-16T13:48:17+00:00",
         "total" : 5,
         "offset" : 0,
         "parameter" : [{
@@ -911,7 +911,7 @@
       "name" : "VSExternalIdSource",
       "title" : "Source des identifiants externes patient (Hub Santé)",
       "status" : "draft",
-      "date" : "2026-03-16T13:14:36+00:00",
+      "date" : "2026-03-16T13:47:35+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -920,8 +920,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:818ccbfd-221f-4791-9e2e-42037950a690",
-        "timestamp" : "2026-03-16T13:15:28+00:00",
+        "identifier" : "urn:uuid:43ce03f5-88c4-4ee2-ad48-4f0ed0f7acaa",
+        "timestamp" : "2026-03-16T13:48:17+00:00",
         "total" : 5,
         "offset" : 0,
         "parameter" : [{
@@ -980,7 +980,7 @@
       "name" : "VSExternalInfoType",
       "title" : "Type d'information externe (Hub Santé)",
       "status" : "draft",
-      "date" : "2026-03-16T13:14:36+00:00",
+      "date" : "2026-03-16T13:47:35+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -989,8 +989,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:bd1a8274-27c9-489f-94a1-ef478be55cbf",
-        "timestamp" : "2026-03-16T13:15:28+00:00",
+        "identifier" : "urn:uuid:14c2f10d-4556-45da-aee2-f6f229ace7ce",
+        "timestamp" : "2026-03-16T13:48:17+00:00",
         "total" : 5,
         "offset" : 0,
         "parameter" : [{
@@ -1049,7 +1049,7 @@
       "name" : "VSExternalLocationIdSource",
       "title" : "Source des identifiants de localisation externes (Hub Santé)",
       "status" : "draft",
-      "date" : "2026-03-16T13:14:36+00:00",
+      "date" : "2026-03-16T13:47:35+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -1058,8 +1058,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:3cafc7d1-9d4a-41ef-aaf8-b18d5aa94410",
-        "timestamp" : "2026-03-16T13:15:28+00:00",
+        "identifier" : "urn:uuid:299d0047-8808-4074-89aa-6662287d3511",
+        "timestamp" : "2026-03-16T13:48:17+00:00",
         "total" : 5,
         "offset" : 0,
         "parameter" : [{
@@ -1118,7 +1118,7 @@
       "name" : "VSInterventionType",
       "title" : "Type d'intervention (Hub Santé)",
       "status" : "draft",
-      "date" : "2026-03-16T13:14:36+00:00",
+      "date" : "2026-03-16T13:47:35+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -1127,8 +1127,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:14f06287-7ce1-4c10-9724-73edfddb5a09",
-        "timestamp" : "2026-03-16T13:15:28+00:00",
+        "identifier" : "urn:uuid:5871b86e-61fb-40e3-a16b-4df736c1fb4c",
+        "timestamp" : "2026-03-16T13:48:17+00:00",
         "total" : 5,
         "offset" : 0,
         "parameter" : [{
@@ -1187,7 +1187,7 @@
       "name" : "VSOperatorRole",
       "title" : "Rôles des opérateurs (Hub Santé)",
       "status" : "draft",
-      "date" : "2026-03-16T13:14:36+00:00",
+      "date" : "2026-03-16T13:47:35+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -1196,8 +1196,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:20afd4ef-378a-4abb-a566-ad24e9c195c2",
-        "timestamp" : "2026-03-16T13:15:28+00:00",
+        "identifier" : "urn:uuid:0164fa51-3455-439c-bd07-4d6a80127134",
+        "timestamp" : "2026-03-16T13:48:17+00:00",
         "total" : 8,
         "offset" : 0,
         "parameter" : [{
@@ -1268,7 +1268,7 @@
       "name" : "VSOrientationType",
       "title" : "Type d'orientation (Hub Santé)",
       "status" : "draft",
-      "date" : "2026-03-16T13:14:36+00:00",
+      "date" : "2026-03-16T13:47:35+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -1277,8 +1277,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:2ddd0818-582a-4b89-bbc5-55a0a1119d8e",
-        "timestamp" : "2026-03-16T13:15:28+00:00",
+        "identifier" : "urn:uuid:3dab06de-6563-43c9-ab1f-d560128c8ff3",
+        "timestamp" : "2026-03-16T13:48:17+00:00",
         "total" : 7,
         "offset" : 0,
         "parameter" : [{
@@ -1345,7 +1345,7 @@
       "name" : "VSPatientCareLevel",
       "title" : "Niveau de soin du patient (Hub Santé)",
       "status" : "draft",
-      "date" : "2026-03-16T13:14:36+00:00",
+      "date" : "2026-03-16T13:47:35+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -1354,8 +1354,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:96a7e684-e890-4f23-b354-26a22bba7242",
-        "timestamp" : "2026-03-16T13:15:28+00:00",
+        "identifier" : "urn:uuid:f22fe050-4cd2-47be-9f97-e306277dbc29",
+        "timestamp" : "2026-03-16T13:48:17+00:00",
         "total" : 4,
         "offset" : 0,
         "parameter" : [{
@@ -1410,7 +1410,7 @@
       "name" : "VSPerimeter",
       "title" : "Filière de régulation (Hub Santé)",
       "status" : "draft",
-      "date" : "2026-03-16T13:14:36+00:00",
+      "date" : "2026-03-16T13:47:35+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -1419,8 +1419,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:40dd8cf7-da43-4d9b-8f50-f364def4e9a3",
-        "timestamp" : "2026-03-16T13:15:28+00:00",
+        "identifier" : "urn:uuid:d971a3d3-0afd-4692-9c51-0d812540bd58",
+        "timestamp" : "2026-03-16T13:48:17+00:00",
         "total" : 4,
         "offset" : 0,
         "parameter" : [{
@@ -1475,7 +1475,7 @@
       "name" : "VSQualificationOrigin",
       "title" : "Origine de la qualification (Hub Santé)",
       "status" : "draft",
-      "date" : "2026-03-16T13:14:36+00:00",
+      "date" : "2026-03-16T13:47:35+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -1484,8 +1484,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:53e245ac-1110-4ee3-a841-4601cd277148",
-        "timestamp" : "2026-03-16T13:15:28+00:00",
+        "identifier" : "urn:uuid:e6a0b744-37f1-449e-a143-df6193c30eed",
+        "timestamp" : "2026-03-16T13:48:18+00:00",
         "total" : 19,
         "offset" : 0,
         "parameter" : [{
@@ -1600,7 +1600,7 @@
       "name" : "VSResourceType",
       "title" : "Type de ressource mobilisée (Hub Santé)",
       "status" : "draft",
-      "date" : "2026-03-16T13:14:36+00:00",
+      "date" : "2026-03-16T13:47:35+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -1609,8 +1609,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:632a88ca-c842-46da-81b0-8a80598dc12f",
-        "timestamp" : "2026-03-16T13:15:28+00:00",
+        "identifier" : "urn:uuid:815dc9f4-b394-4ff2-beb3-97c8bf5262d6",
+        "timestamp" : "2026-03-16T13:48:18+00:00",
         "total" : 34,
         "offset" : 0,
         "parameter" : [{
@@ -1785,7 +1785,7 @@
       "name" : "VSSex",
       "title" : "Sexe du patient (Hub Santé)",
       "status" : "draft",
-      "date" : "2026-03-16T13:14:36+00:00",
+      "date" : "2026-03-16T13:47:35+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -1794,8 +1794,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:42f1bff3-a2da-46d4-b0d6-f879689e847d",
-        "timestamp" : "2026-03-16T13:15:28+00:00",
+        "identifier" : "urn:uuid:ce9df7fc-bc08-4c74-bfd3-0ed94ea43a0e",
+        "timestamp" : "2026-03-16T13:48:18+00:00",
         "total" : 4,
         "offset" : 0,
         "parameter" : [{

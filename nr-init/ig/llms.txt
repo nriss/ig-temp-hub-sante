@@ -3,17 +3,18 @@
 ## Pages
 
 * [Accueil](index.md)
+* [Interfaçage](spec-technique-interfacage.md)
 * [Introduction](spec-technique-intro.md)
 * [Vue d'ensemble](spec-fonctionnelle-intro.md)
+* [Format des messages](spec-technique-messages.md)
 * [Sécurité](annexe-securite.md)
 * [Alimentation](spec-fonctionnelle-alimentation.md)
-* [Flux de consommation](spec-technique-flux-consommation.md)
 * [Artifacts Summary](artifacts.md)
+* [Étapes d'implémentation](spec-technique-implementation.md)
+* [Architecture et sécurité](spec-technique-architecture.md)
 * [Autres Ressources](autres_ressources.md)
 * [Téléchargements et usages](annexe-downloads.md)
-* [Flux d'alimentation](spec-technique-flux-alimentation.md)
 * [Historique des versions](change-log.md)
-* [Vue d'ensemble](spec-technique-vue-ensemble.md)
 
 ## Resources
 

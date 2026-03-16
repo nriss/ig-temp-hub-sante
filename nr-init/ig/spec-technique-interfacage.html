@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <title>Flux de consommation - Hub Santé v0.1.0</title>
+    <title>Interfaçage - Hub Santé v0.1.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -43,8 +43,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script src="assets/js/mermaid.js" type="text/javascript"></script>
     <script src="assets/js/mermaid-init.js" type="text/javascript"></script>
-    <style type="text/css">h2{--heading-prefix:"3.3"}
-    h3,h4,h5,h6{--heading-prefix:"3.3"}</style>
+    <style type="text/css">h2{--heading-prefix:"3.2"}
+    h3,h4,h5,h6{--heading-prefix:"3.2"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
 
@@ -112,7 +112,7 @@
     </ul>
   </li>
   <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Vol. 2 - Détail des transactions
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Vol. 2 - Spécifications techniques
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
@@ -120,13 +120,16 @@
         <a href="spec-technique-intro.html">Introduction</a>
       </li>
       <li>
-        <a href="spec-technique-vue-ensemble.html">Vue d'ensemble</a>
+        <a href="spec-technique-architecture.html">Architecture et sécurité</a>
       </li>
       <li>
-        <a href="spec-technique-flux-alimentation.html">Flux d'alimentation</a>
+        <a href="spec-technique-interfacage.html">Interfaçage</a>
       </li>
       <li>
-        <a href="spec-technique-flux-consommation.html">Flux de consommation</a>
+        <a href="spec-technique-messages.html">Format des messages</a>
+      </li>
+      <li>
+        <a href="spec-technique-implementation.html">Étapes d'implémentation</a>
       </li>
     </ul>
   </li>
@@ -135,10 +138,10 @@
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-      <li><a name="l236">​</a>
+      <li><a name="l242">​</a>
         <a href="securite.html">Sécurité</a>
       </li>
-      <li><a name="l242">​</a>
+      <li><a name="l248">​</a>
         <a href="downloads.html">Téléchargements et usage</a>
       </li>
       <li>
@@ -170,15 +173,15 @@
     <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
       <div class="container">    <!-- container -->
         <ul class="breadcrumb">
-          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="spec-technique-intro.html"><b>Introduction</b></a></li><li><b>Flux de consommation</b></li>
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="spec-technique-intro.html"><b>Introduction</b></a></li><li><b>Interfaçage</b></li>
 
           <span style="float:right;">
 
-            <a href="spec-technique-flux-alimentation.html">&lt;prev</a> | 
+            <a href="spec-technique-architecture.html">&lt;prev</a> | 
 
             <a href="#bottom">bottom</a>
 
-          | <a href="change-log.html">next&gt;</a>
+          | <a href="spec-technique-messages.html">next&gt;</a>
 
           </span>
 
@@ -200,7 +203,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </style>
 <div class="col-12">
     <!-- ReleaseHeader --><p id="publish-box">Hub Santé - version de développement local (intégration continue v0.1.0) construite par les outils de publication FHIR (HL7&reg; FHIR&reg; Standard). Voir le <a href="https://interop.esante.gouv.fr/ig/fhir/hubsante/history.html">répertoire des versions publiées</a></p>  <!-- EndReleaseHeader -->
-  <h2>Flux de consommation</h2>
+  <h2>Interfaçage</h2>
   
 
 
@@ -215,12 +218,108 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
     <p>  <!-- white space is critical inside of capture --></p>
-<div>
-  <!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown. -->
-</div>
-<h3 id="spécifications-techniques-du-flux-de-consommation">Spécifications techniques du flux de consommation</h3>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#connexion" id="markdown-toc-connexion">Connexion</a></li>
+  <li><a href="#entrée-et-sortie-des-messages" id="markdown-toc-entrée-et-sortie-des-messages">Entrée et sortie des messages</a></li>
+  <li><a href="#flot-des-messages-et-acquittements" id="markdown-toc-flot-des-messages-et-acquittements">Flot des messages et acquittements</a></li>
+</ul>
 
-<p>Description technique du flux de consommation</p>
+</div>
+<div style="background-color: #f0f0f0; border-left: 4px solid #666; padding: 10px; margin-bottom: 20px;">
+  <b>Contenu technique</b> — Cette page s'adresse aux développeurs et intégrateurs souhaitant raccorder un logiciel au Hub Santé.
+</div>
+
+<h3 id="connexion">Connexion</h3>
+
+<p>La connexion utilise le protocole <strong>AMQP 0-9-1</strong>. Chaque client se connecte au Hub Santé via un accès sécurisé par certificat, remplaçant l'usage d'un couple identifiant/mot de passe. L'URI complète de connexion est de la forme :</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>amqps://messaging.hub.esante.gouv.fr:5671[/vhost]
+</code></pre></div></div>
+
+<p>Le Hub Santé utilise le concept de <strong>Virtual Hosts</strong> pour gérer les différentes versions des spécifications techniques.</p>
+
+<p>Pour activer les échanges en TLS, le Client doit configurer son connecteur pour :</p>
+<ul>
+  <li>Utiliser <strong>TLS 1.2</strong></li>
+  <li>Activer la <strong>Peer Verification</strong> (truststore permettant de valider le certificat du serveur)</li>
+  <li>Activer la <strong>Server Hostname Verification</strong> (correspondance entre le domaine et le certificat présenté)</li>
+  <li>Spécifier le mécanisme d'authentification <strong><code class="language-plaintext highlighter-rouge">EXTERNAL</code></strong> pour utiliser les certificats à la place d'un identifiant/mot de passe</li>
+</ul>
+
+<p>Le Client est autorisé à :</p>
+<ul>
+  <li><strong>Lire</strong> les messages publiés uniquement sur ses 3 files d'écoute (<code class="language-plaintext highlighter-rouge">{identifiantClient}.message</code>, <code class="language-plaintext highlighter-rouge">{identifiantClient}.ack</code>, <code class="language-plaintext highlighter-rouge">{identifiantClient}.info</code>)</li>
+  <li><strong>Publier</strong> un message sur l'échangeur d'envoi en fournissant son identifiant client comme clé de routage</li>
+</ul>
+
+<p>Le Client ne dispose d'<strong>aucune permission de configuration</strong> (création de files ou d'échangeurs). Il doit se connecter aux files en <strong>mode passif</strong>.</p>
+
+<p>Exemples d'implémentation disponibles sur le GitHub :</p>
+<ul>
+  <li><a href="https://github.com/ansforge/SAMU-Hub-Sante/blob/0.7/client/src/main/java/com/hubsante">Consumer/Producer Java</a> — connexion TLS + authentification EXTERNAL</li>
+</ul>
+
+<h3 id="entrée-et-sortie-des-messages">Entrée et sortie des messages</h3>
+
+<p>Les files de messages sont déclarées comme <strong>persistantes</strong> (métadonnées stockées sur disque) pour garantir la reprise d'activité en cas de problème sur le Hub Santé.</p>
+
+<p>Tous les messages publiés sur les HubEx <strong>doivent être envoyés en mode persistant</strong> (delivery mode = persistent). Un message non persistant ne sera pas récupéré si le système est relancé et entraînera un message d'erreur.</p>
+
+<p>Exemples d'implémentation :</p>
+<ul>
+  <li>Java : <a href="https://github.com/ansforge/SAMU-Hub-Sante/blob/0.7/client/src/main/java/com/hubsante/Producer.java#L79">Producer.java</a></li>
+  <li>Spring Boot : les messages sont envoyés en mode persistant par défaut</li>
+</ul>
+
+<h3 id="flot-des-messages-et-acquittements">Flot des messages et acquittements</h3>
+
+<p>Un message publié par un Client est inscrit dans une enveloppe EDXL-DE, puis publié sur l'échangeur <code class="language-plaintext highlighter-rouge">hubsante</code> du Hub Santé avec l'identifiant client comme clé de routage. Le Hub Santé route le message vers la file <code class="language-plaintext highlighter-rouge">{identifiantDestinataire}.message</code> du destinataire, qui le consomme depuis sa file.</p>
+
+<p>Trois niveaux d'acquittement sont définis :</p>
+
+<h4 id="acquittement-technique-consumer-acknowledgement">Acquittement technique (Consumer Acknowledgement)</h4>
+
+<p>Les HubEx <strong>conservent un message dans leurs files et tentent de le renvoyer jusqu'à réception d'une confirmation de prise en charge</strong>. Une fois qu'un consommateur a bien récupéré et enregistré un message dans son système, la responsabilité du message lui incombe — il informe l'intermédiaire précédent que le message est bien passé pour que celui-ci le supprime de sa file.</p>
+
+<p>Cette fonctionnalité est intégrée au protocole AMQP 0-9-1 sous la forme de <strong>Consumer Acknowledgement</strong>. Ces acquittements doivent être intégrés à la fin du code de traitement d'un message.</p>
+
+<blockquote>
+  <p><strong>Attention</strong> : En cas d'oubli de l'acquittement, les messages resteraient dans la file et RabbitMQ tenterait de les renvoyer, entraînant duplications, blocages et problèmes de mémoire.</p>
+</blockquote>
+
+<p>Exemples d'implémentation :</p>
+<ul>
+  <li>Java : <a href="https://github.com/ansforge/SAMU-Hub-Sante/blob/0.7/client/src/main/java/com/hubsante/ConsumerRun.java">ConsumerRun.java</a></li>
+  <li>Spring Boot : les messages sont acquittés automatiquement à la suite de la bonne exécution du Listener</li>
+</ul>
+
+<h4 id="acquittement-de-réception-finale-message-ack">Acquittement de réception finale (Message Ack)</h4>
+
+<p>La validation auprès de l'émetteur n'est pas nativement intégrée dans AMQP 0-9-1. Un deuxième type de file <code class="language-plaintext highlighter-rouge">{identifiantClient}.ack</code> permet de remonter les <strong>accusés de réception finale</strong>.</p>
+
+<p>Une fois le message intégré dans son système, le Client destinataire peut en informer le Client émetteur en lui envoyant un acquittement de réception finale. Le cheminement est similaire au message original, pris en sens inverse.</p>
+
+<p><strong>Du point de vue fonctionnel</strong> : tant que l'acquittement de réception finale n'est pas reçu, le Client émetteur doit considérer que le message n'a pas été délivré et en informer ses utilisateurs. Le format des acquittements est défini dans la section <a href="spec-technique-messages.html">Format des messages</a> (RC-REF).</p>
+
+<h4 id="informer-du-traitement--message-fonctionnel">Informer du traitement — message fonctionnel</h4>
+
+<p>L'acquittement de réception finale n'informe que de la <strong>réception</strong> du message et ne donne aucune information sur le traitement et les actions réalisés. Pour communiquer les résultats du traitement, de nouveaux <strong>messages fonctionnels</strong> doivent être utilisés.</p>
+
+<h4 id="gestion-des-erreurs">Gestion des erreurs</h4>
+
+<p>Une file <code class="language-plaintext highlighter-rouge">{identifiantClient}.info</code> est mise en place pour remonter des informations et des erreurs aux émetteurs et destinataires. Un message d'erreur peut être envoyé dans les cas suivants :</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">Content-Type</code> non conforme dans les propriétés du message AMQP</li>
+  <li>Incohérence entre la clé de routage utilisée à la publication et le champ <code class="language-plaintext highlighter-rouge">SenderID</code> dans l'enveloppe EDXL-DE</li>
+  <li>Non-conformité du message aux modèles de données des DSF</li>
+  <li>Expiration du message avant dépilement par le destinataire</li>
+  <li>Rejet du message par le SI destinataire lors de son dépilement</li>
+</ul>
+
+<p>Le format des messages d'erreur est défini dans la section <a href="spec-technique-messages.html">Format des messages</a>.</p>
+
 
 
 
@@ -244,7 +343,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             <tr>
               <td style="text-align:left">&nbsp;
 
-                <a href="spec-technique-flux-alimentation.html">&lt;prev</a>
+                <a href="spec-technique-architecture.html">&lt;prev</a>
 
               </td>
               <td style="text-align:center">
@@ -252,7 +351,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
               </td>
               <td style="text-align:right">&nbsp;
 
-                <a href="change-log.html">next&gt;</a>
+                <a href="spec-technique-messages.html">next&gt;</a>
 
               </td>
             </tr>
@@ -262,7 +361,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris</a>.  Package ans.fhir.fr.hubsante#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Mar 16, 2026 13:14+0000">2026-03-16</span>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris</a>.  Package ans.fhir.fr.hubsante#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Mar 16, 2026 13:47+0000">2026-03-16</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens : <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières</a> |

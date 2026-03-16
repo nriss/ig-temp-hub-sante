@@ -31,7 +31,7 @@ Type de décision prise dans le cadre de la régulation médicale.
   "name" : "CSDecisionType",
   "title" : "Type de décision médicale (Hub Santé)",
   "status" : "draft",
-  "date" : "2026-03-16T13:14:36+00:00",
+  "date" : "2026-03-16T13:47:35+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

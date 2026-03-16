@@ -11,7 +11,7 @@
   <name value="HubSante"/>
   <title value="Hub Santé"/>
   <status value="draft"/>
-  <date value="2026-03-16T13:14:36+00:00"/>
+  <date value="2026-03-16T13:47:35+00:00"/>
   <publisher value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
   <contact>
     <name value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
@@ -1520,26 +1520,34 @@
         <generation value="markdown"/>
         <page>
           <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="spec-technique-vue-ensemble.html"/>
+            <valueUrl value="spec-technique-architecture.html"/>
           </extension>
-          <nameUrl value="spec-technique-vue-ensemble.html"/>
-          <title value="Vue d'ensemble"/>
+          <nameUrl value="spec-technique-architecture.html"/>
+          <title value="Architecture et sécurité"/>
           <generation value="markdown"/>
         </page>
         <page>
           <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="spec-technique-flux-alimentation.html"/>
+            <valueUrl value="spec-technique-interfacage.html"/>
           </extension>
-          <nameUrl value="spec-technique-flux-alimentation.html"/>
-          <title value="Flux d'alimentation"/>
+          <nameUrl value="spec-technique-interfacage.html"/>
+          <title value="Interfaçage"/>
           <generation value="markdown"/>
         </page>
         <page>
           <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="spec-technique-flux-consommation.html"/>
+            <valueUrl value="spec-technique-messages.html"/>
           </extension>
-          <nameUrl value="spec-technique-flux-consommation.html"/>
-          <title value="Flux de consommation"/>
+          <nameUrl value="spec-technique-messages.html"/>
+          <title value="Format des messages"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="spec-technique-implementation.html"/>
+          </extension>
+          <nameUrl value="spec-technique-implementation.html"/>
+          <title value="Étapes d'implémentation"/>
           <generation value="markdown"/>
         </page>
       </page>
