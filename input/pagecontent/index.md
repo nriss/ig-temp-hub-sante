@@ -27,11 +27,40 @@ This Implementation Guide defines the logical models for the Hub Santé interope
 
 ### Introduction
 
-Le **Hub Santé** est une plateforme d'interopérabilité permettant l'échange de données entre les acteurs du système de soins d'urgence en France, notamment les SAMU (Services d'Aide Médicale Urgente) et leurs partenaires (SIS, FDO, établissements de santé…).
+Le **Hub Santé** est une plateforme permettant un échange sécurisé de données de santé avec l'écosystème des SAMU. Elle sert à aiguiller les informations d'un SAMU vers un autre SAMU, ou d'un SAMU vers ses partenaires, en assurant les liens suivants :
+
+* **15-18** — avec NexSIS (système national de gestion des alertes des SDIS) ;
+* **15-17** — avec les systèmes nationaux de la Police et de la Gendarmerie ;
+* **15-15** — avec le LRM d'un autre SAMU (quel que soit l'éditeur) ;
+* **15-X** — avec tout autre logiciel partenaire du SAMU (hélicoptères, tablettes SMUR, SI-CAP, CNR 114…).
 
 Cet Implementation Guide définit les **modèles logiques FHIR** correspondant au schéma JSON **RS-EDA** (Remontée de Situation — État Du dossier d'Affaire), qui est le format de message utilisé pour partager les dossiers de régulation médicale entre partenaires du Hub Santé.
 
-### Périmètre du projet
+### Objectifs
+
+Le Hub Santé vise à :
+
+* automatiser le partage et la synchronisation d'informations avec les acteurs de l'écosystème SAMU ;
+* renforcer la coopération entre les acteurs des urgences ;
+* gagner du temps et limiter la perte d'informations dans les échanges ;
+* éviter la multiplicité des liens entre le LRM du SAMU et les autres logiciels ;
+* définir un cadre d'interopérabilité et un référentiel commun aux éditeurs.
+
+### Points forts du Hub Santé
+
+* **Architecture nationale résiliente et sécurisée** garantissant la continuité des échanges en cas de panne ou de redémarrage d'un logiciel connecté ;
+* **Maîtrise des données** : le SAMU reste maître de ses données et de leur partage ;
+* **Standardisation nationale** du transfert d'information entre les SAMU et leurs partenaires ;
+* **Intégrité des données** : pas de perte ni de modification de l'information pendant les échanges ;
+* **Interopérabilité ouverte** : possibilité de connecter le LRM avec tout type de logiciel actuel ou futur ;
+* **Suppression de la double saisie** des informations ;
+* **Réduction des appels** et des temps d'attente ;
+* **Synchronisation automatique** des données dans le LRM ;
+* **Fédération des éditeurs** de SAMU autour d'un langage commun, permettant au SAMU de choisir librement sa solution tout en garantissant le dialogue avec des solutions différentes.
+
+Pour plus d'informations sur le SI-SAMU : [esante.gouv.fr](https://esante.gouv.fr)
+
+### Périmètre de cet IG
 
 Cet IG couvre la modélisation logique du message **RS-EDA**, qui décrit un dossier de régulation médicale complet, incluant :
 
