@@ -1,0 +1,25 @@
+CodeSystem: CSQualificationOrigin
+Id: cs-qualification-origin
+Title: "Origine de la qualification (Hub Santé)"
+Description: "Canal ou entité à l'origine de la création du dossier de régulation médicale."
+* ^status = #draft
+
+* #15 "15"
+* #116117 "116 117"
+* #AUTOCOM "Autocommutateur"
+* #112 "112"
+* #115 "115"
+* #CRRA "CRRA"
+* #AUTREC15 "Autre C15"
+* #`CTA-CONF` "CTA Conférence"
+* #`CTA-PI` "CTA Premier Intervenant"
+* #AUTRECTA "Autre CTA"
+* #CNR "CNR"
+* #FDO "Forces de l'Ordre"
+* #SNATED "SNATED"
+* #PDSSOS "PDS/SOS"
+* #TELASSIST "Téléassistance"
+* #CROSS "CROSS"
+* #PUBLIC "Public"
+* #DATA "Data"
+* #AUTRE "Autre"

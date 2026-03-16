@@ -8,10 +8,15 @@
 
 - Les objets réutilisables (`definitions/`) → **LogicalModels séparés**, pas BackboneElement inline.
 - Les enums JSON → **CodeSystem + ValueSet** dédiés.
-- Nommage : `LM_<Objet>`, `CS_<Concept>`, `VS_<Concept>`.
+- Nommage (conforme bonnes pratiques ANS) :
+  - LogicalModels : FSH name `XxxLogical` (PascalCase), fichier `XxxLogical.fsh`
+  - CodeSystems : FSH name `CSXxx` (PascalCase), fichier `CSXxx.fsh`
+  - ValueSets : FSH name `VSXxx` (PascalCase), fichier `VSXxx.fsh`
+  - Ids : kebab-case (`lm-xxx`, `cs-xxx`, `vs-xxx`)
 - Les codes avec caractères spéciaux (`.`, `-`) sont entourés de backticks dans les CodeSystems FSH.
 - `caller.language` est lié au ValueSet FHIR standard `http://hl7.org/fhir/ValueSet/languages` (BCP-47).
-- `caseDetails.careLevel` réutilise `VS_PatientCareLevel` (mêmes valeurs R1–R4).
+- `caseDetails.careLevel` réutilise `VSPatientCareLevel` (mêmes valeurs R1–R4).
+- `* ^status = #draft` présent sur tous les artefacts (LogicalModels, CodeSystems, ValueSets).
 
 ---
 
@@ -21,147 +26,147 @@
 
 | Fichier | Objet schéma | Statut |
 |---|---|---|
-| `LM_CreateCaseHealth.fsh` | Racine RS-EDA | ✅ |
-| `LM_Qualification.fsh` | `definitions/qualification` | ✅ |
-| `LM_CaseDetails.fsh` | `definitions/caseDetails` | ✅ |
-| `LM_WhatsHappen.fsh` | `definitions/whatsHappen` | ✅ |
-| `LM_LocationKind.fsh` | `definitions/locationKind` | ✅ |
-| `LM_HealthMotive.fsh` | `definitions/healthMotive` | ✅ |
-| `LM_RiskThreat.fsh` | `definitions/riskThreat` | ✅ |
-| `LM_Location.fsh` | `definitions/location` | ✅ |
-| `LM_DetailedAddress.fsh` | `definitions/detailedAddress` | ✅ |
-| `LM_Highway.fsh` | `definitions/highway` | ✅ |
-| `LM_WayName.fsh` | `definitions/wayName` | ✅ |
-| `LM_City.fsh` | `definitions/city` | ✅ |
-| `LM_Access.fsh` | `definitions/access` | ✅ |
-| `LM_Geometry.fsh` | `definitions/geometry` | ✅ |
-| `LM_Point.fsh` | `definitions/point` | ✅ |
-| `LM_Coord.fsh` | `definitions/coord` | ✅ |
-| `LM_ExternalInfo.fsh` | `definitions/externalInfo` | ✅ |
-| `LM_ExternalLocationId.fsh` | `definitions/externalLocationId` | ✅ |
-| `LM_Alert.fsh` | `definitions/alert` | ✅ |
-| `LM_Notes.fsh` | `definitions/notes` | ✅ |
-| `LM_Caller.fsh` | `definitions/caller` | ✅ |
-| `LM_Contact.fsh` | `definitions/contact` | ✅ |
-| `LM_DetailedName.fsh` | `definitions/detailedName` (transverse) | ✅ |
-| `LM_Patient.fsh` | `definitions/patient` | ✅ |
-| `LM_AdministrativeFile.fsh` | `definitions/administrativeFile` | ✅ |
-| `LM_ExternalId.fsh` | `definitions/externalId` | ✅ |
-| `LM_GeneralPractitioner.fsh` | `definitions/generalPractitioner` | ✅ |
-| `LM_PersonalContact.fsh` | `definitions/personalContact` | ✅ |
-| `LM_Identity.fsh` | `definitions/Identity` | ✅ |
-| `LM_InsStrictFeatures.fsh` | `definitions/insStrictFeatures` | ✅ |
-| `LM_PatientDetail.fsh` | `definitions/patientDetail` | ✅ |
-| `LM_Hypothesis.fsh` | `definitions/hypothesis` | ✅ |
-| `LM_MainDiagnosis.fsh` | `definitions/mainDiagnosis` | ✅ |
-| `LM_OtherDiagnosis.fsh` | `definitions/otherDiagnosis` | ✅ |
-| `LM_MedicalNote.fsh` | `definitions/medicalNote` | ✅ |
-| `LM_Operator.fsh` | `definitions/operator` | ✅ |
-| `LM_Decision.fsh` | `definitions/decision` | ✅ |
-| `LM_Destination.fsh` | `definitions/destination` | ✅ |
-| `LM_AdditionalInformation.fsh` | `definitions/additionalInformation` | ✅ |
-| `LM_CustomMap.fsh` | `definitions/customMap` | ✅ |
+| `CreateCaseHealthLogical.fsh` | Racine RS-EDA | ✅ |
+| `QualificationLogical.fsh` | `definitions/qualification` | ✅ |
+| `CaseDetailsLogical.fsh` | `definitions/caseDetails` | ✅ |
+| `WhatsHappenLogical.fsh` | `definitions/whatsHappen` | ✅ |
+| `LocationKindLogical.fsh` | `definitions/locationKind` | ✅ |
+| `HealthMotiveLogical.fsh` | `definitions/healthMotive` | ✅ |
+| `RiskThreatLogical.fsh` | `definitions/riskThreat` | ✅ |
+| `LocationLogical.fsh` | `definitions/location` | ✅ |
+| `DetailedAddressLogical.fsh` | `definitions/detailedAddress` | ✅ |
+| `HighwayLogical.fsh` | `definitions/highway` | ✅ |
+| `WayNameLogical.fsh` | `definitions/wayName` | ✅ |
+| `CityLogical.fsh` | `definitions/city` | ✅ |
+| `AccessLogical.fsh` | `definitions/access` | ✅ |
+| `GeometryLogical.fsh` | `definitions/geometry` | ✅ |
+| `PointLogical.fsh` | `definitions/point` | ✅ |
+| `CoordLogical.fsh` | `definitions/coord` | ✅ |
+| `ExternalInfoLogical.fsh` | `definitions/externalInfo` | ✅ |
+| `ExternalLocationIdLogical.fsh` | `definitions/externalLocationId` | ✅ |
+| `AlertLogical.fsh` | `definitions/alert` | ✅ |
+| `NotesLogical.fsh` | `definitions/notes` | ✅ |
+| `CallerLogical.fsh` | `definitions/caller` | ✅ |
+| `ContactLogical.fsh` | `definitions/contact` | ✅ |
+| `DetailedNameLogical.fsh` | `definitions/detailedName` (transverse) | ✅ |
+| `PatientLogical.fsh` | `definitions/patient` | ✅ |
+| `AdministrativeFileLogical.fsh` | `definitions/administrativeFile` | ✅ |
+| `ExternalIdLogical.fsh` | `definitions/externalId` | ✅ |
+| `GeneralPractitionerLogical.fsh` | `definitions/generalPractitioner` | ✅ |
+| `PersonalContactLogical.fsh` | `definitions/personalContact` | ✅ |
+| `IdentityLogical.fsh` | `definitions/Identity` | ✅ |
+| `InsStrictFeaturesLogical.fsh` | `definitions/insStrictFeatures` | ✅ |
+| `PatientDetailLogical.fsh` | `definitions/patientDetail` | ✅ |
+| `HypothesisLogical.fsh` | `definitions/hypothesis` | ✅ |
+| `MainDiagnosisLogical.fsh` | `definitions/mainDiagnosis` | ✅ |
+| `OtherDiagnosisLogical.fsh` | `definitions/otherDiagnosis` | ✅ |
+| `MedicalNoteLogical.fsh` | `definitions/medicalNote` | ✅ |
+| `OperatorLogical.fsh` | `definitions/operator` | ✅ |
+| `DecisionLogical.fsh` | `definitions/decision` | ✅ |
+| `DestinationLogical.fsh` | `definitions/destination` | ✅ |
+| `AdditionalInformationLogical.fsh` | `definitions/additionalInformation` | ✅ |
+| `CustomMapLogical.fsh` | `definitions/customMap` | ✅ |
 
 ### CodeSystems (`input/fsh/CodeSystems/`)
 
 | Fichier | Enum source | Statut |
 |---|---|---|
-| `CS_OperatorRole.fsh` | `operator.role` | ✅ |
-| `CS_ExternalIdSource.fsh` | `externalId.source` | ✅ |
-| `CS_Sex.fsh` | `insStrictFeatures.sex` | ✅ |
-| `CS_PatientCareLevel.fsh` | `patientDetail.careLevel` (réutilisé pour `caseDetails.careLevel`) | ✅ |
-| `CS_ContactType.fsh` | `contact.type` / `personalContact.type` | ✅ |
-| `CS_QualificationOrigin.fsh` | `qualification.origin` | ✅ |
-| `CS_CaseStatus.fsh` | `caseDetails.status` | ✅ |
-| `CS_CasePriority.fsh` | `caseDetails.priority` | ✅ |
-| `CS_CaseAttribution.fsh` | `caseDetails.attribution` | ✅ |
-| `CS_CoordPrecision.fsh` | `coord.precision` | ✅ |
-| `CS_ExternalLocationIdSource.fsh` | `externalLocationId.source` | ✅ |
-| `CS_ExternalInfoType.fsh` | `externalInfo.type` | ✅ |
-| `CS_DecisionType.fsh` | `decision.decisionType` | ✅ |
-| `CS_OrientationType.fsh` | `decision.orientationType` | ✅ |
-| `CS_Perimeter.fsh` | `perimeter` (racine) | ✅ |
-| `CS_InterventionType.fsh` | `interventionType` (racine) | ✅ |
-| `CS_ContactChannel.fsh` | `contact.channel` | ✅ |
-| `CS_CallerType.fsh` | `caller.type` | ✅ |
-| `CS_CallerCommunication.fsh` | `caller.communication` | ✅ |
-| `CS_ResourceType.fsh` | `decision.resourceType` | ✅ |
+| `CSOperatorRole.fsh` | `operator.role` | ✅ |
+| `CSExternalIdSource.fsh` | `externalId.source` | ✅ |
+| `CSSex.fsh` | `insStrictFeatures.sex` | ✅ |
+| `CSPatientCareLevel.fsh` | `patientDetail.careLevel` (réutilisé pour `caseDetails.careLevel`) | ✅ |
+| `CSContactType.fsh` | `contact.type` / `personalContact.type` | ✅ |
+| `CSQualificationOrigin.fsh` | `qualification.origin` | ✅ |
+| `CSCaseStatus.fsh` | `caseDetails.status` | ✅ |
+| `CSCasePriority.fsh` | `caseDetails.priority` | ✅ |
+| `CSCaseAttribution.fsh` | `caseDetails.attribution` | ✅ |
+| `CSCoordPrecision.fsh` | `coord.precision` | ✅ |
+| `CSExternalLocationIdSource.fsh` | `externalLocationId.source` | ✅ |
+| `CSExternalInfoType.fsh` | `externalInfo.type` | ✅ |
+| `CSDecisionType.fsh` | `decision.decisionType` | ✅ |
+| `CSOrientationType.fsh` | `decision.orientationType` | ✅ |
+| `CSPerimeter.fsh` | `perimeter` (racine) | ✅ |
+| `CSInterventionType.fsh` | `interventionType` (racine) | ✅ |
+| `CSContactChannel.fsh` | `contact.channel` | ✅ |
+| `CSCallerType.fsh` | `caller.type` | ✅ |
+| `CSCallerCommunication.fsh` | `caller.communication` | ✅ |
+| `CSResourceType.fsh` | `decision.resourceType` | ✅ |
 
 ### ValueSets (`input/fsh/ValueSets/`)
 
 | Fichier | Statut |
 |---|---|
-| `VS_OperatorRole.fsh` | ✅ |
-| `VS_ExternalIdSource.fsh` | ✅ |
-| `VS_Sex.fsh` | ✅ |
-| `VS_PatientCareLevel.fsh` | ✅ |
-| `VS_ContactType.fsh` | ✅ |
-| `VS_QualificationOrigin.fsh` | ✅ |
-| `VS_CaseStatus.fsh` | ✅ |
-| `VS_CasePriority.fsh` | ✅ |
-| `VS_CaseAttribution.fsh` | ✅ |
-| `VS_CoordPrecision.fsh` | ✅ |
-| `VS_ExternalLocationIdSource.fsh` | ✅ |
-| `VS_ExternalInfoType.fsh` | ✅ |
-| `VS_DecisionType.fsh` | ✅ |
-| `VS_OrientationType.fsh` | ✅ |
-| `VS_Perimeter.fsh` | ✅ |
-| `VS_InterventionType.fsh` | ✅ |
-| `VS_ContactChannel.fsh` | ✅ |
-| `VS_CallerType.fsh` | ✅ |
-| `VS_CallerCommunication.fsh` | ✅ |
-| `VS_ResourceType.fsh` | ✅ |
+| `VSOperatorRole.fsh` | ✅ |
+| `VSExternalIdSource.fsh` | ✅ |
+| `VSSex.fsh` | ✅ |
+| `VSPatientCareLevel.fsh` | ✅ |
+| `VSContactType.fsh` | ✅ |
+| `VSQualificationOrigin.fsh` | ✅ |
+| `VSCaseStatus.fsh` | ✅ |
+| `VSCasePriority.fsh` | ✅ |
+| `VSCaseAttribution.fsh` | ✅ |
+| `VSCoordPrecision.fsh` | ✅ |
+| `VSExternalLocationIdSource.fsh` | ✅ |
+| `VSExternalInfoType.fsh` | ✅ |
+| `VSDecisionType.fsh` | ✅ |
+| `VSOrientationType.fsh` | ✅ |
+| `VSPerimeter.fsh` | ✅ |
+| `VSInterventionType.fsh` | ✅ |
+| `VSContactChannel.fsh` | ✅ |
+| `VSCallerType.fsh` | ✅ |
+| `VSCallerCommunication.fsh` | ✅ |
+| `VSResourceType.fsh` | ✅ |
 
 ---
 
 ## Graphe de dépendances
 
 ```
-LM_CreateCaseHealth (racine RS-EDA)
-├── LM_Qualification
-│   ├── LM_WhatsHappen
-│   ├── LM_LocationKind
-│   ├── LM_HealthMotive
-│   ├── LM_CaseDetails
-│   └── LM_RiskThreat[]
-├── LM_Location
-│   ├── LM_DetailedAddress
-│   │   ├── LM_Highway
-│   │   └── LM_WayName
-│   ├── LM_City
-│   ├── LM_Access
-│   ├── LM_ExternalInfo[]
-│   ├── LM_ExternalLocationId[]
-│   └── LM_Geometry
-│       └── LM_Point
-│           └── LM_Coord
-├── LM_Alert
-│   ├── LM_Caller
-│   │   ├── LM_Contact (callerContact)
-│   │   ├── LM_Contact (callbackContact)
-│   │   └── LM_DetailedName
-│   └── LM_Notes[]
-├── LM_Patient[]
-│   ├── LM_AdministrativeFile
-│   │   ├── LM_ExternalId[]
-│   │   └── LM_GeneralPractitioner
-│   │       ├── LM_DetailedName
-│   │       └── LM_PersonalContact[]
-│   ├── LM_Identity
-│   │   ├── LM_InsStrictFeatures
-│   │   └── LM_DetailedName
-│   ├── LM_PatientDetail
-│   └── LM_Hypothesis
-│       ├── LM_MainDiagnosis
-│       └── LM_OtherDiagnosis[]
-├── LM_MedicalNote[]
-│   └── LM_Operator
-├── LM_Decision[]
-│   ├── LM_Operator
-│   └── LM_Destination
-│       └── LM_ExternalLocationId[]
-└── LM_AdditionalInformation
-    └── LM_CustomMap[] (max 3)
+CreateCaseHealthLogical (racine RS-EDA)
+├── QualificationLogical
+│   ├── WhatsHappenLogical
+│   ├── LocationKindLogical
+│   ├── HealthMotiveLogical
+│   ├── CaseDetailsLogical
+│   └── RiskThreatLogical[]
+├── LocationLogical
+│   ├── DetailedAddressLogical
+│   │   ├── HighwayLogical
+│   │   └── WayNameLogical
+│   ├── CityLogical
+│   ├── AccessLogical
+│   ├── ExternalInfoLogical[]
+│   ├── ExternalLocationIdLogical[]
+│   └── GeometryLogical
+│       └── PointLogical
+│           └── CoordLogical
+├── AlertLogical
+│   ├── CallerLogical
+│   │   ├── ContactLogical (callerContact)
+│   │   ├── ContactLogical (callbackContact)
+│   │   └── DetailedNameLogical
+│   └── NotesLogical[]
+├── PatientLogical[]
+│   ├── AdministrativeFileLogical
+│   │   ├── ExternalIdLogical[]
+│   │   └── GeneralPractitionerLogical
+│   │       ├── DetailedNameLogical
+│   │       └── PersonalContactLogical[]
+│   ├── IdentityLogical
+│   │   ├── InsStrictFeaturesLogical
+│   │   └── DetailedNameLogical
+│   ├── PatientDetailLogical
+│   └── HypothesisLogical
+│       ├── MainDiagnosisLogical
+│       └── OtherDiagnosisLogical[]
+├── MedicalNoteLogical[]
+│   └── OperatorLogical
+├── DecisionLogical[]
+│   ├── OperatorLogical
+│   └── DestinationLogical
+│       └── ExternalLocationIdLogical[]
+└── AdditionalInformationLogical
+    └── CustomMapLogical[] (max 3)
 ```
 
 ---
