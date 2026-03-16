@@ -1,0 +1,21 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
+"lm-access","lm-access","","","",0,*,"","","","null {[]} {[]}
+","Accès","Informations d'accès à une localisation (bâtiment, étage, digicode…).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"lm-access.floor","lm-access.floor","","","",0,1,"","","","string {[]} {[]}
+","Étage","Numéro ou description de l'étage.","","","","","","","","","",,,,,"",,,,"lm-access.floor",0,1,"",""
+"lm-access.roomNumber","lm-access.roomNumber","","","",0,1,"","","","string {[]} {[]}
+","Numéro de chambre","Numéro de chambre ou d'appartement.","","","","","","","","","",,,,,"",,,,"lm-access.roomNumber",0,1,"",""
+"lm-access.interphone","lm-access.interphone","","","",0,1,"","","","string {[]} {[]}
+","Interphone","Numéro ou code de l'interphone.","","","","","","","","","",,,,,"",,,,"lm-access.interphone",0,1,"",""
+"lm-access.accessCode","lm-access.accessCode","","","",0,*,"","","","string {[]} {[]}
+","Code d'accès","Code(s) d'accès (digicode, badge…).","","","","","","","","","",,,,,"",,,,"lm-access.accessCode",0,*,"",""
+"lm-access.elevator","lm-access.elevator","","","",0,1,"","","","string {[]} {[]}
+","Ascenseur","Indication sur l'ascenseur.","","","","","","","","","",,,,,"",,,,"lm-access.elevator",0,1,"",""
+"lm-access.buildingName","lm-access.buildingName","","","",0,1,"","","","string {[]} {[]}
+","Nom du bâtiment","Nom ou lettre du bâtiment.","","","","","","","","","",,,,,"",,,,"lm-access.buildingName",0,1,"",""
+"lm-access.entrance","lm-access.entrance","","","",0,1,"","","","string {[]} {[]}
+","Entrée","Numéro ou description de l'entrée.","","","","","","","","","",,,,,"",,,,"lm-access.entrance",0,1,"",""
+"lm-access.entity","lm-access.entity","","","",0,1,"","","","string {[]} {[]}
+","Entité","Entité ou service au sein du bâtiment.","","","","","","","","","",,,,,"",,,,"lm-access.entity",0,1,"",""
+"lm-access.phoneNumber","lm-access.phoneNumber","","","",0,1,"","","","string {[]} {[]}
+","Numéro de téléphone","Numéro de téléphone du lieu. Format : +{indicatif}{numéro}.","Regexp : ^\+\d{5,18}$","","","","","","","","",,,,,"",,,,"lm-access.phoneNumber",0,1,"",""

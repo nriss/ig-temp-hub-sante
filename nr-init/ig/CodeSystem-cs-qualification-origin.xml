@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="cs-qualification-origin"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narratif généré : CodeSystem cs-qualification-origin</b></p><a name="cs-qualification-origin"> </a><a name="hccs-qualification-origin"> </a><p>This  code system <code>https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-qualification-origin</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Affichage</b></td></tr><tr><td style="white-space:nowrap">15<a name="cs-qualification-origin-15"> </a></td><td>15</td></tr><tr><td style="white-space:nowrap">116117<a name="cs-qualification-origin-116117"> </a></td><td>116 117</td></tr><tr><td style="white-space:nowrap">AUTOCOM<a name="cs-qualification-origin-AUTOCOM"> </a></td><td>Autocommutateur</td></tr><tr><td style="white-space:nowrap">112<a name="cs-qualification-origin-112"> </a></td><td>112</td></tr><tr><td style="white-space:nowrap">115<a name="cs-qualification-origin-115"> </a></td><td>115</td></tr><tr><td style="white-space:nowrap">CRRA<a name="cs-qualification-origin-CRRA"> </a></td><td>CRRA</td></tr><tr><td style="white-space:nowrap">AUTREC15<a name="cs-qualification-origin-AUTREC15"> </a></td><td>Autre C15</td></tr><tr><td style="white-space:nowrap">`CTA-CONF`<a name="cs-qualification-origin-.96CTA-CONF.96"> </a></td><td>CTA Conférence</td></tr><tr><td style="white-space:nowrap">`CTA-PI`<a name="cs-qualification-origin-.96CTA-PI.96"> </a></td><td>CTA Premier Intervenant</td></tr><tr><td style="white-space:nowrap">AUTRECTA<a name="cs-qualification-origin-AUTRECTA"> </a></td><td>Autre CTA</td></tr><tr><td style="white-space:nowrap">CNR<a name="cs-qualification-origin-CNR"> </a></td><td>CNR</td></tr><tr><td style="white-space:nowrap">FDO<a name="cs-qualification-origin-FDO"> </a></td><td>Forces de l'Ordre</td></tr><tr><td style="white-space:nowrap">SNATED<a name="cs-qualification-origin-SNATED"> </a></td><td>SNATED</td></tr><tr><td style="white-space:nowrap">PDSSOS<a name="cs-qualification-origin-PDSSOS"> </a></td><td>PDS/SOS</td></tr><tr><td style="white-space:nowrap">TELASSIST<a name="cs-qualification-origin-TELASSIST"> </a></td><td>Téléassistance</td></tr><tr><td style="white-space:nowrap">CROSS<a name="cs-qualification-origin-CROSS"> </a></td><td>CROSS</td></tr><tr><td style="white-space:nowrap">PUBLIC<a name="cs-qualification-origin-PUBLIC"> </a></td><td>Public</td></tr><tr><td style="white-space:nowrap">DATA<a name="cs-qualification-origin-DATA"> </a></td><td>Data</td></tr><tr><td style="white-space:nowrap">AUTRE<a name="cs-qualification-origin-AUTRE"> </a></td><td>Autre</td></tr></table></div>
+  </text>
+  <url value="https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-qualification-origin"/>
+  <version value="0.1.0"/>
+  <name value="CS_QualificationOrigin"/>
+  <title value="Origine de la qualification (Hub Santé)"/>
+  <status value="draft"/>
+  <date value="2026-03-16T12:48:10+00:00"/>
+  <publisher value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
+  <contact>
+    <name value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://esante.gouv.fr"/>
+    </telecom>
+  </contact>
+  <description value="Canal ou entité à l'origine de la création du dossier de régulation médicale."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="FR"/>
+      <display value="France"/>
+    </coding>
+  </jurisdiction>
+  <content value="complete"/>
+  <count value="19"/>
+  <concept>
+    <code value="15"/>
+    <display value="15"/>
+  </concept>
+  <concept>
+    <code value="116117"/>
+    <display value="116 117"/>
+  </concept>
+  <concept>
+    <code value="AUTOCOM"/>
+    <display value="Autocommutateur"/>
+  </concept>
+  <concept>
+    <code value="112"/>
+    <display value="112"/>
+  </concept>
+  <concept>
+    <code value="115"/>
+    <display value="115"/>
+  </concept>
+  <concept>
+    <code value="CRRA"/>
+    <display value="CRRA"/>
+  </concept>
+  <concept>
+    <code value="AUTREC15"/>
+    <display value="Autre C15"/>
+  </concept>
+  <concept>
+    <code value="`CTA-CONF`"/>
+    <display value="CTA Conférence"/>
+  </concept>
+  <concept>
+    <code value="`CTA-PI`"/>
+    <display value="CTA Premier Intervenant"/>
+  </concept>
+  <concept>
+    <code value="AUTRECTA"/>
+    <display value="Autre CTA"/>
+  </concept>
+  <concept>
+    <code value="CNR"/>
+    <display value="CNR"/>
+  </concept>
+  <concept>
+    <code value="FDO"/>
+    <display value="Forces de l'Ordre"/>
+  </concept>
+  <concept>
+    <code value="SNATED"/>
+    <display value="SNATED"/>
+  </concept>
+  <concept>
+    <code value="PDSSOS"/>
+    <display value="PDS/SOS"/>
+  </concept>
+  <concept>
+    <code value="TELASSIST"/>
+    <display value="Téléassistance"/>
+  </concept>
+  <concept>
+    <code value="CROSS"/>
+    <display value="CROSS"/>
+  </concept>
+  <concept>
+    <code value="PUBLIC"/>
+    <display value="Public"/>
+  </concept>
+  <concept>
+    <code value="DATA"/>
+    <display value="Data"/>
+  </concept>
+  <concept>
+    <code value="AUTRE"/>
+    <display value="Autre"/>
+  </concept>
+</CodeSystem>

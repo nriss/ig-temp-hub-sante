@@ -1,0 +1,136 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-caller-type> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "cs-caller-type"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : CodeSystem cs-caller-type</b></p><a name=\"cs-caller-type\"> </a><a name=\"hccs-caller-type\"> </a><p>This  code system <code>https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-caller-type</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage</b></td></tr><tr><td style=\"white-space:nowrap\">SUJET<a name=\"cs-caller-type-SUJET\"> </a></td><td>Sujet</td></tr><tr><td style=\"white-space:nowrap\">FAMILLE<a name=\"cs-caller-type-FAMILLE\"> </a></td><td>Famille</td></tr><tr><td style=\"white-space:nowrap\">TIERS<a name=\"cs-caller-type-TIERS\"> </a></td><td>Tiers</td></tr><tr><td style=\"white-space:nowrap\">POMPIER<a name=\"cs-caller-type-POMPIER\"> </a></td><td>Pompier</td></tr><tr><td style=\"white-space:nowrap\">AMBULANC<a name=\"cs-caller-type-AMBULANC\"> </a></td><td>Ambulancier</td></tr><tr><td style=\"white-space:nowrap\">`AMBULANC.AASC`<a name=\"cs-caller-type-.96AMBULANC.46AASC.96\"> </a></td><td>Ambulancier AASC</td></tr><tr><td style=\"white-space:nowrap\">`AMBULANC.AUTRESEC`<a name=\"cs-caller-type-.96AMBULANC.46AUTRESEC.96\"> </a></td><td>Autre secouriste</td></tr><tr><td style=\"white-space:nowrap\">SECOUR<a name=\"cs-caller-type-SECOUR\"> </a></td><td>Secouriste</td></tr><tr><td style=\"white-space:nowrap\">MED<a name=\"cs-caller-type-MED\"> </a></td><td>Médecin</td></tr><tr><td style=\"white-space:nowrap\">`MED.MEDSOS`<a name=\"cs-caller-type-.96MED.46MEDSOS.96\"> </a></td><td>Médecin SOS</td></tr><tr><td style=\"white-space:nowrap\">`MED.MRL`<a name=\"cs-caller-type-.96MED.46MRL.96\"> </a></td><td>Médecin régulateur libéral</td></tr><tr><td style=\"white-space:nowrap\">`MED.EFFML`<a name=\"cs-caller-type-.96MED.46EFFML.96\"> </a></td><td>Effecteur médical libéral</td></tr><tr><td style=\"white-space:nowrap\">SANTE<a name=\"cs-caller-type-SANTE\"> </a></td><td>Professionnel de santé</td></tr><tr><td style=\"white-space:nowrap\">`SANTE.INF`<a name=\"cs-caller-type-.96SANTE.46INF.96\"> </a></td><td>Infirmier</td></tr><tr><td style=\"white-space:nowrap\">`SANTE.AIDESOIN`<a name=\"cs-caller-type-.96SANTE.46AIDESOIN.96\"> </a></td><td>Aide-soignant</td></tr><tr><td style=\"white-space:nowrap\">`SANTE.SF`<a name=\"cs-caller-type-.96SANTE.46SF.96\"> </a></td><td>Sage-femme</td></tr><tr><td style=\"white-space:nowrap\">`SANTE.AIDEDOM`<a name=\"cs-caller-type-.96SANTE.46AIDEDOM.96\"> </a></td><td>Aide à domicile</td></tr><tr><td style=\"white-space:nowrap\">`SANTE.PHARMA`<a name=\"cs-caller-type-.96SANTE.46PHARMA.96\"> </a></td><td>Pharmacien</td></tr><tr><td style=\"white-space:nowrap\">`SANTE.DENTISTE`<a name=\"cs-caller-type-.96SANTE.46DENTISTE.96\"> </a></td><td>Dentiste</td></tr><tr><td style=\"white-space:nowrap\">`SANTE.LABO`<a name=\"cs-caller-type-.96SANTE.46LABO.96\"> </a></td><td>Laboratoire</td></tr><tr><td style=\"white-space:nowrap\">`FDO-MILI`<a name=\"cs-caller-type-.96FDO-MILI.96\"> </a></td><td>Forces de l'ordre / militaire</td></tr><tr><td style=\"white-space:nowrap\">`FDO-MILI.POL`<a name=\"cs-caller-type-.96FDO-MILI.46POL.96\"> </a></td><td>Police</td></tr><tr><td style=\"white-space:nowrap\">`FDO-MILI.GENDARM`<a name=\"cs-caller-type-.96FDO-MILI.46GENDARM.96\"> </a></td><td>Gendarmerie</td></tr><tr><td style=\"white-space:nowrap\">`FDO-MILI.MILI`<a name=\"cs-caller-type-.96FDO-MILI.46MILI.96\"> </a></td><td>Militaire</td></tr><tr><td style=\"white-space:nowrap\">`ADM-TUTL`<a name=\"cs-caller-type-.96ADM-TUTL.96\"> </a></td><td>Administration / tutelle</td></tr><tr><td style=\"white-space:nowrap\">VIP<a name=\"cs-caller-type-VIP\"> </a></td><td>VIP</td></tr><tr><td style=\"white-space:nowrap\">OBJCONNC<a name=\"cs-caller-type-OBJCONNC\"> </a></td><td>Objet connecté</td></tr><tr><td style=\"white-space:nowrap\">AUTRE<a name=\"cs-caller-type-AUTRE\"> </a></td><td>Autre</td></tr><tr><td style=\"white-space:nowrap\">INCONNU<a name=\"cs-caller-type-INCONNU\"> </a></td><td>Inconnu</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-caller-type"^^xsd:anyURI ;
+     fhir:l <https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-caller-type>
+  ] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "CS_CallerType"] ; # 
+  fhir:title [ fhir:v "Type d'appelant (Hub Santé)"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2026-03-16T12:48:10+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://esante.gouv.fr" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Type ou qualité de l'appelant/requérant."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "FR" ] ;
+       fhir:display [ fhir:v "France" ]
+     ] )
+  ] ) ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "29"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "SUJET" ] ;
+     fhir:display [ fhir:v "Sujet" ]
+  ] [
+     fhir:code [ fhir:v "FAMILLE" ] ;
+     fhir:display [ fhir:v "Famille" ]
+  ] [
+     fhir:code [ fhir:v "TIERS" ] ;
+     fhir:display [ fhir:v "Tiers" ]
+  ] [
+     fhir:code [ fhir:v "POMPIER" ] ;
+     fhir:display [ fhir:v "Pompier" ]
+  ] [
+     fhir:code [ fhir:v "AMBULANC" ] ;
+     fhir:display [ fhir:v "Ambulancier" ]
+  ] [
+     fhir:code [ fhir:v "`AMBULANC.AASC`" ] ;
+     fhir:display [ fhir:v "Ambulancier AASC" ]
+  ] [
+     fhir:code [ fhir:v "`AMBULANC.AUTRESEC`" ] ;
+     fhir:display [ fhir:v "Autre secouriste" ]
+  ] [
+     fhir:code [ fhir:v "SECOUR" ] ;
+     fhir:display [ fhir:v "Secouriste" ]
+  ] [
+     fhir:code [ fhir:v "MED" ] ;
+     fhir:display [ fhir:v "Médecin" ]
+  ] [
+     fhir:code [ fhir:v "`MED.MEDSOS`" ] ;
+     fhir:display [ fhir:v "Médecin SOS" ]
+  ] [
+     fhir:code [ fhir:v "`MED.MRL`" ] ;
+     fhir:display [ fhir:v "Médecin régulateur libéral" ]
+  ] [
+     fhir:code [ fhir:v "`MED.EFFML`" ] ;
+     fhir:display [ fhir:v "Effecteur médical libéral" ]
+  ] [
+     fhir:code [ fhir:v "SANTE" ] ;
+     fhir:display [ fhir:v "Professionnel de santé" ]
+  ] [
+     fhir:code [ fhir:v "`SANTE.INF`" ] ;
+     fhir:display [ fhir:v "Infirmier" ]
+  ] [
+     fhir:code [ fhir:v "`SANTE.AIDESOIN`" ] ;
+     fhir:display [ fhir:v "Aide-soignant" ]
+  ] [
+     fhir:code [ fhir:v "`SANTE.SF`" ] ;
+     fhir:display [ fhir:v "Sage-femme" ]
+  ] [
+     fhir:code [ fhir:v "`SANTE.AIDEDOM`" ] ;
+     fhir:display [ fhir:v "Aide à domicile" ]
+  ] [
+     fhir:code [ fhir:v "`SANTE.PHARMA`" ] ;
+     fhir:display [ fhir:v "Pharmacien" ]
+  ] [
+     fhir:code [ fhir:v "`SANTE.DENTISTE`" ] ;
+     fhir:display [ fhir:v "Dentiste" ]
+  ] [
+     fhir:code [ fhir:v "`SANTE.LABO`" ] ;
+     fhir:display [ fhir:v "Laboratoire" ]
+  ] [
+     fhir:code [ fhir:v "`FDO-MILI`" ] ;
+     fhir:display [ fhir:v "Forces de l'ordre / militaire" ]
+  ] [
+     fhir:code [ fhir:v "`FDO-MILI.POL`" ] ;
+     fhir:display [ fhir:v "Police" ]
+  ] [
+     fhir:code [ fhir:v "`FDO-MILI.GENDARM`" ] ;
+     fhir:display [ fhir:v "Gendarmerie" ]
+  ] [
+     fhir:code [ fhir:v "`FDO-MILI.MILI`" ] ;
+     fhir:display [ fhir:v "Militaire" ]
+  ] [
+     fhir:code [ fhir:v "`ADM-TUTL`" ] ;
+     fhir:display [ fhir:v "Administration / tutelle" ]
+  ] [
+     fhir:code [ fhir:v "VIP" ] ;
+     fhir:display [ fhir:v "VIP" ]
+  ] [
+     fhir:code [ fhir:v "OBJCONNC" ] ;
+     fhir:display [ fhir:v "Objet connecté" ]
+  ] [
+     fhir:code [ fhir:v "AUTRE" ] ;
+     fhir:display [ fhir:v "Autre" ]
+  ] [
+     fhir:code [ fhir:v "INCONNU" ] ;
+     fhir:display [ fhir:v "Inconnu" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

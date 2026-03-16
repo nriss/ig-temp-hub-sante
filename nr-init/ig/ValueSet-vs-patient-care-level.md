@@ -16,6 +16,7 @@ Niveaux de soins spécifiques au patient dans le contexte de la régulation méd
 
  **References** 
 
+* [Détails du dossier](StructureDefinition-lm-case-details.md)
 * [Informations patient](StructureDefinition-lm-patient-detail.md)
 
 ### Définition logique (CLD)
@@ -50,7 +51,7 @@ Niveaux de soins spécifiques au patient dans le contexte de la régulation méd
   "name" : "VS_PatientCareLevel",
   "title" : "Niveau de soin du patient (Hub Santé)",
   "status" : "draft",
-  "date" : "2026-03-16T10:29:29+00:00",
+  "date" : "2026-03-16T12:48:10+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

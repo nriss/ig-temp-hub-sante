@@ -1,0 +1,19 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
+"lm-decision","lm-decision","","","",0,*,"","","","null {[]} {[]}
+","Décision médicale","Décision de régulation médicale prise par l'opérateur pour un dossier donné.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"lm-decision.creation","lm-decision.creation","","","",1,1,"","","","dateTime {[]} {[]}
+","Date/heure de la décision","Date et heure de la décision (avec fuseau horaire).","","","","","","","","","",,,,,"",,,,"lm-decision.creation",1,1,"",""
+"lm-decision.operator","lm-decision.operator","","","",1,1,"","","","https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-operator {[]} {[]}
+","Opérateur","Professionnel de santé ayant pris la décision.","","","","","","","","","",,,,,"",,,,"lm-decision.operator",1,1,"",""
+"lm-decision.decisionType","lm-decision.decisionType","","","",1,1,"","","","code {[]} {[]}
+","Type de décision","Type de décision médicale.","","","","","","","","","",,"required","","https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-decision-type|0.1.0","",,,,"lm-decision.decisionType",1,1,"",""
+"lm-decision.patientId","lm-decision.patientId","","","",0,1,"","","","string {[]} {[]}
+","ID patient","Identifiant partagé du patient concerné par la décision.","Regexp : ^([a-zA-Z0-9_-]+\.){3,8}patient(\.[a-zA-Z0-9_-]+){1,2}$","","","","","","","","",,,,,"",,,,"lm-decision.patientId",0,1,"",""
+"lm-decision.resourceType","lm-decision.resourceType","","","",0,1,"","","","code {[]} {[]}
+","Type de ressource","Type de ressource mobilisée.","","","","","","","","","",,"required","","https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-resource-type|0.1.0","",,,,"lm-decision.resourceType",0,1,"",""
+"lm-decision.medicalTransport","lm-decision.medicalTransport","","","",0,1,"","","","boolean {[]} {[]}
+","Transport médicalisé","Indique si un transport médicalisé est requis.","","","","","","","","","",,,,,"",,,,"lm-decision.medicalTransport",0,1,"",""
+"lm-decision.orientationType","lm-decision.orientationType","","","",0,1,"","","","code {[]} {[]}
+","Type d'orientation","Type d'orientation du patient.","","","","","","","","","",,"required","","https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-orientation-type|0.1.0","",,,,"lm-decision.orientationType",0,1,"",""
+"lm-decision.destination","lm-decision.destination","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-destination {[]} {[]}
+","Destination","Établissement de destination du patient.","","","","","","","","","",,,,,"",,,,"lm-decision.destination",0,1,"",""

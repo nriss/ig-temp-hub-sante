@@ -1,0 +1,52 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "cs-external-info-type",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : CodeSystem cs-external-info-type</b></p><a name=\"cs-external-info-type\"> </a><a name=\"hccs-external-info-type\"> </a><p>This  code system <code>https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-external-info-type</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage</b></td></tr><tr><td style=\"white-space:nowrap\">MANUEL<a name=\"cs-external-info-type-MANUEL\"> </a></td><td>Manuel</td></tr><tr><td style=\"white-space:nowrap\">CARTE<a name=\"cs-external-info-type-CARTE\"> </a></td><td>Carte</td></tr><tr><td style=\"white-space:nowrap\">AUTRE<a name=\"cs-external-info-type-AUTRE\"> </a></td><td>Autre</td></tr><tr><td style=\"white-space:nowrap\">PHOTO<a name=\"cs-external-info-type-PHOTO\"> </a></td><td>Photo</td></tr><tr><td style=\"white-space:nowrap\">SITE_INTERNET<a name=\"cs-external-info-type-SITE_INTERNET\"> </a></td><td>Site Internet</td></tr></table></div>"
+  },
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-external-info-type",
+  "version" : "0.1.0",
+  "name" : "CS_ExternalInfoType",
+  "title" : "Type d'information externe (Hub Santé)",
+  "status" : "draft",
+  "date" : "2026-03-16T12:48:10+00:00",
+  "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
+  "contact" : [{
+    "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://esante.gouv.fr"
+    }]
+  }],
+  "description" : "Type de la ressource externe référencée pour la localisation.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "France"
+    }]
+  }],
+  "content" : "complete",
+  "count" : 5,
+  "concept" : [{
+    "code" : "MANUEL",
+    "display" : "Manuel"
+  },
+  {
+    "code" : "CARTE",
+    "display" : "Carte"
+  },
+  {
+    "code" : "AUTRE",
+    "display" : "Autre"
+  },
+  {
+    "code" : "PHOTO",
+    "display" : "Photo"
+  },
+  {
+    "code" : "SITE_INTERNET",
+    "display" : "Site Internet"
+  }]
+}

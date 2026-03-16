@@ -1,0 +1,9 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
+"lm-highway","lm-highway","","","",0,*,"","","","null {[]} {[]}
+","Voie routière","Informations relatives à une voie routière (autoroute, route nationale…).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"lm-highway.name","lm-highway.name","","","",0,1,"","","","string {[]} {[]}
+","Nom de la voie","Nom de la voie routière.","","","","","","","","","",,,,,"",,,,"lm-highway.name",0,1,"",""
+"lm-highway.pk","lm-highway.pk","","","",0,1,"","","","string {[]} {[]}
+","Point kilométrique","Point kilométrique sur la voie routière.","","","","","","","","","",,,,,"",,,,"lm-highway.pk",0,1,"",""
+"lm-highway.direction","lm-highway.direction","","","",0,1,"","","","string {[]} {[]}
+","Direction","Direction sur la voie routière.","","","","","","","","","",,,,,"",,,,"lm-highway.direction",0,1,"",""

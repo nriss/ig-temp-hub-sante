@@ -1,0 +1,15 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
+"lm-qualification","lm-qualification","","","",0,*,"","","","null {[]} {[]}
+","Qualification du dossier","Qualification médicale et opérationnelle du dossier de régulation médicale.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"lm-qualification.origin","lm-qualification.origin","","","",0,1,"","","","code {[]} {[]}
+","Origine","Canal ou entité à l'origine de la création du dossier.","","","","","","","","","",,"required","","https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-qualification-origin|0.1.0","",,,,"lm-qualification.origin",0,1,"",""
+"lm-qualification.riskThreat","lm-qualification.riskThreat","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-risk-threat {[]} {[]}
+","Risques et menaces","Risques ou menaces identifiés associés au dossier.","","","","","","","","","",,,,,"",,,,"lm-qualification.riskThreat",0,*,"",""
+"lm-qualification.whatsHappen","lm-qualification.whatsHappen","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-whats-happen {[]} {[]}
+","Nature du problème","Code et libellé décrivant la nature de l'événement.","","","","","","","","","",,,,,"",,,,"lm-qualification.whatsHappen",0,1,"",""
+"lm-qualification.locationKind","lm-qualification.locationKind","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-location-kind {[]} {[]}
+","Type de lieu","Code et libellé décrivant le type de lieu de l'intervention.","","","","","","","","","",,,,,"",,,,"lm-qualification.locationKind",0,1,"",""
+"lm-qualification.healthMotive","lm-qualification.healthMotive","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-health-motive {[]} {[]}
+","Motif de santé","Code et libellé décrivant le motif de santé de l'appel.","","","","","","","","","",,,,,"",,,,"lm-qualification.healthMotive",0,1,"",""
+"lm-qualification.details","lm-qualification.details","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-case-details {[]} {[]}
+","Détails du dossier","Informations complémentaires de qualification (statut, attribution, priorité, niveau de soin).","","","","","","","","","",,,,,"",,,,"lm-qualification.details",0,1,"",""

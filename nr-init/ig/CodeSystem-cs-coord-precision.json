@@ -1,0 +1,52 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "cs-coord-precision",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : CodeSystem cs-coord-precision</b></p><a name=\"cs-coord-precision\"> </a><a name=\"hccs-coord-precision\"> </a><p>This  code system <code>https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-coord-precision</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage</b></td></tr><tr><td style=\"white-space:nowrap\">VILLE<a name=\"cs-coord-precision-VILLE\"> </a></td><td>Ville</td></tr><tr><td style=\"white-space:nowrap\">RUE<a name=\"cs-coord-precision-RUE\"> </a></td><td>Rue</td></tr><tr><td style=\"white-space:nowrap\">ADRESSE<a name=\"cs-coord-precision-ADRESSE\"> </a></td><td>Adresse</td></tr><tr><td style=\"white-space:nowrap\">EXACTE<a name=\"cs-coord-precision-EXACTE\"> </a></td><td>Exacte</td></tr><tr><td style=\"white-space:nowrap\">INCONNUE<a name=\"cs-coord-precision-INCONNUE\"> </a></td><td>Inconnue</td></tr></table></div>"
+  },
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-coord-precision",
+  "version" : "0.1.0",
+  "name" : "CS_CoordPrecision",
+  "title" : "Précision des coordonnées géographiques (Hub Santé)",
+  "status" : "draft",
+  "date" : "2026-03-16T12:48:10+00:00",
+  "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
+  "contact" : [{
+    "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://esante.gouv.fr"
+    }]
+  }],
+  "description" : "Niveau de précision des coordonnées géographiques d'un point.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "France"
+    }]
+  }],
+  "content" : "complete",
+  "count" : 5,
+  "concept" : [{
+    "code" : "VILLE",
+    "display" : "Ville"
+  },
+  {
+    "code" : "RUE",
+    "display" : "Rue"
+  },
+  {
+    "code" : "ADRESSE",
+    "display" : "Adresse"
+  },
+  {
+    "code" : "EXACTE",
+    "display" : "Exacte"
+  },
+  {
+    "code" : "INCONNUE",
+    "display" : "Inconnue"
+  }]
+}

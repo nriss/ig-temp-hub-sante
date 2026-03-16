@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="cs-case-attribution"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narratif généré : CodeSystem cs-case-attribution</b></p><a name="cs-case-attribution"> </a><a name="hccs-case-attribution"> </a><p>This  code system <code>https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-case-attribution</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Affichage</b></td></tr><tr><td style="white-space:nowrap">DRM<a name="cs-case-attribution-DRM"> </a></td><td>Demande de régulation médicale</td></tr><tr><td style="white-space:nowrap">`DRM.MRU`<a name="cs-case-attribution-.96DRM.46MRU.96"> </a></td><td>Médecin régulateur urgentiste</td></tr><tr><td style="white-space:nowrap">`DRM.MRU.MU`<a name="cs-case-attribution-.96DRM.46MRU.46MU.96"> </a></td><td>MU</td></tr><tr><td style="white-space:nowrap">`DRM.MRU.INDISPMU`<a name="cs-case-attribution-.96DRM.46MRU.46INDISPMU.96"> </a></td><td>Indisponibilité MU</td></tr><tr><td style="white-space:nowrap">`DRM.MRU.SSE`<a name="cs-case-attribution-.96DRM.46MRU.46SSE.96"> </a></td><td>SSE</td></tr><tr><td style="white-space:nowrap">`DRM.MRU.PLANBLAN`<a name="cs-case-attribution-.96DRM.46MRU.46PLANBLAN.96"> </a></td><td>Plan Blanc</td></tr><tr><td style="white-space:nowrap">`DRM.MRU.PCSAMU`<a name="cs-case-attribution-.96DRM.46MRU.46PCSAMU.96"> </a></td><td>PC SAMU</td></tr><tr><td style="white-space:nowrap">`DRM.SPE`<a name="cs-case-attribution-.96DRM.46SPE.96"> </a></td><td>Spécialiste</td></tr><tr><td style="white-space:nowrap">`DRM.SPE.DENT`<a name="cs-case-attribution-.96DRM.46SPE.46DENT.96"> </a></td><td>Dentiste</td></tr><tr><td style="white-space:nowrap">`DRM.SPE.GERIA`<a name="cs-case-attribution-.96DRM.46SPE.46GERIA.96"> </a></td><td>Gériatrie</td></tr><tr><td style="white-space:nowrap">`DRM.SPE.PEDIA`<a name="cs-case-attribution-.96DRM.46SPE.46PEDIA.96"> </a></td><td>Pédiatrie</td></tr><tr><td style="white-space:nowrap">`DRM.SPE.OBST`<a name="cs-case-attribution-.96DRM.46SPE.46OBST.96"> </a></td><td>Obstétrique</td></tr><tr><td style="white-space:nowrap">`DRM.SPE.PSY`<a name="cs-case-attribution-.96DRM.46SPE.46PSY.96"> </a></td><td>Psychiatrie</td></tr><tr><td style="white-space:nowrap">`DRM.SPE.TOXICOL`<a name="cs-case-attribution-.96DRM.46SPE.46TOXICOL.96"> </a></td><td>Toxicologie</td></tr><tr><td style="white-space:nowrap">`DRM.SPE.AUTRESPE`<a name="cs-case-attribution-.96DRM.46SPE.46AUTRESPE.96"> </a></td><td>Autre spécialiste</td></tr><tr><td style="white-space:nowrap">`DRM.MRL`<a name="cs-case-attribution-.96DRM.46MRL.96"> </a></td><td>Médecin régulateur libéral</td></tr><tr><td style="white-space:nowrap">`DRM.MRL.MG`<a name="cs-case-attribution-.96DRM.46MRL.46MG.96"> </a></td><td>Médecin généraliste</td></tr><tr><td style="white-space:nowrap">`DRM.MRL.INDISPMG`<a name="cs-case-attribution-.96DRM.46MRL.46INDISPMG.96"> </a></td><td>Indisponibilité MG</td></tr><tr><td style="white-space:nowrap">`DRM.MRL.ABSML`<a name="cs-case-attribution-.96DRM.46MRL.46ABSML.96"> </a></td><td>Absence médecin libéral</td></tr><tr><td style="white-space:nowrap">DR<a name="cs-case-attribution-DR"> </a></td><td>Dossier régulé</td></tr><tr><td style="white-space:nowrap">`DR.DREG`<a name="cs-case-attribution-.96DR.46DREG.96"> </a></td><td>Dossier en régulation</td></tr><tr><td style="white-space:nowrap">`DR.DREG.DRARM`<a name="cs-case-attribution-.96DR.46DREG.46DRARM.96"> </a></td><td>ARM</td></tr><tr><td style="white-space:nowrap">`DR.DREG.DRDAC`<a name="cs-case-attribution-.96DR.46DREG.46DRDAC.96"> </a></td><td>DAC</td></tr><tr><td style="white-space:nowrap">`DR.DREG.DRMED`<a name="cs-case-attribution-.96DR.46DREG.46DRMED.96"> </a></td><td>Médecin</td></tr><tr><td style="white-space:nowrap">`DR.DREG.DRPHARMA`<a name="cs-case-attribution-.96DR.46DREG.46DRPHARMA.96"> </a></td><td>Pharmacien</td></tr><tr><td style="white-space:nowrap">`DR.DREG.DRDENT`<a name="cs-case-attribution-.96DR.46DREG.46DRDENT.96"> </a></td><td>Dentiste</td></tr><tr><td style="white-space:nowrap">`DR.DREG.DRINFO`<a name="cs-case-attribution-.96DR.46DREG.46DRINFO.96"> </a></td><td>Informatif</td></tr><tr><td style="white-space:nowrap">`DR.DREG.DOS-SIS`<a name="cs-case-attribution-.96DR.46DREG.46DOS-SIS.96"> </a></td><td>Dossier SIS</td></tr><tr><td style="white-space:nowrap">`DR.DREG.DOS-FDO`<a name="cs-case-attribution-.96DR.46DREG.46DOS-FDO.96"> </a></td><td>Dossier FDO</td></tr><tr><td style="white-space:nowrap">D<a name="cs-case-attribution-D"> </a></td><td>Dossier clôturé</td></tr><tr><td style="white-space:nowrap">`D.D-MALV`<a name="cs-case-attribution-.96D.46D-MALV.96"> </a></td><td>Malveillance</td></tr><tr><td style="white-space:nowrap">`D.D-MALV.ERR`<a name="cs-case-attribution-.96D.46D-MALV.46ERR.96"> </a></td><td>Erreur</td></tr><tr><td style="white-space:nowrap">`D.D-MALV.NRP`<a name="cs-case-attribution-.96D.46D-MALV.46NRP.96"> </a></td><td>NRP</td></tr><tr><td style="white-space:nowrap">`D.D-MALV.MALV`<a name="cs-case-attribution-.96D.46D-MALV.46MALV.96"> </a></td><td>Malveillance</td></tr><tr><td style="white-space:nowrap">`D.D-MALV.FAX`<a name="cs-case-attribution-.96D.46D-MALV.46FAX.96"> </a></td><td>Fax</td></tr><tr><td style="white-space:nowrap">`D.D-MALV.ITERATIF`<a name="cs-case-attribution-.96D.46D-MALV.46ITERATIF.96"> </a></td><td>Itératif</td></tr><tr><td style="white-space:nowrap">`D.D-IDENT`<a name="cs-case-attribution-.96D.46D-IDENT.96"> </a></td><td>Identification</td></tr><tr><td style="white-space:nowrap">`D.D-IDENT.ADMIN`<a name="cs-case-attribution-.96D.46D-IDENT.46ADMIN.96"> </a></td><td>Administratif</td></tr><tr><td style="white-space:nowrap">`D.D-IDENT.PERSO`<a name="cs-case-attribution-.96D.46D-IDENT.46PERSO.96"> </a></td><td>Personnel</td></tr><tr><td style="white-space:nowrap">`D.D-IDENT.AUTRE`<a name="cs-case-attribution-.96D.46D-IDENT.46AUTRE.96"> </a></td><td>Autre</td></tr></table></div>
+  </text>
+  <url value="https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-case-attribution"/>
+  <version value="0.1.0"/>
+  <name value="CS_CaseAttribution"/>
+  <title value="Attribution du dossier (Hub Santé)"/>
+  <status value="draft"/>
+  <date value="2026-03-16T12:48:10+00:00"/>
+  <publisher value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
+  <contact>
+    <name value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://esante.gouv.fr"/>
+    </telecom>
+  </contact>
+  <description value="Attribution ou orientation du dossier de régulation médicale."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="FR"/>
+      <display value="France"/>
+    </coding>
+  </jurisdiction>
+  <content value="complete"/>
+  <count value="40"/>
+  <concept>
+    <code value="DRM"/>
+    <display value="Demande de régulation médicale"/>
+  </concept>
+  <concept>
+    <code value="`DRM.MRU`"/>
+    <display value="Médecin régulateur urgentiste"/>
+  </concept>
+  <concept>
+    <code value="`DRM.MRU.MU`"/>
+    <display value="MU"/>
+  </concept>
+  <concept>
+    <code value="`DRM.MRU.INDISPMU`"/>
+    <display value="Indisponibilité MU"/>
+  </concept>
+  <concept>
+    <code value="`DRM.MRU.SSE`"/>
+    <display value="SSE"/>
+  </concept>
+  <concept>
+    <code value="`DRM.MRU.PLANBLAN`"/>
+    <display value="Plan Blanc"/>
+  </concept>
+  <concept>
+    <code value="`DRM.MRU.PCSAMU`"/>
+    <display value="PC SAMU"/>
+  </concept>
+  <concept>
+    <code value="`DRM.SPE`"/>
+    <display value="Spécialiste"/>
+  </concept>
+  <concept>
+    <code value="`DRM.SPE.DENT`"/>
+    <display value="Dentiste"/>
+  </concept>
+  <concept>
+    <code value="`DRM.SPE.GERIA`"/>
+    <display value="Gériatrie"/>
+  </concept>
+  <concept>
+    <code value="`DRM.SPE.PEDIA`"/>
+    <display value="Pédiatrie"/>
+  </concept>
+  <concept>
+    <code value="`DRM.SPE.OBST`"/>
+    <display value="Obstétrique"/>
+  </concept>
+  <concept>
+    <code value="`DRM.SPE.PSY`"/>
+    <display value="Psychiatrie"/>
+  </concept>
+  <concept>
+    <code value="`DRM.SPE.TOXICOL`"/>
+    <display value="Toxicologie"/>
+  </concept>
+  <concept>
+    <code value="`DRM.SPE.AUTRESPE`"/>
+    <display value="Autre spécialiste"/>
+  </concept>
+  <concept>
+    <code value="`DRM.MRL`"/>
+    <display value="Médecin régulateur libéral"/>
+  </concept>
+  <concept>
+    <code value="`DRM.MRL.MG`"/>
+    <display value="Médecin généraliste"/>
+  </concept>
+  <concept>
+    <code value="`DRM.MRL.INDISPMG`"/>
+    <display value="Indisponibilité MG"/>
+  </concept>
+  <concept>
+    <code value="`DRM.MRL.ABSML`"/>
+    <display value="Absence médecin libéral"/>
+  </concept>
+  <concept>
+    <code value="DR"/>
+    <display value="Dossier régulé"/>
+  </concept>
+  <concept>
+    <code value="`DR.DREG`"/>
+    <display value="Dossier en régulation"/>
+  </concept>
+  <concept>
+    <code value="`DR.DREG.DRARM`"/>
+    <display value="ARM"/>
+  </concept>
+  <concept>
+    <code value="`DR.DREG.DRDAC`"/>
+    <display value="DAC"/>
+  </concept>
+  <concept>
+    <code value="`DR.DREG.DRMED`"/>
+    <display value="Médecin"/>
+  </concept>
+  <concept>
+    <code value="`DR.DREG.DRPHARMA`"/>
+    <display value="Pharmacien"/>
+  </concept>
+  <concept>
+    <code value="`DR.DREG.DRDENT`"/>
+    <display value="Dentiste"/>
+  </concept>
+  <concept>
+    <code value="`DR.DREG.DRINFO`"/>
+    <display value="Informatif"/>
+  </concept>
+  <concept>
+    <code value="`DR.DREG.DOS-SIS`"/>
+    <display value="Dossier SIS"/>
+  </concept>
+  <concept>
+    <code value="`DR.DREG.DOS-FDO`"/>
+    <display value="Dossier FDO"/>
+  </concept>
+  <concept>
+    <code value="D"/>
+    <display value="Dossier clôturé"/>
+  </concept>
+  <concept>
+    <code value="`D.D-MALV`"/>
+    <display value="Malveillance"/>
+  </concept>
+  <concept>
+    <code value="`D.D-MALV.ERR`"/>
+    <display value="Erreur"/>
+  </concept>
+  <concept>
+    <code value="`D.D-MALV.NRP`"/>
+    <display value="NRP"/>
+  </concept>
+  <concept>
+    <code value="`D.D-MALV.MALV`"/>
+    <display value="Malveillance"/>
+  </concept>
+  <concept>
+    <code value="`D.D-MALV.FAX`"/>
+    <display value="Fax"/>
+  </concept>
+  <concept>
+    <code value="`D.D-MALV.ITERATIF`"/>
+    <display value="Itératif"/>
+  </concept>
+  <concept>
+    <code value="`D.D-IDENT`"/>
+    <display value="Identification"/>
+  </concept>
+  <concept>
+    <code value="`D.D-IDENT.ADMIN`"/>
+    <display value="Administratif"/>
+  </concept>
+  <concept>
+    <code value="`D.D-IDENT.PERSO`"/>
+    <display value="Personnel"/>
+  </concept>
+  <concept>
+    <code value="`D.D-IDENT.AUTRE`"/>
+    <display value="Autre"/>
+  </concept>
+</CodeSystem>

@@ -1,0 +1,169 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-case-attribution> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "cs-case-attribution"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : CodeSystem cs-case-attribution</b></p><a name=\"cs-case-attribution\"> </a><a name=\"hccs-case-attribution\"> </a><p>This  code system <code>https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-case-attribution</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage</b></td></tr><tr><td style=\"white-space:nowrap\">DRM<a name=\"cs-case-attribution-DRM\"> </a></td><td>Demande de régulation médicale</td></tr><tr><td style=\"white-space:nowrap\">`DRM.MRU`<a name=\"cs-case-attribution-.96DRM.46MRU.96\"> </a></td><td>Médecin régulateur urgentiste</td></tr><tr><td style=\"white-space:nowrap\">`DRM.MRU.MU`<a name=\"cs-case-attribution-.96DRM.46MRU.46MU.96\"> </a></td><td>MU</td></tr><tr><td style=\"white-space:nowrap\">`DRM.MRU.INDISPMU`<a name=\"cs-case-attribution-.96DRM.46MRU.46INDISPMU.96\"> </a></td><td>Indisponibilité MU</td></tr><tr><td style=\"white-space:nowrap\">`DRM.MRU.SSE`<a name=\"cs-case-attribution-.96DRM.46MRU.46SSE.96\"> </a></td><td>SSE</td></tr><tr><td style=\"white-space:nowrap\">`DRM.MRU.PLANBLAN`<a name=\"cs-case-attribution-.96DRM.46MRU.46PLANBLAN.96\"> </a></td><td>Plan Blanc</td></tr><tr><td style=\"white-space:nowrap\">`DRM.MRU.PCSAMU`<a name=\"cs-case-attribution-.96DRM.46MRU.46PCSAMU.96\"> </a></td><td>PC SAMU</td></tr><tr><td style=\"white-space:nowrap\">`DRM.SPE`<a name=\"cs-case-attribution-.96DRM.46SPE.96\"> </a></td><td>Spécialiste</td></tr><tr><td style=\"white-space:nowrap\">`DRM.SPE.DENT`<a name=\"cs-case-attribution-.96DRM.46SPE.46DENT.96\"> </a></td><td>Dentiste</td></tr><tr><td style=\"white-space:nowrap\">`DRM.SPE.GERIA`<a name=\"cs-case-attribution-.96DRM.46SPE.46GERIA.96\"> </a></td><td>Gériatrie</td></tr><tr><td style=\"white-space:nowrap\">`DRM.SPE.PEDIA`<a name=\"cs-case-attribution-.96DRM.46SPE.46PEDIA.96\"> </a></td><td>Pédiatrie</td></tr><tr><td style=\"white-space:nowrap\">`DRM.SPE.OBST`<a name=\"cs-case-attribution-.96DRM.46SPE.46OBST.96\"> </a></td><td>Obstétrique</td></tr><tr><td style=\"white-space:nowrap\">`DRM.SPE.PSY`<a name=\"cs-case-attribution-.96DRM.46SPE.46PSY.96\"> </a></td><td>Psychiatrie</td></tr><tr><td style=\"white-space:nowrap\">`DRM.SPE.TOXICOL`<a name=\"cs-case-attribution-.96DRM.46SPE.46TOXICOL.96\"> </a></td><td>Toxicologie</td></tr><tr><td style=\"white-space:nowrap\">`DRM.SPE.AUTRESPE`<a name=\"cs-case-attribution-.96DRM.46SPE.46AUTRESPE.96\"> </a></td><td>Autre spécialiste</td></tr><tr><td style=\"white-space:nowrap\">`DRM.MRL`<a name=\"cs-case-attribution-.96DRM.46MRL.96\"> </a></td><td>Médecin régulateur libéral</td></tr><tr><td style=\"white-space:nowrap\">`DRM.MRL.MG`<a name=\"cs-case-attribution-.96DRM.46MRL.46MG.96\"> </a></td><td>Médecin généraliste</td></tr><tr><td style=\"white-space:nowrap\">`DRM.MRL.INDISPMG`<a name=\"cs-case-attribution-.96DRM.46MRL.46INDISPMG.96\"> </a></td><td>Indisponibilité MG</td></tr><tr><td style=\"white-space:nowrap\">`DRM.MRL.ABSML`<a name=\"cs-case-attribution-.96DRM.46MRL.46ABSML.96\"> </a></td><td>Absence médecin libéral</td></tr><tr><td style=\"white-space:nowrap\">DR<a name=\"cs-case-attribution-DR\"> </a></td><td>Dossier régulé</td></tr><tr><td style=\"white-space:nowrap\">`DR.DREG`<a name=\"cs-case-attribution-.96DR.46DREG.96\"> </a></td><td>Dossier en régulation</td></tr><tr><td style=\"white-space:nowrap\">`DR.DREG.DRARM`<a name=\"cs-case-attribution-.96DR.46DREG.46DRARM.96\"> </a></td><td>ARM</td></tr><tr><td style=\"white-space:nowrap\">`DR.DREG.DRDAC`<a name=\"cs-case-attribution-.96DR.46DREG.46DRDAC.96\"> </a></td><td>DAC</td></tr><tr><td style=\"white-space:nowrap\">`DR.DREG.DRMED`<a name=\"cs-case-attribution-.96DR.46DREG.46DRMED.96\"> </a></td><td>Médecin</td></tr><tr><td style=\"white-space:nowrap\">`DR.DREG.DRPHARMA`<a name=\"cs-case-attribution-.96DR.46DREG.46DRPHARMA.96\"> </a></td><td>Pharmacien</td></tr><tr><td style=\"white-space:nowrap\">`DR.DREG.DRDENT`<a name=\"cs-case-attribution-.96DR.46DREG.46DRDENT.96\"> </a></td><td>Dentiste</td></tr><tr><td style=\"white-space:nowrap\">`DR.DREG.DRINFO`<a name=\"cs-case-attribution-.96DR.46DREG.46DRINFO.96\"> </a></td><td>Informatif</td></tr><tr><td style=\"white-space:nowrap\">`DR.DREG.DOS-SIS`<a name=\"cs-case-attribution-.96DR.46DREG.46DOS-SIS.96\"> </a></td><td>Dossier SIS</td></tr><tr><td style=\"white-space:nowrap\">`DR.DREG.DOS-FDO`<a name=\"cs-case-attribution-.96DR.46DREG.46DOS-FDO.96\"> </a></td><td>Dossier FDO</td></tr><tr><td style=\"white-space:nowrap\">D<a name=\"cs-case-attribution-D\"> </a></td><td>Dossier clôturé</td></tr><tr><td style=\"white-space:nowrap\">`D.D-MALV`<a name=\"cs-case-attribution-.96D.46D-MALV.96\"> </a></td><td>Malveillance</td></tr><tr><td style=\"white-space:nowrap\">`D.D-MALV.ERR`<a name=\"cs-case-attribution-.96D.46D-MALV.46ERR.96\"> </a></td><td>Erreur</td></tr><tr><td style=\"white-space:nowrap\">`D.D-MALV.NRP`<a name=\"cs-case-attribution-.96D.46D-MALV.46NRP.96\"> </a></td><td>NRP</td></tr><tr><td style=\"white-space:nowrap\">`D.D-MALV.MALV`<a name=\"cs-case-attribution-.96D.46D-MALV.46MALV.96\"> </a></td><td>Malveillance</td></tr><tr><td style=\"white-space:nowrap\">`D.D-MALV.FAX`<a name=\"cs-case-attribution-.96D.46D-MALV.46FAX.96\"> </a></td><td>Fax</td></tr><tr><td style=\"white-space:nowrap\">`D.D-MALV.ITERATIF`<a name=\"cs-case-attribution-.96D.46D-MALV.46ITERATIF.96\"> </a></td><td>Itératif</td></tr><tr><td style=\"white-space:nowrap\">`D.D-IDENT`<a name=\"cs-case-attribution-.96D.46D-IDENT.96\"> </a></td><td>Identification</td></tr><tr><td style=\"white-space:nowrap\">`D.D-IDENT.ADMIN`<a name=\"cs-case-attribution-.96D.46D-IDENT.46ADMIN.96\"> </a></td><td>Administratif</td></tr><tr><td style=\"white-space:nowrap\">`D.D-IDENT.PERSO`<a name=\"cs-case-attribution-.96D.46D-IDENT.46PERSO.96\"> </a></td><td>Personnel</td></tr><tr><td style=\"white-space:nowrap\">`D.D-IDENT.AUTRE`<a name=\"cs-case-attribution-.96D.46D-IDENT.46AUTRE.96\"> </a></td><td>Autre</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-case-attribution"^^xsd:anyURI ;
+     fhir:l <https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-case-attribution>
+  ] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "CS_CaseAttribution"] ; # 
+  fhir:title [ fhir:v "Attribution du dossier (Hub Santé)"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2026-03-16T12:48:10+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://esante.gouv.fr" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Attribution ou orientation du dossier de régulation médicale."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "FR" ] ;
+       fhir:display [ fhir:v "France" ]
+     ] )
+  ] ) ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "40"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "DRM" ] ;
+     fhir:display [ fhir:v "Demande de régulation médicale" ]
+  ] [
+     fhir:code [ fhir:v "`DRM.MRU`" ] ;
+     fhir:display [ fhir:v "Médecin régulateur urgentiste" ]
+  ] [
+     fhir:code [ fhir:v "`DRM.MRU.MU`" ] ;
+     fhir:display [ fhir:v "MU" ]
+  ] [
+     fhir:code [ fhir:v "`DRM.MRU.INDISPMU`" ] ;
+     fhir:display [ fhir:v "Indisponibilité MU" ]
+  ] [
+     fhir:code [ fhir:v "`DRM.MRU.SSE`" ] ;
+     fhir:display [ fhir:v "SSE" ]
+  ] [
+     fhir:code [ fhir:v "`DRM.MRU.PLANBLAN`" ] ;
+     fhir:display [ fhir:v "Plan Blanc" ]
+  ] [
+     fhir:code [ fhir:v "`DRM.MRU.PCSAMU`" ] ;
+     fhir:display [ fhir:v "PC SAMU" ]
+  ] [
+     fhir:code [ fhir:v "`DRM.SPE`" ] ;
+     fhir:display [ fhir:v "Spécialiste" ]
+  ] [
+     fhir:code [ fhir:v "`DRM.SPE.DENT`" ] ;
+     fhir:display [ fhir:v "Dentiste" ]
+  ] [
+     fhir:code [ fhir:v "`DRM.SPE.GERIA`" ] ;
+     fhir:display [ fhir:v "Gériatrie" ]
+  ] [
+     fhir:code [ fhir:v "`DRM.SPE.PEDIA`" ] ;
+     fhir:display [ fhir:v "Pédiatrie" ]
+  ] [
+     fhir:code [ fhir:v "`DRM.SPE.OBST`" ] ;
+     fhir:display [ fhir:v "Obstétrique" ]
+  ] [
+     fhir:code [ fhir:v "`DRM.SPE.PSY`" ] ;
+     fhir:display [ fhir:v "Psychiatrie" ]
+  ] [
+     fhir:code [ fhir:v "`DRM.SPE.TOXICOL`" ] ;
+     fhir:display [ fhir:v "Toxicologie" ]
+  ] [
+     fhir:code [ fhir:v "`DRM.SPE.AUTRESPE`" ] ;
+     fhir:display [ fhir:v "Autre spécialiste" ]
+  ] [
+     fhir:code [ fhir:v "`DRM.MRL`" ] ;
+     fhir:display [ fhir:v "Médecin régulateur libéral" ]
+  ] [
+     fhir:code [ fhir:v "`DRM.MRL.MG`" ] ;
+     fhir:display [ fhir:v "Médecin généraliste" ]
+  ] [
+     fhir:code [ fhir:v "`DRM.MRL.INDISPMG`" ] ;
+     fhir:display [ fhir:v "Indisponibilité MG" ]
+  ] [
+     fhir:code [ fhir:v "`DRM.MRL.ABSML`" ] ;
+     fhir:display [ fhir:v "Absence médecin libéral" ]
+  ] [
+     fhir:code [ fhir:v "DR" ] ;
+     fhir:display [ fhir:v "Dossier régulé" ]
+  ] [
+     fhir:code [ fhir:v "`DR.DREG`" ] ;
+     fhir:display [ fhir:v "Dossier en régulation" ]
+  ] [
+     fhir:code [ fhir:v "`DR.DREG.DRARM`" ] ;
+     fhir:display [ fhir:v "ARM" ]
+  ] [
+     fhir:code [ fhir:v "`DR.DREG.DRDAC`" ] ;
+     fhir:display [ fhir:v "DAC" ]
+  ] [
+     fhir:code [ fhir:v "`DR.DREG.DRMED`" ] ;
+     fhir:display [ fhir:v "Médecin" ]
+  ] [
+     fhir:code [ fhir:v "`DR.DREG.DRPHARMA`" ] ;
+     fhir:display [ fhir:v "Pharmacien" ]
+  ] [
+     fhir:code [ fhir:v "`DR.DREG.DRDENT`" ] ;
+     fhir:display [ fhir:v "Dentiste" ]
+  ] [
+     fhir:code [ fhir:v "`DR.DREG.DRINFO`" ] ;
+     fhir:display [ fhir:v "Informatif" ]
+  ] [
+     fhir:code [ fhir:v "`DR.DREG.DOS-SIS`" ] ;
+     fhir:display [ fhir:v "Dossier SIS" ]
+  ] [
+     fhir:code [ fhir:v "`DR.DREG.DOS-FDO`" ] ;
+     fhir:display [ fhir:v "Dossier FDO" ]
+  ] [
+     fhir:code [ fhir:v "D" ] ;
+     fhir:display [ fhir:v "Dossier clôturé" ]
+  ] [
+     fhir:code [ fhir:v "`D.D-MALV`" ] ;
+     fhir:display [ fhir:v "Malveillance" ]
+  ] [
+     fhir:code [ fhir:v "`D.D-MALV.ERR`" ] ;
+     fhir:display [ fhir:v "Erreur" ]
+  ] [
+     fhir:code [ fhir:v "`D.D-MALV.NRP`" ] ;
+     fhir:display [ fhir:v "NRP" ]
+  ] [
+     fhir:code [ fhir:v "`D.D-MALV.MALV`" ] ;
+     fhir:display [ fhir:v "Malveillance" ]
+  ] [
+     fhir:code [ fhir:v "`D.D-MALV.FAX`" ] ;
+     fhir:display [ fhir:v "Fax" ]
+  ] [
+     fhir:code [ fhir:v "`D.D-MALV.ITERATIF`" ] ;
+     fhir:display [ fhir:v "Itératif" ]
+  ] [
+     fhir:code [ fhir:v "`D.D-IDENT`" ] ;
+     fhir:display [ fhir:v "Identification" ]
+  ] [
+     fhir:code [ fhir:v "`D.D-IDENT.ADMIN`" ] ;
+     fhir:display [ fhir:v "Administratif" ]
+  ] [
+     fhir:code [ fhir:v "`D.D-IDENT.PERSO`" ] ;
+     fhir:display [ fhir:v "Personnel" ]
+  ] [
+     fhir:code [ fhir:v "`D.D-IDENT.AUTRE`" ] ;
+     fhir:display [ fhir:v "Autre" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

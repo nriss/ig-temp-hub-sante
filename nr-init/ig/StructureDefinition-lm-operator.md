@@ -16,7 +16,7 @@ Opérateur ayant effectué une observation médicale dans le contexte de la rég
 
 **Utilisations:**
 
-* Utilise ce/t/te Modèle logique: [Observation médicale](StructureDefinition-lm-medical-note.md)
+* Utilise ce/t/te Modèle logique: [Décision médicale](StructureDefinition-lm-decision.md) and [Observation médicale](StructureDefinition-lm-medical-note.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.fhir.fr.hubsante|current/StructureDefinition/lm-operator)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-lm-operator.csv), [E
   "name" : "LM_Operator",
   "title" : "Professionnel de santé réalisant l'observation",
   "status" : "draft",
-  "date" : "2026-03-16T10:29:29+00:00",
+  "date" : "2026-03-16T12:48:10+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

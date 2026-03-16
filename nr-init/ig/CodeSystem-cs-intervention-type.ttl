@@ -1,0 +1,64 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-intervention-type> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "cs-intervention-type"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : CodeSystem cs-intervention-type</b></p><a name=\"cs-intervention-type\"> </a><a name=\"hccs-intervention-type\"> </a><p>This  code system <code>https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-intervention-type</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage</b></td></tr><tr><td style=\"white-space:nowrap\">T1<a name=\"cs-intervention-type-T1\"> </a></td><td>T1 - Intervention primaire</td></tr><tr><td style=\"white-space:nowrap\">`T2-INTER`<a name=\"cs-intervention-type-.96T2-INTER.96\"> </a></td><td>T2 - Intervention secondaire inter-établissements</td></tr><tr><td style=\"white-space:nowrap\">`T2-INTRA`<a name=\"cs-intervention-type-.96T2-INTRA.96\"> </a></td><td>T2 - Intervention secondaire intra-établissement</td></tr><tr><td style=\"white-space:nowrap\">T3<a name=\"cs-intervention-type-T3\"> </a></td><td>T3</td></tr><tr><td style=\"white-space:nowrap\">T4<a name=\"cs-intervention-type-T4\"> </a></td><td>T4</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-intervention-type"^^xsd:anyURI ;
+     fhir:l <https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-intervention-type>
+  ] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "CS_InterventionType"] ; # 
+  fhir:title [ fhir:v "Type d'intervention (Hub Santé)"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2026-03-16T12:48:10+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://esante.gouv.fr" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Type d'intervention : primaire (première intervention urgente) ou secondaire (ex. TIH)."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "FR" ] ;
+       fhir:display [ fhir:v "France" ]
+     ] )
+  ] ) ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "5"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "T1" ] ;
+     fhir:display [ fhir:v "T1 - Intervention primaire" ]
+  ] [
+     fhir:code [ fhir:v "`T2-INTER`" ] ;
+     fhir:display [ fhir:v "T2 - Intervention secondaire inter-établissements" ]
+  ] [
+     fhir:code [ fhir:v "`T2-INTRA`" ] ;
+     fhir:display [ fhir:v "T2 - Intervention secondaire intra-établissement" ]
+  ] [
+     fhir:code [ fhir:v "T3" ] ;
+     fhir:display [ fhir:v "T3" ]
+  ] [
+     fhir:code [ fhir:v "T4" ] ;
+     fhir:display [ fhir:v "T4" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

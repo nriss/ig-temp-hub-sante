@@ -1,0 +1,11 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
+"lm-case-details","lm-case-details","","","",0,*,"","","","null {[]} {[]}
+","Détails du dossier","Informations complémentaires de qualification du dossier de régulation médicale.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"lm-case-details.status","lm-case-details.status","","","",0,1,"","","","code {[]} {[]}
+","Statut","Statut du dossier.","","","","","","","","","",,"required","","https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-case-status|0.1.0","",,,,"lm-case-details.status",0,1,"",""
+"lm-case-details.attribution","lm-case-details.attribution","","","",0,1,"","","","code {[]} {[]}
+","Attribution","Attribution ou orientation du dossier.","","","","","","","","","",,"required","","https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-case-attribution|0.1.0","",,,,"lm-case-details.attribution",0,1,"",""
+"lm-case-details.priority","lm-case-details.priority","","","",0,1,"","","","code {[]} {[]}
+","Priorité","Niveau de priorité du dossier.","","","","","","","","","",,"required","","https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-case-priority|0.1.0","",,,,"lm-case-details.priority",0,1,"",""
+"lm-case-details.careLevel","lm-case-details.careLevel","","","",0,1,"","","","code {[]} {[]}
+","Niveau de soin","Niveau de soins global du dossier.","","","","","","","","","",,"required","","https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-patient-care-level|0.1.0","",,,,"lm-case-details.careLevel",0,1,"",""

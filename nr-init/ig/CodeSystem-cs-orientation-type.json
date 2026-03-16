@@ -1,0 +1,60 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "cs-orientation-type",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : CodeSystem cs-orientation-type</b></p><a name=\"cs-orientation-type\"> </a><a name=\"hccs-orientation-type\"> </a><p>This  code system <code>https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-orientation-type</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage</b></td></tr><tr><td style=\"white-space:nowrap\">URGENCES<a name=\"cs-orientation-type-URGENCES\"> </a></td><td>Urgences</td></tr><tr><td style=\"white-space:nowrap\">`REA-USI`<a name=\"cs-orientation-type-.96REA-USI.96\"> </a></td><td>Réanimation / USI</td></tr><tr><td style=\"white-space:nowrap\">SANTE<a name=\"cs-orientation-type-SANTE\"> </a></td><td>Structure de santé</td></tr><tr><td style=\"white-space:nowrap\">CABINET<a name=\"cs-orientation-type-CABINET\"> </a></td><td>Cabinet</td></tr><tr><td style=\"white-space:nowrap\">DOMICILE<a name=\"cs-orientation-type-DOMICILE\"> </a></td><td>Domicile</td></tr><tr><td style=\"white-space:nowrap\">EPHAD<a name=\"cs-orientation-type-EPHAD\"> </a></td><td>EHPAD</td></tr><tr><td style=\"white-space:nowrap\">AUTRE<a name=\"cs-orientation-type-AUTRE\"> </a></td><td>Autre</td></tr></table></div>"
+  },
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-orientation-type",
+  "version" : "0.1.0",
+  "name" : "CS_OrientationType",
+  "title" : "Type d'orientation (Hub Santé)",
+  "status" : "draft",
+  "date" : "2026-03-16T12:48:10+00:00",
+  "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
+  "contact" : [{
+    "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://esante.gouv.fr"
+    }]
+  }],
+  "description" : "Type d'orientation décidé à l'issue de la régulation médicale.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "France"
+    }]
+  }],
+  "content" : "complete",
+  "count" : 7,
+  "concept" : [{
+    "code" : "URGENCES",
+    "display" : "Urgences"
+  },
+  {
+    "code" : "`REA-USI`",
+    "display" : "Réanimation / USI"
+  },
+  {
+    "code" : "SANTE",
+    "display" : "Structure de santé"
+  },
+  {
+    "code" : "CABINET",
+    "display" : "Cabinet"
+  },
+  {
+    "code" : "DOMICILE",
+    "display" : "Domicile"
+  },
+  {
+    "code" : "EPHAD",
+    "display" : "EHPAD"
+  },
+  {
+    "code" : "AUTRE",
+    "display" : "Autre"
+  }]
+}

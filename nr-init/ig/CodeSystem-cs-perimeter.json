@@ -1,0 +1,48 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "cs-perimeter",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : CodeSystem cs-perimeter</b></p><a name=\"cs-perimeter\"> </a><a name=\"hccs-perimeter\"> </a><p>This  code system <code>https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-perimeter</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage</b></td></tr><tr><td style=\"white-space:nowrap\">AMU<a name=\"cs-perimeter-AMU\"> </a></td><td>Aide Médicale Urgente</td></tr><tr><td style=\"white-space:nowrap\">NEONAT<a name=\"cs-perimeter-NEONAT\"> </a></td><td>Néonatologie</td></tr><tr><td style=\"white-space:nowrap\">PSY<a name=\"cs-perimeter-PSY\"> </a></td><td>Psychiatrie</td></tr><tr><td style=\"white-space:nowrap\">SNP<a name=\"cs-perimeter-SNP\"> </a></td><td>Soins Non Programmés</td></tr></table></div>"
+  },
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-perimeter",
+  "version" : "0.1.0",
+  "name" : "CS_Perimeter",
+  "title" : "Filière de régulation (Hub Santé)",
+  "status" : "draft",
+  "date" : "2026-03-16T12:48:10+00:00",
+  "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
+  "contact" : [{
+    "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://esante.gouv.fr"
+    }]
+  }],
+  "description" : "Filière du CRRA destinataire à laquelle le dossier doit être adressé.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "France"
+    }]
+  }],
+  "content" : "complete",
+  "count" : 4,
+  "concept" : [{
+    "code" : "AMU",
+    "display" : "Aide Médicale Urgente"
+  },
+  {
+    "code" : "NEONAT",
+    "display" : "Néonatologie"
+  },
+  {
+    "code" : "PSY",
+    "display" : "Psychiatrie"
+  },
+  {
+    "code" : "SNP",
+    "display" : "Soins Non Programmés"
+  }]
+}

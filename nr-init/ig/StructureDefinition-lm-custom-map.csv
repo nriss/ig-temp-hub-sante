@@ -1,0 +1,11 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
+"lm-custom-map","lm-custom-map","","","",0,*,"","","","null {[]} {[]}
+","Champ personnalisé","Entrée de type clé/valeur permettant de transporter des informations complémentaires non structurées (max. 3 entrées).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"lm-custom-map.key","lm-custom-map.key","","","",1,1,"","","","string {[]} {[]}
+","Clé","Identifiant de la donnée personnalisée.","","","","","","","","","",,,,,"",,,,"lm-custom-map.key",1,1,"",""
+"lm-custom-map.label","lm-custom-map.label","","","",0,1,"","","","string {[]} {[]}
+","Libellé","Libellé lisible de la clé.","","","","","","","","","",,,,,"",,,,"lm-custom-map.label",0,1,"",""
+"lm-custom-map.value","lm-custom-map.value","","","",1,1,"","","","string {[]} {[]}
+","Valeur","Valeur associée à la clé.","","","","","","","","","",,,,,"",,,,"lm-custom-map.value",1,1,"",""
+"lm-custom-map.freetext","lm-custom-map.freetext","","","",0,1,"","","","string {[]} {[]}
+","Texte libre","Commentaire libre associé à l'entrée.","","","","","","","","","",,,,,"",,,,"lm-custom-map.freetext",0,1,"",""

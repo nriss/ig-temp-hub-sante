@@ -1,0 +1,61 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-perimeter> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "cs-perimeter"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : CodeSystem cs-perimeter</b></p><a name=\"cs-perimeter\"> </a><a name=\"hccs-perimeter\"> </a><p>This  code system <code>https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-perimeter</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage</b></td></tr><tr><td style=\"white-space:nowrap\">AMU<a name=\"cs-perimeter-AMU\"> </a></td><td>Aide Médicale Urgente</td></tr><tr><td style=\"white-space:nowrap\">NEONAT<a name=\"cs-perimeter-NEONAT\"> </a></td><td>Néonatologie</td></tr><tr><td style=\"white-space:nowrap\">PSY<a name=\"cs-perimeter-PSY\"> </a></td><td>Psychiatrie</td></tr><tr><td style=\"white-space:nowrap\">SNP<a name=\"cs-perimeter-SNP\"> </a></td><td>Soins Non Programmés</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-perimeter"^^xsd:anyURI ;
+     fhir:l <https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-perimeter>
+  ] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "CS_Perimeter"] ; # 
+  fhir:title [ fhir:v "Filière de régulation (Hub Santé)"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2026-03-16T12:48:10+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://esante.gouv.fr" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Filière du CRRA destinataire à laquelle le dossier doit être adressé."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "FR" ] ;
+       fhir:display [ fhir:v "France" ]
+     ] )
+  ] ) ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "4"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "AMU" ] ;
+     fhir:display [ fhir:v "Aide Médicale Urgente" ]
+  ] [
+     fhir:code [ fhir:v "NEONAT" ] ;
+     fhir:display [ fhir:v "Néonatologie" ]
+  ] [
+     fhir:code [ fhir:v "PSY" ] ;
+     fhir:display [ fhir:v "Psychiatrie" ]
+  ] [
+     fhir:code [ fhir:v "SNP" ] ;
+     fhir:display [ fhir:v "Soins Non Programmés" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

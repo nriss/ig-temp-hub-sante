@@ -1,0 +1,7 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
+"lm-risk-threat","lm-risk-threat","","","",0,*,"","","","null {[]} {[]}
+","Risque et menace","Code et libellé décrivant un risque ou une menace associé au dossier (nomenclature SAMU).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"lm-risk-threat.code","lm-risk-threat.code","","","",1,1,"","","","string {[]} {[]}
+","Code","Code de la nomenclature associée.","Regexp : ^R\d{2}$","","","","","","","","",,,,,"",,,,"lm-risk-threat.code",1,1,"",""
+"lm-risk-threat.label","lm-risk-threat.label","","","",1,1,"","","","string {[]} {[]}
+","Libellé","Libellé de la nomenclature associée.","","","","","","","","","",,,,,"",,,,"lm-risk-threat.label",1,1,"",""

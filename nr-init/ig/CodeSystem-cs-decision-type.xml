@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="cs-decision-type"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narratif généré : CodeSystem cs-decision-type</b></p><a name="cs-decision-type"> </a><a name="hccs-decision-type"> </a><p>This  code system <code>https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-decision-type</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Affichage</b></td></tr><tr><td style="white-space:nowrap">CONSEIL<a name="cs-decision-type-CONSEIL"> </a></td><td>Conseil</td></tr><tr><td style="white-space:nowrap">PMT<a name="cs-decision-type-PMT"> </a></td><td>Prescription Médicale de Transport</td></tr><tr><td style="white-space:nowrap">INTER<a name="cs-decision-type-INTER"> </a></td><td>Intervention</td></tr><tr><td style="white-space:nowrap">ORIENT<a name="cs-decision-type-ORIENT"> </a></td><td>Orientation</td></tr><tr><td style="white-space:nowrap">PASPLUS<a name="cs-decision-type-PASPLUS"> </a></td><td>Pas plus</td></tr></table></div>
+  </text>
+  <url value="https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-decision-type"/>
+  <version value="0.1.0"/>
+  <name value="CS_DecisionType"/>
+  <title value="Type de décision médicale (Hub Santé)"/>
+  <status value="draft"/>
+  <date value="2026-03-16T12:48:10+00:00"/>
+  <publisher value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
+  <contact>
+    <name value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://esante.gouv.fr"/>
+    </telecom>
+  </contact>
+  <description value="Type de décision prise dans le cadre de la régulation médicale."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="FR"/>
+      <display value="France"/>
+    </coding>
+  </jurisdiction>
+  <content value="complete"/>
+  <count value="5"/>
+  <concept>
+    <code value="CONSEIL"/>
+    <display value="Conseil"/>
+  </concept>
+  <concept>
+    <code value="PMT"/>
+    <display value="Prescription Médicale de Transport"/>
+  </concept>
+  <concept>
+    <code value="INTER"/>
+    <display value="Intervention"/>
+  </concept>
+  <concept>
+    <code value="ORIENT"/>
+    <display value="Orientation"/>
+  </concept>
+  <concept>
+    <code value="PASPLUS"/>
+    <display value="Pas plus"/>
+  </concept>
+</CodeSystem>

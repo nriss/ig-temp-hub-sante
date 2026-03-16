@@ -21,7 +21,7 @@
   fhir:name [ fhir:v "HubSante"] ; # 
   fhir:title [ fhir:v "Hub Santé"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2026-03-16T10:29:29+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-03-16T12:48:10+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris" ] ;
@@ -1746,6 +1746,279 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-access> ;
+         fhir:reference [ fhir:v "StructureDefinition/lm-access" ]
+       ] ;
+       fhir:name [ fhir:v "Accès" ] ;
+       fhir:description [ fhir:v "Informations d'accès à une localisation (bâtiment, étage, digicode…)." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-detailed-address> ;
+         fhir:reference [ fhir:v "StructureDefinition/lm-detailed-address" ]
+       ] ;
+       fhir:name [ fhir:v "Adresse détaillée" ] ;
+       fhir:description [ fhir:v "Adresse structurée avec numéro, type de voie et informations complémentaires." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-alert> ;
+         fhir:reference [ fhir:v "StructureDefinition/lm-alert" ]
+       ] ;
+       fhir:name [ fhir:v "Alerte initiale" ] ;
+       fhir:description [ fhir:v "Alerte initiale reçue par le SAMU, avec la réception, l'appelant et les notes associées." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-caller> ;
+         fhir:reference [ fhir:v "StructureDefinition/lm-caller" ]
+       ] ;
+       fhir:name [ fhir:v "Appelant" ] ;
+       fhir:description [ fhir:v "Personne à l'origine de l'appel au SAMU, avec ses coordonnées et ses caractéristiques de communication." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-case-attribution> ;
+         fhir:reference [ fhir:v "ValueSet/vs-case-attribution" ]
+       ] ;
+       fhir:name [ fhir:v "Attribution du dossier (Hub Santé)" ] ;
+       fhir:description [ fhir:v "Attribution ou orientation du dossier de régulation médicale." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-case-attribution> ;
+         fhir:reference [ fhir:v "CodeSystem/cs-case-attribution" ]
+       ] ;
+       fhir:name [ fhir:v "Attribution du dossier (Hub Santé)" ] ;
+       fhir:description [ fhir:v "Attribution ou orientation du dossier de régulation médicale." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-contact-channel> ;
+         fhir:reference [ fhir:v "ValueSet/vs-contact-channel" ]
+       ] ;
+       fhir:name [ fhir:v "Canal de contact (Hub Santé)" ] ;
+       fhir:description [ fhir:v "Origine du canal établi pour le contact." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-contact-channel> ;
+         fhir:reference [ fhir:v "CodeSystem/cs-contact-channel" ]
+       ] ;
+       fhir:name [ fhir:v "Canal de contact (Hub Santé)" ] ;
+       fhir:description [ fhir:v "Origine du canal établi pour le contact." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-custom-map> ;
+         fhir:reference [ fhir:v "StructureDefinition/lm-custom-map" ]
+       ] ;
+       fhir:name [ fhir:v "Champ personnalisé" ] ;
+       fhir:description [ fhir:v "Entrée de type clé/valeur permettant de transporter des informations complémentaires non structurées (max. 3 entrées)." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-city> ;
+         fhir:reference [ fhir:v "StructureDefinition/lm-city" ]
+       ] ;
+       fhir:name [ fhir:v "Commune" ] ;
+       fhir:description [ fhir:v "Commune de la localisation." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-caller-communication> ;
+         fhir:reference [ fhir:v "ValueSet/vs-caller-communication" ]
+       ] ;
+       fhir:name [ fhir:v "Communication avec l'appelant (Hub Santé)" ] ;
+       fhir:description [ fhir:v "Qualité ou contrainte de communication avec l'appelant." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-caller-communication> ;
+         fhir:reference [ fhir:v "CodeSystem/cs-caller-communication" ]
+       ] ;
+       fhir:name [ fhir:v "Communication avec l'appelant (Hub Santé)" ] ;
+       fhir:description [ fhir:v "Qualité ou contrainte de communication avec l'appelant." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-contact> ;
+         fhir:reference [ fhir:v "StructureDefinition/lm-contact" ]
+       ] ;
+       fhir:name [ fhir:v "Contact" ] ;
+       fhir:description [ fhir:v "Coordonnées de contact avec canal, type et valeur (utilisé pour l'appelant)." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:l <https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-personal-contact> ;
          fhir:reference [ fhir:v "StructureDefinition/lm-personal-contact" ]
        ] ;
@@ -1767,11 +2040,179 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-coord> ;
+         fhir:reference [ fhir:v "StructureDefinition/lm-coord" ]
+       ] ;
+       fhir:name [ fhir:v "Coordonnées géographiques" ] ;
+       fhir:description [ fhir:v "Coordonnées géographiques d'un point (latitude, longitude, altitude, précision)." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-destination> ;
+         fhir:reference [ fhir:v "StructureDefinition/lm-destination" ]
+       ] ;
+       fhir:name [ fhir:v "Destination" ] ;
+       fhir:description [ fhir:v "Destination du patient à l'issue de la décision de régulation médicale." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:l <https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-administrative-file> ;
          fhir:reference [ fhir:v "StructureDefinition/lm-administrative-file" ]
        ] ;
        fhir:name [ fhir:v "Dossier administratif" ] ;
        fhir:description [ fhir:v "Dossier administratif du patient, contenant ses identifiants externes et son médecin traitant." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-create-case-health> ;
+         fhir:reference [ fhir:v "StructureDefinition/lm-create-case-health" ]
+       ] ;
+       fhir:name [ fhir:v "Dossier de régulation médicale (RS-EDA)" ] ;
+       fhir:description [ fhir:v "Objet racine du message RS-EDA : dossier de régulation médicale transmis entre partenaires du Hub Santé." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-decision> ;
+         fhir:reference [ fhir:v "StructureDefinition/lm-decision" ]
+       ] ;
+       fhir:name [ fhir:v "Décision médicale" ] ;
+       fhir:description [ fhir:v "Décision de régulation médicale prise par l'opérateur pour un dossier donné." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-case-details> ;
+         fhir:reference [ fhir:v "StructureDefinition/lm-case-details" ]
+       ] ;
+       fhir:name [ fhir:v "Détails du dossier" ] ;
+       fhir:description [ fhir:v "Informations complémentaires de qualification du dossier de régulation médicale." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-perimeter> ;
+         fhir:reference [ fhir:v "ValueSet/vs-perimeter" ]
+       ] ;
+       fhir:name [ fhir:v "Filière de régulation (Hub Santé)" ] ;
+       fhir:description [ fhir:v "Filière du CRRA destinataire à laquelle le dossier doit être adressé." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-perimeter> ;
+         fhir:reference [ fhir:v "CodeSystem/cs-perimeter" ]
+       ] ;
+       fhir:name [ fhir:v "Filière de régulation (Hub Santé)" ] ;
+       fhir:description [ fhir:v "Filière du CRRA destinataire à laquelle le dossier doit être adressé." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-geometry> ;
+         fhir:reference [ fhir:v "StructureDefinition/lm-geometry" ]
+       ] ;
+       fhir:name [ fhir:v "Géométrie" ] ;
+       fhir:description [ fhir:v "Localisation géographique horodatée d'un point." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -1851,6 +2292,27 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-external-location-id> ;
+         fhir:reference [ fhir:v "StructureDefinition/lm-external-location-id" ]
+       ] ;
+       fhir:name [ fhir:v "Identifiant de localisation externe" ] ;
+       fhir:description [ fhir:v "Identifiant externe référençant une localisation (établissement de santé, entreprise…)." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:l <https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-external-id> ;
          fhir:reference [ fhir:v "StructureDefinition/lm-external-id" ]
        ] ;
@@ -1893,6 +2355,48 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-external-info> ;
+         fhir:reference [ fhir:v "StructureDefinition/lm-external-info" ]
+       ] ;
+       fhir:name [ fhir:v "Information externe" ] ;
+       fhir:description [ fhir:v "Référence vers une ressource externe apportant des informations complémentaires sur la localisation." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-additional-information> ;
+         fhir:reference [ fhir:v "StructureDefinition/lm-additional-information" ]
+       ] ;
+       fhir:name [ fhir:v "Informations complémentaires" ] ;
+       fhir:description [ fhir:v "Informations complémentaires non structurées transportées sous forme de carte clé/valeur (max. 3 entrées)." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:l <https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-patient-detail> ;
          fhir:reference [ fhir:v "StructureDefinition/lm-patient-detail" ]
        ] ;
@@ -1914,11 +2418,74 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-location> ;
+         fhir:reference [ fhir:v "StructureDefinition/lm-location" ]
+       ] ;
+       fhir:name [ fhir:v "Localisation" ] ;
+       fhir:description [ fhir:v "Localisation de l'intervention, incluant l'adresse, la commune, l'accès, les coordonnées géographiques et les références externes." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-health-motive> ;
+         fhir:reference [ fhir:v "StructureDefinition/lm-health-motive" ]
+       ] ;
+       fhir:name [ fhir:v "Motif de santé" ] ;
+       fhir:description [ fhir:v "Code et libellé décrivant le motif de santé de l'appel (nomenclature SAMU)." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:l <https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-general-practitioner> ;
          fhir:reference [ fhir:v "StructureDefinition/lm-general-practitioner" ]
        ] ;
        fhir:name [ fhir:v "Médecin traitant" ] ;
        fhir:description [ fhir:v "Médecin traitant du patient." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-whats-happen> ;
+         fhir:reference [ fhir:v "StructureDefinition/lm-whats-happen" ]
+       ] ;
+       fhir:name [ fhir:v "Nature du problème" ] ;
+       fhir:description [ fhir:v "Code et libellé décrivant la nature de l'événement déclenchant l'appel (nomenclature SAMU)." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -1977,11 +2544,95 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-way-name> ;
+         fhir:reference [ fhir:v "StructureDefinition/lm-way-name" ]
+       ] ;
+       fhir:name [ fhir:v "Nom de voie" ] ;
+       fhir:description [ fhir:v "Nom complet d'une voie (rue, avenue, boulevard…)." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-notes> ;
+         fhir:reference [ fhir:v "StructureDefinition/lm-notes" ]
+       ] ;
+       fhir:name [ fhir:v "Note" ] ;
+       fhir:description [ fhir:v "Note horodatée associée à l'alerte initiale." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:l <https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-medical-note> ;
          fhir:reference [ fhir:v "StructureDefinition/lm-medical-note" ]
        ] ;
        fhir:name [ fhir:v "Observation médicale" ] ;
        fhir:description [ fhir:v "Observation médicale réalisée par un professionnel de santé dans le contexte de la régulation médicale (RS-EDA)." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-qualification-origin> ;
+         fhir:reference [ fhir:v "ValueSet/vs-qualification-origin" ]
+       ] ;
+       fhir:name [ fhir:v "Origine de la qualification (Hub Santé)" ] ;
+       fhir:description [ fhir:v "Canal ou entité à l'origine de la création du dossier de régulation médicale." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-qualification-origin> ;
+         fhir:reference [ fhir:v "CodeSystem/cs-qualification-origin" ]
+       ] ;
+       fhir:name [ fhir:v "Origine de la qualification (Hub Santé)" ] ;
+       fhir:description [ fhir:v "Canal ou entité à l'origine de la création du dossier de régulation médicale." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -2019,11 +2670,116 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-point> ;
+         fhir:reference [ fhir:v "StructureDefinition/lm-point" ]
+       ] ;
+       fhir:name [ fhir:v "Point géographique" ] ;
+       fhir:description [ fhir:v "Point géographique avec ses coordonnées et une indication sur la provenance AML." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-case-priority> ;
+         fhir:reference [ fhir:v "ValueSet/vs-case-priority" ]
+       ] ;
+       fhir:name [ fhir:v "Priorité du dossier (Hub Santé)" ] ;
+       fhir:description [ fhir:v "Niveau de priorité du dossier de régulation médicale." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-case-priority> ;
+         fhir:reference [ fhir:v "CodeSystem/cs-case-priority" ]
+       ] ;
+       fhir:name [ fhir:v "Priorité du dossier (Hub Santé)" ] ;
+       fhir:description [ fhir:v "Niveau de priorité du dossier de régulation médicale." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:l <https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-operator> ;
          fhir:reference [ fhir:v "StructureDefinition/lm-operator" ]
        ] ;
        fhir:name [ fhir:v "Professionnel de santé réalisant l'observation" ] ;
        fhir:description [ fhir:v "Opérateur ayant effectué une observation médicale dans le contexte de la régulation médicale (RS-EDA)." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-coord-precision> ;
+         fhir:reference [ fhir:v "ValueSet/vs-coord-precision" ]
+       ] ;
+       fhir:name [ fhir:v "Précision des coordonnées géographiques (Hub Santé)" ] ;
+       fhir:description [ fhir:v "Niveau de précision des coordonnées géographiques d'un point." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-coord-precision> ;
+         fhir:reference [ fhir:v "CodeSystem/cs-coord-precision" ]
+       ] ;
+       fhir:name [ fhir:v "Précision des coordonnées géographiques (Hub Santé)" ] ;
+       fhir:description [ fhir:v "Niveau de précision des coordonnées géographiques d'un point." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -2045,6 +2801,48 @@
        ] ;
        fhir:name [ fhir:v "Prénom & nom usuel" ] ;
        fhir:description [ fhir:v "Prénom et nom usuel d'une personne. Objet transverse utilisé dans plusieurs contextes (appelant, médecin traitant, identité patient)." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-qualification> ;
+         fhir:reference [ fhir:v "StructureDefinition/lm-qualification" ]
+       ] ;
+       fhir:name [ fhir:v "Qualification du dossier" ] ;
+       fhir:description [ fhir:v "Qualification médicale et opérationnelle du dossier de régulation médicale." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-risk-threat> ;
+         fhir:reference [ fhir:v "StructureDefinition/lm-risk-threat" ]
+       ] ;
+       fhir:name [ fhir:v "Risque et menace" ] ;
+       fhir:description [ fhir:v "Code et libellé décrivant un risque ou une menace associé au dossier (nomenclature SAMU)." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -2145,6 +2943,48 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-external-location-id-source> ;
+         fhir:reference [ fhir:v "ValueSet/vs-external-location-id-source" ]
+       ] ;
+       fhir:name [ fhir:v "Source des identifiants de localisation externes (Hub Santé)" ] ;
+       fhir:description [ fhir:v "Types d'identifiants utilisés pour référencer une localisation externe." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-external-location-id-source> ;
+         fhir:reference [ fhir:v "CodeSystem/cs-external-location-id-source" ]
+       ] ;
+       fhir:name [ fhir:v "Source des identifiants de localisation externes (Hub Santé)" ] ;
+       fhir:description [ fhir:v "Types d'identifiants utilisés pour référencer une localisation externe." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:l <https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-external-id-source> ;
          fhir:reference [ fhir:v "ValueSet/vs-external-id-source" ]
        ] ;
@@ -2183,6 +3023,48 @@
          ] ;
          fhir:value [
            a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-case-status> ;
+         fhir:reference [ fhir:v "ValueSet/vs-case-status" ]
+       ] ;
+       fhir:name [ fhir:v "Statut du dossier (Hub Santé)" ] ;
+       fhir:description [ fhir:v "Statut du dossier de régulation médicale." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-case-status> ;
+         fhir:reference [ fhir:v "CodeSystem/cs-case-status" ]
+       ] ;
+       fhir:name [ fhir:v "Statut du dossier (Hub Santé)" ] ;
+       fhir:description [ fhir:v "Statut du dossier de régulation médicale." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
            fhir:v "StructureDefinition:logical"
          ]
        ] ) ;
@@ -2192,6 +3074,174 @@
        ] ;
        fhir:name [ fhir:v "Traits stricts de l'identité" ] ;
        fhir:description [ fhir:v "Traits stricts de l'identité du patient au sens de l'identité INS." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-caller-type> ;
+         fhir:reference [ fhir:v "ValueSet/vs-caller-type" ]
+       ] ;
+       fhir:name [ fhir:v "Type d'appelant (Hub Santé)" ] ;
+       fhir:description [ fhir:v "Type ou qualité de l'appelant/requérant." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-caller-type> ;
+         fhir:reference [ fhir:v "CodeSystem/cs-caller-type" ]
+       ] ;
+       fhir:name [ fhir:v "Type d'appelant (Hub Santé)" ] ;
+       fhir:description [ fhir:v "Type ou qualité de l'appelant/requérant." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-external-info-type> ;
+         fhir:reference [ fhir:v "ValueSet/vs-external-info-type" ]
+       ] ;
+       fhir:name [ fhir:v "Type d'information externe (Hub Santé)" ] ;
+       fhir:description [ fhir:v "Type de la ressource externe référencée pour la localisation." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-external-info-type> ;
+         fhir:reference [ fhir:v "CodeSystem/cs-external-info-type" ]
+       ] ;
+       fhir:name [ fhir:v "Type d'information externe (Hub Santé)" ] ;
+       fhir:description [ fhir:v "Type de la ressource externe référencée pour la localisation." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-intervention-type> ;
+         fhir:reference [ fhir:v "ValueSet/vs-intervention-type" ]
+       ] ;
+       fhir:name [ fhir:v "Type d'intervention (Hub Santé)" ] ;
+       fhir:description [ fhir:v "Type d'intervention : primaire ou secondaire." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-intervention-type> ;
+         fhir:reference [ fhir:v "CodeSystem/cs-intervention-type" ]
+       ] ;
+       fhir:name [ fhir:v "Type d'intervention (Hub Santé)" ] ;
+       fhir:description [ fhir:v "Type d'intervention : primaire (première intervention urgente) ou secondaire (ex. TIH)." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-orientation-type> ;
+         fhir:reference [ fhir:v "ValueSet/vs-orientation-type" ]
+       ] ;
+       fhir:name [ fhir:v "Type d'orientation (Hub Santé)" ] ;
+       fhir:description [ fhir:v "Type d'orientation décidé à l'issue de la régulation médicale." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-orientation-type> ;
+         fhir:reference [ fhir:v "CodeSystem/cs-orientation-type" ]
+       ] ;
+       fhir:name [ fhir:v "Type d'orientation (Hub Santé)" ] ;
+       fhir:description [ fhir:v "Type d'orientation décidé à l'issue de la régulation médicale." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -2234,6 +3284,132 @@
        ] ;
        fhir:name [ fhir:v "Type de contact (Hub Santé)" ] ;
        fhir:description [ fhir:v "Types d'URI utilisés pour les coordonnées de contact." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-decision-type> ;
+         fhir:reference [ fhir:v "ValueSet/vs-decision-type" ]
+       ] ;
+       fhir:name [ fhir:v "Type de décision médicale (Hub Santé)" ] ;
+       fhir:description [ fhir:v "Type de décision prise dans le cadre de la régulation médicale." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-decision-type> ;
+         fhir:reference [ fhir:v "CodeSystem/cs-decision-type" ]
+       ] ;
+       fhir:name [ fhir:v "Type de décision médicale (Hub Santé)" ] ;
+       fhir:description [ fhir:v "Type de décision prise dans le cadre de la régulation médicale." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-location-kind> ;
+         fhir:reference [ fhir:v "StructureDefinition/lm-location-kind" ]
+       ] ;
+       fhir:name [ fhir:v "Type de lieu" ] ;
+       fhir:description [ fhir:v "Code et libellé décrivant le type de lieu de l'intervention (nomenclature SAMU)." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-resource-type> ;
+         fhir:reference [ fhir:v "ValueSet/vs-resource-type" ]
+       ] ;
+       fhir:name [ fhir:v "Type de ressource mobilisée (Hub Santé)" ] ;
+       fhir:description [ fhir:v "Type de ressource mobilisée dans le cadre de la décision de régulation médicale." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-resource-type> ;
+         fhir:reference [ fhir:v "CodeSystem/cs-resource-type" ]
+       ] ;
+       fhir:name [ fhir:v "Type de ressource mobilisée (Hub Santé)" ] ;
+       fhir:description [ fhir:v "Type de ressource mobilisée dans le cadre de la décision de régulation médicale." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-highway> ;
+         fhir:reference [ fhir:v "StructureDefinition/lm-highway" ]
+       ] ;
+       fhir:name [ fhir:v "Voie routière" ] ;
+       fhir:description [ fhir:v "Informations relatives à une voie routière (autoroute, route nationale…)." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false

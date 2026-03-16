@@ -1,0 +1,76 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-caller-communication> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "cs-caller-communication"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : CodeSystem cs-caller-communication</b></p><a name=\"cs-caller-communication\"> </a><a name=\"hccs-caller-communication\"> </a><p>This  code system <code>https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-caller-communication</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage</b></td></tr><tr><td style=\"white-space:nowrap\">AUCUNE<a name=\"cs-caller-communication-AUCUNE\"> </a></td><td>Aucune contrainte</td></tr><tr><td style=\"white-space:nowrap\">MUET<a name=\"cs-caller-communication-MUET\"> </a></td><td>Muet</td></tr><tr><td style=\"white-space:nowrap\">VISION<a name=\"cs-caller-communication-VISION\"> </a></td><td>Problème de vision</td></tr><tr><td style=\"white-space:nowrap\">LANGUE<a name=\"cs-caller-communication-LANGUE\"> </a></td><td>Barrière de la langue</td></tr><tr><td style=\"white-space:nowrap\">PANIQUE<a name=\"cs-caller-communication-PANIQUE\"> </a></td><td>Panique</td></tr><tr><td style=\"white-space:nowrap\">HOSTILE<a name=\"cs-caller-communication-HOSTILE\"> </a></td><td>Hostile</td></tr><tr><td style=\"white-space:nowrap\">AGITE<a name=\"cs-caller-communication-AGITE\"> </a></td><td>Agité</td></tr><tr><td style=\"white-space:nowrap\">AUTRE<a name=\"cs-caller-communication-AUTRE\"> </a></td><td>Autre</td></tr><tr><td style=\"white-space:nowrap\">IMPOSS<a name=\"cs-caller-communication-IMPOSS\"> </a></td><td>Communication impossible</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-caller-communication"^^xsd:anyURI ;
+     fhir:l <https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-caller-communication>
+  ] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "CS_CallerCommunication"] ; # 
+  fhir:title [ fhir:v "Communication avec l'appelant (Hub Santé)"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2026-03-16T12:48:10+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://esante.gouv.fr" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Qualité ou contrainte de communication avec l'appelant."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "FR" ] ;
+       fhir:display [ fhir:v "France" ]
+     ] )
+  ] ) ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "9"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "AUCUNE" ] ;
+     fhir:display [ fhir:v "Aucune contrainte" ]
+  ] [
+     fhir:code [ fhir:v "MUET" ] ;
+     fhir:display [ fhir:v "Muet" ]
+  ] [
+     fhir:code [ fhir:v "VISION" ] ;
+     fhir:display [ fhir:v "Problème de vision" ]
+  ] [
+     fhir:code [ fhir:v "LANGUE" ] ;
+     fhir:display [ fhir:v "Barrière de la langue" ]
+  ] [
+     fhir:code [ fhir:v "PANIQUE" ] ;
+     fhir:display [ fhir:v "Panique" ]
+  ] [
+     fhir:code [ fhir:v "HOSTILE" ] ;
+     fhir:display [ fhir:v "Hostile" ]
+  ] [
+     fhir:code [ fhir:v "AGITE" ] ;
+     fhir:display [ fhir:v "Agité" ]
+  ] [
+     fhir:code [ fhir:v "AUTRE" ] ;
+     fhir:display [ fhir:v "Autre" ]
+  ] [
+     fhir:code [ fhir:v "IMPOSS" ] ;
+     fhir:display [ fhir:v "Communication impossible" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

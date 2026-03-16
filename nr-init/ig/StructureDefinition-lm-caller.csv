@@ -1,0 +1,17 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
+"lm-caller","lm-caller","","","",0,*,"","","","null {[]} {[]}
+","Appelant","Personne à l'origine de l'appel au SAMU, avec ses coordonnées et ses caractéristiques de communication.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"lm-caller.callerContact","lm-caller.callerContact","","","",1,1,"","","","https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-contact {[]} {[]}
+","Contact appelant","Coordonnées de l'appelant (canal, type, URI).","","","","","","","","","",,,,,"",,,,"lm-caller.callerContact",1,1,"",""
+"lm-caller.callbackContact","lm-caller.callbackContact","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-contact {[]} {[]}
+","Contact de rappel","Coordonnées de rappel si différentes du contact appelant.","","","","","","","","","",,,,,"",,,,"lm-caller.callbackContact",0,1,"",""
+"lm-caller.detailedName","lm-caller.detailedName","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-detailed-name {[]} {[]}
+","Nom de l'appelant","Prénom et nom de l'appelant.","","","","","","","","","",,,,,"",,,,"lm-caller.detailedName",0,1,"",""
+"lm-caller.type","lm-caller.type","","","",0,1,"","","","code {[]} {[]}
+","Type d'appelant","Qualité ou type de l'appelant.","","","","","","","","","",,"required","","https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-caller-type|0.1.0","",,,,"lm-caller.type",0,1,"",""
+"lm-caller.language","lm-caller.language","","","",0,1,"","","","code {[]} {[]}
+","Langue","Langue parlée par l'appelant (code BCP-47).","","","","","","","","","",,"preferred","","http://hl7.org/fhir/ValueSet/languages|4.0.1","",,,,"lm-caller.language",0,1,"",""
+"lm-caller.communication","lm-caller.communication","","","",0,1,"","","","code {[]} {[]}
+","Communication","Qualité ou contrainte de communication avec l'appelant.","","","","","","","","","",,"required","","https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-caller-communication|0.1.0","",,,,"lm-caller.communication",0,1,"",""
+"lm-caller.freetext","lm-caller.freetext","","","",0,1,"","","","string {[]} {[]}
+","Texte libre","Informations complémentaires libres sur l'appelant.","","","","","","","","","",,,,,"",,,,"lm-caller.freetext",0,1,"",""

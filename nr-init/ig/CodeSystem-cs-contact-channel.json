@@ -1,0 +1,56 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "cs-contact-channel",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : CodeSystem cs-contact-channel</b></p><a name=\"cs-contact-channel\"> </a><a name=\"hccs-contact-channel\"> </a><p>This  code system <code>https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-contact-channel</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage</b></td></tr><tr><td style=\"white-space:nowrap\">APPLICATION<a name=\"cs-contact-channel-APPLICATION\"> </a></td><td>Application</td></tr><tr><td style=\"white-space:nowrap\">BAU<a name=\"cs-contact-channel-BAU\"> </a></td><td>Borne d'Appel d'Urgence</td></tr><tr><td style=\"white-space:nowrap\">DAU<a name=\"cs-contact-channel-DAU\"> </a></td><td>Dispositif d'Appel d'Urgence</td></tr><tr><td style=\"white-space:nowrap\">DEFIBRILLATEUR<a name=\"cs-contact-channel-DEFIBRILLATEUR\"> </a></td><td>Défibrillateur</td></tr><tr><td style=\"white-space:nowrap\">ECALL<a name=\"cs-contact-channel-ECALL\"> </a></td><td>eCall</td></tr><tr><td style=\"white-space:nowrap\">PERSONNE<a name=\"cs-contact-channel-PERSONNE\"> </a></td><td>Personne</td></tr></table></div>"
+  },
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-contact-channel",
+  "version" : "0.1.0",
+  "name" : "CS_ContactChannel",
+  "title" : "Canal de contact (Hub Santé)",
+  "status" : "draft",
+  "date" : "2026-03-16T12:48:10+00:00",
+  "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
+  "contact" : [{
+    "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://esante.gouv.fr"
+    }]
+  }],
+  "description" : "Origine du canal établi pour le contact.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "France"
+    }]
+  }],
+  "content" : "complete",
+  "count" : 6,
+  "concept" : [{
+    "code" : "APPLICATION",
+    "display" : "Application"
+  },
+  {
+    "code" : "BAU",
+    "display" : "Borne d'Appel d'Urgence"
+  },
+  {
+    "code" : "DAU",
+    "display" : "Dispositif d'Appel d'Urgence"
+  },
+  {
+    "code" : "DEFIBRILLATEUR",
+    "display" : "Défibrillateur"
+  },
+  {
+    "code" : "ECALL",
+    "display" : "eCall"
+  },
+  {
+    "code" : "PERSONNE",
+    "display" : "Personne"
+  }]
+}

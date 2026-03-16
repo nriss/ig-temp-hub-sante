@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="cs-contact-channel"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narratif généré : CodeSystem cs-contact-channel</b></p><a name="cs-contact-channel"> </a><a name="hccs-contact-channel"> </a><p>This  code system <code>https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-contact-channel</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Affichage</b></td></tr><tr><td style="white-space:nowrap">APPLICATION<a name="cs-contact-channel-APPLICATION"> </a></td><td>Application</td></tr><tr><td style="white-space:nowrap">BAU<a name="cs-contact-channel-BAU"> </a></td><td>Borne d'Appel d'Urgence</td></tr><tr><td style="white-space:nowrap">DAU<a name="cs-contact-channel-DAU"> </a></td><td>Dispositif d'Appel d'Urgence</td></tr><tr><td style="white-space:nowrap">DEFIBRILLATEUR<a name="cs-contact-channel-DEFIBRILLATEUR"> </a></td><td>Défibrillateur</td></tr><tr><td style="white-space:nowrap">ECALL<a name="cs-contact-channel-ECALL"> </a></td><td>eCall</td></tr><tr><td style="white-space:nowrap">PERSONNE<a name="cs-contact-channel-PERSONNE"> </a></td><td>Personne</td></tr></table></div>
+  </text>
+  <url value="https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-contact-channel"/>
+  <version value="0.1.0"/>
+  <name value="CS_ContactChannel"/>
+  <title value="Canal de contact (Hub Santé)"/>
+  <status value="draft"/>
+  <date value="2026-03-16T12:48:10+00:00"/>
+  <publisher value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
+  <contact>
+    <name value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://esante.gouv.fr"/>
+    </telecom>
+  </contact>
+  <description value="Origine du canal établi pour le contact."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="FR"/>
+      <display value="France"/>
+    </coding>
+  </jurisdiction>
+  <content value="complete"/>
+  <count value="6"/>
+  <concept>
+    <code value="APPLICATION"/>
+    <display value="Application"/>
+  </concept>
+  <concept>
+    <code value="BAU"/>
+    <display value="Borne d'Appel d'Urgence"/>
+  </concept>
+  <concept>
+    <code value="DAU"/>
+    <display value="Dispositif d'Appel d'Urgence"/>
+  </concept>
+  <concept>
+    <code value="DEFIBRILLATEUR"/>
+    <display value="Défibrillateur"/>
+  </concept>
+  <concept>
+    <code value="ECALL"/>
+    <display value="eCall"/>
+  </concept>
+  <concept>
+    <code value="PERSONNE"/>
+    <display value="Personne"/>
+  </concept>
+</CodeSystem>

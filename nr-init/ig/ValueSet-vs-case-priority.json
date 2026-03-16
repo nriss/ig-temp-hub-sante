@@ -1,0 +1,36 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "vs-case-priority",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : EnsembleValeurs vs-case-priority</b></p><a name=\"vs-case-priority\"> </a><a name=\"hcvs-case-priority\"> </a><ul><li>Include tous les codes définis dans <a href=\"CodeSystem-cs-case-priority.html\"><code>https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-case-priority</code></a><span title=\"La version est explicitement indiquée comme étant 0.1.0\"> version &#x1F4CD;0.1.0</span></li></ul></div>"
+  },
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-case-priority",
+  "version" : "0.1.0",
+  "name" : "VS_CasePriority",
+  "title" : "Priorité du dossier (Hub Santé)",
+  "status" : "draft",
+  "date" : "2026-03-16T12:48:10+00:00",
+  "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
+  "contact" : [{
+    "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://esante.gouv.fr"
+    }]
+  }],
+  "description" : "Niveau de priorité du dossier de régulation médicale.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "France"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-case-priority",
+      "version" : "0.1.0"
+    }]
+  }
+}

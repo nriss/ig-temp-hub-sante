@@ -1,0 +1,52 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "cs-intervention-type",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : CodeSystem cs-intervention-type</b></p><a name=\"cs-intervention-type\"> </a><a name=\"hccs-intervention-type\"> </a><p>This  code system <code>https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-intervention-type</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage</b></td></tr><tr><td style=\"white-space:nowrap\">T1<a name=\"cs-intervention-type-T1\"> </a></td><td>T1 - Intervention primaire</td></tr><tr><td style=\"white-space:nowrap\">`T2-INTER`<a name=\"cs-intervention-type-.96T2-INTER.96\"> </a></td><td>T2 - Intervention secondaire inter-établissements</td></tr><tr><td style=\"white-space:nowrap\">`T2-INTRA`<a name=\"cs-intervention-type-.96T2-INTRA.96\"> </a></td><td>T2 - Intervention secondaire intra-établissement</td></tr><tr><td style=\"white-space:nowrap\">T3<a name=\"cs-intervention-type-T3\"> </a></td><td>T3</td></tr><tr><td style=\"white-space:nowrap\">T4<a name=\"cs-intervention-type-T4\"> </a></td><td>T4</td></tr></table></div>"
+  },
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-intervention-type",
+  "version" : "0.1.0",
+  "name" : "CS_InterventionType",
+  "title" : "Type d'intervention (Hub Santé)",
+  "status" : "draft",
+  "date" : "2026-03-16T12:48:10+00:00",
+  "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
+  "contact" : [{
+    "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://esante.gouv.fr"
+    }]
+  }],
+  "description" : "Type d'intervention : primaire (première intervention urgente) ou secondaire (ex. TIH).",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "France"
+    }]
+  }],
+  "content" : "complete",
+  "count" : 5,
+  "concept" : [{
+    "code" : "T1",
+    "display" : "T1 - Intervention primaire"
+  },
+  {
+    "code" : "`T2-INTER`",
+    "display" : "T2 - Intervention secondaire inter-établissements"
+  },
+  {
+    "code" : "`T2-INTRA`",
+    "display" : "T2 - Intervention secondaire intra-établissement"
+  },
+  {
+    "code" : "T3",
+    "display" : "T3"
+  },
+  {
+    "code" : "T4",
+    "display" : "T4"
+  }]
+}

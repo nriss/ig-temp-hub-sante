@@ -1,0 +1,67 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-contact-channel> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "cs-contact-channel"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : CodeSystem cs-contact-channel</b></p><a name=\"cs-contact-channel\"> </a><a name=\"hccs-contact-channel\"> </a><p>This  code system <code>https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-contact-channel</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage</b></td></tr><tr><td style=\"white-space:nowrap\">APPLICATION<a name=\"cs-contact-channel-APPLICATION\"> </a></td><td>Application</td></tr><tr><td style=\"white-space:nowrap\">BAU<a name=\"cs-contact-channel-BAU\"> </a></td><td>Borne d'Appel d'Urgence</td></tr><tr><td style=\"white-space:nowrap\">DAU<a name=\"cs-contact-channel-DAU\"> </a></td><td>Dispositif d'Appel d'Urgence</td></tr><tr><td style=\"white-space:nowrap\">DEFIBRILLATEUR<a name=\"cs-contact-channel-DEFIBRILLATEUR\"> </a></td><td>Défibrillateur</td></tr><tr><td style=\"white-space:nowrap\">ECALL<a name=\"cs-contact-channel-ECALL\"> </a></td><td>eCall</td></tr><tr><td style=\"white-space:nowrap\">PERSONNE<a name=\"cs-contact-channel-PERSONNE\"> </a></td><td>Personne</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-contact-channel"^^xsd:anyURI ;
+     fhir:l <https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-contact-channel>
+  ] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "CS_ContactChannel"] ; # 
+  fhir:title [ fhir:v "Canal de contact (Hub Santé)"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2026-03-16T12:48:10+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://esante.gouv.fr" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Origine du canal établi pour le contact."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "FR" ] ;
+       fhir:display [ fhir:v "France" ]
+     ] )
+  ] ) ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "6"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "APPLICATION" ] ;
+     fhir:display [ fhir:v "Application" ]
+  ] [
+     fhir:code [ fhir:v "BAU" ] ;
+     fhir:display [ fhir:v "Borne d'Appel d'Urgence" ]
+  ] [
+     fhir:code [ fhir:v "DAU" ] ;
+     fhir:display [ fhir:v "Dispositif d'Appel d'Urgence" ]
+  ] [
+     fhir:code [ fhir:v "DEFIBRILLATEUR" ] ;
+     fhir:display [ fhir:v "Défibrillateur" ]
+  ] [
+     fhir:code [ fhir:v "ECALL" ] ;
+     fhir:display [ fhir:v "eCall" ]
+  ] [
+     fhir:code [ fhir:v "PERSONNE" ] ;
+     fhir:display [ fhir:v "Personne" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

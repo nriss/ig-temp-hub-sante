@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="cs-caller-type"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narratif généré : CodeSystem cs-caller-type</b></p><a name="cs-caller-type"> </a><a name="hccs-caller-type"> </a><p>This  code system <code>https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-caller-type</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Affichage</b></td></tr><tr><td style="white-space:nowrap">SUJET<a name="cs-caller-type-SUJET"> </a></td><td>Sujet</td></tr><tr><td style="white-space:nowrap">FAMILLE<a name="cs-caller-type-FAMILLE"> </a></td><td>Famille</td></tr><tr><td style="white-space:nowrap">TIERS<a name="cs-caller-type-TIERS"> </a></td><td>Tiers</td></tr><tr><td style="white-space:nowrap">POMPIER<a name="cs-caller-type-POMPIER"> </a></td><td>Pompier</td></tr><tr><td style="white-space:nowrap">AMBULANC<a name="cs-caller-type-AMBULANC"> </a></td><td>Ambulancier</td></tr><tr><td style="white-space:nowrap">`AMBULANC.AASC`<a name="cs-caller-type-.96AMBULANC.46AASC.96"> </a></td><td>Ambulancier AASC</td></tr><tr><td style="white-space:nowrap">`AMBULANC.AUTRESEC`<a name="cs-caller-type-.96AMBULANC.46AUTRESEC.96"> </a></td><td>Autre secouriste</td></tr><tr><td style="white-space:nowrap">SECOUR<a name="cs-caller-type-SECOUR"> </a></td><td>Secouriste</td></tr><tr><td style="white-space:nowrap">MED<a name="cs-caller-type-MED"> </a></td><td>Médecin</td></tr><tr><td style="white-space:nowrap">`MED.MEDSOS`<a name="cs-caller-type-.96MED.46MEDSOS.96"> </a></td><td>Médecin SOS</td></tr><tr><td style="white-space:nowrap">`MED.MRL`<a name="cs-caller-type-.96MED.46MRL.96"> </a></td><td>Médecin régulateur libéral</td></tr><tr><td style="white-space:nowrap">`MED.EFFML`<a name="cs-caller-type-.96MED.46EFFML.96"> </a></td><td>Effecteur médical libéral</td></tr><tr><td style="white-space:nowrap">SANTE<a name="cs-caller-type-SANTE"> </a></td><td>Professionnel de santé</td></tr><tr><td style="white-space:nowrap">`SANTE.INF`<a name="cs-caller-type-.96SANTE.46INF.96"> </a></td><td>Infirmier</td></tr><tr><td style="white-space:nowrap">`SANTE.AIDESOIN`<a name="cs-caller-type-.96SANTE.46AIDESOIN.96"> </a></td><td>Aide-soignant</td></tr><tr><td style="white-space:nowrap">`SANTE.SF`<a name="cs-caller-type-.96SANTE.46SF.96"> </a></td><td>Sage-femme</td></tr><tr><td style="white-space:nowrap">`SANTE.AIDEDOM`<a name="cs-caller-type-.96SANTE.46AIDEDOM.96"> </a></td><td>Aide à domicile</td></tr><tr><td style="white-space:nowrap">`SANTE.PHARMA`<a name="cs-caller-type-.96SANTE.46PHARMA.96"> </a></td><td>Pharmacien</td></tr><tr><td style="white-space:nowrap">`SANTE.DENTISTE`<a name="cs-caller-type-.96SANTE.46DENTISTE.96"> </a></td><td>Dentiste</td></tr><tr><td style="white-space:nowrap">`SANTE.LABO`<a name="cs-caller-type-.96SANTE.46LABO.96"> </a></td><td>Laboratoire</td></tr><tr><td style="white-space:nowrap">`FDO-MILI`<a name="cs-caller-type-.96FDO-MILI.96"> </a></td><td>Forces de l'ordre / militaire</td></tr><tr><td style="white-space:nowrap">`FDO-MILI.POL`<a name="cs-caller-type-.96FDO-MILI.46POL.96"> </a></td><td>Police</td></tr><tr><td style="white-space:nowrap">`FDO-MILI.GENDARM`<a name="cs-caller-type-.96FDO-MILI.46GENDARM.96"> </a></td><td>Gendarmerie</td></tr><tr><td style="white-space:nowrap">`FDO-MILI.MILI`<a name="cs-caller-type-.96FDO-MILI.46MILI.96"> </a></td><td>Militaire</td></tr><tr><td style="white-space:nowrap">`ADM-TUTL`<a name="cs-caller-type-.96ADM-TUTL.96"> </a></td><td>Administration / tutelle</td></tr><tr><td style="white-space:nowrap">VIP<a name="cs-caller-type-VIP"> </a></td><td>VIP</td></tr><tr><td style="white-space:nowrap">OBJCONNC<a name="cs-caller-type-OBJCONNC"> </a></td><td>Objet connecté</td></tr><tr><td style="white-space:nowrap">AUTRE<a name="cs-caller-type-AUTRE"> </a></td><td>Autre</td></tr><tr><td style="white-space:nowrap">INCONNU<a name="cs-caller-type-INCONNU"> </a></td><td>Inconnu</td></tr></table></div>
+  </text>
+  <url value="https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-caller-type"/>
+  <version value="0.1.0"/>
+  <name value="CS_CallerType"/>
+  <title value="Type d'appelant (Hub Santé)"/>
+  <status value="draft"/>
+  <date value="2026-03-16T12:48:10+00:00"/>
+  <publisher value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
+  <contact>
+    <name value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://esante.gouv.fr"/>
+    </telecom>
+  </contact>
+  <description value="Type ou qualité de l'appelant/requérant."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="FR"/>
+      <display value="France"/>
+    </coding>
+  </jurisdiction>
+  <content value="complete"/>
+  <count value="29"/>
+  <concept>
+    <code value="SUJET"/>
+    <display value="Sujet"/>
+  </concept>
+  <concept>
+    <code value="FAMILLE"/>
+    <display value="Famille"/>
+  </concept>
+  <concept>
+    <code value="TIERS"/>
+    <display value="Tiers"/>
+  </concept>
+  <concept>
+    <code value="POMPIER"/>
+    <display value="Pompier"/>
+  </concept>
+  <concept>
+    <code value="AMBULANC"/>
+    <display value="Ambulancier"/>
+  </concept>
+  <concept>
+    <code value="`AMBULANC.AASC`"/>
+    <display value="Ambulancier AASC"/>
+  </concept>
+  <concept>
+    <code value="`AMBULANC.AUTRESEC`"/>
+    <display value="Autre secouriste"/>
+  </concept>
+  <concept>
+    <code value="SECOUR"/>
+    <display value="Secouriste"/>
+  </concept>
+  <concept>
+    <code value="MED"/>
+    <display value="Médecin"/>
+  </concept>
+  <concept>
+    <code value="`MED.MEDSOS`"/>
+    <display value="Médecin SOS"/>
+  </concept>
+  <concept>
+    <code value="`MED.MRL`"/>
+    <display value="Médecin régulateur libéral"/>
+  </concept>
+  <concept>
+    <code value="`MED.EFFML`"/>
+    <display value="Effecteur médical libéral"/>
+  </concept>
+  <concept>
+    <code value="SANTE"/>
+    <display value="Professionnel de santé"/>
+  </concept>
+  <concept>
+    <code value="`SANTE.INF`"/>
+    <display value="Infirmier"/>
+  </concept>
+  <concept>
+    <code value="`SANTE.AIDESOIN`"/>
+    <display value="Aide-soignant"/>
+  </concept>
+  <concept>
+    <code value="`SANTE.SF`"/>
+    <display value="Sage-femme"/>
+  </concept>
+  <concept>
+    <code value="`SANTE.AIDEDOM`"/>
+    <display value="Aide à domicile"/>
+  </concept>
+  <concept>
+    <code value="`SANTE.PHARMA`"/>
+    <display value="Pharmacien"/>
+  </concept>
+  <concept>
+    <code value="`SANTE.DENTISTE`"/>
+    <display value="Dentiste"/>
+  </concept>
+  <concept>
+    <code value="`SANTE.LABO`"/>
+    <display value="Laboratoire"/>
+  </concept>
+  <concept>
+    <code value="`FDO-MILI`"/>
+    <display value="Forces de l'ordre / militaire"/>
+  </concept>
+  <concept>
+    <code value="`FDO-MILI.POL`"/>
+    <display value="Police"/>
+  </concept>
+  <concept>
+    <code value="`FDO-MILI.GENDARM`"/>
+    <display value="Gendarmerie"/>
+  </concept>
+  <concept>
+    <code value="`FDO-MILI.MILI`"/>
+    <display value="Militaire"/>
+  </concept>
+  <concept>
+    <code value="`ADM-TUTL`"/>
+    <display value="Administration / tutelle"/>
+  </concept>
+  <concept>
+    <code value="VIP"/>
+    <display value="VIP"/>
+  </concept>
+  <concept>
+    <code value="OBJCONNC"/>
+    <display value="Objet connecté"/>
+  </concept>
+  <concept>
+    <code value="AUTRE"/>
+    <display value="Autre"/>
+  </concept>
+  <concept>
+    <code value="INCONNU"/>
+    <display value="Inconnu"/>
+  </concept>
+</CodeSystem>

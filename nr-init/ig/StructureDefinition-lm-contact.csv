@@ -1,0 +1,9 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
+"lm-contact","lm-contact","","","",0,*,"","","","null {[]} {[]}
+","Contact","Coordonnées de contact avec canal, type et valeur (utilisé pour l'appelant).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"lm-contact.channel","lm-contact.channel","","","",1,1,"","","","code {[]} {[]}
+","Canal","Origine du canal établi.","","","","","","","","","",,"required","","https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-contact-channel|0.1.0","",,,,"lm-contact.channel",1,1,"",""
+"lm-contact.type","lm-contact.type","","","",1,1,"","","","code {[]} {[]}
+","Type de contact","Type de l'URI utilisée.","","","","","","","","","",,"required","","https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-contact-type|0.1.0","",,,,"lm-contact.type",1,1,"",""
+"lm-contact.detail","lm-contact.detail","","","",1,1,"","","","string {[]} {[]}
+","URI du contact","Valeur de l'URI. Format téléphone : +{indicatif pays}{numéro}.","","","","","","","","","",,,,,"",,,,"lm-contact.detail",1,1,"",""

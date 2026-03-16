@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="cs-perimeter"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narratif généré : CodeSystem cs-perimeter</b></p><a name="cs-perimeter"> </a><a name="hccs-perimeter"> </a><p>This  code system <code>https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-perimeter</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Affichage</b></td></tr><tr><td style="white-space:nowrap">AMU<a name="cs-perimeter-AMU"> </a></td><td>Aide Médicale Urgente</td></tr><tr><td style="white-space:nowrap">NEONAT<a name="cs-perimeter-NEONAT"> </a></td><td>Néonatologie</td></tr><tr><td style="white-space:nowrap">PSY<a name="cs-perimeter-PSY"> </a></td><td>Psychiatrie</td></tr><tr><td style="white-space:nowrap">SNP<a name="cs-perimeter-SNP"> </a></td><td>Soins Non Programmés</td></tr></table></div>
+  </text>
+  <url value="https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-perimeter"/>
+  <version value="0.1.0"/>
+  <name value="CS_Perimeter"/>
+  <title value="Filière de régulation (Hub Santé)"/>
+  <status value="draft"/>
+  <date value="2026-03-16T12:48:10+00:00"/>
+  <publisher value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
+  <contact>
+    <name value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://esante.gouv.fr"/>
+    </telecom>
+  </contact>
+  <description value="Filière du CRRA destinataire à laquelle le dossier doit être adressé."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="FR"/>
+      <display value="France"/>
+    </coding>
+  </jurisdiction>
+  <content value="complete"/>
+  <count value="4"/>
+  <concept>
+    <code value="AMU"/>
+    <display value="Aide Médicale Urgente"/>
+  </concept>
+  <concept>
+    <code value="NEONAT"/>
+    <display value="Néonatologie"/>
+  </concept>
+  <concept>
+    <code value="PSY"/>
+    <display value="Psychiatrie"/>
+  </concept>
+  <concept>
+    <code value="SNP"/>
+    <display value="Soins Non Programmés"/>
+  </concept>
+</CodeSystem>

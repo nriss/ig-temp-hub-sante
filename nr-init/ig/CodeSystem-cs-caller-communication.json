@@ -1,0 +1,68 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "cs-caller-communication",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : CodeSystem cs-caller-communication</b></p><a name=\"cs-caller-communication\"> </a><a name=\"hccs-caller-communication\"> </a><p>This  code system <code>https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-caller-communication</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage</b></td></tr><tr><td style=\"white-space:nowrap\">AUCUNE<a name=\"cs-caller-communication-AUCUNE\"> </a></td><td>Aucune contrainte</td></tr><tr><td style=\"white-space:nowrap\">MUET<a name=\"cs-caller-communication-MUET\"> </a></td><td>Muet</td></tr><tr><td style=\"white-space:nowrap\">VISION<a name=\"cs-caller-communication-VISION\"> </a></td><td>Problème de vision</td></tr><tr><td style=\"white-space:nowrap\">LANGUE<a name=\"cs-caller-communication-LANGUE\"> </a></td><td>Barrière de la langue</td></tr><tr><td style=\"white-space:nowrap\">PANIQUE<a name=\"cs-caller-communication-PANIQUE\"> </a></td><td>Panique</td></tr><tr><td style=\"white-space:nowrap\">HOSTILE<a name=\"cs-caller-communication-HOSTILE\"> </a></td><td>Hostile</td></tr><tr><td style=\"white-space:nowrap\">AGITE<a name=\"cs-caller-communication-AGITE\"> </a></td><td>Agité</td></tr><tr><td style=\"white-space:nowrap\">AUTRE<a name=\"cs-caller-communication-AUTRE\"> </a></td><td>Autre</td></tr><tr><td style=\"white-space:nowrap\">IMPOSS<a name=\"cs-caller-communication-IMPOSS\"> </a></td><td>Communication impossible</td></tr></table></div>"
+  },
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-caller-communication",
+  "version" : "0.1.0",
+  "name" : "CS_CallerCommunication",
+  "title" : "Communication avec l'appelant (Hub Santé)",
+  "status" : "draft",
+  "date" : "2026-03-16T12:48:10+00:00",
+  "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
+  "contact" : [{
+    "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://esante.gouv.fr"
+    }]
+  }],
+  "description" : "Qualité ou contrainte de communication avec l'appelant.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "France"
+    }]
+  }],
+  "content" : "complete",
+  "count" : 9,
+  "concept" : [{
+    "code" : "AUCUNE",
+    "display" : "Aucune contrainte"
+  },
+  {
+    "code" : "MUET",
+    "display" : "Muet"
+  },
+  {
+    "code" : "VISION",
+    "display" : "Problème de vision"
+  },
+  {
+    "code" : "LANGUE",
+    "display" : "Barrière de la langue"
+  },
+  {
+    "code" : "PANIQUE",
+    "display" : "Panique"
+  },
+  {
+    "code" : "HOSTILE",
+    "display" : "Hostile"
+  },
+  {
+    "code" : "AGITE",
+    "display" : "Agité"
+  },
+  {
+    "code" : "AUTRE",
+    "display" : "Autre"
+  },
+  {
+    "code" : "IMPOSS",
+    "display" : "Communication impossible"
+  }]
+}

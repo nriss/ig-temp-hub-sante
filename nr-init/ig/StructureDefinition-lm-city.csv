@@ -1,0 +1,7 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
+"lm-city","lm-city","","","",0,*,"","","","null {[]} {[]}
+","Commune","Commune de la localisation.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"lm-city.name","lm-city.name","","","",0,1,"","","","string {[]} {[]}
+","Nom de la commune","Nom de la commune.","","","","","","","","","",,,,,"",,,,"lm-city.name",0,1,"",""
+"lm-city.inseeCode","lm-city.inseeCode","","","",0,1,"","","","string {[]} {[]}
+","Code INSEE","Code INSEE de la commune.","Regexp : ^[0-9]{5}$","","","","","","","","",,,,,"",,,,"lm-city.inseeCode",0,1,"",""

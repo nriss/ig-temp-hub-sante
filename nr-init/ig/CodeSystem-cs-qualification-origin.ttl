@@ -1,0 +1,106 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-qualification-origin> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "cs-qualification-origin"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : CodeSystem cs-qualification-origin</b></p><a name=\"cs-qualification-origin\"> </a><a name=\"hccs-qualification-origin\"> </a><p>This  code system <code>https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-qualification-origin</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage</b></td></tr><tr><td style=\"white-space:nowrap\">15<a name=\"cs-qualification-origin-15\"> </a></td><td>15</td></tr><tr><td style=\"white-space:nowrap\">116117<a name=\"cs-qualification-origin-116117\"> </a></td><td>116 117</td></tr><tr><td style=\"white-space:nowrap\">AUTOCOM<a name=\"cs-qualification-origin-AUTOCOM\"> </a></td><td>Autocommutateur</td></tr><tr><td style=\"white-space:nowrap\">112<a name=\"cs-qualification-origin-112\"> </a></td><td>112</td></tr><tr><td style=\"white-space:nowrap\">115<a name=\"cs-qualification-origin-115\"> </a></td><td>115</td></tr><tr><td style=\"white-space:nowrap\">CRRA<a name=\"cs-qualification-origin-CRRA\"> </a></td><td>CRRA</td></tr><tr><td style=\"white-space:nowrap\">AUTREC15<a name=\"cs-qualification-origin-AUTREC15\"> </a></td><td>Autre C15</td></tr><tr><td style=\"white-space:nowrap\">`CTA-CONF`<a name=\"cs-qualification-origin-.96CTA-CONF.96\"> </a></td><td>CTA Conférence</td></tr><tr><td style=\"white-space:nowrap\">`CTA-PI`<a name=\"cs-qualification-origin-.96CTA-PI.96\"> </a></td><td>CTA Premier Intervenant</td></tr><tr><td style=\"white-space:nowrap\">AUTRECTA<a name=\"cs-qualification-origin-AUTRECTA\"> </a></td><td>Autre CTA</td></tr><tr><td style=\"white-space:nowrap\">CNR<a name=\"cs-qualification-origin-CNR\"> </a></td><td>CNR</td></tr><tr><td style=\"white-space:nowrap\">FDO<a name=\"cs-qualification-origin-FDO\"> </a></td><td>Forces de l'Ordre</td></tr><tr><td style=\"white-space:nowrap\">SNATED<a name=\"cs-qualification-origin-SNATED\"> </a></td><td>SNATED</td></tr><tr><td style=\"white-space:nowrap\">PDSSOS<a name=\"cs-qualification-origin-PDSSOS\"> </a></td><td>PDS/SOS</td></tr><tr><td style=\"white-space:nowrap\">TELASSIST<a name=\"cs-qualification-origin-TELASSIST\"> </a></td><td>Téléassistance</td></tr><tr><td style=\"white-space:nowrap\">CROSS<a name=\"cs-qualification-origin-CROSS\"> </a></td><td>CROSS</td></tr><tr><td style=\"white-space:nowrap\">PUBLIC<a name=\"cs-qualification-origin-PUBLIC\"> </a></td><td>Public</td></tr><tr><td style=\"white-space:nowrap\">DATA<a name=\"cs-qualification-origin-DATA\"> </a></td><td>Data</td></tr><tr><td style=\"white-space:nowrap\">AUTRE<a name=\"cs-qualification-origin-AUTRE\"> </a></td><td>Autre</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-qualification-origin"^^xsd:anyURI ;
+     fhir:l <https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-qualification-origin>
+  ] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "CS_QualificationOrigin"] ; # 
+  fhir:title [ fhir:v "Origine de la qualification (Hub Santé)"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2026-03-16T12:48:10+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://esante.gouv.fr" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Canal ou entité à l'origine de la création du dossier de régulation médicale."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "FR" ] ;
+       fhir:display [ fhir:v "France" ]
+     ] )
+  ] ) ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "19"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "15" ] ;
+     fhir:display [ fhir:v "15" ]
+  ] [
+     fhir:code [ fhir:v "116117" ] ;
+     fhir:display [ fhir:v "116 117" ]
+  ] [
+     fhir:code [ fhir:v "AUTOCOM" ] ;
+     fhir:display [ fhir:v "Autocommutateur" ]
+  ] [
+     fhir:code [ fhir:v "112" ] ;
+     fhir:display [ fhir:v "112" ]
+  ] [
+     fhir:code [ fhir:v "115" ] ;
+     fhir:display [ fhir:v "115" ]
+  ] [
+     fhir:code [ fhir:v "CRRA" ] ;
+     fhir:display [ fhir:v "CRRA" ]
+  ] [
+     fhir:code [ fhir:v "AUTREC15" ] ;
+     fhir:display [ fhir:v "Autre C15" ]
+  ] [
+     fhir:code [ fhir:v "`CTA-CONF`" ] ;
+     fhir:display [ fhir:v "CTA Conférence" ]
+  ] [
+     fhir:code [ fhir:v "`CTA-PI`" ] ;
+     fhir:display [ fhir:v "CTA Premier Intervenant" ]
+  ] [
+     fhir:code [ fhir:v "AUTRECTA" ] ;
+     fhir:display [ fhir:v "Autre CTA" ]
+  ] [
+     fhir:code [ fhir:v "CNR" ] ;
+     fhir:display [ fhir:v "CNR" ]
+  ] [
+     fhir:code [ fhir:v "FDO" ] ;
+     fhir:display [ fhir:v "Forces de l'Ordre" ]
+  ] [
+     fhir:code [ fhir:v "SNATED" ] ;
+     fhir:display [ fhir:v "SNATED" ]
+  ] [
+     fhir:code [ fhir:v "PDSSOS" ] ;
+     fhir:display [ fhir:v "PDS/SOS" ]
+  ] [
+     fhir:code [ fhir:v "TELASSIST" ] ;
+     fhir:display [ fhir:v "Téléassistance" ]
+  ] [
+     fhir:code [ fhir:v "CROSS" ] ;
+     fhir:display [ fhir:v "CROSS" ]
+  ] [
+     fhir:code [ fhir:v "PUBLIC" ] ;
+     fhir:display [ fhir:v "Public" ]
+  ] [
+     fhir:code [ fhir:v "DATA" ] ;
+     fhir:display [ fhir:v "Data" ]
+  ] [
+     fhir:code [ fhir:v "AUTRE" ] ;
+     fhir:display [ fhir:v "Autre" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

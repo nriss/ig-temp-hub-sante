@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="cs-coord-precision"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narratif généré : CodeSystem cs-coord-precision</b></p><a name="cs-coord-precision"> </a><a name="hccs-coord-precision"> </a><p>This  code system <code>https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-coord-precision</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Affichage</b></td></tr><tr><td style="white-space:nowrap">VILLE<a name="cs-coord-precision-VILLE"> </a></td><td>Ville</td></tr><tr><td style="white-space:nowrap">RUE<a name="cs-coord-precision-RUE"> </a></td><td>Rue</td></tr><tr><td style="white-space:nowrap">ADRESSE<a name="cs-coord-precision-ADRESSE"> </a></td><td>Adresse</td></tr><tr><td style="white-space:nowrap">EXACTE<a name="cs-coord-precision-EXACTE"> </a></td><td>Exacte</td></tr><tr><td style="white-space:nowrap">INCONNUE<a name="cs-coord-precision-INCONNUE"> </a></td><td>Inconnue</td></tr></table></div>
+  </text>
+  <url value="https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-coord-precision"/>
+  <version value="0.1.0"/>
+  <name value="CS_CoordPrecision"/>
+  <title value="Précision des coordonnées géographiques (Hub Santé)"/>
+  <status value="draft"/>
+  <date value="2026-03-16T12:48:10+00:00"/>
+  <publisher value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
+  <contact>
+    <name value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://esante.gouv.fr"/>
+    </telecom>
+  </contact>
+  <description value="Niveau de précision des coordonnées géographiques d'un point."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="FR"/>
+      <display value="France"/>
+    </coding>
+  </jurisdiction>
+  <content value="complete"/>
+  <count value="5"/>
+  <concept>
+    <code value="VILLE"/>
+    <display value="Ville"/>
+  </concept>
+  <concept>
+    <code value="RUE"/>
+    <display value="Rue"/>
+  </concept>
+  <concept>
+    <code value="ADRESSE"/>
+    <display value="Adresse"/>
+  </concept>
+  <concept>
+    <code value="EXACTE"/>
+    <display value="Exacte"/>
+  </concept>
+  <concept>
+    <code value="INCONNUE"/>
+    <display value="Inconnue"/>
+  </concept>
+</CodeSystem>

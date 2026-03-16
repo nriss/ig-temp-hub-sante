@@ -1,0 +1,60 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "cs-case-status",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : CodeSystem cs-case-status</b></p><a name=\"cs-case-status\"> </a><a name=\"hccs-case-status\"> </a><p>This  code system <code>https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-case-status</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage</b></td></tr><tr><td style=\"white-space:nowrap\">PROGRAM<a name=\"cs-case-status-PROGRAM\"> </a></td><td>Programmé</td></tr><tr><td style=\"white-space:nowrap\">ACTIF<a name=\"cs-case-status-ACTIF\"> </a></td><td>Actif</td></tr><tr><td style=\"white-space:nowrap\">ACHEVE<a name=\"cs-case-status-ACHEVE\"> </a></td><td>Achevé</td></tr><tr><td style=\"white-space:nowrap\">VALIDE<a name=\"cs-case-status-VALIDE\"> </a></td><td>Validé</td></tr><tr><td style=\"white-space:nowrap\">CLOTURE<a name=\"cs-case-status-CLOTURE\"> </a></td><td>Clôturé</td></tr><tr><td style=\"white-space:nowrap\">CLASSE<a name=\"cs-case-status-CLASSE\"> </a></td><td>Classé</td></tr><tr><td style=\"white-space:nowrap\">ARCHIVE<a name=\"cs-case-status-ARCHIVE\"> </a></td><td>Archivé</td></tr></table></div>"
+  },
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-case-status",
+  "version" : "0.1.0",
+  "name" : "CS_CaseStatus",
+  "title" : "Statut du dossier (Hub Santé)",
+  "status" : "draft",
+  "date" : "2026-03-16T12:48:10+00:00",
+  "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
+  "contact" : [{
+    "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://esante.gouv.fr"
+    }]
+  }],
+  "description" : "Statut du dossier de régulation médicale.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "France"
+    }]
+  }],
+  "content" : "complete",
+  "count" : 7,
+  "concept" : [{
+    "code" : "PROGRAM",
+    "display" : "Programmé"
+  },
+  {
+    "code" : "ACTIF",
+    "display" : "Actif"
+  },
+  {
+    "code" : "ACHEVE",
+    "display" : "Achevé"
+  },
+  {
+    "code" : "VALIDE",
+    "display" : "Validé"
+  },
+  {
+    "code" : "CLOTURE",
+    "display" : "Clôturé"
+  },
+  {
+    "code" : "CLASSE",
+    "display" : "Classé"
+  },
+  {
+    "code" : "ARCHIVE",
+    "display" : "Archivé"
+  }]
+}

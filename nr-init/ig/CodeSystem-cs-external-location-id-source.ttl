@@ -1,0 +1,64 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-external-location-id-source> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "cs-external-location-id-source"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : CodeSystem cs-external-location-id-source</b></p><a name=\"cs-external-location-id-source\"> </a><a name=\"hccs-external-location-id-source\"> </a><p>This  code system <code>https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-external-location-id-source</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage</b></td></tr><tr><td style=\"white-space:nowrap\">FINESS_ADMINISTRATIF<a name=\"cs-external-location-id-source-FINESS_ADMINISTRATIF\"> </a></td><td>FINESS Administratif</td></tr><tr><td style=\"white-space:nowrap\">FINESS_GEOGRAPHIQUE<a name=\"cs-external-location-id-source-FINESS_GEOGRAPHIQUE\"> </a></td><td>FINESS Géographique</td></tr><tr><td style=\"white-space:nowrap\">SIREN<a name=\"cs-external-location-id-source-SIREN\"> </a></td><td>SIREN</td></tr><tr><td style=\"white-space:nowrap\">SIRET<a name=\"cs-external-location-id-source-SIRET\"> </a></td><td>SIRET</td></tr><tr><td style=\"white-space:nowrap\">APE_NAF<a name=\"cs-external-location-id-source-APE_NAF\"> </a></td><td>APE / NAF</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-external-location-id-source"^^xsd:anyURI ;
+     fhir:l <https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-external-location-id-source>
+  ] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "CS_ExternalLocationIdSource"] ; # 
+  fhir:title [ fhir:v "Source des identifiants de localisation externes (Hub Santé)"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2026-03-16T12:48:10+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://esante.gouv.fr" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Types d'identifiants utilisés pour référencer une localisation externe."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "FR" ] ;
+       fhir:display [ fhir:v "France" ]
+     ] )
+  ] ) ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "5"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "FINESS_ADMINISTRATIF" ] ;
+     fhir:display [ fhir:v "FINESS Administratif" ]
+  ] [
+     fhir:code [ fhir:v "FINESS_GEOGRAPHIQUE" ] ;
+     fhir:display [ fhir:v "FINESS Géographique" ]
+  ] [
+     fhir:code [ fhir:v "SIREN" ] ;
+     fhir:display [ fhir:v "SIREN" ]
+  ] [
+     fhir:code [ fhir:v "SIRET" ] ;
+     fhir:display [ fhir:v "SIRET" ]
+  ] [
+     fhir:code [ fhir:v "APE_NAF" ] ;
+     fhir:display [ fhir:v "APE / NAF" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

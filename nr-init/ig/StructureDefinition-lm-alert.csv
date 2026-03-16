@@ -1,0 +1,9 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
+"lm-alert","lm-alert","","","",0,*,"","","","null {[]} {[]}
+","Alerte initiale","Alerte initiale reçue par le SAMU, avec la réception, l'appelant et les notes associées.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"lm-alert.reception","lm-alert.reception","","","",1,1,"","","","dateTime {[]} {[]}
+","Date/heure de réception","Date et heure de réception de l'appel (avec fuseau horaire).","","","","","","","","","",,,,,"",,,,"lm-alert.reception",1,1,"",""
+"lm-alert.caller","lm-alert.caller","","","",1,1,"","","","https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-caller {[]} {[]}
+","Appelant","Personne à l'origine de l'appel.","","","","","","","","","",,,,,"",,,,"lm-alert.caller",1,1,"",""
+"lm-alert.notes","lm-alert.notes","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-notes {[]} {[]}
+","Notes","Notes horodatées associées à l'alerte.","","","","","","","","","",,,,,"",,,,"lm-alert.notes",0,*,"",""

@@ -1,0 +1,52 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "cs-external-location-id-source",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : CodeSystem cs-external-location-id-source</b></p><a name=\"cs-external-location-id-source\"> </a><a name=\"hccs-external-location-id-source\"> </a><p>This  code system <code>https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-external-location-id-source</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage</b></td></tr><tr><td style=\"white-space:nowrap\">FINESS_ADMINISTRATIF<a name=\"cs-external-location-id-source-FINESS_ADMINISTRATIF\"> </a></td><td>FINESS Administratif</td></tr><tr><td style=\"white-space:nowrap\">FINESS_GEOGRAPHIQUE<a name=\"cs-external-location-id-source-FINESS_GEOGRAPHIQUE\"> </a></td><td>FINESS Géographique</td></tr><tr><td style=\"white-space:nowrap\">SIREN<a name=\"cs-external-location-id-source-SIREN\"> </a></td><td>SIREN</td></tr><tr><td style=\"white-space:nowrap\">SIRET<a name=\"cs-external-location-id-source-SIRET\"> </a></td><td>SIRET</td></tr><tr><td style=\"white-space:nowrap\">APE_NAF<a name=\"cs-external-location-id-source-APE_NAF\"> </a></td><td>APE / NAF</td></tr></table></div>"
+  },
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-external-location-id-source",
+  "version" : "0.1.0",
+  "name" : "CS_ExternalLocationIdSource",
+  "title" : "Source des identifiants de localisation externes (Hub Santé)",
+  "status" : "draft",
+  "date" : "2026-03-16T12:48:10+00:00",
+  "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
+  "contact" : [{
+    "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://esante.gouv.fr"
+    }]
+  }],
+  "description" : "Types d'identifiants utilisés pour référencer une localisation externe.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "France"
+    }]
+  }],
+  "content" : "complete",
+  "count" : 5,
+  "concept" : [{
+    "code" : "FINESS_ADMINISTRATIF",
+    "display" : "FINESS Administratif"
+  },
+  {
+    "code" : "FINESS_GEOGRAPHIQUE",
+    "display" : "FINESS Géographique"
+  },
+  {
+    "code" : "SIREN",
+    "display" : "SIREN"
+  },
+  {
+    "code" : "SIRET",
+    "display" : "SIRET"
+  },
+  {
+    "code" : "APE_NAF",
+    "display" : "APE / NAF"
+  }]
+}

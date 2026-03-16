@@ -258,7 +258,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <ul id="markdown-toc">
   <li><a href="#introduction" id="markdown-toc-introduction">Introduction</a></li>
   <li><a href="#périmètre-du-projet" id="markdown-toc-périmètre-du-projet">Périmètre du projet</a></li>
-  <li><a href="#auteurs-et-contributeurs-optionnel" id="markdown-toc-auteurs-et-contributeurs-optionnel">Auteurs et contributeurs (optionnel)</a></li>
+  <li><a href="#auteurs-et-contributeurs" id="markdown-toc-auteurs-et-contributeurs">Auteurs et contributeurs</a></li>
   <li><a href="#dépendances" id="markdown-toc-dépendances">Dépendances</a></li>
   <li><a href="#propriété-intellectuelle" id="markdown-toc-propriété-intellectuelle">Propriété intellectuelle</a></li>
 </ul>
@@ -266,39 +266,39 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </div>
 <p style="padding: 5px; border-radius: 5px; border: 2px solid maroon; background: #ffffe6; width: 65%">
 <b>Brief description of this Implementation Guide</b><br/>
-[Add a brief description of this IG in English]
+This Implementation Guide defines the logical models for the Hub Santé interoperability platform (SAMU), based on the RS-EDA JSON schema. It provides a FHIR-based representation of emergency medical regulation cases exchanged between partners of the French emergency medical dispatch system.
 </p>
 
 <div style="width: 65%">
     <blockquote class="stu-note">
-    <p>Cet Implementation Guide n'est pas la version courante, il s'agit de la version en intégration continue soumise à des changements fréquents uniquement destinée à suivre les travaux en cours. La version courante sera accessible via l'URL canonique suite à la première release : http://interop.esante.gouv.fr/ig/fhir/[code - ig]</p>
+    <p>Cet Implementation Guide n'est pas la version courante, il s'agit de la version en intégration continue soumise à des changements fréquents uniquement destinée à suivre les travaux en cours. La version courante sera accessible via l'URL canonique suite à la première release : https://interop.esante.gouv.fr/ig/fhir/hubsante</p>
     </blockquote>
 </div>
 
-  <!-- A décommenter si CI-SIS
-<div class="figure">
-    <img src="ci-sis-logo.png" alt="CI-SIS" title="Logo du CI-SIS" style="width:100%;">
-</div> -->
-
 <h3 id="introduction">Introduction</h3>
 
-<p>Définir ici de quoi parle l'IG (En termes non expert, compréhensible par un patient). Rajouter également les détails techniques sur le contexte et le besoin de cet IG</p>
+<p>Le <strong>Hub Santé</strong> est une plateforme d'interopérabilité permettant l'échange de données entre les acteurs du système de soins d'urgence en France, notamment les SAMU (Services d'Aide Médicale Urgente) et leurs partenaires (SIS, FDO, établissements de santé…).</p>
 
-<p>Les principales sections de l'IG  sont :</p>
-
-<ul>
-  <li>Le contexte de l'IG, quelle problématique il résout</li>
-  <li>Ce que les Implémenteurs doivent mettre en place</li>
-  <li>Un onglet "Ressources de conformité" pour s'assurer d'un schéma global entre tous les IGs</li>
-</ul>
+<p>Cet Implementation Guide définit les <strong>modèles logiques FHIR</strong> correspondant au schéma JSON <strong>RS-EDA</strong> (Remontée de Situation — État Du dossier d'Affaire), qui est le format de message utilisé pour partager les dossiers de régulation médicale entre partenaires du Hub Santé.</p>
 
 <h3 id="périmètre-du-projet">Périmètre du projet</h3>
 
-<p>Définir en quelques lignes quel est le périmètre du projet</p>
+<p>Cet IG couvre la modélisation logique du message <strong>RS-EDA</strong>, qui décrit un dossier de régulation médicale complet, incluant :</p>
 
-<p>Toujours laisser l'onglet "Ressources de conformité" pour s'assurer d'une cohérence globales entre tous les IGs</p>
+<ul>
+  <li>La <strong>qualification</strong> du dossier (nature du problème, motif de santé, risques, priorité)</li>
+  <li>La <strong>localisation</strong> de l'intervention (adresse, coordonnées GPS, accès)</li>
+  <li>L'<strong>alerte initiale</strong> (appelant, canal de contact, notes)</li>
+  <li>Le ou les <strong>patients</strong> pris en charge (identité, dossier administratif, hypothèses diagnostiques)</li>
+  <li>Les <strong>observations médicales</strong> réalisées par les professionnels de santé</li>
+  <li>Les <strong>décisions</strong> de régulation médicale (type, ressource mobilisée, destination)</li>
+  <li>Les <strong>informations complémentaires</strong> libres</li>
+</ul>
 
-<h3 id="auteurs-et-contributeurs-optionnel">Auteurs et contributeurs (optionnel)</h3>
+<p>Les modèles logiques sont construits à partir du schéma JSON de référence publié par l'ANS :
+<a href="https://github.com/ansforge/SAMU-Hub-Modeles/blob/main/src/main/resources/json-schema/RS-EDA.schema.json">SAMU-Hub-Modeles / RS-EDA.schema.json</a></p>
+
+<h3 id="auteurs-et-contributeurs">Auteurs et contributeurs</h3>
 
 <table>
   <thead>
@@ -314,7 +314,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td><strong>Primary Editor</strong></td>
       <td>Prenom Nom</td>
       <td>Agence du Numérique en Santé</td>
-      <td>prenom.nom@address.email</td>
+      <td>prenom.nom@esante.gouv.fr</td>
     </tr>
   </tbody>
 </table>
@@ -379,7 +379,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris</a>.  Package ans.fhir.fr.hubsante#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Mar 16, 2026 10:29+0000">2026-03-16</span>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris</a>.  Package ans.fhir.fr.hubsante#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Mar 16, 2026 12:48+0000">2026-03-16</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens : <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières</a> |

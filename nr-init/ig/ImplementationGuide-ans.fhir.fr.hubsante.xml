@@ -11,7 +11,7 @@
   <name value="HubSante"/>
   <title value="Hub Santé"/>
   <status value="draft"/>
-  <date value="2026-03-16T10:29:29+00:00"/>
+  <date value="2026-03-16T12:48:10+00:00"/>
   <publisher value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
   <contact>
     <name value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
@@ -605,6 +605,149 @@
         <valueString value="StructureDefinition:logical"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/lm-access"/>
+      </reference>
+      <name value="Accès"/>
+      <description value="Informations d'accès à une localisation (bâtiment, étage, digicode…)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/lm-detailed-address"/>
+      </reference>
+      <name value="Adresse détaillée"/>
+      <description value="Adresse structurée avec numéro, type de voie et informations complémentaires."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/lm-alert"/>
+      </reference>
+      <name value="Alerte initiale"/>
+      <description value="Alerte initiale reçue par le SAMU, avec la réception, l'appelant et les notes associées."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/lm-caller"/>
+      </reference>
+      <name value="Appelant"/>
+      <description value="Personne à l'origine de l'appel au SAMU, avec ses coordonnées et ses caractéristiques de communication."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vs-case-attribution"/>
+      </reference>
+      <name value="Attribution du dossier (Hub Santé)"/>
+      <description value="Attribution ou orientation du dossier de régulation médicale."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/cs-case-attribution"/>
+      </reference>
+      <name value="Attribution du dossier (Hub Santé)"/>
+      <description value="Attribution ou orientation du dossier de régulation médicale."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vs-contact-channel"/>
+      </reference>
+      <name value="Canal de contact (Hub Santé)"/>
+      <description value="Origine du canal établi pour le contact."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/cs-contact-channel"/>
+      </reference>
+      <name value="Canal de contact (Hub Santé)"/>
+      <description value="Origine du canal établi pour le contact."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/lm-custom-map"/>
+      </reference>
+      <name value="Champ personnalisé"/>
+      <description value="Entrée de type clé/valeur permettant de transporter des informations complémentaires non structurées (max. 3 entrées)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/lm-city"/>
+      </reference>
+      <name value="Commune"/>
+      <description value="Commune de la localisation."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vs-caller-communication"/>
+      </reference>
+      <name value="Communication avec l'appelant (Hub Santé)"/>
+      <description value="Qualité ou contrainte de communication avec l'appelant."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/cs-caller-communication"/>
+      </reference>
+      <name value="Communication avec l'appelant (Hub Santé)"/>
+      <description value="Qualité ou contrainte de communication avec l'appelant."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/lm-contact"/>
+      </reference>
+      <name value="Contact"/>
+      <description value="Coordonnées de contact avec canal, type et valeur (utilisé pour l'appelant)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/lm-personal-contact"/>
       </reference>
       <name value="Contact personnel"/>
@@ -616,10 +759,98 @@
         <valueString value="StructureDefinition:logical"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/lm-coord"/>
+      </reference>
+      <name value="Coordonnées géographiques"/>
+      <description value="Coordonnées géographiques d'un point (latitude, longitude, altitude, précision)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/lm-destination"/>
+      </reference>
+      <name value="Destination"/>
+      <description value="Destination du patient à l'issue de la décision de régulation médicale."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/lm-administrative-file"/>
       </reference>
       <name value="Dossier administratif"/>
       <description value="Dossier administratif du patient, contenant ses identifiants externes et son médecin traitant."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/lm-create-case-health"/>
+      </reference>
+      <name value="Dossier de régulation médicale (RS-EDA)"/>
+      <description value="Objet racine du message RS-EDA : dossier de régulation médicale transmis entre partenaires du Hub Santé."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/lm-decision"/>
+      </reference>
+      <name value="Décision médicale"/>
+      <description value="Décision de régulation médicale prise par l'opérateur pour un dossier donné."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/lm-case-details"/>
+      </reference>
+      <name value="Détails du dossier"/>
+      <description value="Informations complémentaires de qualification du dossier de régulation médicale."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vs-perimeter"/>
+      </reference>
+      <name value="Filière de régulation (Hub Santé)"/>
+      <description value="Filière du CRRA destinataire à laquelle le dossier doit être adressé."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/cs-perimeter"/>
+      </reference>
+      <name value="Filière de régulation (Hub Santé)"/>
+      <description value="Filière du CRRA destinataire à laquelle le dossier doit être adressé."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/lm-geometry"/>
+      </reference>
+      <name value="Géométrie"/>
+      <description value="Localisation géographique horodatée d'un point."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -660,6 +891,17 @@
         <valueString value="StructureDefinition:logical"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/lm-external-location-id"/>
+      </reference>
+      <name value="Identifiant de localisation externe"/>
+      <description value="Identifiant externe référençant une localisation (établissement de santé, entreprise…)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/lm-external-id"/>
       </reference>
       <name value="Identifiant(s) patient(s)"/>
@@ -682,6 +924,28 @@
         <valueString value="StructureDefinition:logical"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/lm-external-info"/>
+      </reference>
+      <name value="Information externe"/>
+      <description value="Référence vers une ressource externe apportant des informations complémentaires sur la localisation."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/lm-additional-information"/>
+      </reference>
+      <name value="Informations complémentaires"/>
+      <description value="Informations complémentaires non structurées transportées sous forme de carte clé/valeur (max. 3 entrées)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/lm-patient-detail"/>
       </reference>
       <name value="Informations patient"/>
@@ -693,10 +957,43 @@
         <valueString value="StructureDefinition:logical"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/lm-location"/>
+      </reference>
+      <name value="Localisation"/>
+      <description value="Localisation de l'intervention, incluant l'adresse, la commune, l'accès, les coordonnées géographiques et les références externes."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/lm-health-motive"/>
+      </reference>
+      <name value="Motif de santé"/>
+      <description value="Code et libellé décrivant le motif de santé de l'appel (nomenclature SAMU)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/lm-general-practitioner"/>
       </reference>
       <name value="Médecin traitant"/>
       <description value="Médecin traitant du patient."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/lm-whats-happen"/>
+      </reference>
+      <name value="Nature du problème"/>
+      <description value="Code et libellé décrivant la nature de l'événement déclenchant l'appel (nomenclature SAMU)."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -726,10 +1023,54 @@
         <valueString value="StructureDefinition:logical"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/lm-way-name"/>
+      </reference>
+      <name value="Nom de voie"/>
+      <description value="Nom complet d'une voie (rue, avenue, boulevard…)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/lm-notes"/>
+      </reference>
+      <name value="Note"/>
+      <description value="Note horodatée associée à l'alerte initiale."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/lm-medical-note"/>
       </reference>
       <name value="Observation médicale"/>
       <description value="Observation médicale réalisée par un professionnel de santé dans le contexte de la régulation médicale (RS-EDA)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vs-qualification-origin"/>
+      </reference>
+      <name value="Origine de la qualification (Hub Santé)"/>
+      <description value="Canal ou entité à l'origine de la création du dossier de régulation médicale."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/cs-qualification-origin"/>
+      </reference>
+      <name value="Origine de la qualification (Hub Santé)"/>
+      <description value="Canal ou entité à l'origine de la création du dossier de régulation médicale."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -748,10 +1089,65 @@
         <valueString value="StructureDefinition:logical"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/lm-point"/>
+      </reference>
+      <name value="Point géographique"/>
+      <description value="Point géographique avec ses coordonnées et une indication sur la provenance AML."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vs-case-priority"/>
+      </reference>
+      <name value="Priorité du dossier (Hub Santé)"/>
+      <description value="Niveau de priorité du dossier de régulation médicale."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/cs-case-priority"/>
+      </reference>
+      <name value="Priorité du dossier (Hub Santé)"/>
+      <description value="Niveau de priorité du dossier de régulation médicale."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/lm-operator"/>
       </reference>
       <name value="Professionnel de santé réalisant l'observation"/>
       <description value="Opérateur ayant effectué une observation médicale dans le contexte de la régulation médicale (RS-EDA)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vs-coord-precision"/>
+      </reference>
+      <name value="Précision des coordonnées géographiques (Hub Santé)"/>
+      <description value="Niveau de précision des coordonnées géographiques d'un point."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/cs-coord-precision"/>
+      </reference>
+      <name value="Précision des coordonnées géographiques (Hub Santé)"/>
+      <description value="Niveau de précision des coordonnées géographiques d'un point."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -763,6 +1159,28 @@
       </reference>
       <name value="Prénom &amp; nom usuel"/>
       <description value="Prénom et nom usuel d'une personne. Objet transverse utilisé dans plusieurs contextes (appelant, médecin traitant, identité patient)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/lm-qualification"/>
+      </reference>
+      <name value="Qualification du dossier"/>
+      <description value="Qualification médicale et opérationnelle du dossier de régulation médicale."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/lm-risk-threat"/>
+      </reference>
+      <name value="Risque et menace"/>
+      <description value="Code et libellé décrivant un risque ou une menace associé au dossier (nomenclature SAMU)."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -814,6 +1232,28 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
+        <reference value="ValueSet/vs-external-location-id-source"/>
+      </reference>
+      <name value="Source des identifiants de localisation externes (Hub Santé)"/>
+      <description value="Types d'identifiants utilisés pour référencer une localisation externe."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/cs-external-location-id-source"/>
+      </reference>
+      <name value="Source des identifiants de localisation externes (Hub Santé)"/>
+      <description value="Types d'identifiants utilisés pour référencer une localisation externe."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
         <reference value="ValueSet/vs-external-id-source"/>
       </reference>
       <name value="Source des identifiants externes patient (Hub Santé)"/>
@@ -833,6 +1273,28 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vs-case-status"/>
+      </reference>
+      <name value="Statut du dossier (Hub Santé)"/>
+      <description value="Statut du dossier de régulation médicale."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/cs-case-status"/>
+      </reference>
+      <name value="Statut du dossier (Hub Santé)"/>
+      <description value="Statut du dossier de régulation médicale."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:logical"/>
       </extension>
       <reference>
@@ -840,6 +1302,94 @@
       </reference>
       <name value="Traits stricts de l'identité"/>
       <description value="Traits stricts de l'identité du patient au sens de l'identité INS."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vs-caller-type"/>
+      </reference>
+      <name value="Type d'appelant (Hub Santé)"/>
+      <description value="Type ou qualité de l'appelant/requérant."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/cs-caller-type"/>
+      </reference>
+      <name value="Type d'appelant (Hub Santé)"/>
+      <description value="Type ou qualité de l'appelant/requérant."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vs-external-info-type"/>
+      </reference>
+      <name value="Type d'information externe (Hub Santé)"/>
+      <description value="Type de la ressource externe référencée pour la localisation."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/cs-external-info-type"/>
+      </reference>
+      <name value="Type d'information externe (Hub Santé)"/>
+      <description value="Type de la ressource externe référencée pour la localisation."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vs-intervention-type"/>
+      </reference>
+      <name value="Type d'intervention (Hub Santé)"/>
+      <description value="Type d'intervention : primaire ou secondaire."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/cs-intervention-type"/>
+      </reference>
+      <name value="Type d'intervention (Hub Santé)"/>
+      <description value="Type d'intervention : primaire (première intervention urgente) ou secondaire (ex. TIH)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vs-orientation-type"/>
+      </reference>
+      <name value="Type d'orientation (Hub Santé)"/>
+      <description value="Type d'orientation décidé à l'issue de la régulation médicale."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/cs-orientation-type"/>
+      </reference>
+      <name value="Type d'orientation (Hub Santé)"/>
+      <description value="Type d'orientation décidé à l'issue de la régulation médicale."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -862,6 +1412,72 @@
       </reference>
       <name value="Type de contact (Hub Santé)"/>
       <description value="Types d'URI utilisés pour les coordonnées de contact."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vs-decision-type"/>
+      </reference>
+      <name value="Type de décision médicale (Hub Santé)"/>
+      <description value="Type de décision prise dans le cadre de la régulation médicale."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/cs-decision-type"/>
+      </reference>
+      <name value="Type de décision médicale (Hub Santé)"/>
+      <description value="Type de décision prise dans le cadre de la régulation médicale."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/lm-location-kind"/>
+      </reference>
+      <name value="Type de lieu"/>
+      <description value="Code et libellé décrivant le type de lieu de l'intervention (nomenclature SAMU)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vs-resource-type"/>
+      </reference>
+      <name value="Type de ressource mobilisée (Hub Santé)"/>
+      <description value="Type de ressource mobilisée dans le cadre de la décision de régulation médicale."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/cs-resource-type"/>
+      </reference>
+      <name value="Type de ressource mobilisée (Hub Santé)"/>
+      <description value="Type de ressource mobilisée dans le cadre de la décision de régulation médicale."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/lm-highway"/>
+      </reference>
+      <name value="Voie routière"/>
+      <description value="Informations relatives à une voie routière (autoroute, route nationale…)."/>
       <exampleBoolean value="false"/>
     </resource>
     <page>

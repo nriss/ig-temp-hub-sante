@@ -1,10 +1,164 @@
 "Profile","Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
+"lm-access","lm-access","lm-access","","","",0,*,"","","","null {[]} {[]}
+","Accès","Informations d'accès à une localisation (bâtiment, étage, digicode…).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"lm-access","lm-access.floor","lm-access.floor","","","",0,1,"","","","string {[]} {[]}
+","Étage","Numéro ou description de l'étage.","","","","","","","","","",,,,,"",,,,"lm-access.floor",0,1,"",""
+"lm-access","lm-access.roomNumber","lm-access.roomNumber","","","",0,1,"","","","string {[]} {[]}
+","Numéro de chambre","Numéro de chambre ou d'appartement.","","","","","","","","","",,,,,"",,,,"lm-access.roomNumber",0,1,"",""
+"lm-access","lm-access.interphone","lm-access.interphone","","","",0,1,"","","","string {[]} {[]}
+","Interphone","Numéro ou code de l'interphone.","","","","","","","","","",,,,,"",,,,"lm-access.interphone",0,1,"",""
+"lm-access","lm-access.accessCode","lm-access.accessCode","","","",0,*,"","","","string {[]} {[]}
+","Code d'accès","Code(s) d'accès (digicode, badge…).","","","","","","","","","",,,,,"",,,,"lm-access.accessCode",0,*,"",""
+"lm-access","lm-access.elevator","lm-access.elevator","","","",0,1,"","","","string {[]} {[]}
+","Ascenseur","Indication sur l'ascenseur.","","","","","","","","","",,,,,"",,,,"lm-access.elevator",0,1,"",""
+"lm-access","lm-access.buildingName","lm-access.buildingName","","","",0,1,"","","","string {[]} {[]}
+","Nom du bâtiment","Nom ou lettre du bâtiment.","","","","","","","","","",,,,,"",,,,"lm-access.buildingName",0,1,"",""
+"lm-access","lm-access.entrance","lm-access.entrance","","","",0,1,"","","","string {[]} {[]}
+","Entrée","Numéro ou description de l'entrée.","","","","","","","","","",,,,,"",,,,"lm-access.entrance",0,1,"",""
+"lm-access","lm-access.entity","lm-access.entity","","","",0,1,"","","","string {[]} {[]}
+","Entité","Entité ou service au sein du bâtiment.","","","","","","","","","",,,,,"",,,,"lm-access.entity",0,1,"",""
+"lm-access","lm-access.phoneNumber","lm-access.phoneNumber","","","",0,1,"","","","string {[]} {[]}
+","Numéro de téléphone","Numéro de téléphone du lieu. Format : +{indicatif}{numéro}.","Regexp : ^\+\d{5,18}$","","","","","","","","",,,,,"",,,,"lm-access.phoneNumber",0,1,"",""
+"lm-additional-information","lm-additional-information","lm-additional-information","","","",0,*,"","","","null {[]} {[]}
+","Informations complémentaires","Informations complémentaires non structurées transportées sous forme de carte clé/valeur (max. 3 entrées).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"lm-additional-information","lm-additional-information.customMap","lm-additional-information.customMap","","","",0,3,"","","","https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-custom-map {[]} {[]}
+","Champs personnalisés","Entrées clé/valeur personnalisées (maximum 3).","","","","","","","","","",,,,,"",,,,"lm-additional-information.customMap",0,3,"",""
 "lm-administrative-file","lm-administrative-file","lm-administrative-file","","","",0,*,"","","","null {[]} {[]}
 ","Dossier administratif","Dossier administratif du patient, contenant ses identifiants externes et son médecin traitant.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "lm-administrative-file","lm-administrative-file.externalId","lm-administrative-file.externalId","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-external-id {[]} {[]}
 ","Identifiants externes","Identifiants patient provenant de systèmes externes (NIR, SINUS, dossard…).","","","","","","","","","",,,,,"",,,,"lm-administrative-file.externalId",0,*,"",""
 "lm-administrative-file","lm-administrative-file.generalPractitioner","lm-administrative-file.generalPractitioner","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-general-practitioner {[]} {[]}
 ","Médecin traitant","Médecin traitant du patient.","","","","","","","","","",,,,,"",,,,"lm-administrative-file.generalPractitioner",0,1,"",""
+"lm-alert","lm-alert","lm-alert","","","",0,*,"","","","null {[]} {[]}
+","Alerte initiale","Alerte initiale reçue par le SAMU, avec la réception, l'appelant et les notes associées.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"lm-alert","lm-alert.reception","lm-alert.reception","","","",1,1,"","","","dateTime {[]} {[]}
+","Date/heure de réception","Date et heure de réception de l'appel (avec fuseau horaire).","","","","","","","","","",,,,,"",,,,"lm-alert.reception",1,1,"",""
+"lm-alert","lm-alert.caller","lm-alert.caller","","","",1,1,"","","","https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-caller {[]} {[]}
+","Appelant","Personne à l'origine de l'appel.","","","","","","","","","",,,,,"",,,,"lm-alert.caller",1,1,"",""
+"lm-alert","lm-alert.notes","lm-alert.notes","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-notes {[]} {[]}
+","Notes","Notes horodatées associées à l'alerte.","","","","","","","","","",,,,,"",,,,"lm-alert.notes",0,*,"",""
+"lm-caller","lm-caller","lm-caller","","","",0,*,"","","","null {[]} {[]}
+","Appelant","Personne à l'origine de l'appel au SAMU, avec ses coordonnées et ses caractéristiques de communication.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"lm-caller","lm-caller.callerContact","lm-caller.callerContact","","","",1,1,"","","","https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-contact {[]} {[]}
+","Contact appelant","Coordonnées de l'appelant (canal, type, URI).","","","","","","","","","",,,,,"",,,,"lm-caller.callerContact",1,1,"",""
+"lm-caller","lm-caller.callbackContact","lm-caller.callbackContact","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-contact {[]} {[]}
+","Contact de rappel","Coordonnées de rappel si différentes du contact appelant.","","","","","","","","","",,,,,"",,,,"lm-caller.callbackContact",0,1,"",""
+"lm-caller","lm-caller.detailedName","lm-caller.detailedName","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-detailed-name {[]} {[]}
+","Nom de l'appelant","Prénom et nom de l'appelant.","","","","","","","","","",,,,,"",,,,"lm-caller.detailedName",0,1,"",""
+"lm-caller","lm-caller.type","lm-caller.type","","","",0,1,"","","","code {[]} {[]}
+","Type d'appelant","Qualité ou type de l'appelant.","","","","","","","","","",,"required","","https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-caller-type|0.1.0","",,,,"lm-caller.type",0,1,"",""
+"lm-caller","lm-caller.language","lm-caller.language","","","",0,1,"","","","code {[]} {[]}
+","Langue","Langue parlée par l'appelant (code BCP-47).","","","","","","","","","",,"preferred","","http://hl7.org/fhir/ValueSet/languages|4.0.1","",,,,"lm-caller.language",0,1,"",""
+"lm-caller","lm-caller.communication","lm-caller.communication","","","",0,1,"","","","code {[]} {[]}
+","Communication","Qualité ou contrainte de communication avec l'appelant.","","","","","","","","","",,"required","","https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-caller-communication|0.1.0","",,,,"lm-caller.communication",0,1,"",""
+"lm-caller","lm-caller.freetext","lm-caller.freetext","","","",0,1,"","","","string {[]} {[]}
+","Texte libre","Informations complémentaires libres sur l'appelant.","","","","","","","","","",,,,,"",,,,"lm-caller.freetext",0,1,"",""
+"lm-case-details","lm-case-details","lm-case-details","","","",0,*,"","","","null {[]} {[]}
+","Détails du dossier","Informations complémentaires de qualification du dossier de régulation médicale.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"lm-case-details","lm-case-details.status","lm-case-details.status","","","",0,1,"","","","code {[]} {[]}
+","Statut","Statut du dossier.","","","","","","","","","",,"required","","https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-case-status|0.1.0","",,,,"lm-case-details.status",0,1,"",""
+"lm-case-details","lm-case-details.attribution","lm-case-details.attribution","","","",0,1,"","","","code {[]} {[]}
+","Attribution","Attribution ou orientation du dossier.","","","","","","","","","",,"required","","https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-case-attribution|0.1.0","",,,,"lm-case-details.attribution",0,1,"",""
+"lm-case-details","lm-case-details.priority","lm-case-details.priority","","","",0,1,"","","","code {[]} {[]}
+","Priorité","Niveau de priorité du dossier.","","","","","","","","","",,"required","","https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-case-priority|0.1.0","",,,,"lm-case-details.priority",0,1,"",""
+"lm-case-details","lm-case-details.careLevel","lm-case-details.careLevel","","","",0,1,"","","","code {[]} {[]}
+","Niveau de soin","Niveau de soins global du dossier.","","","","","","","","","",,"required","","https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-patient-care-level|0.1.0","",,,,"lm-case-details.careLevel",0,1,"",""
+"lm-city","lm-city","lm-city","","","",0,*,"","","","null {[]} {[]}
+","Commune","Commune de la localisation.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"lm-city","lm-city.name","lm-city.name","","","",0,1,"","","","string {[]} {[]}
+","Nom de la commune","Nom de la commune.","","","","","","","","","",,,,,"",,,,"lm-city.name",0,1,"",""
+"lm-city","lm-city.inseeCode","lm-city.inseeCode","","","",0,1,"","","","string {[]} {[]}
+","Code INSEE","Code INSEE de la commune.","Regexp : ^[0-9]{5}$","","","","","","","","",,,,,"",,,,"lm-city.inseeCode",0,1,"",""
+"lm-contact","lm-contact","lm-contact","","","",0,*,"","","","null {[]} {[]}
+","Contact","Coordonnées de contact avec canal, type et valeur (utilisé pour l'appelant).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"lm-contact","lm-contact.channel","lm-contact.channel","","","",1,1,"","","","code {[]} {[]}
+","Canal","Origine du canal établi.","","","","","","","","","",,"required","","https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-contact-channel|0.1.0","",,,,"lm-contact.channel",1,1,"",""
+"lm-contact","lm-contact.type","lm-contact.type","","","",1,1,"","","","code {[]} {[]}
+","Type de contact","Type de l'URI utilisée.","","","","","","","","","",,"required","","https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-contact-type|0.1.0","",,,,"lm-contact.type",1,1,"",""
+"lm-contact","lm-contact.detail","lm-contact.detail","","","",1,1,"","","","string {[]} {[]}
+","URI du contact","Valeur de l'URI. Format téléphone : +{indicatif pays}{numéro}.","","","","","","","","","",,,,,"",,,,"lm-contact.detail",1,1,"",""
+"lm-coord","lm-coord","lm-coord","","","",0,*,"","","","null {[]} {[]}
+","Coordonnées géographiques","Coordonnées géographiques d'un point (latitude, longitude, altitude, précision).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"lm-coord","lm-coord.lat","lm-coord.lat","","","",1,1,"","","","decimal {[]} {[]}
+","Latitude","Latitude en degrés décimaux (WGS84).","","","","","","","","","",,,,,"",,,,"lm-coord.lat",1,1,"",""
+"lm-coord","lm-coord.lon","lm-coord.lon","","","",1,1,"","","","decimal {[]} {[]}
+","Longitude","Longitude en degrés décimaux (WGS84).","","","","","","","","","",,,,,"",,,,"lm-coord.lon",1,1,"",""
+"lm-coord","lm-coord.precision","lm-coord.precision","","","",1,1,"","","","code {[]} {[]}
+","Précision","Niveau de précision des coordonnées.","","","","","","","","","",,"required","","https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-coord-precision|0.1.0","",,,,"lm-coord.precision",1,1,"",""
+"lm-coord","lm-coord.height","lm-coord.height","","","",0,1,"","","","decimal {[]} {[]}
+","Altitude","Altitude en mètres.","","","","","","","","","",,,,,"",,,,"lm-coord.height",0,1,"",""
+"lm-create-case-health","lm-create-case-health","lm-create-case-health","","","",0,*,"","","","null {[]} {[]}
+","Dossier de régulation médicale (RS-EDA)","Objet racine du message RS-EDA : dossier de régulation médicale transmis entre partenaires du Hub Santé.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"lm-create-case-health","lm-create-case-health.caseId","lm-create-case-health.caseId","","","",1,1,"","","","string {[]} {[]}
+","Identifiant affaire/dossier","Identifiant partagé du dossier, généré par le système créateur. Format : {pays}.{domaine}.{organisation}.{senderCaseId}.","Regexp : ^([a-zA-Z0-9_-]+\.?){4,10}$","","","","","","","","",,,,,"",,,,"lm-create-case-health.caseId",1,1,"",""
+"lm-create-case-health","lm-create-case-health.senderCaseId","lm-create-case-health.senderCaseId","","","",0,1,"","","","string {[]} {[]}
+","Identifiant local du dossier","Numéro du dossier dans le SI de l'émetteur.","","","","","","","","","",,,,,"",,,,"lm-create-case-health.senderCaseId",0,1,"",""
+"lm-create-case-health","lm-create-case-health.creation","lm-create-case-health.creation","","","",1,1,"","","","dateTime {[]} {[]}
+","Date/heure de création","Date et heure de création du dossier (avec fuseau horaire, sans indicateur Z).","Regexp : ^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}[\-+]\d{2}:\d{2}$","","","","","","","","",,,,,"",,,,"lm-create-case-health.creation",1,1,"",""
+"lm-create-case-health","lm-create-case-health.perimeter","lm-create-case-health.perimeter","","","",0,1,"","","","code {[]} {[]}
+","Filière","Filière du CRRA destinataire à laquelle le dossier doit être adressé.","","","","","","","","","",,"required","","https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-perimeter|0.1.0","",,,,"lm-create-case-health.perimeter",0,1,"",""
+"lm-create-case-health","lm-create-case-health.interventionType","lm-create-case-health.interventionType","","","",0,1,"","","","code {[]} {[]}
+","Type d'intervention","Type d'intervention : primaire ou secondaire.","","","","","","","","","",,"required","","https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-intervention-type|0.1.0","",,,,"lm-create-case-health.interventionType",0,1,"",""
+"lm-create-case-health","lm-create-case-health.qualification","lm-create-case-health.qualification","","","",1,1,"","","","https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-qualification {[]} {[]}
+","Qualification","Qualification médicale et opérationnelle du dossier.","","","","","","","","","",,,,,"",,,,"lm-create-case-health.qualification",1,1,"",""
+"lm-create-case-health","lm-create-case-health.location","lm-create-case-health.location","","","",1,1,"","","","https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-location {[]} {[]}
+","Localisation","Localisation de l'intervention.","","","","","","","","","",,,,,"",,,,"lm-create-case-health.location",1,1,"",""
+"lm-create-case-health","lm-create-case-health.initialAlert","lm-create-case-health.initialAlert","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-alert {[]} {[]}
+","Alerte initiale","Alerte initiale reçue par le SAMU.","","","","","","","","","",,,,,"",,,,"lm-create-case-health.initialAlert",0,1,"",""
+"lm-create-case-health","lm-create-case-health.owner","lm-create-case-health.owner","","","",1,1,"","","","string {[]} {[]}
+","CRRA traitant","Identifiant du CRRA prenant en charge le dossier.","Regexp : ^([a-zA-Z0-9_-]+\.?){4,9}$","","","","","","","","",,,,,"",,,,"lm-create-case-health.owner",1,1,"",""
+"lm-create-case-health","lm-create-case-health.patient","lm-create-case-health.patient","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-patient {[]} {[]}
+","Patient(s)","Patient(s) concerné(s) par le dossier.","","","","","","","","","",,,,,"",,,,"lm-create-case-health.patient",0,*,"",""
+"lm-create-case-health","lm-create-case-health.medicalNote","lm-create-case-health.medicalNote","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-medical-note {[]} {[]}
+","Observation(s) médicale(s)","Observations médicales associées au dossier.","","","","","","","","","",,,,,"",,,,"lm-create-case-health.medicalNote",0,*,"",""
+"lm-create-case-health","lm-create-case-health.decision","lm-create-case-health.decision","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-decision {[]} {[]}
+","Décision(s)","Décisions de régulation médicale prises pour le dossier.","","","","","","","","","",,,,,"",,,,"lm-create-case-health.decision",0,*,"",""
+"lm-create-case-health","lm-create-case-health.additionalInformation","lm-create-case-health.additionalInformation","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-additional-information {[]} {[]}
+","Informations complémentaires","Données complémentaires non structurées (max. 3 entrées clé/valeur).","","","","","","","","","",,,,,"",,,,"lm-create-case-health.additionalInformation",0,1,"",""
+"lm-custom-map","lm-custom-map","lm-custom-map","","","",0,*,"","","","null {[]} {[]}
+","Champ personnalisé","Entrée de type clé/valeur permettant de transporter des informations complémentaires non structurées (max. 3 entrées).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"lm-custom-map","lm-custom-map.key","lm-custom-map.key","","","",1,1,"","","","string {[]} {[]}
+","Clé","Identifiant de la donnée personnalisée.","","","","","","","","","",,,,,"",,,,"lm-custom-map.key",1,1,"",""
+"lm-custom-map","lm-custom-map.label","lm-custom-map.label","","","",0,1,"","","","string {[]} {[]}
+","Libellé","Libellé lisible de la clé.","","","","","","","","","",,,,,"",,,,"lm-custom-map.label",0,1,"",""
+"lm-custom-map","lm-custom-map.value","lm-custom-map.value","","","",1,1,"","","","string {[]} {[]}
+","Valeur","Valeur associée à la clé.","","","","","","","","","",,,,,"",,,,"lm-custom-map.value",1,1,"",""
+"lm-custom-map","lm-custom-map.freetext","lm-custom-map.freetext","","","",0,1,"","","","string {[]} {[]}
+","Texte libre","Commentaire libre associé à l'entrée.","","","","","","","","","",,,,,"",,,,"lm-custom-map.freetext",0,1,"",""
+"lm-decision","lm-decision","lm-decision","","","",0,*,"","","","null {[]} {[]}
+","Décision médicale","Décision de régulation médicale prise par l'opérateur pour un dossier donné.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"lm-decision","lm-decision.creation","lm-decision.creation","","","",1,1,"","","","dateTime {[]} {[]}
+","Date/heure de la décision","Date et heure de la décision (avec fuseau horaire).","","","","","","","","","",,,,,"",,,,"lm-decision.creation",1,1,"",""
+"lm-decision","lm-decision.operator","lm-decision.operator","","","",1,1,"","","","https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-operator {[]} {[]}
+","Opérateur","Professionnel de santé ayant pris la décision.","","","","","","","","","",,,,,"",,,,"lm-decision.operator",1,1,"",""
+"lm-decision","lm-decision.decisionType","lm-decision.decisionType","","","",1,1,"","","","code {[]} {[]}
+","Type de décision","Type de décision médicale.","","","","","","","","","",,"required","","https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-decision-type|0.1.0","",,,,"lm-decision.decisionType",1,1,"",""
+"lm-decision","lm-decision.patientId","lm-decision.patientId","","","",0,1,"","","","string {[]} {[]}
+","ID patient","Identifiant partagé du patient concerné par la décision.","Regexp : ^([a-zA-Z0-9_-]+\.){3,8}patient(\.[a-zA-Z0-9_-]+){1,2}$","","","","","","","","",,,,,"",,,,"lm-decision.patientId",0,1,"",""
+"lm-decision","lm-decision.resourceType","lm-decision.resourceType","","","",0,1,"","","","code {[]} {[]}
+","Type de ressource","Type de ressource mobilisée.","","","","","","","","","",,"required","","https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-resource-type|0.1.0","",,,,"lm-decision.resourceType",0,1,"",""
+"lm-decision","lm-decision.medicalTransport","lm-decision.medicalTransport","","","",0,1,"","","","boolean {[]} {[]}
+","Transport médicalisé","Indique si un transport médicalisé est requis.","","","","","","","","","",,,,,"",,,,"lm-decision.medicalTransport",0,1,"",""
+"lm-decision","lm-decision.orientationType","lm-decision.orientationType","","","",0,1,"","","","code {[]} {[]}
+","Type d'orientation","Type d'orientation du patient.","","","","","","","","","",,"required","","https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-orientation-type|0.1.0","",,,,"lm-decision.orientationType",0,1,"",""
+"lm-decision","lm-decision.destination","lm-decision.destination","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-destination {[]} {[]}
+","Destination","Établissement de destination du patient.","","","","","","","","","",,,,,"",,,,"lm-decision.destination",0,1,"",""
+"lm-destination","lm-destination","lm-destination","","","",0,*,"","","","null {[]} {[]}
+","Destination","Destination du patient à l'issue de la décision de régulation médicale.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"lm-destination","lm-destination.externalLocationId","lm-destination.externalLocationId","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-external-location-id {[]} {[]}
+","Identifiant de localisation","Identifiant(s) externe(s) de l'établissement de destination.","","","","","","","","","",,,,,"",,,,"lm-destination.externalLocationId",0,*,"",""
+"lm-destination","lm-destination.freetext","lm-destination.freetext","","","",0,1,"","","","string {[]} {[]}
+","Texte libre","Description libre de la destination.","","","","","","","","","",,,,,"",,,,"lm-destination.freetext",0,1,"",""
+"lm-detailed-address","lm-detailed-address","lm-detailed-address","","","",0,*,"","","","null {[]} {[]}
+","Adresse détaillée","Adresse structurée avec numéro, type de voie et informations complémentaires.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"lm-detailed-address","lm-detailed-address.complete","lm-detailed-address.complete","","","",1,1,"","","","string {[]} {[]}
+","Adresse complète","Adresse complète sous forme textuelle.","","","","","","","","","",,,,,"",,,,"lm-detailed-address.complete",1,1,"",""
+"lm-detailed-address","lm-detailed-address.number","lm-detailed-address.number","","","",0,1,"","","","string {[]} {[]}
+","Numéro","Numéro dans la voie.","","","","","","","","","",,,,,"",,,,"lm-detailed-address.number",0,1,"",""
+"lm-detailed-address","lm-detailed-address.wayName","lm-detailed-address.wayName","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-way-name {[]} {[]}
+","Nom de voie","Nom structuré de la voie.","","","","","","","","","",,,,,"",,,,"lm-detailed-address.wayName",0,1,"",""
+"lm-detailed-address","lm-detailed-address.highway","lm-detailed-address.highway","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-highway {[]} {[]}
+","Voie routière","Informations sur la voie routière (pour les interventions sur route).","","","","","","","","","",,,,,"",,,,"lm-detailed-address.highway",0,1,"",""
 "lm-detailed-name","lm-detailed-name","lm-detailed-name","","","",0,*,"","","","null {[]} {[]}
 ","Prénom & nom usuel","Prénom et nom usuel d'une personne. Objet transverse utilisé dans plusieurs contextes (appelant, médecin traitant, identité patient).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "lm-detailed-name","lm-detailed-name.complete","lm-detailed-name.complete","","","",1,1,"","","","string {[]} {[]}
@@ -19,6 +173,20 @@
 ","Source / type d'identifiant","Type de l'identifiant fourni.","","","","","","","","","",,"required","","https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-external-id-source|0.1.0","",,,,"lm-external-id.source",1,1,"",""
 "lm-external-id","lm-external-id.value","lm-external-id.value","","","",1,1,"","","","string {[]} {[]}
 ","Identifiant","Valeur de l'identifiant.","","","","","","","","","",,,,,"",,,,"lm-external-id.value",1,1,"",""
+"lm-external-info","lm-external-info","lm-external-info","","","",0,*,"","","","null {[]} {[]}
+","Information externe","Référence vers une ressource externe apportant des informations complémentaires sur la localisation.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"lm-external-info","lm-external-info.uri","lm-external-info.uri","","","",1,1,"","","","url {[]} {[]}
+","URI","URI de la ressource externe.","","","","","","","","","",,,,,"",,,,"lm-external-info.uri",1,1,"",""
+"lm-external-info","lm-external-info.type","lm-external-info.type","","","",0,1,"","","","code {[]} {[]}
+","Type","Type de la ressource externe.","","","","","","","","","",,"required","","https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-external-info-type|0.1.0","",,,,"lm-external-info.type",0,1,"",""
+"lm-external-info","lm-external-info.freetext","lm-external-info.freetext","","","",0,1,"","","","string {[]} {[]}
+","Texte libre","Description libre de la ressource externe.","","","","","","","","","",,,,,"",,,,"lm-external-info.freetext",0,1,"",""
+"lm-external-location-id","lm-external-location-id","lm-external-location-id","","","",0,*,"","","","null {[]} {[]}
+","Identifiant de localisation externe","Identifiant externe référençant une localisation (établissement de santé, entreprise…).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"lm-external-location-id","lm-external-location-id.source","lm-external-location-id.source","","","",1,1,"","","","code {[]} {[]}
+","Source","Type de l'identifiant fourni.","","","","","","","","","",,"required","","https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-external-location-id-source|0.1.0","",,,,"lm-external-location-id.source",1,1,"",""
+"lm-external-location-id","lm-external-location-id.value","lm-external-location-id.value","","","",1,1,"","","","string {[]} {[]}
+","Valeur","Valeur de l'identifiant.","Regexp : ^([0-9A-Z]{2}0\d{5}\d|\d{9}|\d{14}|\d{4}[A-Za-z])$","","","","","","","","",,,,,"",,,,"lm-external-location-id.value",1,1,"",""
 "lm-general-practitioner","lm-general-practitioner","lm-general-practitioner","","","",0,*,"","","","null {[]} {[]}
 ","Médecin traitant","Médecin traitant du patient.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "lm-general-practitioner","lm-general-practitioner.detailedName","lm-general-practitioner.detailedName","","","",1,1,"","","","https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-detailed-name {[]} {[]}
@@ -27,6 +195,26 @@
 ","Identifiant RPPS","Numéro RPPS du médecin traitant.","","","","","","","","","",,,,,"",,,,"lm-general-practitioner.rppsId",0,1,"",""
 "lm-general-practitioner","lm-general-practitioner.contact","lm-general-practitioner.contact","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-personal-contact {[]} {[]}
 ","Contact","Coordonnées du médecin traitant.","","","","","","","","","",,,,,"",,,,"lm-general-practitioner.contact",0,*,"",""
+"lm-geometry","lm-geometry","lm-geometry","","","",0,*,"","","","null {[]} {[]}
+","Géométrie","Localisation géographique horodatée d'un point.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"lm-geometry","lm-geometry.datetime","lm-geometry.datetime","","","",1,1,"","","","dateTime {[]} {[]}
+","Date/heure","Date et heure de la prise de coordonnées (avec fuseau horaire).","","","","","","","","","",,,,,"",,,,"lm-geometry.datetime",1,1,"",""
+"lm-geometry","lm-geometry.point","lm-geometry.point","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-point {[]} {[]}
+","Point","Coordonnées géographiques du point.","","","","","","","","","",,,,,"",,,,"lm-geometry.point",0,1,"",""
+"lm-health-motive","lm-health-motive","lm-health-motive","","","",0,*,"","","","null {[]} {[]}
+","Motif de santé","Code et libellé décrivant le motif de santé de l'appel (nomenclature SAMU).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"lm-health-motive","lm-health-motive.code","lm-health-motive.code","","","",1,1,"","","","string {[]} {[]}
+","Code","Code de la nomenclature associée.","Regexp : ^M\d{2}\.\d{2}(\.\d{2})?$","","","","","","","","",,,,,"",,,,"lm-health-motive.code",1,1,"",""
+"lm-health-motive","lm-health-motive.label","lm-health-motive.label","","","",1,1,"","","","string {[]} {[]}
+","Libellé","Libellé de la nomenclature associée.","","","","","","","","","",,,,,"",,,,"lm-health-motive.label",1,1,"",""
+"lm-highway","lm-highway","lm-highway","","","",0,*,"","","","null {[]} {[]}
+","Voie routière","Informations relatives à une voie routière (autoroute, route nationale…).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"lm-highway","lm-highway.name","lm-highway.name","","","",0,1,"","","","string {[]} {[]}
+","Nom de la voie","Nom de la voie routière.","","","","","","","","","",,,,,"",,,,"lm-highway.name",0,1,"",""
+"lm-highway","lm-highway.pk","lm-highway.pk","","","",0,1,"","","","string {[]} {[]}
+","Point kilométrique","Point kilométrique sur la voie routière.","","","","","","","","","",,,,,"",,,,"lm-highway.pk",0,1,"",""
+"lm-highway","lm-highway.direction","lm-highway.direction","","","",0,1,"","","","string {[]} {[]}
+","Direction","Direction sur la voie routière.","","","","","","","","","",,,,,"",,,,"lm-highway.direction",0,1,"",""
 "lm-hypothesis","lm-hypothesis","lm-hypothesis","","","",0,*,"","","","null {[]} {[]}
 ","Hypothèses de régulation médicale","Hypothèses diagnostiques principale et secondaires issues de la régulation médicale.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "lm-hypothesis","lm-hypothesis.mainDiagnosis","lm-hypothesis.mainDiagnosis","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-main-diagnosis {[]} {[]}
@@ -47,6 +235,30 @@
 ","Date de naissance","Date de naissance du patient.","Regexp : ^\d{4}-\d{2}-\d{2}$","","","","","","","","",,,,,"",,,,"lm-ins-strict-features.birthDate",0,1,"",""
 "lm-ins-strict-features","lm-ins-strict-features.sex","lm-ins-strict-features.sex","","","",0,1,"","","","code {[]} {[]}
 ","Sexe","Sexe du patient.","","","","","","","","","",,"required","","https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-sex|0.1.0","",,,,"lm-ins-strict-features.sex",0,1,"",""
+"lm-location-kind","lm-location-kind","lm-location-kind","","","",0,*,"","","","null {[]} {[]}
+","Type de lieu","Code et libellé décrivant le type de lieu de l'intervention (nomenclature SAMU).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"lm-location-kind","lm-location-kind.code","lm-location-kind.code","","","",1,1,"","","","string {[]} {[]}
+","Code","Code de la nomenclature associée.","Regexp : ^L\d{2}(\.\d{2}){2}$","","","","","","","","",,,,,"",,,,"lm-location-kind.code",1,1,"",""
+"lm-location-kind","lm-location-kind.label","lm-location-kind.label","","","",1,1,"","","","string {[]} {[]}
+","Libellé","Libellé de la nomenclature associée.","","","","","","","","","",,,,,"",,,,"lm-location-kind.label",1,1,"",""
+"lm-location","lm-location","lm-location","","","",0,*,"","","","null {[]} {[]}
+","Localisation","Localisation de l'intervention, incluant l'adresse, la commune, l'accès, les coordonnées géographiques et les références externes.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"lm-location","lm-location.name","lm-location.name","","","",0,1,"","","","string {[]} {[]}
+","Nom du lieu","Nom du lieu ou de l'établissement.","","","","","","","","","",,,,,"",,,,"lm-location.name",0,1,"",""
+"lm-location","lm-location.externalLocationId","lm-location.externalLocationId","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-external-location-id {[]} {[]}
+","Identifiant(s) externe(s)","Identifiant(s) externe(s) référençant la localisation.","","","","","","","","","",,,,,"",,,,"lm-location.externalLocationId",0,*,"",""
+"lm-location","lm-location.detailedAddress","lm-location.detailedAddress","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-detailed-address {[]} {[]}
+","Adresse détaillée","Adresse structurée.","","","","","","","","","",,,,,"",,,,"lm-location.detailedAddress",0,1,"",""
+"lm-location","lm-location.city","lm-location.city","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-city {[]} {[]}
+","Commune","Commune de la localisation.","","","","","","","","","",,,,,"",,,,"lm-location.city",0,1,"",""
+"lm-location","lm-location.access","lm-location.access","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-access {[]} {[]}
+","Accès","Informations d'accès (bâtiment, étage, digicode…).","","","","","","","","","",,,,,"",,,,"lm-location.access",0,1,"",""
+"lm-location","lm-location.geometry","lm-location.geometry","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-geometry {[]} {[]}
+","Géométrie","Coordonnées géographiques horodatées.","","","","","","","","","",,,,,"",,,,"lm-location.geometry",0,1,"",""
+"lm-location","lm-location.externalInfo","lm-location.externalInfo","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-external-info {[]} {[]}
+","Information(s) externe(s)","Références vers des ressources externes (photo, carte, site web…).","","","","","","","","","",,,,,"",,,,"lm-location.externalInfo",0,*,"",""
+"lm-location","lm-location.freetext","lm-location.freetext","","","",0,1,"","","","string {[]} {[]}
+","Texte libre","Description libre de la localisation.","","","","","","","","","",,,,,"",,,,"lm-location.freetext",0,1,"",""
 "lm-main-diagnosis","lm-main-diagnosis","lm-main-diagnosis","","","",0,*,"","","","null {[]} {[]}
 ","Hypothèse de régulation médicale principale","Hypothèse diagnostique principale issue de la régulation médicale.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "lm-main-diagnosis","lm-main-diagnosis.code","lm-main-diagnosis.code","","","",1,1,"","","","string {[]} {[]}
@@ -65,6 +277,12 @@
 ","Date/heure de l'observation","Date et heure de création de l'observation médicale (avec fuseau horaire, sans indicateur Z).","","","","","","","","","",,,,,"",,,,"lm-medical-note.creation",0,1,"",""
 "lm-medical-note","lm-medical-note.freetext","lm-medical-note.freetext","","","",1,1,"","","","string {[]} {[]}
 ","Observations et commentaires","Champ libre pour les informations médicales et commentaires.","","","","","","","","","",,,,,"",,,,"lm-medical-note.freetext",1,1,"",""
+"lm-notes","lm-notes","lm-notes","","","",0,*,"","","","null {[]} {[]}
+","Note","Note horodatée associée à l'alerte initiale.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"lm-notes","lm-notes.creation","lm-notes.creation","","","",0,1,"","","","dateTime {[]} {[]}
+","Date/heure de création","Date et heure de création de la note.","","","","","","","","","",,,,,"",,,,"lm-notes.creation",0,1,"",""
+"lm-notes","lm-notes.freetext","lm-notes.freetext","","","",0,1,"","","","string {[]} {[]}
+","Texte libre","Contenu de la note.","","","","","","","","","",,,,,"",,,,"lm-notes.freetext",0,1,"",""
 "lm-operator","lm-operator","lm-operator","","","",0,*,"","","","null {[]} {[]}
 ","Professionnel de santé réalisant l'observation","Opérateur ayant effectué une observation médicale dans le contexte de la régulation médicale (RS-EDA).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "lm-operator","lm-operator.label","lm-operator.label","","","",0,1,"","","","string {[]} {[]}
@@ -109,3 +327,43 @@
 ","Type de contact","Type de l'URI utilisée.","","","","","","","","","",,"required","","https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-contact-type|0.1.0","",,,,"lm-personal-contact.type",1,1,"",""
 "lm-personal-contact","lm-personal-contact.detail","lm-personal-contact.detail","","","",1,1,"","","","string {[]} {[]}
 ","URI du contact","Valeur de l'URI utilisée. Format téléphone : +{indicatif pays}{numéro}.","","","","","","","","","",,,,,"",,,,"lm-personal-contact.detail",1,1,"",""
+"lm-point","lm-point","lm-point","","","",0,*,"","","","null {[]} {[]}
+","Point géographique","Point géographique avec ses coordonnées et une indication sur la provenance AML.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"lm-point","lm-point.coord","lm-point.coord","","","",1,1,"","","","https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-coord {[]} {[]}
+","Coordonnées","Coordonnées géographiques du point.","","","","","","","","","",,,,,"",,,,"lm-point.coord",1,1,"",""
+"lm-point","lm-point.isAml","lm-point.isAml","","","",0,1,"","","","boolean {[]} {[]}
+","Est AML","Indique si les coordonnées proviennent de l'Advanced Mobile Location (AML).","","","","","","","","","",,,,,"",,,,"lm-point.isAml",0,1,"",""
+"lm-qualification","lm-qualification","lm-qualification","","","",0,*,"","","","null {[]} {[]}
+","Qualification du dossier","Qualification médicale et opérationnelle du dossier de régulation médicale.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"lm-qualification","lm-qualification.origin","lm-qualification.origin","","","",0,1,"","","","code {[]} {[]}
+","Origine","Canal ou entité à l'origine de la création du dossier.","","","","","","","","","",,"required","","https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-qualification-origin|0.1.0","",,,,"lm-qualification.origin",0,1,"",""
+"lm-qualification","lm-qualification.riskThreat","lm-qualification.riskThreat","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-risk-threat {[]} {[]}
+","Risques et menaces","Risques ou menaces identifiés associés au dossier.","","","","","","","","","",,,,,"",,,,"lm-qualification.riskThreat",0,*,"",""
+"lm-qualification","lm-qualification.whatsHappen","lm-qualification.whatsHappen","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-whats-happen {[]} {[]}
+","Nature du problème","Code et libellé décrivant la nature de l'événement.","","","","","","","","","",,,,,"",,,,"lm-qualification.whatsHappen",0,1,"",""
+"lm-qualification","lm-qualification.locationKind","lm-qualification.locationKind","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-location-kind {[]} {[]}
+","Type de lieu","Code et libellé décrivant le type de lieu de l'intervention.","","","","","","","","","",,,,,"",,,,"lm-qualification.locationKind",0,1,"",""
+"lm-qualification","lm-qualification.healthMotive","lm-qualification.healthMotive","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-health-motive {[]} {[]}
+","Motif de santé","Code et libellé décrivant le motif de santé de l'appel.","","","","","","","","","",,,,,"",,,,"lm-qualification.healthMotive",0,1,"",""
+"lm-qualification","lm-qualification.details","lm-qualification.details","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-case-details {[]} {[]}
+","Détails du dossier","Informations complémentaires de qualification (statut, attribution, priorité, niveau de soin).","","","","","","","","","",,,,,"",,,,"lm-qualification.details",0,1,"",""
+"lm-risk-threat","lm-risk-threat","lm-risk-threat","","","",0,*,"","","","null {[]} {[]}
+","Risque et menace","Code et libellé décrivant un risque ou une menace associé au dossier (nomenclature SAMU).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"lm-risk-threat","lm-risk-threat.code","lm-risk-threat.code","","","",1,1,"","","","string {[]} {[]}
+","Code","Code de la nomenclature associée.","Regexp : ^R\d{2}$","","","","","","","","",,,,,"",,,,"lm-risk-threat.code",1,1,"",""
+"lm-risk-threat","lm-risk-threat.label","lm-risk-threat.label","","","",1,1,"","","","string {[]} {[]}
+","Libellé","Libellé de la nomenclature associée.","","","","","","","","","",,,,,"",,,,"lm-risk-threat.label",1,1,"",""
+"lm-way-name","lm-way-name","lm-way-name","","","",0,*,"","","","null {[]} {[]}
+","Nom de voie","Nom complet d'une voie (rue, avenue, boulevard…).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"lm-way-name","lm-way-name.complete","lm-way-name.complete","","","",1,1,"","","","string {[]} {[]}
+","Nom complet","Nom complet de la voie.","","","","","","","","","",,,,,"",,,,"lm-way-name.complete",1,1,"",""
+"lm-way-name","lm-way-name.type","lm-way-name.type","","","",0,1,"","","","string {[]} {[]}
+","Type de voie","Type de voie (rue, avenue, boulevard…).","","","","","","","","","",,,,,"",,,,"lm-way-name.type",0,1,"",""
+"lm-way-name","lm-way-name.name","lm-way-name.name","","","",0,1,"","","","string {[]} {[]}
+","Nom","Nom propre de la voie (sans le type).","","","","","","","","","",,,,,"",,,,"lm-way-name.name",0,1,"",""
+"lm-whats-happen","lm-whats-happen","lm-whats-happen","","","",0,*,"","","","null {[]} {[]}
+","Nature du problème","Code et libellé décrivant la nature de l'événement déclenchant l'appel (nomenclature SAMU).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"lm-whats-happen","lm-whats-happen.code","lm-whats-happen.code","","","",1,1,"","","","string {[]} {[]}
+","Code","Code de la nomenclature associée.","Regexp : ^C\d{2}(\.\d{2}){2}$","","","","","","","","",,,,,"",,,,"lm-whats-happen.code",1,1,"",""
+"lm-whats-happen","lm-whats-happen.label","lm-whats-happen.label","","","",1,1,"","","","string {[]} {[]}
+","Libellé","Libellé de la nomenclature associée.","","","","","","","","","",,,,,"",,,,"lm-whats-happen.label",1,1,"",""

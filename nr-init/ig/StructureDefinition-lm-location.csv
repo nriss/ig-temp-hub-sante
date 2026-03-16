@@ -1,0 +1,19 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
+"lm-location","lm-location","","","",0,*,"","","","null {[]} {[]}
+","Localisation","Localisation de l'intervention, incluant l'adresse, la commune, l'accès, les coordonnées géographiques et les références externes.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"lm-location.name","lm-location.name","","","",0,1,"","","","string {[]} {[]}
+","Nom du lieu","Nom du lieu ou de l'établissement.","","","","","","","","","",,,,,"",,,,"lm-location.name",0,1,"",""
+"lm-location.externalLocationId","lm-location.externalLocationId","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-external-location-id {[]} {[]}
+","Identifiant(s) externe(s)","Identifiant(s) externe(s) référençant la localisation.","","","","","","","","","",,,,,"",,,,"lm-location.externalLocationId",0,*,"",""
+"lm-location.detailedAddress","lm-location.detailedAddress","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-detailed-address {[]} {[]}
+","Adresse détaillée","Adresse structurée.","","","","","","","","","",,,,,"",,,,"lm-location.detailedAddress",0,1,"",""
+"lm-location.city","lm-location.city","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-city {[]} {[]}
+","Commune","Commune de la localisation.","","","","","","","","","",,,,,"",,,,"lm-location.city",0,1,"",""
+"lm-location.access","lm-location.access","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-access {[]} {[]}
+","Accès","Informations d'accès (bâtiment, étage, digicode…).","","","","","","","","","",,,,,"",,,,"lm-location.access",0,1,"",""
+"lm-location.geometry","lm-location.geometry","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-geometry {[]} {[]}
+","Géométrie","Coordonnées géographiques horodatées.","","","","","","","","","",,,,,"",,,,"lm-location.geometry",0,1,"",""
+"lm-location.externalInfo","lm-location.externalInfo","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/fhir/hubsante/StructureDefinition/lm-external-info {[]} {[]}
+","Information(s) externe(s)","Références vers des ressources externes (photo, carte, site web…).","","","","","","","","","",,,,,"",,,,"lm-location.externalInfo",0,*,"",""
+"lm-location.freetext","lm-location.freetext","","","",0,1,"","","","string {[]} {[]}
+","Texte libre","Description libre de la localisation.","","","","","","","","","",,,,,"",,,,"lm-location.freetext",0,1,"",""

@@ -1,0 +1,7 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
+"lm-health-motive","lm-health-motive","","","",0,*,"","","","null {[]} {[]}
+","Motif de santé","Code et libellé décrivant le motif de santé de l'appel (nomenclature SAMU).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"lm-health-motive.code","lm-health-motive.code","","","",1,1,"","","","string {[]} {[]}
+","Code","Code de la nomenclature associée.","Regexp : ^M\d{2}\.\d{2}(\.\d{2})?$","","","","","","","","",,,,,"",,,,"lm-health-motive.code",1,1,"",""
+"lm-health-motive.label","lm-health-motive.label","","","",1,1,"","","","string {[]} {[]}
+","Libellé","Libellé de la nomenclature associée.","","","","","","","","","",,,,,"",,,,"lm-health-motive.label",1,1,"",""

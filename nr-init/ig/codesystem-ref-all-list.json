@@ -1,5 +1,71 @@
 {
   "codeSystems" : [{
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-caller-communication",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "CS_CallerCommunication",
+    "title" : "Communication avec l'appelant (Hub Santé)",
+    "description" : "Qualité ou contrainte de communication avec l'appelant.",
+    "uses" : {
+    },
+    "ValueSet-vs-caller-communication.html" : "Communication avec l'appelant (Hub Santé)"
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-caller-type",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "CS_CallerType",
+    "title" : "Type d'appelant (Hub Santé)",
+    "description" : "Type ou qualité de l'appelant/requérant.",
+    "uses" : {
+    },
+    "ValueSet-vs-caller-type.html" : "Type d'appelant (Hub Santé)"
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-case-attribution",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "CS_CaseAttribution",
+    "title" : "Attribution du dossier (Hub Santé)",
+    "description" : "Attribution ou orientation du dossier de régulation médicale.",
+    "uses" : {
+    },
+    "ValueSet-vs-case-attribution.html" : "Attribution du dossier (Hub Santé)"
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-case-priority",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "CS_CasePriority",
+    "title" : "Priorité du dossier (Hub Santé)",
+    "description" : "Niveau de priorité du dossier de régulation médicale.",
+    "uses" : {
+    },
+    "ValueSet-vs-case-priority.html" : "Priorité du dossier (Hub Santé)"
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-case-status",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "CS_CaseStatus",
+    "title" : "Statut du dossier (Hub Santé)",
+    "description" : "Statut du dossier de régulation médicale.",
+    "uses" : {
+    },
+    "ValueSet-vs-case-status.html" : "Statut du dossier (Hub Santé)"
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-contact-channel",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "CS_ContactChannel",
+    "title" : "Canal de contact (Hub Santé)",
+    "description" : "Origine du canal établi pour le contact.",
+    "uses" : {
+    },
+    "ValueSet-vs-contact-channel.html" : "Canal de contact (Hub Santé)"
+  },
+  {
     "url" : "https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-contact-type",
     "version" : "0.1.0",
     "status" : "draft",
@@ -9,6 +75,28 @@
     "uses" : {
     },
     "ValueSet-vs-contact-type.html" : "Type de contact (Hub Santé)"
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-coord-precision",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "CS_CoordPrecision",
+    "title" : "Précision des coordonnées géographiques (Hub Santé)",
+    "description" : "Niveau de précision des coordonnées géographiques d'un point.",
+    "uses" : {
+    },
+    "ValueSet-vs-coord-precision.html" : "Précision des coordonnées géographiques (Hub Santé)"
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-decision-type",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "CS_DecisionType",
+    "title" : "Type de décision médicale (Hub Santé)",
+    "description" : "Type de décision prise dans le cadre de la régulation médicale.",
+    "uses" : {
+    },
+    "ValueSet-vs-decision-type.html" : "Type de décision médicale (Hub Santé)"
   },
   {
     "url" : "https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-external-id-source",
@@ -22,6 +110,39 @@
     "ValueSet-vs-external-id-source.html" : "Source des identifiants externes patient (Hub Santé)"
   },
   {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-external-info-type",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "CS_ExternalInfoType",
+    "title" : "Type d'information externe (Hub Santé)",
+    "description" : "Type de la ressource externe référencée pour la localisation.",
+    "uses" : {
+    },
+    "ValueSet-vs-external-info-type.html" : "Type d'information externe (Hub Santé)"
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-external-location-id-source",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "CS_ExternalLocationIdSource",
+    "title" : "Source des identifiants de localisation externes (Hub Santé)",
+    "description" : "Types d'identifiants utilisés pour référencer une localisation externe.",
+    "uses" : {
+    },
+    "ValueSet-vs-external-location-id-source.html" : "Source des identifiants de localisation externes (Hub Santé)"
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-intervention-type",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "CS_InterventionType",
+    "title" : "Type d'intervention (Hub Santé)",
+    "description" : "Type d'intervention : primaire (première intervention urgente) ou secondaire (ex. TIH).",
+    "uses" : {
+    },
+    "ValueSet-vs-intervention-type.html" : "Type d'intervention (Hub Santé)"
+  },
+  {
     "url" : "https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-operator-role",
     "version" : "0.1.0",
     "status" : "draft",
@@ -33,6 +154,17 @@
     "ValueSet-vs-operator-role.html" : "Rôles des opérateurs (Hub Santé)"
   },
   {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-orientation-type",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "CS_OrientationType",
+    "title" : "Type d'orientation (Hub Santé)",
+    "description" : "Type d'orientation décidé à l'issue de la régulation médicale.",
+    "uses" : {
+    },
+    "ValueSet-vs-orientation-type.html" : "Type d'orientation (Hub Santé)"
+  },
+  {
     "url" : "https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-patient-care-level",
     "version" : "0.1.0",
     "status" : "draft",
@@ -42,6 +174,39 @@
     "uses" : {
     },
     "ValueSet-vs-patient-care-level.html" : "Niveau de soin du patient (Hub Santé)"
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-perimeter",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "CS_Perimeter",
+    "title" : "Filière de régulation (Hub Santé)",
+    "description" : "Filière du CRRA destinataire à laquelle le dossier doit être adressé.",
+    "uses" : {
+    },
+    "ValueSet-vs-perimeter.html" : "Filière de régulation (Hub Santé)"
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-qualification-origin",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "CS_QualificationOrigin",
+    "title" : "Origine de la qualification (Hub Santé)",
+    "description" : "Canal ou entité à l'origine de la création du dossier de régulation médicale.",
+    "uses" : {
+    },
+    "ValueSet-vs-qualification-origin.html" : "Origine de la qualification (Hub Santé)"
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-resource-type",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "CS_ResourceType",
+    "title" : "Type de ressource mobilisée (Hub Santé)",
+    "description" : "Type de ressource mobilisée dans le cadre de la décision de régulation médicale.",
+    "uses" : {
+    },
+    "ValueSet-vs-resource-type.html" : "Type de ressource mobilisée (Hub Santé)"
   },
   {
     "url" : "https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-sex",

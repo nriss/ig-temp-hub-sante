@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="cs-resource-type"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narratif généré : CodeSystem cs-resource-type</b></p><a name="cs-resource-type"> </a><a name="hccs-resource-type"> </a><p>This  code system <code>https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-resource-type</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Affichage</b></td></tr><tr><td style="white-space:nowrap">SMUR<a name="cs-resource-type-SMUR"> </a></td><td>SMUR</td></tr><tr><td style="white-space:nowrap">`SMUR.ADULT`<a name="cs-resource-type-.96SMUR.46ADULT.96"> </a></td><td>SMUR Adulte</td></tr><tr><td style="white-space:nowrap">`SMUR.PED`<a name="cs-resource-type-.96SMUR.46PED.96"> </a></td><td>SMUR Pédiatrique</td></tr><tr><td style="white-space:nowrap">`SMUR.UMH-S`<a name="cs-resource-type-.96SMUR.46UMH-S.96"> </a></td><td>UMH-S</td></tr><tr><td style="white-space:nowrap">`SMUR.CUMP`<a name="cs-resource-type-.96SMUR.46CUMP.96"> </a></td><td>CUMP</td></tr><tr><td style="white-space:nowrap">HOSPIT<a name="cs-resource-type-HOSPIT"> </a></td><td>Hospitalisation</td></tr><tr><td style="white-space:nowrap">LIBERAL<a name="cs-resource-type-LIBERAL"> </a></td><td>Libéral</td></tr><tr><td style="white-space:nowrap">`LIBERAL.MG`<a name="cs-resource-type-.96LIBERAL.46MG.96"> </a></td><td>Médecin Généraliste</td></tr><tr><td style="white-space:nowrap">`LIBERAL.PHARM`<a name="cs-resource-type-.96LIBERAL.46PHARM.96"> </a></td><td>Pharmacien</td></tr><tr><td style="white-space:nowrap">`LIBERAL.INF`<a name="cs-resource-type-.96LIBERAL.46INF.96"> </a></td><td>Infirmier</td></tr><tr><td style="white-space:nowrap">`LIBERAL.KINE`<a name="cs-resource-type-.96LIBERAL.46KINE.96"> </a></td><td>Kinésithérapeute</td></tr><tr><td style="white-space:nowrap">`LIBERAL.SOS`<a name="cs-resource-type-.96LIBERAL.46SOS.96"> </a></td><td>SOS Médecins</td></tr><tr><td style="white-space:nowrap">`LIBERAL.MMG`<a name="cs-resource-type-.96LIBERAL.46MMG.96"> </a></td><td>Maison Médicale de Garde</td></tr><tr><td style="white-space:nowrap">`LIBERAL.MSPD`<a name="cs-resource-type-.96LIBERAL.46MSPD.96"> </a></td><td>MSPD</td></tr><tr><td style="white-space:nowrap">`LIBERAL.MCS`<a name="cs-resource-type-.96LIBERAL.46MCS.96"> </a></td><td>MCS</td></tr><tr><td style="white-space:nowrap">`LIBERAL.SPEMED`<a name="cs-resource-type-.96LIBERAL.46SPEMED.96"> </a></td><td>Spécialiste médical</td></tr><tr><td style="white-space:nowrap">`LIBERAL.DENT`<a name="cs-resource-type-.96LIBERAL.46DENT.96"> </a></td><td>Dentiste</td></tr><tr><td style="white-space:nowrap">`LIBERAL.LABO`<a name="cs-resource-type-.96LIBERAL.46LABO.96"> </a></td><td>Laboratoire</td></tr><tr><td style="white-space:nowrap">`LIBERAL.AUTREPRO`<a name="cs-resource-type-.96LIBERAL.46AUTREPRO.96"> </a></td><td>Autre professionnel libéral</td></tr><tr><td style="white-space:nowrap">TSU<a name="cs-resource-type-TSU"> </a></td><td>Transport Sanitaire Urgent</td></tr><tr><td style="white-space:nowrap">SIS<a name="cs-resource-type-SIS"> </a></td><td>Service Incendie et Secours</td></tr><tr><td style="white-space:nowrap">`SIS.MEDSP`<a name="cs-resource-type-.96SIS.46MEDSP.96"> </a></td><td>Médecin SDIS</td></tr><tr><td style="white-space:nowrap">`SIS.ISP`<a name="cs-resource-type-.96SIS.46ISP.96"> </a></td><td>Infirmier Sapeur-Pompier</td></tr><tr><td style="white-space:nowrap">`SIS.SP`<a name="cs-resource-type-.96SIS.46SP.96"> </a></td><td>Sapeur-Pompier</td></tr><tr><td style="white-space:nowrap">AASC<a name="cs-resource-type-AASC"> </a></td><td>Association Agréée de Sécurité Civile</td></tr><tr><td style="white-space:nowrap">FDO<a name="cs-resource-type-FDO"> </a></td><td>Forces de l'Ordre</td></tr><tr><td style="white-space:nowrap">`FDO.PN`<a name="cs-resource-type-.96FDO.46PN.96"> </a></td><td>Police Nationale</td></tr><tr><td style="white-space:nowrap">`FDO.GEND`<a name="cs-resource-type-.96FDO.46GEND.96"> </a></td><td>Gendarmerie</td></tr><tr><td style="white-space:nowrap">`FDO.PM`<a name="cs-resource-type-.96FDO.46PM.96"> </a></td><td>Police Municipale</td></tr><tr><td style="white-space:nowrap">`FDO.DOUANES`<a name="cs-resource-type-.96FDO.46DOUANES.96"> </a></td><td>Douanes</td></tr><tr><td style="white-space:nowrap">AUTRE<a name="cs-resource-type-AUTRE"> </a></td><td>Autre</td></tr><tr><td style="white-space:nowrap">`AUTRE.ADM`<a name="cs-resource-type-.96AUTRE.46ADM.96"> </a></td><td>Administratif</td></tr><tr><td style="white-space:nowrap">`AUTRE.DAE`<a name="cs-resource-type-.96AUTRE.46DAE.96"> </a></td><td>DAE</td></tr><tr><td style="white-space:nowrap">`AUTRE.AUTRE`<a name="cs-resource-type-.96AUTRE.46AUTRE.96"> </a></td><td>Autre</td></tr></table></div>
+  </text>
+  <url value="https://interop.esante.gouv.fr/ig/fhir/hubsante/CodeSystem/cs-resource-type"/>
+  <version value="0.1.0"/>
+  <name value="CS_ResourceType"/>
+  <title value="Type de ressource mobilisée (Hub Santé)"/>
+  <status value="draft"/>
+  <date value="2026-03-16T12:48:10+00:00"/>
+  <publisher value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
+  <contact>
+    <name value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://esante.gouv.fr"/>
+    </telecom>
+  </contact>
+  <description value="Type de ressource mobilisée dans le cadre de la décision de régulation médicale."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="FR"/>
+      <display value="France"/>
+    </coding>
+  </jurisdiction>
+  <content value="complete"/>
+  <count value="34"/>
+  <concept>
+    <code value="SMUR"/>
+    <display value="SMUR"/>
+  </concept>
+  <concept>
+    <code value="`SMUR.ADULT`"/>
+    <display value="SMUR Adulte"/>
+  </concept>
+  <concept>
+    <code value="`SMUR.PED`"/>
+    <display value="SMUR Pédiatrique"/>
+  </concept>
+  <concept>
+    <code value="`SMUR.UMH-S`"/>
+    <display value="UMH-S"/>
+  </concept>
+  <concept>
+    <code value="`SMUR.CUMP`"/>
+    <display value="CUMP"/>
+  </concept>
+  <concept>
+    <code value="HOSPIT"/>
+    <display value="Hospitalisation"/>
+  </concept>
+  <concept>
+    <code value="LIBERAL"/>
+    <display value="Libéral"/>
+  </concept>
+  <concept>
+    <code value="`LIBERAL.MG`"/>
+    <display value="Médecin Généraliste"/>
+  </concept>
+  <concept>
+    <code value="`LIBERAL.PHARM`"/>
+    <display value="Pharmacien"/>
+  </concept>
+  <concept>
+    <code value="`LIBERAL.INF`"/>
+    <display value="Infirmier"/>
+  </concept>
+  <concept>
+    <code value="`LIBERAL.KINE`"/>
+    <display value="Kinésithérapeute"/>
+  </concept>
+  <concept>
+    <code value="`LIBERAL.SOS`"/>
+    <display value="SOS Médecins"/>
+  </concept>
+  <concept>
+    <code value="`LIBERAL.MMG`"/>
+    <display value="Maison Médicale de Garde"/>
+  </concept>
+  <concept>
+    <code value="`LIBERAL.MSPD`"/>
+    <display value="MSPD"/>
+  </concept>
+  <concept>
+    <code value="`LIBERAL.MCS`"/>
+    <display value="MCS"/>
+  </concept>
+  <concept>
+    <code value="`LIBERAL.SPEMED`"/>
+    <display value="Spécialiste médical"/>
+  </concept>
+  <concept>
+    <code value="`LIBERAL.DENT`"/>
+    <display value="Dentiste"/>
+  </concept>
+  <concept>
+    <code value="`LIBERAL.LABO`"/>
+    <display value="Laboratoire"/>
+  </concept>
+  <concept>
+    <code value="`LIBERAL.AUTREPRO`"/>
+    <display value="Autre professionnel libéral"/>
+  </concept>
+  <concept>
+    <code value="TSU"/>
+    <display value="Transport Sanitaire Urgent"/>
+  </concept>
+  <concept>
+    <code value="SIS"/>
+    <display value="Service Incendie et Secours"/>
+  </concept>
+  <concept>
+    <code value="`SIS.MEDSP`"/>
+    <display value="Médecin SDIS"/>
+  </concept>
+  <concept>
+    <code value="`SIS.ISP`"/>
+    <display value="Infirmier Sapeur-Pompier"/>
+  </concept>
+  <concept>
+    <code value="`SIS.SP`"/>
+    <display value="Sapeur-Pompier"/>
+  </concept>
+  <concept>
+    <code value="AASC"/>
+    <display value="Association Agréée de Sécurité Civile"/>
+  </concept>
+  <concept>
+    <code value="FDO"/>
+    <display value="Forces de l'Ordre"/>
+  </concept>
+  <concept>
+    <code value="`FDO.PN`"/>
+    <display value="Police Nationale"/>
+  </concept>
+  <concept>
+    <code value="`FDO.GEND`"/>
+    <display value="Gendarmerie"/>
+  </concept>
+  <concept>
+    <code value="`FDO.PM`"/>
+    <display value="Police Municipale"/>
+  </concept>
+  <concept>
+    <code value="`FDO.DOUANES`"/>
+    <display value="Douanes"/>
+  </concept>
+  <concept>
+    <code value="AUTRE"/>
+    <display value="Autre"/>
+  </concept>
+  <concept>
+    <code value="`AUTRE.ADM`"/>
+    <display value="Administratif"/>
+  </concept>
+  <concept>
+    <code value="`AUTRE.DAE`"/>
+    <display value="DAE"/>
+  </concept>
+  <concept>
+    <code value="`AUTRE.AUTRE`"/>
+    <display value="Autre"/>
+  </concept>
+</CodeSystem>

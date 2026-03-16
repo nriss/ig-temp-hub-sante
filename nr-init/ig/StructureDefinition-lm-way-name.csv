@@ -1,0 +1,9 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
+"lm-way-name","lm-way-name","","","",0,*,"","","","null {[]} {[]}
+","Nom de voie","Nom complet d'une voie (rue, avenue, boulevard…).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"lm-way-name.complete","lm-way-name.complete","","","",1,1,"","","","string {[]} {[]}
+","Nom complet","Nom complet de la voie.","","","","","","","","","",,,,,"",,,,"lm-way-name.complete",1,1,"",""
+"lm-way-name.type","lm-way-name.type","","","",0,1,"","","","string {[]} {[]}
+","Type de voie","Type de voie (rue, avenue, boulevard…).","","","","","","","","","",,,,,"",,,,"lm-way-name.type",0,1,"",""
+"lm-way-name.name","lm-way-name.name","","","",0,1,"","","","string {[]} {[]}
+","Nom","Nom propre de la voie (sans le type).","","","","","","","","","",,,,,"",,,,"lm-way-name.name",0,1,"",""

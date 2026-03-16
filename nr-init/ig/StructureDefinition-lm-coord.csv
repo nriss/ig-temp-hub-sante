@@ -1,0 +1,11 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
+"lm-coord","lm-coord","","","",0,*,"","","","null {[]} {[]}
+","Coordonnées géographiques","Coordonnées géographiques d'un point (latitude, longitude, altitude, précision).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"lm-coord.lat","lm-coord.lat","","","",1,1,"","","","decimal {[]} {[]}
+","Latitude","Latitude en degrés décimaux (WGS84).","","","","","","","","","",,,,,"",,,,"lm-coord.lat",1,1,"",""
+"lm-coord.lon","lm-coord.lon","","","",1,1,"","","","decimal {[]} {[]}
+","Longitude","Longitude en degrés décimaux (WGS84).","","","","","","","","","",,,,,"",,,,"lm-coord.lon",1,1,"",""
+"lm-coord.precision","lm-coord.precision","","","",1,1,"","","","code {[]} {[]}
+","Précision","Niveau de précision des coordonnées.","","","","","","","","","",,"required","","https://interop.esante.gouv.fr/ig/fhir/hubsante/ValueSet/vs-coord-precision|0.1.0","",,,,"lm-coord.precision",1,1,"",""
+"lm-coord.height","lm-coord.height","","","",0,1,"","","","decimal {[]} {[]}
+","Altitude","Altitude en mètres.","","","","","","","","","",,,,,"",,,,"lm-coord.height",0,1,"",""

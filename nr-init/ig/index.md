@@ -11,31 +11,35 @@
 | Draft as of 2026-03-16 | *Computable Name*:HubSante |
 
  **Brief description of this Implementation Guide**
- [Add a brief description of this IG in English] 
+ This Implementation Guide defines the logical models for the Hub Santé interoperability platform (SAMU), based on the RS-EDA JSON schema. It provides a FHIR-based representation of emergency medical regulation cases exchanged between partners of the French emergency medical dispatch system. 
 
-> Cet Implementation Guide n'est pas la version courante, il s'agit de la version en intégration continue soumise à des changements fréquents uniquement destinée à suivre les travaux en cours. La version courante sera accessible via l'URL canonique suite à la première release : http://interop.esante.gouv.fr/ig/fhir/[code - ig]
+> Cet Implementation Guide n'est pas la version courante, il s'agit de la version en intégration continue soumise à des changements fréquents uniquement destinée à suivre les travaux en cours. La version courante sera accessible via l'URL canonique suite à la première release : https://interop.esante.gouv.fr/ig/fhir/hubsante
 
 ### Introduction
 
-Définir ici de quoi parle l'IG (En termes non expert, compréhensible par un patient). Rajouter également les détails techniques sur le contexte et le besoin de cet IG
+Le **Hub Santé** est une plateforme d'interopérabilité permettant l'échange de données entre les acteurs du système de soins d'urgence en France, notamment les SAMU (Services d'Aide Médicale Urgente) et leurs partenaires (SIS, FDO, établissements de santé…).
 
-Les principales sections de l'IG sont :
-
-* Le contexte de l'IG, quelle problématique il résout
-* Ce que les Implémenteurs doivent mettre en place
-* Un onglet "Ressources de conformité" pour s'assurer d'un schéma global entre tous les IGs
+Cet Implementation Guide définit les **modèles logiques FHIR** correspondant au schéma JSON **RS-EDA** (Remontée de Situation — État Du dossier d'Affaire), qui est le format de message utilisé pour partager les dossiers de régulation médicale entre partenaires du Hub Santé.
 
 ### Périmètre du projet
 
-Définir en quelques lignes quel est le périmètre du projet
+Cet IG couvre la modélisation logique du message **RS-EDA**, qui décrit un dossier de régulation médicale complet, incluant :
 
-Toujours laisser l'onglet "Ressources de conformité" pour s'assurer d'une cohérence globales entre tous les IGs
+* La **qualification** du dossier (nature du problème, motif de santé, risques, priorité)
+* La **localisation** de l'intervention (adresse, coordonnées GPS, accès)
+* L'**alerte initiale** (appelant, canal de contact, notes)
+* Le ou les **patients** pris en charge (identité, dossier administratif, hypothèses diagnostiques)
+* Les **observations médicales** réalisées par les professionnels de santé
+* Les **décisions** de régulation médicale (type, ressource mobilisée, destination)
+* Les **informations complémentaires** libres
 
-### Auteurs et contributeurs (optionnel)
+Les modèles logiques sont construits à partir du schéma JSON de référence publié par l'ANS : [SAMU-Hub-Modeles / RS-EDA.schema.json](https://github.com/ansforge/SAMU-Hub-Modeles/blob/main/src/main/resources/json-schema/RS-EDA.schema.json)
+
+### Auteurs et contributeurs
 
 | | | | |
 | :--- | :--- | :--- | :--- |
-| **Primary Editor** | Prenom Nom | Agence du Numérique en Santé | prenom.nom@address.email |
+| **Primary Editor** | Prenom Nom | Agence du Numérique en Santé | prenom.nom@esante.gouv.fr |
 
 ### Dépendances
 
@@ -58,7 +62,7 @@ Pas d'usage de PI externe (autre que celles de la spécification FHIR)
   "name" : "HubSante",
   "title" : "Hub Santé",
   "status" : "draft",
-  "date" : "2026-03-16T10:29:29+00:00",
+  "date" : "2026-03-16T12:48:10+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -863,6 +867,162 @@ Pas d'usage de PI externe (autre que celles de la spécification FHIR)
         "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/lm-access"
+      },
+      "name" : "Accès",
+      "description" : "Informations d'accès à une localisation (bâtiment, étage, digicode…).",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/lm-detailed-address"
+      },
+      "name" : "Adresse détaillée",
+      "description" : "Adresse structurée avec numéro, type de voie et informations complémentaires.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/lm-alert"
+      },
+      "name" : "Alerte initiale",
+      "description" : "Alerte initiale reçue par le SAMU, avec la réception, l'appelant et les notes associées.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/lm-caller"
+      },
+      "name" : "Appelant",
+      "description" : "Personne à l'origine de l'appel au SAMU, avec ses coordonnées et ses caractéristiques de communication.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/vs-case-attribution"
+      },
+      "name" : "Attribution du dossier (Hub Santé)",
+      "description" : "Attribution ou orientation du dossier de régulation médicale.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/cs-case-attribution"
+      },
+      "name" : "Attribution du dossier (Hub Santé)",
+      "description" : "Attribution ou orientation du dossier de régulation médicale.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/vs-contact-channel"
+      },
+      "name" : "Canal de contact (Hub Santé)",
+      "description" : "Origine du canal établi pour le contact.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/cs-contact-channel"
+      },
+      "name" : "Canal de contact (Hub Santé)",
+      "description" : "Origine du canal établi pour le contact.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/lm-custom-map"
+      },
+      "name" : "Champ personnalisé",
+      "description" : "Entrée de type clé/valeur permettant de transporter des informations complémentaires non structurées (max. 3 entrées).",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/lm-city"
+      },
+      "name" : "Commune",
+      "description" : "Commune de la localisation.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/vs-caller-communication"
+      },
+      "name" : "Communication avec l'appelant (Hub Santé)",
+      "description" : "Qualité ou contrainte de communication avec l'appelant.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/cs-caller-communication"
+      },
+      "name" : "Communication avec l'appelant (Hub Santé)",
+      "description" : "Qualité ou contrainte de communication avec l'appelant.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/lm-contact"
+      },
+      "name" : "Contact",
+      "description" : "Coordonnées de contact avec canal, type et valeur (utilisé pour l'appelant).",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/lm-personal-contact"
       },
       "name" : "Contact personnel",
@@ -875,10 +1035,106 @@ Pas d'usage de PI externe (autre que celles de la spécification FHIR)
         "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/lm-coord"
+      },
+      "name" : "Coordonnées géographiques",
+      "description" : "Coordonnées géographiques d'un point (latitude, longitude, altitude, précision).",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/lm-destination"
+      },
+      "name" : "Destination",
+      "description" : "Destination du patient à l'issue de la décision de régulation médicale.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/lm-administrative-file"
       },
       "name" : "Dossier administratif",
       "description" : "Dossier administratif du patient, contenant ses identifiants externes et son médecin traitant.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/lm-create-case-health"
+      },
+      "name" : "Dossier de régulation médicale (RS-EDA)",
+      "description" : "Objet racine du message RS-EDA : dossier de régulation médicale transmis entre partenaires du Hub Santé.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/lm-decision"
+      },
+      "name" : "Décision médicale",
+      "description" : "Décision de régulation médicale prise par l'opérateur pour un dossier donné.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/lm-case-details"
+      },
+      "name" : "Détails du dossier",
+      "description" : "Informations complémentaires de qualification du dossier de régulation médicale.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/vs-perimeter"
+      },
+      "name" : "Filière de régulation (Hub Santé)",
+      "description" : "Filière du CRRA destinataire à laquelle le dossier doit être adressé.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/cs-perimeter"
+      },
+      "name" : "Filière de régulation (Hub Santé)",
+      "description" : "Filière du CRRA destinataire à laquelle le dossier doit être adressé.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/lm-geometry"
+      },
+      "name" : "Géométrie",
+      "description" : "Localisation géographique horodatée d'un point.",
       "exampleBoolean" : false
     },
     {
@@ -923,6 +1179,18 @@ Pas d'usage de PI externe (autre que celles de la spécification FHIR)
         "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/lm-external-location-id"
+      },
+      "name" : "Identifiant de localisation externe",
+      "description" : "Identifiant externe référençant une localisation (établissement de santé, entreprise…).",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/lm-external-id"
       },
       "name" : "Identifiant(s) patient(s)",
@@ -947,6 +1215,30 @@ Pas d'usage de PI externe (autre que celles de la spécification FHIR)
         "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/lm-external-info"
+      },
+      "name" : "Information externe",
+      "description" : "Référence vers une ressource externe apportant des informations complémentaires sur la localisation.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/lm-additional-information"
+      },
+      "name" : "Informations complémentaires",
+      "description" : "Informations complémentaires non structurées transportées sous forme de carte clé/valeur (max. 3 entrées).",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/lm-patient-detail"
       },
       "name" : "Informations patient",
@@ -959,10 +1251,46 @@ Pas d'usage de PI externe (autre que celles de la spécification FHIR)
         "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/lm-location"
+      },
+      "name" : "Localisation",
+      "description" : "Localisation de l'intervention, incluant l'adresse, la commune, l'accès, les coordonnées géographiques et les références externes.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/lm-health-motive"
+      },
+      "name" : "Motif de santé",
+      "description" : "Code et libellé décrivant le motif de santé de l'appel (nomenclature SAMU).",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/lm-general-practitioner"
       },
       "name" : "Médecin traitant",
       "description" : "Médecin traitant du patient.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/lm-whats-happen"
+      },
+      "name" : "Nature du problème",
+      "description" : "Code et libellé décrivant la nature de l'événement déclenchant l'appel (nomenclature SAMU).",
       "exampleBoolean" : false
     },
     {
@@ -995,10 +1323,58 @@ Pas d'usage de PI externe (autre que celles de la spécification FHIR)
         "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/lm-way-name"
+      },
+      "name" : "Nom de voie",
+      "description" : "Nom complet d'une voie (rue, avenue, boulevard…).",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/lm-notes"
+      },
+      "name" : "Note",
+      "description" : "Note horodatée associée à l'alerte initiale.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/lm-medical-note"
       },
       "name" : "Observation médicale",
       "description" : "Observation médicale réalisée par un professionnel de santé dans le contexte de la régulation médicale (RS-EDA).",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/vs-qualification-origin"
+      },
+      "name" : "Origine de la qualification (Hub Santé)",
+      "description" : "Canal ou entité à l'origine de la création du dossier de régulation médicale.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/cs-qualification-origin"
+      },
+      "name" : "Origine de la qualification (Hub Santé)",
+      "description" : "Canal ou entité à l'origine de la création du dossier de régulation médicale.",
       "exampleBoolean" : false
     },
     {
@@ -1019,10 +1395,70 @@ Pas d'usage de PI externe (autre que celles de la spécification FHIR)
         "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/lm-point"
+      },
+      "name" : "Point géographique",
+      "description" : "Point géographique avec ses coordonnées et une indication sur la provenance AML.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/vs-case-priority"
+      },
+      "name" : "Priorité du dossier (Hub Santé)",
+      "description" : "Niveau de priorité du dossier de régulation médicale.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/cs-case-priority"
+      },
+      "name" : "Priorité du dossier (Hub Santé)",
+      "description" : "Niveau de priorité du dossier de régulation médicale.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/lm-operator"
       },
       "name" : "Professionnel de santé réalisant l'observation",
       "description" : "Opérateur ayant effectué une observation médicale dans le contexte de la régulation médicale (RS-EDA).",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/vs-coord-precision"
+      },
+      "name" : "Précision des coordonnées géographiques (Hub Santé)",
+      "description" : "Niveau de précision des coordonnées géographiques d'un point.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/cs-coord-precision"
+      },
+      "name" : "Précision des coordonnées géographiques (Hub Santé)",
+      "description" : "Niveau de précision des coordonnées géographiques d'un point.",
       "exampleBoolean" : false
     },
     {
@@ -1035,6 +1471,30 @@ Pas d'usage de PI externe (autre que celles de la spécification FHIR)
       },
       "name" : "Prénom & nom usuel",
       "description" : "Prénom et nom usuel d'une personne. Objet transverse utilisé dans plusieurs contextes (appelant, médecin traitant, identité patient).",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/lm-qualification"
+      },
+      "name" : "Qualification du dossier",
+      "description" : "Qualification médicale et opérationnelle du dossier de régulation médicale.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/lm-risk-threat"
+      },
+      "name" : "Risque et menace",
+      "description" : "Code et libellé décrivant un risque ou une menace associé au dossier (nomenclature SAMU).",
       "exampleBoolean" : false
     },
     {
@@ -1091,6 +1551,30 @@ Pas d'usage de PI externe (autre que celles de la spécification FHIR)
         "valueString" : "ValueSet"
       }],
       "reference" : {
+        "reference" : "ValueSet/vs-external-location-id-source"
+      },
+      "name" : "Source des identifiants de localisation externes (Hub Santé)",
+      "description" : "Types d'identifiants utilisés pour référencer une localisation externe.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/cs-external-location-id-source"
+      },
+      "name" : "Source des identifiants de localisation externes (Hub Santé)",
+      "description" : "Types d'identifiants utilisés pour référencer une localisation externe.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
         "reference" : "ValueSet/vs-external-id-source"
       },
       "name" : "Source des identifiants externes patient (Hub Santé)",
@@ -1112,6 +1596,30 @@ Pas d'usage de PI externe (autre que celles de la spécification FHIR)
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/vs-case-status"
+      },
+      "name" : "Statut du dossier (Hub Santé)",
+      "description" : "Statut du dossier de régulation médicale.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/cs-case-status"
+      },
+      "name" : "Statut du dossier (Hub Santé)",
+      "description" : "Statut du dossier de régulation médicale.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
@@ -1119,6 +1627,102 @@ Pas d'usage de PI externe (autre que celles de la spécification FHIR)
       },
       "name" : "Traits stricts de l'identité",
       "description" : "Traits stricts de l'identité du patient au sens de l'identité INS.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/vs-caller-type"
+      },
+      "name" : "Type d'appelant (Hub Santé)",
+      "description" : "Type ou qualité de l'appelant/requérant.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/cs-caller-type"
+      },
+      "name" : "Type d'appelant (Hub Santé)",
+      "description" : "Type ou qualité de l'appelant/requérant.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/vs-external-info-type"
+      },
+      "name" : "Type d'information externe (Hub Santé)",
+      "description" : "Type de la ressource externe référencée pour la localisation.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/cs-external-info-type"
+      },
+      "name" : "Type d'information externe (Hub Santé)",
+      "description" : "Type de la ressource externe référencée pour la localisation.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/vs-intervention-type"
+      },
+      "name" : "Type d'intervention (Hub Santé)",
+      "description" : "Type d'intervention : primaire ou secondaire.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/cs-intervention-type"
+      },
+      "name" : "Type d'intervention (Hub Santé)",
+      "description" : "Type d'intervention : primaire (première intervention urgente) ou secondaire (ex. TIH).",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/vs-orientation-type"
+      },
+      "name" : "Type d'orientation (Hub Santé)",
+      "description" : "Type d'orientation décidé à l'issue de la régulation médicale.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/cs-orientation-type"
+      },
+      "name" : "Type d'orientation (Hub Santé)",
+      "description" : "Type d'orientation décidé à l'issue de la régulation médicale.",
       "exampleBoolean" : false
     },
     {
@@ -1143,6 +1747,78 @@ Pas d'usage de PI externe (autre que celles de la spécification FHIR)
       },
       "name" : "Type de contact (Hub Santé)",
       "description" : "Types d'URI utilisés pour les coordonnées de contact.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/vs-decision-type"
+      },
+      "name" : "Type de décision médicale (Hub Santé)",
+      "description" : "Type de décision prise dans le cadre de la régulation médicale.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/cs-decision-type"
+      },
+      "name" : "Type de décision médicale (Hub Santé)",
+      "description" : "Type de décision prise dans le cadre de la régulation médicale.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/lm-location-kind"
+      },
+      "name" : "Type de lieu",
+      "description" : "Code et libellé décrivant le type de lieu de l'intervention (nomenclature SAMU).",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/vs-resource-type"
+      },
+      "name" : "Type de ressource mobilisée (Hub Santé)",
+      "description" : "Type de ressource mobilisée dans le cadre de la décision de régulation médicale.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/cs-resource-type"
+      },
+      "name" : "Type de ressource mobilisée (Hub Santé)",
+      "description" : "Type de ressource mobilisée dans le cadre de la décision de régulation médicale.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/lm-highway"
+      },
+      "name" : "Voie routière",
+      "description" : "Informations relatives à une voie routière (autoroute, route nationale…).",
       "exampleBoolean" : false
     }],
     "page" : {

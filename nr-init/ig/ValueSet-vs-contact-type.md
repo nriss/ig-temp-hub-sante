@@ -16,6 +16,7 @@ Types d'URI utilisés pour les coordonnées de contact.
 
  **References** 
 
+* [Contact](StructureDefinition-lm-contact.md)
 * [Contact personnel](StructureDefinition-lm-personal-contact.md)
 
 ### Définition logique (CLD)
@@ -50,7 +51,7 @@ Types d'URI utilisés pour les coordonnées de contact.
   "name" : "VS_ContactType",
   "title" : "Type de contact (Hub Santé)",
   "status" : "draft",
-  "date" : "2026-03-16T10:29:29+00:00",
+  "date" : "2026-03-16T12:48:10+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
